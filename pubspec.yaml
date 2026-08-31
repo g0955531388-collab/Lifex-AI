@@ -2,3 +2,5 @@
   android: true
   ios: true
   image_path: "assets/images/app_icon.png"
+environment: 
+  sdk: '3.3.0'
