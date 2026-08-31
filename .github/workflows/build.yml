@@ -26,7 +26,13 @@ jobs:
 
     - name: Install dependencies
       working-directory: ./lifex_ai
-      run: flutter pub get
+      run: |
+        flutter pub add --dev flutter_launcher_icons
+        flutter pub get
+
+    - name: Generate App Icons
+      working-directory: ./lifex_ai
+      run: dart run flutter_launcher_icons
 
     - name: Build APK
       working-directory: ./lifex_ai
