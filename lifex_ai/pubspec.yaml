@@ -81,3 +81,11 @@ flutter:
     - lib/data/medical/symptoms_database.json
     - lib/data/medical/tests_database.json
     - lib/data/medical/medical_knowledge.json
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
