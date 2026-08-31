@@ -1,43 +1,16 @@
-﻿name: Build Flutter APK
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-
-    - name: Set up Java
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'zulu'
-        java-version: '17'
-
-    - name: Set up Flutter
-      uses: subosito/flutter-action@v2
-      with:
-        channel: 'stable'
-
-    - name: Install dependencies
-      working-directory: ./lifex_ai
-      run: flutter pub get
-
-    - name: Generate App Icons
-      working-directory: ./lifex_ai
-      run: dart run flutter_launcher_icons
-
-    - name: Build APK
-      working-directory: ./lifex_ai
-      run: flutter build apk --release
-
-    - name: Upload APK Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: release-apk
-        path: lifex_ai/build/app/outputs/flutter-apk/*.apk
+name: Build APK 
+on: push 
+jobs: 
+  build: 
+    runs-on: ubuntu-latest 
+    steps: 
+    - uses: actions/checkout@v3 
+    - uses: subosito/flutter-action@v2 
+      with: 
+        flutter-version: '3.19.0' 
+    - run: flutter pub get 
+    - run: flutter build apk --release 
+    - uses: actions/upload-artifact@v3 
+      with: 
+        name: app-release 
+        path: build/app/outputs/flutter-apk/app-release.apk
