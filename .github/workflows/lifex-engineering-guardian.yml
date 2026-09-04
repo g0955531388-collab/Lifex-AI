@@ -26,8 +26,9 @@ jobs:
       - name: Check Flutter Version
         run: flutter --version
 
-      - name: Fetch Dependencies & Scan Project
+      - name: Fetch Dependencies & Scan Project inside lifex_ai
         run: |
+          cd lifex_ai
           echo "Scanning complete project structure..."
           flutter pub get
           echo "Running Flutter Analyze for code health..."
