@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- خلفية شاشة الإقلاع (Splash) قبل تشغيل Flutter. يمكن استبدالها لاحقًا
+     بشعار Lifex-AI الحقيقي (راجع المرحلة 15 من مهمة التدقيق: يجب ربط
+     هوية Lifex-AI البصرية هنا بدل الخلفية البيضاء الافتراضية). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:color/white" />
+</layer-list>
