@@ -21,10 +21,13 @@ jobs:
           channel: 'stable'
 
       - name: Install Dependencies
+        working-directory: lifex_ai
         run: flutter pub get
 
       - name: Run Static Analysis
+        working-directory: lifex_ai
         run: flutter analyze
 
       - name: Run Tests
+        working-directory: lifex_ai
         run: flutter test
