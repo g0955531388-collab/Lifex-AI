@@ -58,7 +58,7 @@ class _MustNotBeCalledTool implements AgentTool {
     required AgentContext context,
   }) async {
     wasCalled = true;
-    return AgentToolExecutionResult.success(const {'ok': true});
+    return const AgentToolExecutionResult.success({'ok': true});
   }
 }
 

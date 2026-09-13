@@ -49,7 +49,7 @@ class _FakeKnowledgeSearchTool implements AgentTool {
     required Map<String, dynamic> arguments,
     required AgentContext context,
   }) async {
-    return AgentToolExecutionResult.success({
+    return const AgentToolExecutionResult.success({
       'dataType': 'knowledge_search',
       'matchCount': 1,
       'items': [
@@ -186,7 +186,7 @@ class _FakeReportGeneratorTool implements AgentTool {
     required Map<String, dynamic> arguments,
     required AgentContext context,
   }) async {
-    return AgentToolExecutionResult.success({
+    return const AgentToolExecutionResult.success({
       'dataType': 'final_report',
       'sections': [
         {'titleAr': 'نتائج', 'contentAr': 'محتوى تجريبي'}

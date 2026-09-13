@@ -10,6 +10,7 @@
 /// المساعد البصري) تحصل عليه من ActiveProfileController.activeProfileId
 /// الحقيقي — وليس نصاً وهمياً ثابتاً كما كان الحال سابقاً.
 /// =============================================================
+library lifex_ai.screens.home_screen;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -76,7 +77,7 @@ class HomeScreen extends StatelessWidget {
                       );
                     },
                   ),
-                  AccessibleActionButton(
+                  const AccessibleActionButton(
                     icon: Icons.medication_outlined,
                     label: 'أدويتي',
                     // ملاحظة: onTap متروك فارغاً (null) عمداً لأن شاشة
@@ -86,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                     // متاحة بعد" بدلاً من وعد كاذب بفتح صفحة غير موجودة.
                     semanticHint: 'ميزة إدارة الأدوية قيد التطوير حالياً',
                   ),
-                  AccessibleActionButton(
+                  const AccessibleActionButton(
                     icon: Icons.calendar_month_outlined,
                     label: 'مواعيدي',
                     // نفس الملاحظة أعلاه: شاشة المواعيد لم تُبنَ بعد.

@@ -6,6 +6,7 @@
 /// (Gemini/ChatGPT/Claude) بمفتاحه الخاص، عبر UnifiedAiHubGateway،
 /// دون أن يلمس التطبيق أو خوادمنا هذا المفتاح بشكل غير آمن.
 /// =============================================================
+library lifex_ai.screens.ai_hub_screen;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -73,6 +74,7 @@ class _AiHubScreenState extends State<AiHubScreen> {
     );
 
     if (confirmed != true) return;
+    if (!mounted) return;
     if (keyController.text.trim().isEmpty) {
       setState(() => _statusMessageAr = 'يُرجى إدخال مفتاح صالح.');
       return;

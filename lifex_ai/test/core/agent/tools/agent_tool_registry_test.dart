@@ -64,7 +64,7 @@ class _FakeTool implements AgentTool {
       throw StateError('خطأ غير متوقع داخل الأداة');
     }
     return shouldSucceed
-        ? AgentToolExecutionResult.success({'ok': true})
+        ? const AgentToolExecutionResult.success({'ok': true})
         : const AgentToolExecutionResult.failure('فشل متوقع');
   }
 }
@@ -207,6 +207,23 @@ void main() {
 
       final result = await registry.executeTool(
         toolName: 'crashing_tool',
+        arguments: const {},
+        context: _buildContext(),
+        actionId: 'a1',
+        sessionId: 's1',
+      );
+
+      expect(result.isSuccess, isFalse);
+    });
+
+    test(
+        'ToolExecutionFailed: فشل منطقي طبيعي داخل الأداة (بلا استثناء) '
+        'يُعاد كنتيجة فشل واضحة', () async {
+      final registry = AgentToolRegistry();
+      registry.register(_FakeTool(name: 'failing_tool', shouldSucceed: false));
+
+      final result = await registry.executeTool(
+        toolName: 'failing_tool',
         arguments: const {},
         context: _buildContext(),
         actionId: 'a1',

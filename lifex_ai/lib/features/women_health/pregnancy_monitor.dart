@@ -8,6 +8,7 @@
 /// ⚠️ أي مؤشر خطر هنا (نزيف، ألم حاد، غياب حركة الجنين) يجب أن يُصعَّد
 /// فوراً لوحدة الطوارئ الحقيقية، وليس أن يُترك القرار للذكاء الاصطناعي.
 /// =============================================================
+library lifex_ai.women_health.pregnancy_monitor;
 
 import '../../core/health_event_manager.dart';
 import 'pregnancy_profile.dart';

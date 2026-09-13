@@ -19,6 +19,7 @@
 ///   المركز الوطني المعتمد في بلدك قبل أي استخدام تجاري أو حتى تطويري
 ///   جاد — لا يجوز دمجه دون هذا الترخيص.
 /// =============================================================
+library lifex_ai.services.medical_terminology.terminology_connector;
 
 import 'dart:convert';
 

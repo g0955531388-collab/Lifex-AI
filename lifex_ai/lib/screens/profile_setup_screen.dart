@@ -7,6 +7,7 @@
 /// عبر ActiveProfileController، بدلاً من ترك التطبيق يعمل بمعرّف وهمي
 /// ثابت كما كان الحال قبل إضافة هذه الشاشة.
 /// =============================================================
+library lifex_ai.screens.profile_setup_screen;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -134,7 +135,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                 ),
                 const SizedBox(height: 16),
                 DropdownButtonFormField<BiologicalSex>(
-                  value: _sex,
+                  initialValue: _sex,
                   decoration: const InputDecoration(
                     labelText: 'الجنس البيولوجي (لأغراض طبية بحتة)',
                     border: OutlineInputBorder(),

@@ -6,6 +6,7 @@
 /// وتحديث المحتوى الطبي. ترتبط منطقياً بـ AppConfig وProfilePrivacyManager
 /// وMedicalDatabaseManager.
 /// =============================================================
+library lifex_ai.screens.settings_screen;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

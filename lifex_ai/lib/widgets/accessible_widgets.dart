@@ -14,6 +14,7 @@
 /// IconButton/Card العادية مباشرة، لضمان اتساق إمكانية الوصول عبر كل
 /// التطبيق دون نسيانها في شاشة بعينها.
 /// =============================================================
+library lifex_ai.widgets.accessible_widgets;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
@@ -133,5 +134,9 @@ class LiveAnnouncingText extends StatelessWidget {
 /// (مثلاً نتيجة تحليل الكاميرا فور جاهزيتها)، حتى لو لم يكن تركيز
 /// قارئ الشاشة على هذا العنصر أصلاً.
 void announceForScreenReader(BuildContext context, String message) {
-  SemanticsService.announce(message, Directionality.of(context));
+  SemanticsService.sendAnnouncement(
+    View.of(context),
+    message,
+    Directionality.of(context),
+  );
 }

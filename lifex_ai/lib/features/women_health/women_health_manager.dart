@@ -11,6 +11,7 @@
 /// نفسها افتراضياً (عبر profile_privacy_manager.dart)، ولا تُشارك مع
 /// أي طرف آخر (بما فيهم أفراد العائلة) إلا بموافقة صريحة ومنفصلة منها.
 /// =============================================================
+library lifex_ai.women_health.women_health_manager;
 
 import '../../core/health_event_manager.dart';
 

@@ -15,6 +15,7 @@
 /// (No-op/In-memory) موضَّحة بتعليق ⚠️ عند كل واحدة، بحيث يبدأ التطبيق
 /// ويعمل دون كراش، بدل تعطيل الميزة بالكامل حتى توفر الاعتماديات.
 /// =============================================================
+library lifex_ai.main;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -22,7 +23,6 @@ import 'package:provider/provider.dart';
 
 import 'core/app_config.dart';
 import 'core/error_handler.dart';
-import 'core/health_event_manager.dart';
 import 'core/agent/agent_core.dart';
 import 'core/agent/adapters/placeholder_ocr_extractor.dart';
 import 'l10n/generated/app_localizations.dart';
