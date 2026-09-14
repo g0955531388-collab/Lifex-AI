@@ -10,6 +10,7 @@
 /// في كل مرة تُضاف أو تُعدَّل فيها مفاتيح الترجمة في ملفات .arb، حتى لا
 /// يفقد هذا الملف اليدوي التزامنه معها بمرور الوقت.
 /// =============================================================
+library lifex_ai.l10n.app_localizations;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';

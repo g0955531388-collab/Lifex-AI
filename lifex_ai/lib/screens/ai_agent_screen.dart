@@ -8,6 +8,7 @@
 /// لا تتعامل هذه الشاشة مع Planner/Executor/ToolRegistry مباشرة أبداً؛
 /// كل تفاعل يمر عبر CoordinatorAgent.handleUserRequest فقط.
 /// =============================================================
+library lifex_ai.screens.ai_agent_screen;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -300,13 +301,33 @@ class _AiAgentScreenState extends State<AiAgentScreen> {
       color = Colors.grey;
     }
 
+    final showLiveLabel = thisIndex == currentIndex &&
+        _isRunning &&
+        _currentStepLabelAr.isNotEmpty;
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Icon(icon, size: 18, color: color),
           const SizedBox(width: 8),
-          Text(step.labelAr),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(step.labelAr),
+                if (showLiveLabel)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Text(
+                      _currentStepLabelAr,
+                      style: const TextStyle(fontSize: 12, color: Colors.grey),
+                    ),
+                  ),
+              ],
+            ),
+          ),
         ],
       ),
     );

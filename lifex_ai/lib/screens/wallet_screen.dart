@@ -6,6 +6,7 @@
 /// عبر بوابة الدفع المرخّصة. تعتمد على PaymentController وTransactionService
 /// المبنيين مسبقاً، ولا تلمس أي بيانات بطاقة خام مباشرة.
 /// =============================================================
+library lifex_ai.screens.wallet_screen;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -57,6 +58,7 @@ class _WalletScreenState extends State<WalletScreen> {
     );
 
     if (confirmed != true) return;
+    if (!mounted) return;
 
     final dollars = int.tryParse(amountController.text.trim());
     if (dollars == null || dollars <= 0) {

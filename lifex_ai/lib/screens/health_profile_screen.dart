@@ -6,6 +6,7 @@
 /// مبسّط للقراءة، مع تنويه واضح دائم الظهور حول طبيعة البيانات، ودعم
 /// كامل لقارئ الشاشة (TalkBack/VoiceOver) لكل قسم.
 /// =============================================================
+library lifex_ai.screens.health_profile_screen;
 
 import 'package:flutter/material.dart';
 
@@ -88,7 +89,7 @@ class HealthProfileScreen extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                          color: Colors.blue.withOpacity(0.08),
+                          color: Colors.blue.withValues(alpha: 0.08),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: const Text(

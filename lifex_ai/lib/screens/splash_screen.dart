@@ -9,6 +9,7 @@
 /// ⚠️ هذا النص (AppConstants.ownershipStatement) إلزامي الظهور هنا ولا
 /// يجوز حذفه أو اختصاره أو تغييره.
 /// =============================================================
+library lifex_ai.screens.splash_screen;
 
 import 'dart:async';
 

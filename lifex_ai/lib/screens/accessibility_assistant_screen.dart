@@ -11,6 +11,7 @@
 /// حالياً" بدلاً من نتيجة وهمية — نفس المبدأ المتّبع في بقية التطبيق
 /// (مثل بوابة الدفع) من عدم الادّعاء بعمل ميزة قبل اكتمال ربطها الفعلي.
 /// =============================================================
+library lifex_ai.screens.accessibility_assistant_screen;
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -52,6 +53,8 @@ class _AccessibilityAssistantScreenState
       }
 
       final imageBytes = await photo.readAsBytes();
+
+      if (!mounted) return;
       final engine = Provider.of<AssistiveVisionEngine>(context, listen: false);
 
       final result = await engine.process(

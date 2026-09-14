@@ -11,6 +11,7 @@
 /// خادم Lifex-AI الخاص) يتطلب اعتماد بنية خلفية (Backend) كاملة خارج
 /// نطاق تطبيق Flutter نفسه.
 /// =============================================================
+library lifex_ai.services.cloud.cloud_sync_manager;
 
 import '../../core/error_handler.dart';
 import 'cloud_backend_client.dart';
