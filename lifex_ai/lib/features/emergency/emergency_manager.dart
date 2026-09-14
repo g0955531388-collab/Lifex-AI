@@ -10,6 +10,7 @@ import '../../core/health_event_manager.dart';
 import '../accessibility/multi_sensory_alert_manager.dart';
 import 'emergency_message_manager.dart';
 import 'risk_level_engine.dart';
+import 'silent_emergency_signal_controller.dart';
 
 enum EmergencyStatus { none, active, resolved }
 
@@ -37,16 +38,22 @@ class EmergencyManager {
     required this.riskLevelEngine,
     required this.messageManager,
     this.multiSensoryAlertManager,
+    this.silentSignalController,
   });
 
   final RiskLevelEngine riskLevelEngine;
   final EmergencyMessageManager messageManager;
 
-  /// اختياري عمداً (nullable) حتى لا يفشل النظام كاملاً لو لم يُهيَّأ؛
-  /// لكن لو أُهيِّئ، كل تنبيه طوارئ يصل إلزامياً عبر الاهتزاز والومضة
-  /// البصرية بالتوازي مع الرسالة الصوتية/النصية العادية — لضمان وصول
-  /// التنبيه للمستخدمين الصم أو ضعاف السمع أيضاً.
+  /// اختياري عمداً (nullable) حتى لا يفشل النظام كاملاً لو لم يُهيَّأ.
+  /// يُستخدم فقط كخيار احتياطي مباشر إن لم يُوفَّر
+  /// [silentSignalController] (مثلاً في اختبارات مبسّطة)؛ عند توفر
+  /// silentSignalController يُفضَّل عليه دائماً لأنه يحترم الوضع الصامت.
   final MultiSensoryAlertManager? multiSensoryAlertManager;
+
+  /// الطبقة المعتمدة فعلياً لتقرير: تنبيه حسي طبيعي (صوت+اهتزاز+ومضة)،
+  /// أم وضع صامت (ومضة فقط) — انظر silent_emergency_signal_controller.dart
+  /// للتفاصيل الكاملة وسبب وجود هذا الفرق تحديداً في حالات الطوارئ.
+  final SilentEmergencySignalController? silentSignalController;
 
   final Map<String, EmergencyCase> _activeCases = {};
   int _caseCounter = 0;
@@ -75,11 +82,20 @@ class EmergencyManager {
       caseId: caseId,
       riskLevel: riskAssessment.level,
       reasonAr: reasonAr,
+      latitude: (context?['latitude'] as num?)?.toDouble(),
+      longitude: (context?['longitude'] as num?)?.toDouble(),
     );
 
-    // تنبيه حسي فوري على جهاز المستخدم نفسه (اهتزاز + ومضة)، بغض النظر
-    // عن قدرته على سماع أي رد صوتي من التطبيق.
-    multiSensoryAlertManager?.triggerAlert(AlertSeverityForSenses.critical);
+    // تنبيه حسي فوري على جهاز المستخدم — صوت وضوء واهتزاز طبيعي، أو
+    // ضوء فقط إن كان الوضع الصامت مفعَّلاً (انظر تعليق الحقلين أعلاه).
+    if (silentSignalController != null) {
+      silentSignalController!.signalEmergency(
+        profileId: profileId,
+        severity: AlertSeverityForSenses.critical,
+      );
+    } else {
+      multiSensoryAlertManager?.triggerAlert(AlertSeverityForSenses.critical);
+    }
 
     HealthEventManager.instance.emitQuick(
       HealthEventType.emergencyTriggered,
@@ -100,6 +116,7 @@ class EmergencyManager {
     }
     emergencyCase.status = EmergencyStatus.resolved;
     emergencyCase.resolvedAt = DateTime.now();
+    silentSignalController?.clearTrustedCallOverride(emergencyCase.profileId);
 
     HealthEventManager.instance.emitQuick(
       HealthEventType.emergencyResolved,

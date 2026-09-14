@@ -35,14 +35,20 @@ import 'features/accessibility/multi_sensory_alert_manager.dart';
 import 'features/ai/ai_bridge.dart';
 import 'features/ai/ai_service_router.dart';
 import 'features/ai/unified_ai_hub_gateway.dart';
+import 'core/admin/admin_manager.dart';
 import 'features/emergency/emergency_manager.dart';
 import 'features/emergency/emergency_message_manager.dart';
+import 'features/emergency/emergency_phone_contacts_registry.dart';
 import 'features/emergency/risk_level_engine.dart';
+import 'features/emergency/silent_emergency_signal_controller.dart';
 import 'features/energy/battery_monitor.dart';
 import 'features/energy/energy_manager.dart';
 import 'features/energy/survival_energy_mode.dart';
+import 'features/finance/billing_exemption_policy.dart';
 import 'features/finance/payment_controller.dart';
 import 'features/finance/payment_gateway_client.dart';
+import 'features/finance/paypal_payment_gateway_client.dart';
+import 'features/finance/subscription_billing_manager.dart';
 import 'features/finance/transaction_ledger.dart';
 import 'features/finance/transaction_service.dart';
 import 'features/finance/wallet_manager.dart';
@@ -83,6 +89,7 @@ class LifexAppContext {
     required this.walletManager,
     required this.paymentController,
     required this.transactionService,
+    required this.subscriptionBillingManager,
     required this.unifiedAiHubGateway,
     required this.aiServiceRouter,
     required this.cloudSyncManager,
@@ -104,6 +111,7 @@ class LifexAppContext {
   final WalletManager walletManager;
   final PaymentController paymentController;
   final TransactionService transactionService;
+  final SubscriptionBillingManager subscriptionBillingManager;
   final UnifiedAiHubGateway unifiedAiHubGateway;
   final AiServiceRouter aiServiceRouter;
   final CloudSyncManager cloudSyncManager;
@@ -197,7 +205,9 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
 
   // 4) الطوارئ — يعتمد على محرك تقييم الخطر ومدير الرسائل.
   final riskLevelEngine = RiskLevelEngine();
+  final emergencyPhoneContactsRegistry = EmergencyPhoneContactsRegistry();
   final emergencyMessageManager = EmergencyMessageManager(
+    emergencyContactsRegistry: emergencyPhoneContactsRegistry,
     sendFunction: (recipient, message) async {
       // TODO: ربط هذا فعلياً بخدمة SMS/Push حقيقية عند توفرها.
       return true;
@@ -211,10 +221,23 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
     visualFlashExecutor: _NoopVisualFlashExecutor(),
   );
 
+  // 4-ج) طبقة قرار "الطوارئ الصامتة" — ضوء فقط بدل صوت/اهتزاز، إلا إذا
+  // وردت مكالمة من رقم موثوق. راجع silent_emergency_signal_controller.dart.
+  // مربوطة الآن فعلياً بمفتاح الحدث الدقيق في لوحة الأدمن
+  // (GlobalAdminManager)، فيمكن للأدمن تعطيل هذا الوضع مباشرة من
+  // AdminDashboardScreen دون الحاجة لتحديث التطبيق.
+  final silentEmergencySignalController = SilentEmergencySignalController(
+    multiSensoryAlertManager: multiSensoryAlertManager,
+    emergencyContactsRegistry: emergencyPhoneContactsRegistry,
+    isSilentModeEnabledSystemWide: () => GlobalAdminManager.instance
+        .isEventEnabled('emergency_silent_light_mode_enabled'),
+  );
+
   final emergencyManager = EmergencyManager(
     riskLevelEngine: riskLevelEngine,
     messageManager: emergencyMessageManager,
     multiSensoryAlertManager: multiSensoryAlertManager,
+    silentSignalController: silentEmergencySignalController,
   );
 
   // 4-ج) طبقة الوكيل الذكي متعدد الوكلاء (AI Agent Orchestration Layer).
@@ -274,6 +297,18 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
   final paymentController = PaymentController(walletManager: walletManager);
   final transactionService = TransactionService(ledger: transactionLedger);
 
+  // 7-ب) فوترة الاشتراكات ومبيعات المتاجر — PayPal هو مزوّد الدفع
+  // المعتمد فعلياً للاشتراكات حسب توجيه صريح (Stripe يبقى مخصصاً لشحن
+  // المحفظة أعلاه). كل فوترة تمر أولاً عبر BillingExemptionPolicy، التي
+  // تُعفي تلقائياً كل مريض بحالة مزمنة/مستعصية نشطة وكل شخص من ذوي الهمم.
+  // ⚠️ يتطلب Client ID فعلي من حساب PayPal تجاري حقيقي قبل أي دفعة حقيقية.
+  final subscriptionBillingManager = SubscriptionBillingManager(
+    ledger: transactionLedger,
+    exemptionPolicy: const BillingExemptionPolicy(),
+  )..registerGateway(
+      PayPalPaymentGatewayClient(clientId: 'paypal_client_id_placeholder'),
+    );
+
   // 8) المزامنة السحابية.
   final cloudBackendClient = CloudBackendClient(
     // TODO: استبدال هذا الرابط برابط خادم Lifex-AI الخلفي الفعلي.
@@ -309,6 +344,7 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
     walletManager: walletManager,
     paymentController: paymentController,
     transactionService: transactionService,
+    subscriptionBillingManager: subscriptionBillingManager,
     unifiedAiHubGateway: unifiedAiHubGateway,
     aiServiceRouter: aiServiceRouter,
     cloudSyncManager: cloudSyncManager,
@@ -344,6 +380,9 @@ class LifexAiApp extends StatelessWidget {
         ),
         Provider<WalletManager>.value(value: appContext.walletManager),
         Provider<PaymentController>.value(value: appContext.paymentController),
+        Provider<SubscriptionBillingManager>.value(
+          value: appContext.subscriptionBillingManager,
+        ),
         Provider<TransactionService>.value(value: appContext.transactionService),
         Provider<UnifiedAiHubGateway>.value(value: appContext.unifiedAiHubGateway),
         Provider<AiServiceRouter>.value(value: appContext.aiServiceRouter),
