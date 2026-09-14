@@ -10,9 +10,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../core/admin/admin_manager.dart';
+import '../core/admin/admin_permissions.dart';
 import '../core/app_config.dart';
 import '../core/app_constants.dart';
 import '../data/medical_database_manager.dart';
+import '../features/profile/active_profile_controller.dart';
+import '../features/profile/health_identity_manager.dart';
+import 'admin_dashboard_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -96,8 +101,21 @@ class _SettingsScreenState extends State<SettingsScreen> {
     }
   }
 
+  /// معرّف Lifex-ID للملف النشط حالياً، أو null إن لم توجد هوية صحية
+  /// مرتبطة بعد بالملف النشط.
+  String? _activeLifexId(BuildContext context) {
+    final activeProfileId =
+        Provider.of<ActiveProfileController>(context).activeProfileId;
+    if (activeProfileId == null) return null;
+    return HealthIdentityManager.instance.getByProfileId(activeProfileId)?.lifexId;
+  }
+
   @override
   Widget build(BuildContext context) {
+    final activeLifexId = _activeLifexId(context);
+    final hasAdminRole = activeLifexId != null &&
+        GlobalAdminManager.instance.roleOf(activeLifexId) != GlobalAdminRole.none;
+
     return Scaffold(
       appBar: AppBar(title: const Text('الإعدادات')),
       body: ListView(
@@ -166,6 +184,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
               // TODO: ربط هذا بـ MultiProfileEngine.
             },
           ),
+          if (hasAdminRole) ...[
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.admin_panel_settings_outlined),
+              title: const Text('لوحة تحكم الأدمن'),
+              subtitle: const Text('إدارة الأدوار ومفاتيح الأحداث الدقيقة'),
+              trailing: const Icon(Icons.chevron_left),
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) =>
+                        AdminDashboardScreen(currentUserLifexId: activeLifexId),
+                  ),
+                );
+              },
+            ),
+          ],
           const Divider(),
           _buildMedicalUpdateSection(context),
           const Divider(),

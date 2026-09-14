@@ -9,6 +9,7 @@
 
 import 'dart:math';
 
+import '../../core/admin/admin_manager.dart';
 import '../../core/error_handler.dart';
 
 /// مستوى التحقق من هوية المستخدم.
@@ -28,6 +29,11 @@ class HealthIdentity {
   final String lifexId;
   final String linkedProfileId;
   String? phoneNumber;
+
+  /// البريد الإلكتروني المرتبط بالهوية، إن وُجد. اختياري تماماً مثل رقم
+  /// الهاتف — يُستخدم حالياً في مطابقة حساب المالك التلقائي
+  /// (GlobalAdminManager) إضافة إلى أي استخدام مستقبلي لتسجيل الدخول.
+  String? email;
   IdentityVerificationLevel verificationLevel;
   DateTime createdAt;
   DateTime? verifiedAt;
@@ -36,6 +42,7 @@ class HealthIdentity {
     required this.lifexId,
     required this.linkedProfileId,
     this.phoneNumber,
+    this.email,
     this.verificationLevel = IdentityVerificationLevel.unverified,
     DateTime? createdAt,
     this.verifiedAt,
@@ -45,6 +52,7 @@ class HealthIdentity {
         'lifexId': lifexId,
         'linkedProfileId': linkedProfileId,
         'phoneNumber': phoneNumber,
+        'email': email,
         'verificationLevel': verificationLevel.name,
         'createdAt': createdAt.toIso8601String(),
         'verifiedAt': verifiedAt?.toIso8601String(),
@@ -54,6 +62,7 @@ class HealthIdentity {
         lifexId: json['lifexId'] as String,
         linkedProfileId: json['linkedProfileId'] as String,
         phoneNumber: json['phoneNumber'] as String?,
+        email: json['email'] as String?,
         verificationLevel: IdentityVerificationLevel.values.firstWhere(
           (e) => e.name == json['verificationLevel'],
           orElse: () => IdentityVerificationLevel.unverified,
@@ -84,6 +93,7 @@ class HealthIdentityManager {
   HealthIdentity createIdentity({
     required String profileId,
     String? phoneNumber,
+    String? email,
   }) {
     if (_lifexIdByProfileId.containsKey(profileId)) {
       final existingId = _lifexIdByProfileId[profileId]!;
@@ -95,6 +105,7 @@ class HealthIdentityManager {
       lifexId: lifexId,
       linkedProfileId: profileId,
       phoneNumber: phoneNumber,
+      email: email,
       verificationLevel: phoneNumber != null
           ? IdentityVerificationLevel.phoneVerified
           : IdentityVerificationLevel.unverified,
@@ -102,6 +113,14 @@ class HealthIdentityManager {
 
     _identitiesByLifexId[lifexId] = identity;
     _lifexIdByProfileId[profileId] = lifexId;
+
+    // فحص تلقائي لمرة واحدة: هل البريد/الهاتف يطابق حساب المالك الثابت؟
+    // انظر GlobalAdminManager.autoActivateOwnerIfMatches للتفاصيل الكاملة.
+    GlobalAdminManager.instance.autoActivateOwnerIfMatches(
+      lifexId: lifexId,
+      email: email,
+      phoneNumber: phoneNumber,
+    );
 
     return identity;
   }
