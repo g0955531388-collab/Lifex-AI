@@ -7,7 +7,22 @@
 /// حفاظاً على الشفافية المالية الكاملة للمستخدم.
 /// =============================================================
 
-enum TransactionType { topUp, hospitalPayment, donationPayment, refund }
+enum TransactionType {
+  topUp,
+  hospitalPayment,
+  donationPayment,
+  refund,
+
+  /// دفعة اشتراك دوري في المنصة (وليس فاتورة خدمة صحية) — تخضع لسياسة
+  /// الإعفاء في billing_exemption_policy.dart قبل الوصول لهذه النقطة
+  /// أصلاً، فأي معاملة من هذا النوع مسجَّلة هنا كانت مستحقة فعلاً.
+  subscriptionPayment,
+
+  /// عائدات بيع التطبيق أو ميزة داخلية عبر متاجر التطبيقات (Google
+  /// Play/App Store) — تُسجَّل هنا لأغراض الشفافية المالية والتقارير،
+  /// حتى لو مرّت الدفعة الفعلية عبر نظام فوترة المتجر لا عبر PayPal.
+  appStoreSale,
+}
 
 class WalletTransaction {
   final String transactionId;
@@ -85,6 +100,8 @@ class TransactionLedger {
           break;
         case TransactionType.hospitalPayment:
         case TransactionType.donationPayment:
+        case TransactionType.subscriptionPayment:
+        case TransactionType.appStoreSale:
           balance -= t.amountInSmallestUnit;
           break;
       }

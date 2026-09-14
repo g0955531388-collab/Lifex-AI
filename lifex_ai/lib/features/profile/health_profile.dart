@@ -93,6 +93,12 @@ class HealthProfile {
   List<AllergyRecord> allergies;
   List<ChronicConditionRecord> chronicConditions;
 
+  /// "من ذوي الهمم" (شخص من ذوي الإعاقة) بتصريح المستخدم نفسه — يُستخدم
+  /// حصراً في billing_exemption_policy.dart لتطبيق الإعفاء الدائم من
+  /// الرسوم والاشتراكات؛ لا يُستنتج تلقائياً من أي بيانات طبية أخرى ولا
+  /// يُشترط إثبات طبي لتفعيله، احتراماً لخصوصية المستخدم وسهولة الوصول.
+  bool isPersonOfDetermination;
+
   /// معرّفات ملفات أفراد العائلة المرتبطين (يُستخدم مع
   /// family_genetic_engine.dart) — تخزّن كمعرفات فقط، البيانات نفسها
   /// تبقى في ملفاتهم المستقلة احتراماً للخصوصية.
@@ -110,6 +116,7 @@ class HealthProfile {
     this.weightKg,
     List<AllergyRecord>? allergies,
     List<ChronicConditionRecord>? chronicConditions,
+    this.isPersonOfDetermination = false,
     List<String>? linkedFamilyProfileIds,
     DateTime? lastUpdatedAt,
   })  : allergies = allergies ?? [],
@@ -182,6 +189,7 @@ class HealthProfile {
         'allergies': allergies.map((a) => a.toJson()).toList(),
         'chronicConditions':
             chronicConditions.map((c) => c.toJson()).toList(),
+        'isPersonOfDetermination': isPersonOfDetermination,
         'linkedFamilyProfileIds': linkedFamilyProfileIds,
         'lastUpdatedAt': lastUpdatedAt.toIso8601String(),
       };
@@ -207,6 +215,8 @@ class HealthProfile {
             .map((e) =>
                 ChronicConditionRecord.fromJson(e as Map<String, dynamic>))
             .toList(),
+        isPersonOfDetermination:
+            json['isPersonOfDetermination'] as bool? ?? false,
         linkedFamilyProfileIds:
             (json['linkedFamilyProfileIds'] as List<dynamic>? ?? [])
                 .map((e) => e as String)

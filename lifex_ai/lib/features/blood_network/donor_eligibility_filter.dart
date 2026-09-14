@@ -17,11 +17,18 @@ class DonorLocation {
   final double latitude;
   final double longitude;
 
+  /// انعكاس مباشر لخيار المستخدم في ملفه الصحي: "لا أرغب في تلقّي طلبات
+  /// تبرع بالدم". القيمة الافتراضية false (أي مشارك بشكل افتراضي) لأن كل
+  /// من يسجّل بياناته كمتبرع أصلاً في نظام Lifex Blood Network قد وافق
+  /// على المبدأ؛ هذا الحقل هو تراجع صريح لاحق، وليس اشتراكاً إضافياً.
+  final bool hasOptedOutOfDonationAlerts;
+
   const DonorLocation({
     required this.donorLifexId,
     required this.bloodType,
     required this.latitude,
     required this.longitude,
+    this.hasOptedOutOfDonationAlerts = false,
   });
 }
 
@@ -65,6 +72,10 @@ class DonorEligibilityFilter {
     final allDonors = donorDirectory();
 
     return allDonors.where((donor) {
+      // الشرط الأول دائماً: احترام رفض المستخدم الصريح لتلقي طلبات
+      // التبرع، بصرف النظر عن مدى توافقه الطبي أو الجغرافي مع الطلب.
+      if (donor.hasOptedOutOfDonationAlerts) return false;
+
       if (donor.bloodType != bloodType) return false;
 
       final distance = _distanceKm(
