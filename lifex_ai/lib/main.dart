@@ -35,6 +35,7 @@ import 'features/accessibility/multi_sensory_alert_manager.dart';
 import 'features/ai/ai_bridge.dart';
 import 'features/ai/ai_service_router.dart';
 import 'features/ai/unified_ai_hub_gateway.dart';
+import 'core/admin/admin_manager.dart';
 import 'features/emergency/emergency_manager.dart';
 import 'features/emergency/emergency_message_manager.dart';
 import 'features/emergency/emergency_phone_contacts_registry.dart';
@@ -222,18 +223,14 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
 
   // 4-ج) طبقة قرار "الطوارئ الصامتة" — ضوء فقط بدل صوت/اهتزاز، إلا إذا
   // وردت مكالمة من رقم موثوق. راجع silent_emergency_signal_controller.dart.
-  //
-  // ⚠️ TODO: بعد دمج فرع feature/global-admin-system (PR #5)، استبدل
-  // `() => true` أدناه بـ:
-  //   () => GlobalAdminManager.instance
-  //       .isEventEnabled('emergency_silent_light_mode_enabled')
-  // حتى يتحكم الأدمن فعلياً بتفعيل/تعطيل هذا الوضع من لوحته. القيمة
-  // الثابتة الحالية تُبقي الوضع الصامت مفعَّلاً افتراضياً (نفس القيمة
-  // الافتراضية الآمنة المعتمدة في GlobalAdminManager) حتى يتم الربط.
+  // مربوطة الآن فعلياً بمفتاح الحدث الدقيق في لوحة الأدمن
+  // (GlobalAdminManager)، فيمكن للأدمن تعطيل هذا الوضع مباشرة من
+  // AdminDashboardScreen دون الحاجة لتحديث التطبيق.
   final silentEmergencySignalController = SilentEmergencySignalController(
     multiSensoryAlertManager: multiSensoryAlertManager,
     emergencyContactsRegistry: emergencyPhoneContactsRegistry,
-    isSilentModeEnabledSystemWide: () => true,
+    isSilentModeEnabledSystemWide: () => GlobalAdminManager.instance
+        .isEventEnabled('emergency_silent_light_mode_enabled'),
   );
 
   final emergencyManager = EmergencyManager(
