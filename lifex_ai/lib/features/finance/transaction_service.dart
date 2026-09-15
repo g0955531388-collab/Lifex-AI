@@ -59,6 +59,8 @@ class TransactionService {
           break;
         case TransactionType.hospitalPayment:
         case TransactionType.donationPayment:
+        case TransactionType.subscriptionPayment:
+        case TransactionType.appStoreSale:
           totalPayments += t.amountInSmallestUnit;
           break;
       }

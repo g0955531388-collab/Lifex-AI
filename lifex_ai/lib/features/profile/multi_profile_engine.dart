@@ -144,13 +144,14 @@ class MultiProfileEngine {
 
   /// إزالة ملف من الحساب العائلي (لا يحذف بيانات الملف نفسه، فقط الرابط).
   bool removeProfile(String profileId) {
-    final removed = _links.removeWhere((l) => l.profileId == profileId);
+    final removed = _links.any((l) => l.profileId == profileId);
+    _links.removeWhere((l) => l.profileId == profileId);
     _profilesById.remove(profileId);
 
     if (_activeProfileId == profileId) {
       _activeProfileId = _links.isNotEmpty ? _links.first.profileId : null;
     }
-    return removed != null;
+    return removed;
   }
 
   /// التبديل إلى ملف صحي آخر داخل نفس الحساب.

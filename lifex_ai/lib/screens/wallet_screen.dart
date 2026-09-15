@@ -193,6 +193,10 @@ class _WalletScreenState extends State<WalletScreen> {
         return 'تبرع';
       case TransactionType.refund:
         return 'استرجاع مبلغ';
+      case TransactionType.subscriptionPayment:
+        return 'اشتراك دوري';
+      case TransactionType.appStoreSale:
+        return 'بيع عبر المتجر';
     }
   }
 }
