@@ -1,0 +1,270 @@
+[
+  {"name":"Folic Acid","form":"Tablet","strength":"400mcg"},
+  {"name":"Iron Sulfate","form":"Tablet","strength":"65mg"},
+  {"name":"Calcium Carbonate","form":"Tablet","strength":"500mg"},
+  {"name":"Vitamin D3","form":"Capsule","strength":"1000IU"},
+  {"name":"Omega-3 (DHA/EPA)","form":"Capsule","strength":"500mg"},
+  {"name":"Prenatal Multivitamins","form":"Tablet","strength":"As per formula"},
+  {"name":"Vitamin B12","form":"Tablet","strength":"250mcg"},
+  {"name":"Magnesium Citrate","form":"Tablet","strength":"250mg"},
+  {"name":"Zinc Sulfate","form":"Tablet","strength":"22mg"},
+  {"name":"Iodine","form":"Tablet","strength":"150mcg"},
+  {"name":"Vitamin C","form":"Tablet","strength":"100mg"},
+  {"name":"Protein Powder for Pregnancy","form":"Powder","strength":"20g per serving"},
+  {"name":"Evening Primrose Oil","form":"Capsule","strength":"500mg"},
+  {"name":"Choline","form":"Capsule","strength":"250mg"},
+  {"name":"Probiotic for Pregnancy","form":"Capsule","strength":"10 billion CFU"}
+,
+  {"category":"Pregnancy Supplements","name":"Folic Acid","form":"Tablet","strength":"400mcg"},
+  {"category":"Pregnancy Supplements","name":"Iron Sulfate","form":"Tablet","strength":"65mg"},
+  {"category":"Pregnancy Supplements","name":"Calcium Carbonate","form":"Tablet","strength":"500mg"},
+  {"category":"Pregnancy Supplements","name":"Vitamin D3","form":"Capsule","strength":"1000IU"},
+  {"category":"Pregnancy Supplements","name":"Omega-3 (DHA/EPA)","form":"Capsule","strength":"500mg"},
+  {"category":"Breastfeeding Support","name":"Galactagogue Herbal Capsules","form":"Capsule","strength":"As per formula"},
+  {"category":"Breastfeeding Support","name":"Vitamin B12","form":"Tablet","strength":"250mcg"},
+  {"category":"Breastfeeding Support","name":"Probiotic for Lactation","form":"Capsule","strength":"10 billion CFU"},
+  {"category":"Vaginal Care","name":"Lactacyd Feminine Wash","form":"Liquid","strength":"As per bottle"},
+  {"category":"Vaginal Care","name":"Antifungal Vaginal Cream","form":"Cream","strength":"1%"},
+  {"category":"Breast Care","name":"Lanolin Nipple Cream","form":"Cream","strength":"100%"},
+  {"category":"Breast Care","name":"Breast Pump Sanitizer","form":"Liquid","strength":"As per bottle"},
+  {"category":"Umbilical Cord Care","name":"Chlorhexidine Solution 4%","form":"Solution","strength":"4%"},
+  {"category":"Umbilical Cord Care","name":"Healing Ointment","form":"Ointment","strength":"As per tube"},
+  {"category":"Oral Care","name":"Fluoride-free Toothpaste for Pregnancy","form":"Paste","strength":"As per tube"},
+  {"category":"Oral Care","name":"Mouthwash Safe for Pregnancy","form":"Liquid","strength":"As per bottle"},
+  {"category":"Eye Care","name":"Artificial Tears","form":"Drops","strength":"0.5%"},
+  {"category":"Ear Care","name":"Ear Drops Safe for Pregnancy","form":"Drops","strength":"As per bottle"}
+,
+  {"category":"Pregnancy Supplements","name":"Folic Acid","form":"Tablet","strength":"400mcg"},
+  {"category":"Pregnancy Supplements","name":"Iron Sulfate","form":"Tablet","strength":"65mg"},
+  {"category":"Pregnancy Supplements","name":"Calcium Carbonate","form":"Tablet","strength":"500mg"},
+  {"category":"Pregnancy Supplements","name":"Vitamin D3","form":"Capsule","strength":"1000IU"},
+  {"category":"Pregnancy Supplements","name":"Vitamin B12","form":"Tablet","strength":"250mcg"},
+  {"category":"Pregnancy Supplements","name":"Omega-3 (DHA/EPA)","form":"Capsule","strength":"500mg"},
+  {"category":"Pregnancy Supplements","name":"Iodine","form":"Tablet","strength":"150mcg"},
+  {"category":"Pregnancy Supplements","name":"Magnesium","form":"Tablet","strength":"250mg"},
+  {"category":"Pregnancy Supplements","name":"Zinc","form":"Tablet","strength":"15mg"},
+  {"category":"Pregnancy Supplements","name":"Vitamin C","form":"Tablet","strength":"500mg"},
+  
+  {"category":"Breastfeeding Support","name":"Galactagogue Herbal Capsules","form":"Capsule","strength":"As per formula"},
+  {"category":"Breastfeeding Support","name":"Probiotic for Lactation","form":"Capsule","strength":"10 billion CFU"},
+  {"category":"Breastfeeding Support","name":"Fenugreek Capsules","form":"Capsule","strength":"500mg"},
+  {"category":"Breastfeeding Support","name":"Vitamin B6","form":"Tablet","strength":"25mg"},
+  
+  {"category":"Vaginal Care","name":"Lactacyd Feminine Wash","form":"Liquid","strength":"As per bottle"},
+  {"category":"Vaginal Care","name":"Antifungal Vaginal Cream","form":"Cream","strength":"1%"},
+  {"category":"Vaginal Care","name":"Probiotic Vaginal Suppository","form":"Suppository","strength":"As per formula"},
+  
+  {"category":"Breast Care","name":"Lanolin Nipple Cream","form":"Cream","strength":"100%"},
+  {"category":"Breast Care","name":"Breast Pump Sanitizer","form":"Liquid","strength":"As per bottle"},
+  {"category":"Breast Care","name":"Hydrogel Pads for Cracked Nipples","form":"Pads","strength":"As per package"},
+  
+  {"category":"Umbilical Cord Care","name":"Chlorhexidine Solution 4%","form":"Solution","strength":"4%"},
+  {"category":"Umbilical Cord Care","name":"Healing Ointment","form":"Ointment","strength":"As per tube"},
+  
+  {"category":"Oral Care","name":"Fluoride-free Toothpaste for Pregnancy","form":"Paste","strength":"As per tube"},
+  {"category":"Oral Care","name":"Mouthwash Safe for Pregnancy","form":"Liquid","strength":"As per bottle"},
+  {"category":"Oral Care","name":"Dental Floss","form":"String","strength":"As per package"},
+  
+  {"category":"Eye Care","name":"Artificial Tears","form":"Drops","strength":"0.5%"},
+  {"category":"Ear Care","name":"Ear Drops Safe for Pregnancy","form":"Drops","strength":"As per bottle"},
+  
+  {"category":"Preventive Care","name":"Sunscreen Safe for Pregnancy","form":"Cream","strength":"SPF 50"},
+  {"category":"Preventive Care","name":"Calamine Lotion","form":"Lotion","strength":"10%"},
+  {"category":"Preventive Care","name":"Antiseptic Wipes","form":"Wipes","strength":"As per package"}
+,
+  {"category":"Sexual Enhancement","name":"Clitoral & Labial Plumping Cream","form":"Cream","strength":"As per formula"},
+  {"category":"Sexual Enhancement","name":"Natural Herbal Labia Enhancer Oil","form":"Oil","strength":"As per bottle"},
+  {"category":"Sexual Enhancement","name":"Hyaluronic Acid Lip & Labia Plumping Gel","form":"Gel","strength":"As per formula"},
+  {"category":"Sexual Enhancement","name":"Collagen & Peptide Plumping Serum","form":"Serum","strength":"As per formula"},
+  {"category":"Sexual Enhancement","name":"Menthol / Peppermint Warming Gel","form":"Gel","strength":"As per formula"}
+,
+  {
+    "category": "Pregnancy Support",
+    "name": "Progesterone Capsules",
+    "form": "Capsule",
+    "strength": "200mg",
+    "purpose": "تثبيت الحمل"
+  },
+  {
+    "category": "Pregnancy Support",
+    "name": "Progesterone Vaginal Suppository",
+    "form": "Suppository",
+    "strength": "100mg",
+    "purpose": "تثبيت الحمل"
+  },
+  {
+    "category": "Pregnancy Support",
+    "name": "Folic Acid",
+    "form": "Tablet",
+    "strength": "400mcg",
+    "purpose": "مكمل غذائي لتثبيت الحمل"
+  },
+  {
+    "category": "Sexual Inhibition",
+    "name": "Medroxyprogesterone Acetate",
+    "form": "Injection",
+    "strength": "150mg/ml",
+    "purpose": "تثبيط الرغبة الجنسية لدى الإناث"
+  },
+  {
+    "category": "Sexual Inhibition",
+    "name": "Cyproterone Acetate",
+    "form": "Tablet",
+    "strength": "50mg",
+    "purpose": "تثبيط الرغبة الجنسية لدى الذكور"
+  },
+  {
+    "category": "Sexual Inhibition",
+    "name": "GnRH Agonist",
+    "form": "Injection",
+    "strength": "3.75mg",
+    "purpose": "تثبيط الإثارة الجنسية مؤقتًا"
+  }
+,
+  {
+    "category": "Rectal Preparations",
+    "name": "Paracetamol Suppository",
+    "form": "Suppository",
+    "strength": "125mg",
+    "purpose": "مسكن وخافض حرارة"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Diclofenac Suppository",
+    "form": "Suppository",
+    "strength": "50mg",
+    "purpose": "مسكن ومضاد التهاب"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Glycerin Suppository",
+    "form": "Suppository",
+    "strength": "2g",
+    "purpose": "ملين"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Bisacodyl Suppository",
+    "form": "Suppository",
+    "strength": "10mg",
+    "purpose": "ملين"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Hydrocortisone Suppository",
+    "form": "Suppository",
+    "strength": "25mg",
+    "purpose": "مضاد التهاب شرجي"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Mesalazine Suppository",
+    "form": "Suppository",
+    "strength": "500mg",
+    "purpose": "علاج التهاب القولون"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Dexamethasone Rectal Enema",
+    "form": "Enema",
+    "strength": "1mg/ml",
+    "purpose": "مضاد التهاب"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Bisacodyl Rectal Enema",
+    "form": "Enema",
+    "strength": "10mg/5ml",
+    "purpose": "ملين شرجي"
+  },
+  {
+    "category": "Rectal Preparations",
+    "name": "Hydrocortisone Rectal Cream",
+    "form": "Cream",
+    "strength": "1%",
+    "purpose": "مضاد التهاب شرجي موضعي"
+  }
+,
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Minoxidil",
+    "form": "Solution",
+    "strength": "5%",
+    "purpose": "تنشيط نمو الشعر ومنع التساقط"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Finasteride",
+    "form": "Tablet",
+    "strength": "1mg",
+    "purpose": "منع تساقط الشعر عند الرجال"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Eflornithine Cream",
+    "form": "Cream",
+    "strength": "13.9%",
+    "purpose": "إبطاء نمو الشعر غير المرغوب"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Biotin",
+    "form": "Tablet",
+    "strength": "5mg",
+    "purpose": "تقوية الشعر والأظافر"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Vitamin B Complex",
+    "form": "Tablet",
+    "strength": "متعدد المكونات",
+    "purpose": "تقوية الشعر وحمايته من التساقط"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Ketoconazole Shampoo",
+    "form": "Shampoo",
+    "strength": "2%",
+    "purpose": "منع تساقط الشعر وعلاج القشرة"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Hair Removal Wax",
+    "form": "Wax",
+    "strength": "N/A",
+    "purpose": "إزالة الشعر"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Depilatory Cream",
+    "form": "Cream",
+    "strength": "N/A",
+    "purpose": "إزالة الشعر كيميائيًا"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Caffeine Shampoo",
+    "form": "Shampoo",
+    "strength": "N/A",
+    "purpose": "تحفيز نمو الشعر وتقويته"
+  },
+  {
+    "category": "Hair Care / Hair Removal",
+    "name": "Saw Palmetto Extract",
+    "form": "Capsule",
+    "strength": "320mg",
+    "purpose": "منع تساقط الشعر"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+

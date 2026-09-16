@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Paracetamol",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Paracetamol",
+    "form": "Syrup",
+    "strength": "160mg/5ml"
+  },
+  {
+    "name": "Paracetamol/ER",
+    "form": "Tablet",
+    "strength": "650mg"
+  },
+  {
+    "name": "Ibuprofen",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Ibuprofen",
+    "form": "Syrup",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Naproxen",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Naproxen/SR",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Aspirin",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Aspirin/Chewable",
+    "form": "Tablet",
+    "strength": "81mg"
+  },
+  {
+    "name": "Diclofenac",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Diclofenac/SR",
+    "form": "Tablet",
+    "strength": "75mg"
+  },
+  {
+    "name": "Ketorolac",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Ketorolac/Injection",
+    "form": "Injection",
+    "strength": "30mg/ml"
+  },
+  {
+    "name": "Acetaminophen/Rectal",
+    "form": "Suppository",
+    "strength": "125mg"
+  },
+  {
+    "name": "Acetaminophen/Injection",
+    "form": "Injection",
+    "strength": "500mg/100ml"
+  },
+  {
+    "name": "Paracetamol/Codeine",
+    "form": "Tablet",
+    "strength": "500mg/30mg"
+  },
+  {
+    "name": "Ibuprofen/Codeine",
+    "form": "Tablet",
+    "strength": "200mg/30mg"
+  },
+  {
+    "name": "Paracetamol/Tramadol",
+    "form": "Tablet",
+    "strength": "325mg/37.5mg"
+  }
+]

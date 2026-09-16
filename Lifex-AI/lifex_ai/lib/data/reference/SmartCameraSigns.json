@@ -1,0 +1,3035 @@
+[
+  {
+    "id": 1,
+    "area": "face",
+    "sign": "Pale Face",
+    "meaning": "قد يشير إلى فقر دم"
+  },
+  {
+    "id": 2,
+    "area": "face",
+    "sign": "Facial Redness",
+    "meaning": "التهاب جلدي أو حساسية"
+  },
+  {
+    "id": 3,
+    "area": "face",
+    "sign": "Cyanotic Lips",
+    "meaning": "نقص أكسجة"
+  },
+  {
+    "id": 4,
+    "area": "face",
+    "sign": "Yellow Skin",
+    "meaning": "مشاكل كبدية"
+  },
+  {
+    "id": 5,
+    "area": "face",
+    "sign": "Dark Circles",
+    "meaning": "إرهاق أو احتقان أنفي"
+  },
+  {
+    "id": 6,
+    "area": "face",
+    "sign": "Facial Swelling",
+    "meaning": "مشاكل كلى أو حساسية"
+  },
+  {
+    "id": 7,
+    "area": "face",
+    "sign": "Cheek Swelling",
+    "meaning": "التهاب نكفي"
+  },
+  {
+    "id": 8,
+    "area": "face",
+    "sign": "Facial Droop",
+    "meaning": "شلل وجهي"
+  },
+  {
+    "id": 9,
+    "area": "face",
+    "sign": "Proptosis",
+    "meaning": "اضطرابات درقية"
+  },
+  {
+    "id": 10,
+    "area": "face",
+    "sign": "Moon Face",
+    "meaning": "ارتفاع كورتيزون"
+  },
+  {
+    "id": 11,
+    "area": "face",
+    "sign": "Eye Redness",
+    "meaning": "التهاب ملتحمة"
+  },
+  {
+    "id": 12,
+    "area": "face",
+    "sign": "Eye Yellowing",
+    "meaning": "يرقان"
+  },
+  {
+    "id": 13,
+    "area": "face",
+    "sign": "Puffy Eyelids",
+    "meaning": "قصور درقي"
+  },
+  {
+    "id": 14,
+    "area": "face",
+    "sign": "Dilated Pupil",
+    "meaning": "طارئ عصبي"
+  },
+  {
+    "id": 15,
+    "area": "face",
+    "sign": "Subconj Hemorrhage",
+    "meaning": "ارتفاع ضغط أو جهد"
+  },
+  {
+    "id": 16,
+    "area": "face",
+    "sign": "Nasal Redness",
+    "meaning": "روزاسيا"
+  },
+  {
+    "id": 17,
+    "area": "face",
+    "sign": "Cracked Nose",
+    "meaning": "التهاب مزمن"
+  },
+  {
+    "id": 18,
+    "area": "face",
+    "sign": "Beard Bald Spots",
+    "meaning": "ثعلبة"
+  },
+  {
+    "id": 19,
+    "area": "face",
+    "sign": "Beard Scaling",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 20,
+    "area": "face",
+    "sign": "Lip Cracks",
+    "meaning": "جفاف شديد"
+  },
+  {
+    "id": 21,
+    "area": "skin",
+    "sign": "Red Patch",
+    "meaning": "التهاب جلدي"
+  },
+  {
+    "id": 22,
+    "area": "skin",
+    "sign": "Dry Scaly Patch",
+    "meaning": "صدفية أو أكزيما"
+  },
+  {
+    "id": 23,
+    "area": "skin",
+    "sign": "Hypopigmented Spot",
+    "meaning": "بهاق أو فطريات"
+  },
+  {
+    "id": 24,
+    "area": "skin",
+    "sign": "Hyperpigmented Patch",
+    "meaning": "كلف"
+  },
+  {
+    "id": 25,
+    "area": "skin",
+    "sign": "Circular Rash",
+    "meaning": "فطريات جلدية"
+  },
+  {
+    "id": 26,
+    "area": "skin",
+    "sign": "Hives",
+    "meaning": "تحسس"
+  },
+  {
+    "id": 27,
+    "area": "skin",
+    "sign": "Purpura",
+    "meaning": "مشاكل صفائح"
+  },
+  {
+    "id": 28,
+    "area": "skin",
+    "sign": "Petechiae",
+    "meaning": "نزف شعيري"
+  },
+  {
+    "id": 29,
+    "area": "skin",
+    "sign": "Ulcer",
+    "meaning": "التهاب شديد"
+  },
+  {
+    "id": 30,
+    "area": "skin",
+    "sign": "Open Wound",
+    "meaning": "جرح حاد"
+  },
+  {
+    "id": 31,
+    "area": "skin",
+    "sign": "Blister",
+    "meaning": "حروق أو حساسية"
+  },
+  {
+    "id": 32,
+    "area": "skin",
+    "sign": "Pustule",
+    "meaning": "التهاب بكتيري"
+  },
+  {
+    "id": 33,
+    "area": "skin",
+    "sign": "Nodular Lesion",
+    "meaning": "خراج أو كيس"
+  },
+  {
+    "id": 34,
+    "area": "skin",
+    "sign": "Crust Formation",
+    "meaning": "التهاب جلدي"
+  },
+  {
+    "id": 35,
+    "area": "skin",
+    "sign": "Atrophic Scar",
+    "meaning": "ندبة ضامرة"
+  },
+  {
+    "id": 36,
+    "area": "skin",
+    "sign": "Hypertrophic Scar",
+    "meaning": "ندبة مرتفعة"
+  },
+  {
+    "id": 37,
+    "area": "skin",
+    "sign": "Keloid",
+    "meaning": "تليف زائد"
+  },
+  {
+    "id": 38,
+    "area": "skin",
+    "sign": "Skin Atrophy",
+    "meaning": "كورتيزون موضعي"
+  },
+  {
+    "id": 39,
+    "area": "skin",
+    "sign": "Stretch Marks",
+    "meaning": "هرمونات أو وزن"
+  },
+  {
+    "id": 40,
+    "area": "skin",
+    "sign": "Mole",
+    "meaning": "وحمة"
+  },
+  {
+    "id": 41,
+    "area": "skin",
+    "sign": "Irregular Mole",
+    "meaning": "علامة إنذار سرطاني"
+  },
+  {
+    "id": 42,
+    "area": "skin",
+    "sign": "Bleeding Mole",
+    "meaning": "خطر سرطان جلد"
+  },
+  {
+    "id": 43,
+    "area": "skin",
+    "sign": "Seborrheic Scaling",
+    "meaning": "التهاب دهني"
+  },
+  {
+    "id": 44,
+    "area": "skin",
+    "sign": "Greasy Skin",
+    "meaning": "إفراز دهني زائد"
+  },
+  {
+    "id": 45,
+    "area": "skin",
+    "sign": "Severe Dryness",
+    "meaning": "جفاف عام"
+  },
+  {
+    "id": 46,
+    "area": "hair",
+    "sign": "Hair Thinning",
+    "meaning": "تساقط شعري"
+  },
+  {
+    "id": 47,
+    "area": "hair",
+    "sign": "Bald Patch",
+    "meaning": "ثعلبة"
+  },
+  {
+    "id": 48,
+    "area": "hair",
+    "sign": "Diffuse Hair Loss",
+    "meaning": "نقص فيتامينات"
+  },
+  {
+    "id": 49,
+    "area": "hair",
+    "sign": "Oily Hair",
+    "meaning": "التهاب دهني"
+  },
+  {
+    "id": 50,
+    "area": "hair",
+    "sign": "Dry Brittle Hair",
+    "meaning": "نقص تغذية"
+  },
+  {
+    "id": 51,
+    "area": "hair",
+    "sign": "Dandruff",
+    "meaning": "التهاب فطري"
+  },
+  {
+    "id": 52,
+    "area": "hair",
+    "sign": "Yellow Greasy Scales",
+    "meaning": "التهاب دهني"
+  },
+  {
+    "id": 53,
+    "area": "hair",
+    "sign": "Red Scalp",
+    "meaning": "التهاب فروة"
+  },
+  {
+    "id": 54,
+    "area": "hair",
+    "sign": "Scalp Pustules",
+    "meaning": "التهاب بكتيري"
+  },
+  {
+    "id": 55,
+    "area": "hair",
+    "sign": "Scaling Plaques",
+    "meaning": "صدفية فروة"
+  },
+  {
+    "id": 56,
+    "area": "hair",
+    "sign": "Broken Hair Shafts",
+    "meaning": "فطريات فروة"
+  },
+  {
+    "id": 57,
+    "area": "hair",
+    "sign": "Cradle Cap Adult",
+    "meaning": "Seborrheic dermatitis"
+  },
+  {
+    "id": 58,
+    "area": "hair",
+    "sign": "Hair Miniaturization",
+    "meaning": "صلع وراثي"
+  },
+  {
+    "id": 59,
+    "area": "hair",
+    "sign": "Uneven Hair Length",
+    "meaning": "تكسر"
+  },
+  {
+    "id": 60,
+    "area": "hair",
+    "sign": "Follicular Red Dots",
+    "meaning": "التهاب جريبات"
+  },
+  {
+    "id": 61,
+    "area": "nail",
+    "sign": "Nail Pitting",
+    "meaning": "صدفية"
+  },
+  {
+    "id": 62,
+    "area": "nail",
+    "sign": "Nail Thickening",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 63,
+    "area": "nail",
+    "sign": "Yellow Nails",
+    "meaning": "عدوى فطرية"
+  },
+  {
+    "id": 64,
+    "area": "nail",
+    "sign": "White Spots",
+    "meaning": "رض بسيط"
+  },
+  {
+    "id": 65,
+    "area": "nail",
+    "sign": "Dark Splinter Hemorrhage",
+    "meaning": "نزف داخلي"
+  },
+  {
+    "id": 66,
+    "area": "nail",
+    "sign": "Koilonychia",
+    "meaning": "نقص حديد"
+  },
+  {
+    "id": 67,
+    "area": "nail",
+    "sign": "Clubbing",
+    "meaning": "مشاكل قلب ورئة"
+  },
+  {
+    "id": 68,
+    "area": "nail",
+    "sign": "Beau Lines",
+    "meaning": "توقف نمو"
+  },
+  {
+    "id": 69,
+    "area": "nail",
+    "sign": "Half-and-Half Nails",
+    "meaning": "مشاكل كلى"
+  },
+  {
+    "id": 70,
+    "area": "nail",
+    "sign": "Paronychia Redness",
+    "meaning": "التهاب حول الظفر"
+  },
+  {
+    "id": 71,
+    "area": "nail",
+    "sign": "Green Nail",
+    "meaning": "جرثومة Pseudomonas"
+  },
+  {
+    "id": 72,
+    "area": "nail",
+    "sign": "Onycholysis",
+    "meaning": "انفصال الظفر"
+  },
+  {
+    "id": 73,
+    "area": "nail",
+    "sign": "Brittle Nails",
+    "meaning": "نقص عناصر"
+  },
+  {
+    "id": 74,
+    "area": "nail",
+    "sign": "Transverse Lines",
+    "meaning": "إجهاد أو مرض"
+  },
+  {
+    "id": 75,
+    "area": "nail",
+    "sign": "Thick Cornified Nail",
+    "meaning": "فطريات متقدمة"
+  },
+  {
+    "id": 76,
+    "area": "face",
+    "sign": "Facial Flushing",
+    "meaning": "هبّات حرارية"
+  },
+  {
+    "id": 77,
+    "area": "face",
+    "sign": "Forehead Oily Shine",
+    "meaning": "إفراز دهني زائد"
+  },
+  {
+    "id": 78,
+    "area": "face",
+    "sign": "Forehead Wrinkles",
+    "meaning": "جفاف أو شيخوخة"
+  },
+  {
+    "id": 79,
+    "area": "face",
+    "sign": "Uneven Skin Tone",
+    "meaning": "تصبغات"
+  },
+  {
+    "id": 80,
+    "area": "face",
+    "sign": "Perioral Dermatitis",
+    "meaning": "التهاب محيط الفم"
+  },
+  {
+    "id": 81,
+    "area": "face",
+    "sign": "Droopy Eyelid",
+    "meaning": "وهن عضلي"
+  },
+  {
+    "id": 82,
+    "area": "face",
+    "sign": "Red Cheek Spots",
+    "meaning": "روزاسيا"
+  },
+  {
+    "id": 83,
+    "area": "face",
+    "sign": "Angular Cheilitis",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 84,
+    "area": "face",
+    "sign": "Sunburn Redness",
+    "meaning": "حروق شمس"
+  },
+  {
+    "id": 85,
+    "area": "face",
+    "sign": "Jaw Swelling",
+    "meaning": "خراج سني"
+  },
+  {
+    "id": 86,
+    "area": "face",
+    "sign": "Blueish Under-Eyes",
+    "meaning": "احتقان وريدي"
+  },
+  {
+    "id": 87,
+    "area": "face",
+    "sign": "Glossy Eyes",
+    "meaning": "حساسية"
+  },
+  {
+    "id": 88,
+    "area": "face",
+    "sign": "Dry Lips",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 89,
+    "area": "face",
+    "sign": "Scaly Eyebrows",
+    "meaning": "التهاب دهني"
+  },
+  {
+    "id": 90,
+    "area": "face",
+    "sign": "Uneven Beard Density",
+    "meaning": "تساقط موضعي"
+  },
+  {
+    "id": 91,
+    "area": "skin",
+    "sign": "Linear Scratch Marks",
+    "meaning": "حكّة مستمرة"
+  },
+  {
+    "id": 92,
+    "area": "skin",
+    "sign": "Erythematous Patch",
+    "meaning": "التهاب جلدي"
+  },
+  {
+    "id": 93,
+    "area": "skin",
+    "sign": "Annular Lesion",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 94,
+    "area": "skin",
+    "sign": "Vesicular Rash",
+    "meaning": "هربس أو حساسية"
+  },
+  {
+    "id": 95,
+    "area": "skin",
+    "sign": "Papular Rash",
+    "meaning": "تحسس أو لدغة"
+  },
+  {
+    "id": 96,
+    "area": "skin",
+    "sign": "Livedo Reticularis",
+    "meaning": "اضطراب وعائي"
+  },
+  {
+    "id": 97,
+    "area": "skin",
+    "sign": "Mottled Skin",
+    "meaning": "ضعف دوران"
+  },
+  {
+    "id": 98,
+    "area": "skin",
+    "sign": "Skin Induration",
+    "meaning": "تصلّب جلدي"
+  },
+  {
+    "id": 99,
+    "area": "skin",
+    "sign": "Marbling Pattern",
+    "meaning": "قصور دوران"
+  },
+  {
+    "id": 100,
+    "area": "skin",
+    "sign": "Skin Desquamation",
+    "meaning": "تقشير واسع"
+  },
+  {
+    "id": 101,
+    "area": "skin",
+    "sign": "Skin Erosion",
+    "meaning": "التهاب أو احتكاك"
+  },
+  {
+    "id": 102,
+    "area": "skin",
+    "sign": "Hyperkeratosis",
+    "meaning": "تراكم خلايا"
+  },
+  {
+    "id": 103,
+    "area": "skin",
+    "sign": "Keratosis Pilaris",
+    "meaning": "تحسس جلدي"
+  },
+  {
+    "id": 104,
+    "area": "skin",
+    "sign": "Shiny Thin Skin",
+    "meaning": "ضمور جلدي"
+  },
+  {
+    "id": 105,
+    "area": "skin",
+    "sign": "Brown Patches",
+    "meaning": "كلف أو شمس"
+  },
+  {
+    "id": 106,
+    "area": "hair",
+    "sign": "Hair Shaft Banding",
+    "meaning": "خلل نمو"
+  },
+  {
+    "id": 107,
+    "area": "hair",
+    "sign": "Red Scalp Dots",
+    "meaning": "التهاب جريبات"
+  },
+  {
+    "id": 108,
+    "area": "hair",
+    "sign": "Black Dot Alopecia",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 109,
+    "area": "hair",
+    "sign": "Grey Hair Patches",
+    "meaning": "شحوب أو وراثة"
+  },
+  {
+    "id": 110,
+    "area": "hair",
+    "sign": "Uneven Scalp Pigment",
+    "meaning": "تصبغات"
+  },
+  {
+    "id": 111,
+    "area": "hair",
+    "sign": "Wet Oily Scalp",
+    "meaning": "Seborrheic"
+  },
+  {
+    "id": 112,
+    "area": "hair",
+    "sign": "Hard Thick Scales",
+    "meaning": "Psoriasis"
+  },
+  {
+    "id": 113,
+    "area": "hair",
+    "sign": "Red Hot Scalp",
+    "meaning": "التهاب حاد"
+  },
+  {
+    "id": 114,
+    "area": "hair",
+    "sign": "Scalp Induration",
+    "meaning": "تورم"
+  },
+  {
+    "id": 115,
+    "area": "hair",
+    "sign": "Localized Hair Breakage",
+    "meaning": "تكسر مباشر"
+  },
+  {
+    "id": 116,
+    "area": "nail",
+    "sign": "Longitudinal Ridges",
+    "meaning": "شيخوخة"
+  },
+  {
+    "id": 117,
+    "area": "nail",
+    "sign": "Leukonychia",
+    "meaning": "نقص معادن"
+  },
+  {
+    "id": 118,
+    "area": "nail",
+    "sign": "Blue Nails",
+    "meaning": "نقص أكسجة"
+  },
+  {
+    "id": 119,
+    "area": "nail",
+    "sign": "Red Lunula",
+    "meaning": "ارتفاع ضغط"
+  },
+  {
+    "id": 120,
+    "area": "nail",
+    "sign": "Brown Nail Streak",
+    "meaning": "ميلانوما محتملة"
+  },
+  {
+    "id": 121,
+    "area": "nail",
+    "sign": "Onychogryphosis",
+    "meaning": "تثخّن شديد"
+  },
+  {
+    "id": 122,
+    "area": "nail",
+    "sign": "Pale Nails",
+    "meaning": "فقر دم"
+  },
+  {
+    "id": 123,
+    "area": "nail",
+    "sign": "Grey Nails",
+    "meaning": "التهابات مزمنة"
+  },
+  {
+    "id": 124,
+    "area": "nail",
+    "sign": "Indented Nail Plate",
+    "meaning": "Beau lines"
+  },
+  {
+    "id": 125,
+    "area": "nail",
+    "sign": "Inflamed Cuticle",
+    "meaning": "التهاب محيط الظفر"
+  },
+  {
+    "id": 126,
+    "area": "nail",
+    "sign": "Nail Curvature Increase",
+    "meaning": "Clubbing"
+  },
+  {
+    "id": 127,
+    "area": "nail",
+    "sign": "Black Nail",
+    "meaning": "نزف أو صدمة"
+  },
+  {
+    "id": 128,
+    "area": "nail",
+    "sign": "Separated Cuticle",
+    "meaning": "ضعف تغذية"
+  },
+  {
+    "id": 129,
+    "area": "nail",
+    "sign": "Nail Detachment",
+    "meaning": "Onycholysis"
+  },
+  {
+    "id": 130,
+    "area": "nail",
+    "sign": "White Nail Bands",
+    "meaning": "نقص بروتين"
+  },
+  {
+    "id": 131,
+    "area": "face",
+    "sign": "Facial Oil Accumulation",
+    "meaning": "دهون زائدة"
+  },
+  {
+    "id": 132,
+    "area": "face",
+    "sign": "Chapped Skin",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 133,
+    "area": "face",
+    "sign": "Localized Facial Scaling",
+    "meaning": "Seborrhea"
+  },
+  {
+    "id": 134,
+    "area": "face",
+    "sign": "Forehead Red Patches",
+    "meaning": "التهاب جلدي"
+  },
+  {
+    "id": 135,
+    "area": "face",
+    "sign": "Periorbital Darkening",
+    "meaning": "احتقان أو إرهاق"
+  },
+  {
+    "id": 136,
+    "area": "face",
+    "sign": "Malar Rash",
+    "meaning": "ذئبة حمراء"
+  },
+  {
+    "id": 137,
+    "area": "face",
+    "sign": "Facial Papules",
+    "meaning": "تحسس أو التهاب"
+  },
+  {
+    "id": 138,
+    "area": "face",
+    "sign": "Facial Nodules",
+    "meaning": "كيس أو خراج"
+  },
+  {
+    "id": 139,
+    "area": "face",
+    "sign": "Chin Redness",
+    "meaning": "التهاب موضعي"
+  },
+  {
+    "id": 140,
+    "area": "face",
+    "sign": "Forehead Bumps",
+    "meaning": "حب شباب"
+  },
+  {
+    "id": 141,
+    "area": "skin",
+    "sign": "Cold Skin",
+    "meaning": "قصور دوران"
+  },
+  {
+    "id": 142,
+    "area": "skin",
+    "sign": "Warm Skin",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 143,
+    "area": "skin",
+    "sign": "Orange-Peel Texture",
+    "meaning": "وذمة"
+  },
+  {
+    "id": 144,
+    "area": "skin",
+    "sign": "Shiny Tight Skin",
+    "meaning": "scleroderma"
+  },
+  {
+    "id": 145,
+    "area": "skin",
+    "sign": "Bright Red Lesion",
+    "meaning": "التهاب حاد"
+  },
+  {
+    "id": 146,
+    "area": "skin",
+    "sign": "Greenish Discoloration",
+    "meaning": "عدوى Pseudomonas"
+  },
+  {
+    "id": 147,
+    "area": "skin",
+    "sign": "Bluish Skin Areas",
+    "meaning": "نقص أكسجة"
+  },
+  {
+    "id": 148,
+    "area": "skin",
+    "sign": "Localized Hair Follicle Enlargement",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 149,
+    "area": "skin",
+    "sign": "Skin Cracks",
+    "meaning": "جفاف شديد"
+  },
+  {
+    "id": 150,
+    "area": "skin",
+    "sign": "Hyperpigmented Lines",
+    "meaning": "احتكاك مزمن"
+  },
+  {
+    "id": 76,
+    "area": "face",
+    "sign": "Facial Flushing",
+    "meaning": "هبّات حرارية"
+  },
+  {
+    "id": 77,
+    "area": "face",
+    "sign": "Forehead Oily Shine",
+    "meaning": "إفراز دهني زائد"
+  },
+  {
+    "id": 78,
+    "area": "face",
+    "sign": "Forehead Wrinkles",
+    "meaning": "جفاف أو شيخوخة"
+  },
+  {
+    "id": 79,
+    "area": "face",
+    "sign": "Uneven Skin Tone",
+    "meaning": "تصبغات"
+  },
+  {
+    "id": 80,
+    "area": "face",
+    "sign": "Perioral Dermatitis",
+    "meaning": "التهاب محيط الفم"
+  },
+  {
+    "id": 81,
+    "area": "face",
+    "sign": "Droopy Eyelid",
+    "meaning": "وهن عضلي"
+  },
+  {
+    "id": 82,
+    "area": "face",
+    "sign": "Red Cheek Spots",
+    "meaning": "روزاسيا"
+  },
+  {
+    "id": 83,
+    "area": "face",
+    "sign": "Angular Cheilitis",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 84,
+    "area": "face",
+    "sign": "Sunburn Redness",
+    "meaning": "حروق شمس"
+  },
+  {
+    "id": 85,
+    "area": "face",
+    "sign": "Jaw Swelling",
+    "meaning": "خراج سني"
+  },
+  {
+    "id": 86,
+    "area": "face",
+    "sign": "Blueish Under-Eyes",
+    "meaning": "احتقان وريدي"
+  },
+  {
+    "id": 87,
+    "area": "face",
+    "sign": "Glossy Eyes",
+    "meaning": "حساسية"
+  },
+  {
+    "id": 88,
+    "area": "face",
+    "sign": "Dry Lips",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 89,
+    "area": "face",
+    "sign": "Scaly Eyebrows",
+    "meaning": "التهاب دهني"
+  },
+  {
+    "id": 90,
+    "area": "face",
+    "sign": "Uneven Beard Density",
+    "meaning": "تساقط موضعي"
+  },
+  {
+    "id": 91,
+    "area": "skin",
+    "sign": "Linear Scratch Marks",
+    "meaning": "حكّة مستمرة"
+  },
+  {
+    "id": 92,
+    "area": "skin",
+    "sign": "Erythematous Patch",
+    "meaning": "التهاب جلدي"
+  },
+  {
+    "id": 93,
+    "area": "skin",
+    "sign": "Annular Lesion",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 94,
+    "area": "skin",
+    "sign": "Vesicular Rash",
+    "meaning": "هربس أو حساسية"
+  },
+  {
+    "id": 95,
+    "area": "skin",
+    "sign": "Papular Rash",
+    "meaning": "تحسس أو لدغة"
+  },
+  {
+    "id": 96,
+    "area": "skin",
+    "sign": "Livedo Reticularis",
+    "meaning": "اضطراب وعائي"
+  },
+  {
+    "id": 97,
+    "area": "skin",
+    "sign": "Mottled Skin",
+    "meaning": "ضعف دوران"
+  },
+  {
+    "id": 98,
+    "area": "skin",
+    "sign": "Skin Induration",
+    "meaning": "تصلّب جلدي"
+  },
+  {
+    "id": 99,
+    "area": "skin",
+    "sign": "Marbling Pattern",
+    "meaning": "قصور دوران"
+  },
+  {
+    "id": 100,
+    "area": "skin",
+    "sign": "Skin Desquamation",
+    "meaning": "تقشير واسع"
+  },
+  {
+    "id": 101,
+    "area": "skin",
+    "sign": "Skin Erosion",
+    "meaning": "التهاب أو احتكاك"
+  },
+  {
+    "id": 102,
+    "area": "skin",
+    "sign": "Hyperkeratosis",
+    "meaning": "تراكم خلايا"
+  },
+  {
+    "id": 103,
+    "area": "skin",
+    "sign": "Keratosis Pilaris",
+    "meaning": "تحسس جلدي"
+  },
+  {
+    "id": 104,
+    "area": "skin",
+    "sign": "Shiny Thin Skin",
+    "meaning": "ضمور جلدي"
+  },
+  {
+    "id": 105,
+    "area": "skin",
+    "sign": "Brown Patches",
+    "meaning": "كلف أو شمس"
+  },
+  {
+    "id": 106,
+    "area": "hair",
+    "sign": "Hair Shaft Banding",
+    "meaning": "خلل نمو"
+  },
+  {
+    "id": 107,
+    "area": "hair",
+    "sign": "Red Scalp Dots",
+    "meaning": "التهاب جريبات"
+  },
+  {
+    "id": 108,
+    "area": "hair",
+    "sign": "Black Dot Alopecia",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 109,
+    "area": "hair",
+    "sign": "Grey Hair Patches",
+    "meaning": "شحوب أو وراثة"
+  },
+  {
+    "id": 110,
+    "area": "hair",
+    "sign": "Uneven Scalp Pigment",
+    "meaning": "تصبغات"
+  },
+  {
+    "id": 111,
+    "area": "hair",
+    "sign": "Wet Oily Scalp",
+    "meaning": "Seborrheic"
+  },
+  {
+    "id": 112,
+    "area": "hair",
+    "sign": "Hard Thick Scales",
+    "meaning": "Psoriasis"
+  },
+  {
+    "id": 113,
+    "area": "hair",
+    "sign": "Red Hot Scalp",
+    "meaning": "التهاب حاد"
+  },
+  {
+    "id": 114,
+    "area": "hair",
+    "sign": "Scalp Induration",
+    "meaning": "تورم"
+  },
+  {
+    "id": 115,
+    "area": "hair",
+    "sign": "Localized Hair Breakage",
+    "meaning": "تكسر مباشر"
+  },
+  {
+    "id": 116,
+    "area": "nail",
+    "sign": "Longitudinal Ridges",
+    "meaning": "شيخوخة"
+  },
+  {
+    "id": 117,
+    "area": "nail",
+    "sign": "Leukonychia",
+    "meaning": "نقص معادن"
+  },
+  {
+    "id": 118,
+    "area": "nail",
+    "sign": "Blue Nails",
+    "meaning": "نقص أكسجة"
+  },
+  {
+    "id": 119,
+    "area": "nail",
+    "sign": "Red Lunula",
+    "meaning": "ارتفاع ضغط"
+  },
+  {
+    "id": 120,
+    "area": "nail",
+    "sign": "Brown Nail Streak",
+    "meaning": "ميلانوما محتملة"
+  },
+  {
+    "id": 121,
+    "area": "nail",
+    "sign": "Onychogryphosis",
+    "meaning": "تثخّن شديد"
+  },
+  {
+    "id": 122,
+    "area": "nail",
+    "sign": "Pale Nails",
+    "meaning": "فقر دم"
+  },
+  {
+    "id": 123,
+    "area": "nail",
+    "sign": "Grey Nails",
+    "meaning": "التهابات مزمنة"
+  },
+  {
+    "id": 124,
+    "area": "nail",
+    "sign": "Indented Nail Plate",
+    "meaning": "Beau lines"
+  },
+  {
+    "id": 125,
+    "area": "nail",
+    "sign": "Inflamed Cuticle",
+    "meaning": "التهاب محيط الظفر"
+  },
+  {
+    "id": 126,
+    "area": "nail",
+    "sign": "Nail Curvature Increase",
+    "meaning": "Clubbing"
+  },
+  {
+    "id": 127,
+    "area": "nail",
+    "sign": "Black Nail",
+    "meaning": "نزف أو صدمة"
+  },
+  {
+    "id": 128,
+    "area": "nail",
+    "sign": "Separated Cuticle",
+    "meaning": "ضعف تغذية"
+  },
+  {
+    "id": 129,
+    "area": "nail",
+    "sign": "Nail Detachment",
+    "meaning": "Onycholysis"
+  },
+  {
+    "id": 130,
+    "area": "nail",
+    "sign": "White Nail Bands",
+    "meaning": "نقص بروتين"
+  },
+  {
+    "id": 131,
+    "area": "face",
+    "sign": "Facial Oil Accumulation",
+    "meaning": "دهون زائدة"
+  },
+  {
+    "id": 132,
+    "area": "face",
+    "sign": "Chapped Skin",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 133,
+    "area": "face",
+    "sign": "Localized Facial Scaling",
+    "meaning": "Seborrhea"
+  },
+  {
+    "id": 134,
+    "area": "face",
+    "sign": "Forehead Red Patches",
+    "meaning": "التهاب جلدي"
+  },
+  {
+    "id": 135,
+    "area": "face",
+    "sign": "Periorbital Darkening",
+    "meaning": "احتقان أو إرهاق"
+  },
+  {
+    "id": 136,
+    "area": "face",
+    "sign": "Malar Rash",
+    "meaning": "ذئبة حمراء"
+  },
+  {
+    "id": 137,
+    "area": "face",
+    "sign": "Facial Papules",
+    "meaning": "تحسس أو التهاب"
+  },
+  {
+    "id": 138,
+    "area": "face",
+    "sign": "Facial Nodules",
+    "meaning": "كيس أو خراج"
+  },
+  {
+    "id": 139,
+    "area": "face",
+    "sign": "Chin Redness",
+    "meaning": "التهاب موضعي"
+  },
+  {
+    "id": 140,
+    "area": "face",
+    "sign": "Forehead Bumps",
+    "meaning": "حب شباب"
+  },
+  {
+    "id": 141,
+    "area": "skin",
+    "sign": "Cold Skin",
+    "meaning": "قصور دوران"
+  },
+  {
+    "id": 142,
+    "area": "skin",
+    "sign": "Warm Skin",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 143,
+    "area": "skin",
+    "sign": "Orange-Peel Texture",
+    "meaning": "وذمة"
+  },
+  {
+    "id": 144,
+    "area": "skin",
+    "sign": "Shiny Tight Skin",
+    "meaning": "scleroderma"
+  },
+  {
+    "id": 145,
+    "area": "skin",
+    "sign": "Bright Red Lesion",
+    "meaning": "التهاب حاد"
+  },
+  {
+    "id": 146,
+    "area": "skin",
+    "sign": "Greenish Discoloration",
+    "meaning": "عدوى Pseudomonas"
+  },
+  {
+    "id": 147,
+    "area": "skin",
+    "sign": "Bluish Skin Areas",
+    "meaning": "نقص أكسجة"
+  },
+  {
+    "id": 148,
+    "area": "skin",
+    "sign": "Localized Hair Follicle Enlargement",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 149,
+    "area": "skin",
+    "sign": "Skin Cracks",
+    "meaning": "جفاف شديد"
+  },
+  {
+    "id": 150,
+    "area": "skin",
+    "sign": "Hyperpigmented Lines",
+    "meaning": "احتكاك مزمن"
+  },
+  {
+    "id": 151,
+    "area": "face",
+    "sign": "Facial Puffiness",
+    "meaning": "احتباس سوائل"
+  },
+  {
+    "id": 152,
+    "area": "face",
+    "sign": "Sunken Eyes",
+    "meaning": "جفاف شديد"
+  },
+  {
+    "id": 153,
+    "area": "face",
+    "sign": "Cheek Pallor",
+    "meaning": "فقر دم"
+  },
+  {
+    "id": 154,
+    "area": "face",
+    "sign": "Facial Tightness",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 155,
+    "area": "face",
+    "sign": "Facial Spider Veins",
+    "meaning": "توسع شعيري"
+  },
+  {
+    "id": 156,
+    "area": "face",
+    "sign": "Facial Swelling One-Side",
+    "meaning": "التهاب موضعي"
+  },
+  {
+    "id": 157,
+    "area": "face",
+    "sign": "Facial Yellow Tint",
+    "meaning": "يرقان"
+  },
+  {
+    "id": 158,
+    "area": "face",
+    "sign": "Smoker Lines",
+    "meaning": "تضرر جلد"
+  },
+  {
+    "id": 159,
+    "area": "face",
+    "sign": "Droopy Mouth Corner",
+    "meaning": "شلل وجهي"
+  },
+  {
+    "id": 160,
+    "area": "face",
+    "sign": "Facial Red Heat Areas",
+    "meaning": "التهاب حراري"
+  },
+  {
+    "id": 161,
+    "area": "face",
+    "sign": "Forehead Lumps",
+    "meaning": "كيس دهني"
+  },
+  {
+    "id": 162,
+    "area": "face",
+    "sign": "Sparse Eyebrows",
+    "meaning": "قصور درق"
+  },
+  {
+    "id": 163,
+    "area": "face",
+    "sign": "Facial Muscle Twitch",
+    "meaning": "نقص مغنيسيوم"
+  },
+  {
+    "id": 164,
+    "area": "face",
+    "sign": "Lip Swelling",
+    "meaning": "تحسس"
+  },
+  {
+    "id": 165,
+    "area": "face",
+    "sign": "Uneven Facial Pigment",
+    "meaning": "كلف"
+  },
+  {
+    "id": 166,
+    "area": "skin",
+    "sign": "Purple Skin Areas",
+    "meaning": "كدمات"
+  },
+  {
+    "id": 167,
+    "area": "skin",
+    "sign": "Thick Yellow Crust",
+    "meaning": "إنتان جرثومي"
+  },
+  {
+    "id": 168,
+    "area": "skin",
+    "sign": "Raised Red Plaques",
+    "meaning": "صدفية"
+  },
+  {
+    "id": 169,
+    "area": "skin",
+    "sign": "Brown Scaly Patch",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 170,
+    "area": "skin",
+    "sign": "Localized Heat",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 171,
+    "area": "skin",
+    "sign": "Large Pustules",
+    "meaning": "خراج صغير"
+  },
+  {
+    "id": 172,
+    "area": "skin",
+    "sign": "Clustered Vesicles",
+    "meaning": "هربس"
+  },
+  {
+    "id": 173,
+    "area": "skin",
+    "sign": "Circular Rash",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 174,
+    "area": "skin",
+    "sign": "Diffuse Scaling",
+    "meaning": "جفاف شديد"
+  },
+  {
+    "id": 175,
+    "area": "skin",
+    "sign": "Shallow Ulcers",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 176,
+    "area": "skin",
+    "sign": "Hard Nodules",
+    "meaning": "عقد جلدية"
+  },
+  {
+    "id": 177,
+    "area": "skin",
+    "sign": "Soft Subcutaneous Lump",
+    "meaning": "Lipoma"
+  },
+  {
+    "id": 178,
+    "area": "skin",
+    "sign": "Small Skin Tags",
+    "meaning": "زوائد ليفية"
+  },
+  {
+    "id": 179,
+    "area": "skin",
+    "sign": "Dark Rough Patch",
+    "meaning": "سماك جلدي"
+  },
+  {
+    "id": 180,
+    "area": "skin",
+    "sign": "Blotchy Skin",
+    "meaning": "تحسس"
+  },
+  {
+    "id": 181,
+    "area": "skin",
+    "sign": "Localized Cool Patch",
+    "meaning": "ضعف تروية"
+  },
+  {
+    "id": 182,
+    "area": "skin",
+    "sign": "Localized Warm Patch",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 183,
+    "area": "skin",
+    "sign": "Grey Discoloration",
+    "meaning": "نقص أكسجة"
+  },
+  {
+    "id": 184,
+    "area": "skin",
+    "sign": "Dry Crease Lines",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 185,
+    "area": "skin",
+    "sign": "Honey-Colored Crust",
+    "meaning": "قوباء"
+  },
+  {
+    "id": 186,
+    "area": "hair",
+    "sign": "Circular Bald Spot",
+    "meaning": "ثعلبة"
+  },
+  {
+    "id": 187,
+    "area": "hair",
+    "sign": "Yellow Scalp Crust",
+    "meaning": "Seborrhea"
+  },
+  {
+    "id": 188,
+    "area": "hair",
+    "sign": "Thinning Crown",
+    "meaning": "صلع وراثي"
+  },
+  {
+    "id": 189,
+    "area": "hair",
+    "sign": "Hair Loss Shedding",
+    "meaning": "Telogen Effluvium"
+  },
+  {
+    "id": 190,
+    "area": "hair",
+    "sign": "White Scalp Flakes",
+    "meaning": "قشرة"
+  },
+  {
+    "id": 191,
+    "area": "hair",
+    "sign": "Bright Red Scalp",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 192,
+    "area": "hair",
+    "sign": "Hyperpigmented Scalp Spots",
+    "meaning": "بقع لونية"
+  },
+  {
+    "id": 193,
+    "area": "hair",
+    "sign": "Wet Scalp Shine",
+    "meaning": "دهون مرتفعة"
+  },
+  {
+    "id": 194,
+    "area": "hair",
+    "sign": "Cracked Scalp Skin",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 195,
+    "area": "hair",
+    "sign": "Scalp Pustules",
+    "meaning": "التهاب جريبات"
+  },
+  {
+    "id": 196,
+    "area": "nail",
+    "sign": "Thick Rough Nails",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 197,
+    "area": "nail",
+    "sign": "Nail Pitting",
+    "meaning": "صدفية"
+  },
+  {
+    "id": 198,
+    "area": "nail",
+    "sign": "Koilonychia",
+    "meaning": "نقص حديد"
+  },
+  {
+    "id": 199,
+    "area": "nail",
+    "sign": "Half-and-Half Nail",
+    "meaning": "مرض كلوي"
+  },
+  {
+    "id": 200,
+    "area": "nail",
+    "sign": "Loose Nail Plate",
+    "meaning": "Onycholysis"
+  },
+  {
+    "id": 201,
+    "area": "nail",
+    "sign": "Nail Spoon Shape",
+    "meaning": "نقص حديد"
+  },
+  {
+    "id": 202,
+    "area": "nail",
+    "sign": "Nail Dark Band",
+    "meaning": "Melanonychia"
+  },
+  {
+    "id": 203,
+    "area": "nail",
+    "sign": "Red Nail Bed",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 204,
+    "area": "nail",
+    "sign": "Split Nails",
+    "meaning": "تكسر"
+  },
+  {
+    "id": 205,
+    "area": "nail",
+    "sign": "Yellow Nail Thickening",
+    "meaning": "عدوى"
+  },
+  {
+    "id": 206,
+    "area": "face",
+    "sign": "Puffy Eyelids",
+    "meaning": "احتباس سوائل"
+  },
+  {
+    "id": 207,
+    "area": "face",
+    "sign": "Red Ear Lobes",
+    "meaning": "توتر دموي"
+  },
+  {
+    "id": 208,
+    "area": "face",
+    "sign": "Sunlight Sensitivity Patch",
+    "meaning": "تحسس ضوئي"
+  },
+  {
+    "id": 209,
+    "area": "face",
+    "sign": "Maroon Face Tint",
+    "meaning": "احتقان"
+  },
+  {
+    "id": 210,
+    "area": "face",
+    "sign": "Dry Cheeks",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 211,
+    "area": "face",
+    "sign": "Facial Swelling Diffuse",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 212,
+    "area": "face",
+    "sign": "Shiny Tight Forehead",
+    "meaning": "وذمة"
+  },
+  {
+    "id": 213,
+    "area": "face",
+    "sign": "Lip Cracks Corners",
+    "meaning": "تشقق"
+  },
+  {
+    "id": 214,
+    "area": "face",
+    "sign": "Red Nose Tip",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 215,
+    "area": "face",
+    "sign": "Facial Hard Patch",
+    "meaning": "تصلب جلدي"
+  },
+  {
+    "id": 216,
+    "area": "skin",
+    "sign": "Smooth Red Patch",
+    "meaning": "التهاب"
+  },
+  {
+    "id": 217,
+    "area": "skin",
+    "sign": "Dry Scattered Flakes",
+    "meaning": "جفاف"
+  },
+  {
+    "id": 218,
+    "area": "skin",
+    "sign": "Flat Brown Patch",
+    "meaning": "تصبغ"
+  },
+  {
+    "id": 219,
+    "area": "skin",
+    "sign": "Thick Raised Bump",
+    "meaning": "ورم جلدي"
+  },
+  {
+    "id": 220,
+    "area": "skin",
+    "sign": "Scaly Border Lesion",
+    "meaning": "فطريات"
+  },
+  {
+    "id": 221,
+    "area": "skin",
+    "sign": "Cluster Red Papules",
+    "meaning": "حساسية"
+  },
+  {
+    "id": 222,
+    "area": "skin",
+    "sign": "Hard Skin Plaques",
+    "meaning": "صدفية سميكة"
+  },
+  {
+    "id": 223,
+    "area": "skin",
+    "sign": "Yellow Greasy Scales",
+    "meaning": "Seborrheic"
+  },
+  {
+    "id": 224,
+    "area": "skin",
+    "sign": "Wet Streak Lines",
+    "meaning": "إفرازات"
+  },
+  {
+    "id": 225,
+    "area": "skin",
+    "sign": "Skin Depressions",
+    "meaning": "ضمور موضعي"
+  },
+  {
+    "id": 301,
+    "category": "الوجه",
+    "sign": "شحوب شديد",
+    "possible_causes": [
+      "فقر الدم",
+      "نزيف داخلي",
+      "نقص سوائل حاد"
+    ]
+  },
+  {
+    "id": 302,
+    "category": "الوجه",
+    "sign": "احمرار موضعي",
+    "possible_causes": [
+      "حساسية",
+      "التهاب جلدي",
+      "توسع أوعية"
+    ]
+  },
+  {
+    "id": 303,
+    "category": "الوجه",
+    "sign": "تصبغات داكنة حول العينين",
+    "possible_causes": [
+      "إرهاق",
+      "فقر دم",
+      "مشاكل كبد",
+      "احتقان الجيوب"
+    ]
+  },
+  {
+    "id": 304,
+    "category": "الوجه",
+    "sign": "انتفاخ تحت العين",
+    "possible_causes": [
+      "احتباس سوائل",
+      "مشاكل كلى",
+      "تحسس",
+      "قلة نوم"
+    ]
+  },
+  {
+    "id": 305,
+    "category": "الوجه",
+    "sign": "اصفرار الوجه",
+    "possible_causes": [
+      "مشاكل كبد",
+      "انسداد القناة الصفراوية",
+      "يرقان"
+    ]
+  },
+  {
+    "id": 306,
+    "category": "الوجه",
+    "sign": "زرقة الشفاه",
+    "possible_causes": [
+      "نقص أكسجة",
+      "مشاكل رئة",
+      "قصور قلبي"
+    ]
+  },
+  {
+    "id": 307,
+    "category": "الوجه",
+    "sign": "زرقة حول الفم",
+    "possible_causes": [
+      "نقص أكسجة",
+      "ربو",
+      "انسداد تنفسي"
+    ]
+  },
+  {
+    "id": 308,
+    "category": "الوجه",
+    "sign": "تعرق شديد مفاجئ",
+    "possible_causes": [
+      "هبوط ضغط",
+      "أزمة قلبية",
+      "انخفاض سكر"
+    ]
+  },
+  {
+    "id": 309,
+    "category": "الوجه",
+    "sign": "تورم الوجه",
+    "possible_causes": [
+      "تحسس",
+      "وذمة كلوية",
+      "مشاكل غدة درقية"
+    ]
+  },
+  {
+    "id": 310,
+    "category": "الوجه",
+    "sign": "جفاف وتقشر في الوجه",
+    "possible_causes": [
+      "جفاف شديد",
+      "نقص فيتامين A",
+      "أكزيما"
+    ]
+  },
+  {
+    "id": 311,
+    "category": "الوجه",
+    "sign": "حبوب منتشرة على الخدين",
+    "possible_causes": [
+      "حب شباب",
+      "Rosacea",
+      "حساسية"
+    ]
+  },
+  {
+    "id": 312,
+    "category": "الوجه",
+    "sign": "وجه منتفخ صباحاً",
+    "possible_causes": [
+      "احتباس سوائل",
+      "مشاكل درقية",
+      "التهاب جيوب"
+    ]
+  },
+  {
+    "id": 314,
+    "category": "الوجه",
+    "sign": "بقع بيضاء على الوجه",
+    "possible_causes": [
+      "بهاق",
+      "نقص تصبغ",
+      "فطريات"
+    ]
+  },
+  {
+    "id": 315,
+    "category": "الوجه",
+    "sign": "احمرار دائم في الخدين",
+    "possible_causes": [
+      "Rosacea",
+      "توسع أوعية",
+      "حساسية"
+    ]
+  },
+  {
+    "id": 316,
+    "category": "الوجه",
+    "sign": "جفاف وتشقق الشفاه",
+    "possible_causes": [
+      "جفاف",
+      "نقص فيتامينات B",
+      "جفاف فم"
+    ]
+  },
+  {
+    "id": 317,
+    "category": "الوجه",
+    "sign": "تجاعيد عميقة مبكرة",
+    "possible_causes": [
+      "شيخوخة ضوئية",
+      "نقص كولاجين",
+      "تدخين"
+    ]
+  },
+  {
+    "id": 318,
+    "category": "الوجه",
+    "sign": "نمش مفاجئ",
+    "possible_causes": [
+      "حساسية شمس",
+      "اضطراب هرموني"
+    ]
+  },
+  {
+    "id": 319,
+    "category": "الوجه",
+    "sign": "تغير لون الأنف إلى أحمر داكن",
+    "possible_causes": [
+      "Rosacea",
+      "التهاب",
+      "ارتفاع ضغط"
+    ]
+  },
+  {
+    "id": 320,
+    "category": "الوجه",
+    "sign": "بثور كبيرة مؤلمة",
+    "possible_causes": [
+      "التهاب بكتيري",
+      "خراج جلدي"
+    ]
+  },
+  {
+    "id": 321,
+    "category": "الوجه",
+    "sign": "سقوط شعر الحاجبين",
+    "possible_causes": [
+      "قصور درقي",
+      "أكزيما",
+      "ثعلبة"
+    ]
+  },
+  {
+    "id": 322,
+    "category": "الوجه",
+    "sign": "انتفاخ الجفون",
+    "possible_causes": [
+      "حساسية",
+      "مشاكل كلى",
+      "احتباس سوائل"
+    ]
+  },
+  {
+    "id": 323,
+    "category": "الوجه",
+    "sign": "توسع شعيرات دموية على الخد",
+    "possible_causes": [
+      "Rosacea",
+      "تلف شمس",
+      "أدوية كورتيزون"
+    ]
+  },
+  {
+    "id": 324,
+    "category": "الوجه",
+    "sign": "لون رمادي باهت",
+    "possible_causes": [
+      "تدخين مزمن",
+      "فقر دم",
+      "ضعف تروية"
+    ]
+  },
+  {
+    "id": 325,
+    "category": "الوجه",
+    "sign": "لون مزرق حول العين",
+    "possible_causes": [
+      "ضعف أكسجة",
+      "تحسس",
+      "ركود وريدي"
+    ]
+  },
+  {
+    "id": 326,
+    "category": "الوجه",
+    "sign": "طفح حول الفم",
+    "possible_causes": [
+      "تحسس معجون أسنان",
+      "التهاب حول الفم",
+      "نقص فيتامينات"
+    ]
+  },
+  {
+    "id": 327,
+    "category": "الوجه",
+    "sign": "بقع صفراء على الجفن",
+    "possible_causes": [
+      "اضطراب دهون الدم",
+      "Xanthelasma"
+    ]
+  },
+  {
+    "id": 328,
+    "category": "الوجه",
+    "sign": "احمرار الأنف",
+    "possible_causes": [
+      "التهاب الأنف الجلدي",
+      "Rosacea"
+    ]
+  },
+  {
+    "id": 329,
+    "category": "الوجه",
+    "sign": "لون بنفسجي على الشفاه",
+    "possible_causes": [
+      "نقص أكسجة شديد",
+      "أزمة قلبية محتملة"
+    ]
+  },
+  {
+    "id": 330,
+    "category": "الوجه",
+    "sign": "توسع مسام بشدة",
+    "possible_causes": [
+      "زهم زائد",
+      "حب شباب"
+    ]
+  },
+  {
+    "id": 331,
+    "category": "الوجه",
+    "sign": "قشور حول الأنف",
+    "possible_causes": [
+      "التهاب جلد دهني",
+      "جفاف شديد"
+    ]
+  },
+  {
+    "id": 332,
+    "category": "الوجه",
+    "sign": "تشقق زوايا الفم",
+    "possible_causes": [
+      "فطريات",
+      "نقص B2",
+      "جفاف"
+    ]
+  },
+  {
+    "id": 333,
+    "category": "الوجه",
+    "sign": "هالات بنفسجية عميقة",
+    "possible_causes": [
+      "ضعف تروية",
+      "احتقان وريدي"
+    ]
+  },
+  {
+    "id": 334,
+    "category": "الوجه",
+    "sign": "شحوب محيط الفم",
+    "possible_causes": [
+      "نقص مناعة",
+      "فقر دم"
+    ]
+  },
+  {
+    "id": 335,
+    "category": "الوجه",
+    "sign": "بقع حمراء منتشرة",
+    "possible_causes": [
+      "تحسس",
+      "التهاب جلدي",
+      "عدوى فيروسية"
+    ]
+  },
+  {
+    "id": 336,
+    "category": "الوجه",
+    "sign": "تورم الخدين",
+    "possible_causes": [
+      "تحسس",
+      "مشاكل كلى",
+      "وذمة عامة"
+    ]
+  },
+  {
+    "id": 337,
+    "category": "الوجه",
+    "sign": "شحوب تحت الأنف",
+    "possible_causes": [
+      "هبوط ضغط",
+      "فقر دم"
+    ]
+  },
+  {
+    "id": 338,
+    "category": "الوجه",
+    "sign": "فطريات حول الفم",
+    "possible_causes": [
+      "خمائر",
+      "ضعف مناعة",
+      "استعمال كورتيزون"
+    ]
+  },
+  {
+    "id": 339,
+    "category": "الوجه",
+    "sign": "نقاط حمراء دقيقة",
+    "possible_causes": [
+      "نزف نقطي",
+      "قلة صفائح"
+    ]
+  },
+  {
+    "id": 340,
+    "category": "الوجه",
+    "sign": "انتفاخ غير متناظر",
+    "possible_causes": [
+      "التهاب جرثومي",
+      "خراج",
+      "تحسس حاد"
+    ]
+  },
+  {
+    "id": 341,
+    "category": "الوجه",
+    "sign": "شحوب محيط العينين",
+    "possible_causes": [
+      "فقر دم",
+      "إرهاق شديد",
+      "نقص تغذية"
+    ]
+  },
+  {
+    "id": 342,
+    "category": "الوجه",
+    "sign": "بقع بنية على الخدين",
+    "possible_causes": [
+      "كلف",
+      "اضطراب هرمونات",
+      "تأثير الشمس"
+    ]
+  },
+  {
+    "id": 343,
+    "category": "الوجه",
+    "sign": "ميلان لون الشفاه للون الداكن",
+    "possible_causes": [
+      "تدخين",
+      "اضطراب هرموني",
+      "نقص أكسجة"
+    ]
+  },
+  {
+    "id": 344,
+    "category": "الوجه",
+    "sign": "التهاب حاد حول العين",
+    "possible_causes": [
+      "عدوى بكتيرية",
+      "Cellulitis",
+      "حساسية شديدة"
+    ]
+  },
+  {
+    "id": 345,
+    "category": "الوجه",
+    "sign": "تجعد مبكر بالوجه",
+    "possible_causes": [
+      "تدخين",
+      "تعرض للشمس",
+      "نقص كولاجين"
+    ]
+  },
+  {
+    "id": 346,
+    "category": "الوجه",
+    "sign": "احمرار مفاجئ مع حرارة",
+    "possible_causes": [
+      "تحسس",
+      "Rosacea",
+      "خلل هرموني"
+    ]
+  },
+  {
+    "id": 347,
+    "category": "الوجه",
+    "sign": "اصفرار شديد بالوجه",
+    "possible_causes": [
+      "مشاكل كبد",
+      "يرقان",
+      "انسداد صفراوي"
+    ]
+  },
+  {
+    "id": 348,
+    "category": "الوجه",
+    "sign": "تورم أسفل الفم",
+    "possible_causes": [
+      "التهاب غدد لعابية",
+      "تحسس",
+      "وذمة"
+    ]
+  },
+  {
+    "id": 349,
+    "category": "الوجه",
+    "sign": "خطوط طويلة على الخدين",
+    "possible_causes": [
+      "نقص وزن سريع",
+      "إجهاد",
+      "اضطراب هرموني"
+    ]
+  },
+  {
+    "id": 350,
+    "category": "الوجه",
+    "sign": "انتفاخ مع انتفاخ الجفن العلوي",
+    "possible_causes": [
+      "أذية كلوية",
+      "حساسية",
+      "وهن عام"
+    ]
+  },
+  {
+    "id": 351,
+    "category": "الوجه",
+    "sign": "جفاف شديد حول الفم",
+    "possible_causes": [
+      "نقص سوائل",
+      "سكري",
+      "أكزيما"
+    ]
+  },
+  {
+    "id": 352,
+    "category": "الوجه",
+    "sign": "بقع بنفسجية صغيرة",
+    "possible_causes": [
+      "قلة صفائح",
+      "نزف تحت الجلد"
+    ]
+  },
+  {
+    "id": 353,
+    "category": "الوجه",
+    "sign": "لون غامق على الجبهة",
+    "possible_causes": [
+      "كلف",
+      "تأثير شمس",
+      "اضطراب هرمونات"
+    ]
+  },
+  {
+    "id": 354,
+    "category": "الوجه",
+    "sign": "انتفاخ الفم والأذن معاً",
+    "possible_causes": [
+      "تحسس دوائي",
+      "وذمة وعائية"
+    ]
+  },
+  {
+    "id": 355,
+    "category": "الوجه",
+    "sign": "احمرار حول الأنف والفم",
+    "possible_causes": [
+      "التهاب حول الفم",
+      "حب شباب"
+    ]
+  },
+  {
+    "id": 356,
+    "category": "الوجه",
+    "sign": "ميلان لون الأسنان للصفرة مع شحوب الوجه",
+    "possible_causes": [
+      "فقر دم",
+      "مشاكل كبد",
+      "نقص فيتامينات"
+    ]
+  },
+  {
+    "id": 357,
+    "category": "الوجه",
+    "sign": "تورم مفاجئ في خد واحد",
+    "possible_causes": [
+      "التهاب غدة نكفية",
+      "خراج",
+      "تحسس"
+    ]
+  },
+  {
+    "id": 358,
+    "category": "الوجه",
+    "sign": "جفاف حول العينين مع تشققات",
+    "possible_causes": [
+      "نقص فيتامين A",
+      "إجهاد",
+      "أكزيما"
+    ]
+  },
+  {
+    "id": 359,
+    "category": "الوجه",
+    "sign": "بقع بيضاء على الوجه",
+    "possible_causes": [
+      "بهاق",
+      "نقص ميناء الجلد",
+      "فطريات"
+    ]
+  },
+  {
+    "id": 360,
+    "category": "الوجه",
+    "sign": "تعرق شديد على الوجه",
+    "possible_causes": [
+      "فرط نشاط درقي",
+      "توتر",
+      "أدوية"
+    ]
+  },
+  {
+    "id": 361,
+    "category": "الوجه",
+    "sign": "حبوب حمراء بارزة على الأنف",
+    "possible_causes": [
+      "Rosacea",
+      "تحسس",
+      "التهاب جلدي"
+    ]
+  },
+  {
+    "id": 362,
+    "category": "الوجه",
+    "sign": "بقع داكنة حول الفم",
+    "possible_causes": [
+      "تأثير هرموني",
+      "كلف",
+      "تغير لون الجلد"
+    ]
+  },
+  {
+    "id": 363,
+    "category": "الوجه",
+    "sign": "جفاف الشفاه مع تشققات عميقة",
+    "possible_causes": [
+      "نقص سوائل",
+      "فيتامينات",
+      "أكزيما"
+    ]
+  },
+  {
+    "id": 364,
+    "category": "الوجه",
+    "sign": "انتفاخ تحت العينين مستمر",
+    "possible_causes": [
+      "تراكم سوائل",
+      "مشاكل كلوية",
+      "إرهاق مزمن"
+    ]
+  },
+  {
+    "id": 365,
+    "category": "الوجه",
+    "sign": "تعرق مع احمرار الجبهة",
+    "possible_causes": [
+      "توتر",
+      "فرط نشاط الغدة الدرقية",
+      "حرارة محيطة"
+    ]
+  },
+  {
+    "id": 366,
+    "category": "الوجه",
+    "sign": "بقع حمراء متفرقة على الخدين",
+    "possible_causes": [
+      "تحسس",
+      "حب الشباب",
+      "التهاب جلدي"
+    ]
+  },
+  {
+    "id": 367,
+    "category": "الوجه",
+    "sign": "تورم الشفاه العلوية والسفلية",
+    "possible_causes": [
+      "تحسس",
+      "وذمة",
+      "التهاب غدة لعابية"
+    ]
+  },
+  {
+    "id": 368,
+    "category": "الوجه",
+    "sign": "شحوب الوجه مع فقدان لمعان العين",
+    "possible_causes": [
+      "فقر دم",
+      "إرهاق شديد",
+      "نقص تغذية"
+    ]
+  },
+  {
+    "id": 369,
+    "category": "الوجه",
+    "sign": "بقع زرقاء صغيرة حول العينين",
+    "possible_causes": [
+      "نقص صفائح الدم",
+      "رضوض طفيفة",
+      "اضطراب تخثر"
+    ]
+  },
+  {
+    "id": 370,
+    "category": "الوجه",
+    "sign": "احمرار متقطع مع حكة في الجبهة",
+    "possible_causes": [
+      "تحسس",
+      "Rosacea",
+      "أكزيما"
+    ]
+  },
+  {
+    "id": 371,
+    "category": "الوجه",
+    "sign": "ظهور خطوط دقيقة حول الفم والعينين",
+    "possible_causes": [
+      "تقدم في العمر",
+      "نقص رطوبة الجلد",
+      "تعب مزمن"
+    ]
+  },
+  {
+    "id": 372,
+    "category": "الوجه",
+    "sign": "تورم خفيف في خد واحد مع احمرار",
+    "possible_causes": [
+      "عدوى موضعية",
+      "خراج",
+      "التهاب غدد"
+    ]
+  },
+  {
+    "id": 373,
+    "category": "الوجه",
+    "sign": "بقع بنية صغيرة متفرقة على الوجه",
+    "possible_causes": [
+      "تأثير شمس",
+      "كلف",
+      "شيخوخة الجلد"
+    ]
+  },
+  {
+    "id": 374,
+    "category": "الوجه",
+    "sign": "اصفرار حول العينين والفم",
+    "possible_causes": [
+      "مشاكل كبدية",
+      "يرقان",
+      "فقر دم"
+    ]
+  },
+  {
+    "id": 375,
+    "category": "الوجه",
+    "sign": "تورم متقطع في الجبهة والعينين",
+    "possible_causes": [
+      "وذمة",
+      "حساسية",
+      "احتباس سوائل"
+    ]
+  },
+  {
+    "id": 376,
+    "category": "الوجه",
+    "sign": "بقع بيضاء صغيرة حول الأنف",
+    "possible_causes": [
+      "فطريات",
+      "بهاق موضعي",
+      "جفاف الجلد"
+    ]
+  },
+  {
+    "id": 377,
+    "category": "الوجه",
+    "sign": "تغير ملمس الجلد ليصبح خشناً",
+    "possible_causes": [
+      "أكزيما",
+      "التهاب جلدي مزمن",
+      "جفاف شديد"
+    ]
+  },
+  {
+    "id": 378,
+    "category": "الوجه",
+    "sign": "انتفاخ خفيف حول الشفاه مع احمرار",
+    "possible_causes": [
+      "تحسس",
+      "عدوى",
+      "التهاب"
+    ]
+  },
+  {
+    "id": 379,
+    "category": "الوجه",
+    "sign": "بقع حمراء كبيرة ومتكتلة على الخدين",
+    "possible_causes": [
+      "Rosacea",
+      "تحسس دوائي",
+      "عدوى جلدية"
+    ]
+  },
+  {
+    "id": 380,
+    "category": "الوجه",
+    "sign": "ميلان لون الجلد للأصفر مع شحوب الوجه",
+    "possible_causes": [
+      "فقر دم",
+      "مشاكل كبدية",
+      "نقص تغذية"
+    ]
+  },
+  {
+    "id": 381,
+    "category": "الوجه",
+    "sign": "ظهور حبوب صغيرة حول الفك والذقن",
+    "possible_causes": [
+      "حب الشباب الهرموني",
+      "التهاب بصيلات الشعر",
+      "تحسس"
+    ]
+  },
+  {
+    "id": 382,
+    "category": "الوجه",
+    "sign": "بقع حمراء متقشرة على الحاجبين",
+    "possible_causes": [
+      "صدفية",
+      "إكزيما",
+      "عدوى فطرية"
+    ]
+  },
+  {
+    "id": 383,
+    "category": "الوجه",
+    "sign": "ظهور خطوط أفقية على الجبهة",
+    "possible_causes": [
+      "تقدم العمر",
+      "تعب مزمن",
+      "جفاف الجلد"
+    ]
+  },
+  {
+    "id": 384,
+    "category": "الوجه",
+    "sign": "شحوب عام مع دوار عند الوقوف",
+    "possible_causes": [
+      "فقر دم",
+      "هبوط ضغط الدم",
+      "نقص سوائل"
+    ]
+  },
+  {
+    "id": 385,
+    "category": "الوجه",
+    "sign": "ظهور بثور صغيرة مع قيح على الأنف",
+    "possible_causes": [
+      "حب الشباب",
+      "عدوى بصيلات الشعر",
+      "تحسس موضعي"
+    ]
+  },
+  {
+    "id": 386,
+    "category": "الوجه",
+    "sign": "احمرار مستمر على الخدين والجبهة",
+    "possible_causes": [
+      "Rosacea",
+      "تحسس جلدي",
+      "التهاب"
+    ]
+  },
+  {
+    "id": 387,
+    "category": "الوجه",
+    "sign": "انتفاخ طفيف حول العينين عند الاستيقاظ",
+    "possible_causes": [
+      "احتباس سوائل",
+      "توتر",
+      "تحسس"
+    ]
+  },
+  {
+    "id": 388,
+    "category": "الوجه",
+    "sign": "بقع زرقاء متفرقة تحت العينين",
+    "possible_causes": [
+      "رضوض طفيفة",
+      "نقص صفائح الدم",
+      "إرهاق شديد"
+    ]
+  },
+  {
+    "id": 389,
+    "category": "الوجه",
+    "sign": "تشققات عميقة في زوايا الفم",
+    "possible_causes": [
+      "نقص فيتامين B",
+      "جفاف شديد",
+      "عدوى فطرية"
+    ]
+  },
+  {
+    "id": 390,
+    "category": "الوجه",
+    "sign": "بقع حمراء متفرقة حول الفم والأنف",
+    "possible_causes": [
+      "تحسس",
+      "التهاب جلدي",
+      "عدوى"
+    ]
+  },
+  {
+    "id": 391,
+    "category": "الوجه",
+    "sign": "ظهور خطوط عمودية دقيقة على الشفاه",
+    "possible_causes": [
+      "تقدم العمر",
+      "جفاف الجلد",
+      "تعرض متكرر للشمس"
+    ]
+  },
+  {
+    "id": 392,
+    "category": "الوجه",
+    "sign": "احمرار مع حكة على الذقن",
+    "possible_causes": [
+      "تحسس",
+      "إكزيما",
+      "عدوى فطرية"
+    ]
+  },
+  {
+    "id": 393,
+    "category": "الوجه",
+    "sign": "بقع داكنة متفرقة على الجبهة",
+    "possible_causes": [
+      "كلف",
+      "تأثير الشمس",
+      "تغيرات هرمونية"
+    ]
+  },
+  {
+    "id": 394,
+    "category": "الوجه",
+    "sign": "تورم خفيف مع احمرار على الأذن والوجنتين",
+    "possible_causes": [
+      "تحسس",
+      "وذمة",
+      "عدوى جلدية"
+    ]
+  },
+  {
+    "id": 395,
+    "category": "الوجه",
+    "sign": "بقع بيضاء صغيرة على الوجه",
+    "possible_causes": [
+      "فطريات",
+      "بهاق موضعي",
+      "جفاف الجلد"
+    ]
+  },
+  {
+    "id": 396,
+    "category": "الوجه",
+    "sign": "ظهور خطوط أفقية دقيقة على الجبهة والأنف",
+    "possible_causes": [
+      "تقدم العمر",
+      "إرهاق",
+      "جفاف الجلد"
+    ]
+  },
+  {
+    "id": 397,
+    "category": "الوجه",
+    "sign": "بقع حمراء كبيرة ومتكتلة على الوجه",
+    "possible_causes": [
+      "Rosacea",
+      "تحسس",
+      "عدوى جلدية"
+    ]
+  },
+  {
+    "id": 398,
+    "category": "الوجه",
+    "sign": "ميلان لون الجلد للأصفر مع شحوب الوجه",
+    "possible_causes": [
+      "فقر دم",
+      "مشاكل كبدية",
+      "نقص تغذية"
+    ]
+  },
+  {
+    "id": 399,
+    "category": "الوجه",
+    "sign": "تورم متقطع في الجبهة والخدين",
+    "possible_causes": [
+      "وذمة",
+      "حساسية",
+      "احتباس سوائل"
+    ]
+  },
+  {
+    "id": 400,
+    "category": "الوجه",
+    "sign": "بقع بنية صغيرة متفرقة على الوجه",
+    "possible_causes": [
+      "تأثير الشمس",
+      "كلف",
+      "شيخوخة الجلد"
+    ]
+  },
+  {
+    "id": 401,
+    "category": "الوجه",
+    "sign": "حبوب صغيرة مليئة بالقيح على الجبهة",
+    "possible_causes": [
+      "حب الشباب",
+      "عدوى بصيلات الشعر",
+      "تحسس"
+    ]
+  },
+  {
+    "id": 402,
+    "category": "الوجه",
+    "sign": "خطوط عمودية حول الأنف والفم",
+    "possible_causes": [
+      "تقدم العمر",
+      "جفاف الجلد",
+      "تعرض للشمس"
+    ]
+  },
+  {
+    "id": 403,
+    "category": "الوجه",
+    "sign": "احمرار مستمر مع حكة في الخدين",
+    "possible_causes": [
+      "Rosacea",
+      "إكزيما",
+      "تحسس"
+    ]
+  },
+  {
+    "id": 404,
+    "category": "الوجه",
+    "sign": "بقع بيضاء غير منتظمة على الوجه",
+    "possible_causes": [
+      "بهاق",
+      "فطريات",
+      "جفاف الجلد"
+    ]
+  },
+  {
+    "id": 405,
+    "category": "الوجه",
+    "sign": "تورم وانتفاخ حول العينين مستمر",
+    "possible_causes": [
+      "احتباس سوائل",
+      "تحسس",
+      "إرهاق مزمن"
+    ]
+  },
+  {
+    "id": 406,
+    "category": "الوجه",
+    "sign": "بقع حمراء منتشرة حول الفم والأنف",
+    "possible_causes": [
+      "تحسس",
+      "عدوى جلدية",
+      "إكزيما"
+    ]
+  },
+  {
+    "id": 407,
+    "category": "الوجه",
+    "sign": "خطوط أفقية على الجبهة مع جفاف الجلد",
+    "possible_causes": [
+      "تقدم العمر",
+      "إرهاق",
+      "نقص ترطيب"
+    ]
+  },
+  {
+    "id": 408,
+    "category": "الوجه",
+    "sign": "احمرار مع تقشر الجلد حول الحاجبين",
+    "possible_causes": [
+      "صدفية",
+      "إكزيما",
+      "عدوى فطرية"
+    ]
+  },
+  {
+    "id": 409,
+    "category": "الوجه",
+    "sign": "بقع داكنة غير منتظمة على الجبهة والخدين",
+    "possible_causes": [
+      "كلف",
+      "تغيرات هرمونية",
+      "تأثير الشمس"
+    ]
+  },
+  {
+    "id": 410,
+    "category": "الوجه",
+    "sign": "تورم خفيف مع احمرار في الأذنين والخدين",
+    "possible_causes": [
+      "وذمة",
+      "تحسس",
+      "عدوى جلدية"
+    ]
+  },
+  {
+    "id": 411,
+    "category": "الوجه",
+    "sign": "ظهور حبوب حمراء صغيرة مع قيح على الأنف",
+    "possible_causes": [
+      "حب الشباب",
+      "تحسس",
+      "عدوى بصيلات الشعر"
+    ]
+  },
+  {
+    "id": 412,
+    "category": "الوجه",
+    "sign": "شحوب الوجه مع دوار",
+    "possible_causes": [
+      "فقر دم",
+      "هبوط ضغط الدم",
+      "نقص سوائل"
+    ]
+  },
+  {
+    "id": 413,
+    "category": "الوجه",
+    "sign": "بقع حمراء متقشرة على الحاجبين والجبهة",
+    "possible_causes": [
+      "صدفية",
+      "إكزيما",
+      "عدوى فطرية"
+    ]
+  },
+  {
+    "id": 414,
+    "category": "الوجه",
+    "sign": "خطوط دقيقة حول الشفاه",
+    "possible_causes": [
+      "تقدم العمر",
+      "جفاف الجلد",
+      "تعرض متكرر للشمس"
+    ]
+  },
+  {
+    "id": 415,
+    "category": "الوجه",
+    "sign": "بقع زرقاء تحت العينين",
+    "possible_causes": [
+      "إرهاق شديد",
+      "رضوض طفيفة",
+      "نقص صفائح الدم"
+    ]
+  },
+  {
+    "id": 416,
+    "category": "الوجه",
+    "sign": "تورم وانتفاخ خفيف حول الفم والأنف",
+    "possible_causes": [
+      "وذمة",
+      "تحسس",
+      "احتباس سوائل"
+    ]
+  },
+  {
+    "id": 417,
+    "category": "الوجه",
+    "sign": "بقع حمراء كبيرة ومتكتلة على الخدين والجبهة",
+    "possible_causes": [
+      "Rosacea",
+      "تحسس",
+      "عدوى جلدية"
+    ]
+  },
+  {
+    "id": 418,
+    "category": "الوجه",
+    "sign": "ميلان لون الجلد للأصفر مع شحوب",
+    "possible_causes": [
+      "فقر دم",
+      "مشاكل كبدية",
+      "نقص تغذية"
+    ]
+  },
+  {
+    "id": 419,
+    "category": "الوجه",
+    "sign": "بقع بنية متفرقة على الجبهة والخدين",
+    "possible_causes": [
+      "تأثير الشمس",
+      "كلف",
+      "شيخوخة الجلد"
+    ]
+  },
+  {
+    "id": 420,
+    "category": "الوجه",
+    "sign": "احمرار مستمر مع حكة في الذقن",
+    "possible_causes": [
+      "تحسس",
+      "إكزيما",
+      "عدوى فطرية"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "جفاف الكفين (Dry Hands)",
+    "description": "جلد الكفين جاف ومتشقق، قد يسبب الحكة والألم.",
+    "symptoms": [
+      "تشقق الجلد",
+      "حكة مستمرة",
+      "احمرار",
+      "قشور أو تقشر الجلد"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "التهاب الجلد التماسي (Contact Dermatitis) - الكفين",
+    "description": "طفح جلدي يظهر عند ملامسة مواد مهيجة أو مسببة للحساسية.",
+    "symptoms": [
+      "احمرار",
+      "حكة قوية",
+      "فقاعات صغيرة أو بثور",
+      "تورم أو تهيج الجلد"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "فطريات الكفين (Hand Fungal Infection)",
+    "description": "عدوى فطرية تؤثر على جلد الكفين وتسبب تقشر وحكة.",
+    "symptoms": [
+      "بقع حمراء مقشرة",
+      "حكة شديدة",
+      "تشققات في الجلد",
+      "رائحة غير طبيعية أحياناً"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "أظافر الكفين المصابة بالفطريات (Fungal Nail Infection - Hands)",
+    "description": "تغير في شكل أو لون أظافر اليدين بسبب عدوى فطرية.",
+    "symptoms": [
+      "أظافر سميكة أو متقشرة",
+      "تغير اللون إلى أصفر أو بني",
+      "رائحة خفيفة أو كريهة",
+      "تفتت الأظافر أو انحناء"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "تورم اليدين (Hand Edema)",
+    "description": "انتفاخ الكفين نتيجة احتباس السوائل أو مشاكل في الدورة الدموية.",
+    "symptoms": [
+      "انتفاخ واضح في اليدين أو الأصابع",
+      "صعوبة في ثني الأصابع",
+      "لمس دافئ أو قاسي",
+      "تغير لون الجلد أحياناً"
+    ]
+  }
+]

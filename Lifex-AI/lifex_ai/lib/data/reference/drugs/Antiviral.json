@@ -1,0 +1,214 @@
+[
+  {"name":"Acyclovir","form":"Tablet","strength":"400mg"},
+  {"name":"Valacyclovir","form":"Tablet","strength":"500mg"},
+  {"name":"Famciclovir","form":"Tablet","strength":"500mg"},
+  {"name":"Ganciclovir","form":"Injection","strength":"500mg"},
+  {"name":"Valganciclovir","form":"Tablet","strength":"450mg"},
+  {"name":"Foscarnet","form":"Injection","strength":"24mg/ml"},
+  {"name":"Cidofovir","form":"Injection","strength":"75mg/ml"},
+  {"name":"Oseltamivir","form":"Capsule","strength":"75mg"},
+  {"name":"Zanamivir","form":"Inhalation","strength":"5mg/dose"},
+  {"name":"Peramivir","form":"Injection","strength":"600mg"},
+  {"name":"Ribavirin","form":"Tablet","strength":"200mg"},
+  {"name":"Sofosbuvir","form":"Tablet","strength":"400mg"},
+  {"name":"Ledipasvir/Sofosbuvir","form":"Tablet","strength":"90mg/400mg"},
+  {"name":"Velpatasvir/Sofosbuvir","form":"Tablet","strength":"100mg/400mg"},
+  {"name":"Daclatasvir","form":"Tablet","strength":"60mg"},
+  {"name":"Elbasvir/Grazoprevir","form":"Tablet","strength":"50mg/100mg"},
+  {"name":"Remdesivir","form":"Injection","strength":"100mg"},
+  {"name":"Tenofovir","form":"Tablet","strength":"300mg"},
+  {"name":"Emtricitabine/Tenofovir","form":"Tablet","strength":"200mg/300mg"},
+  {"name":"Lamivudine","form":"Tablet","strength":"150mg"},
+  {"name":"Zidovudine","form":"Tablet","strength":"300mg"},
+  {"name":"Abacavir","form":"Tablet","strength":"300mg"},
+  {"name":"Efavirenz","form":"Tablet","strength":"600mg"},
+  {"name":"Dolutegravir","form":"Tablet","strength":"50mg"},
+  {"name":"Rilpivirine","form":"Tablet","strength":"25mg"},
+  {"name":"Atazanavir","form":"Tablet","strength":"300mg"},
+  {"name":"Darunavir","form":"Tablet","strength":"800mg"},
+  {"name":"Lopinavir/Ritonavir","form":"Tablet","strength":"200mg/50mg"},
+  {"name":"Saquinavir","form":"Tablet","strength":"500mg"},
+  {"name":"Indinavir","form":"Capsule","strength":"400mg"},
+  {"name":"Fomivirsen","form":"Injection","strength":"330μg/ml"},
+  {"name":"Baloxavir marboxil","form":"Tablet","strength":"40mg"},
+  {"name":"Amantadine","form":"Tablet","strength":"100mg"},
+  {"name":"Rimantadine","form":"Tablet","strength":"100mg"},
+  {"name":"Favipiravir","form":"Tablet","strength":"200mg"},
+  {"name":"Maribavir","form":"Tablet","strength":"400mg"},
+  {"name":"Letermovir","form":"Tablet","strength":"480mg"},
+  {"name":"Glecaprevir/Pibrentasvir","form":"Tablet","strength":"100mg/40mg"},
+  {"name":"Simeprevir","form":"Capsule","strength":"150mg"},
+  {"name":"Paritaprevir/Ritonavir/Ombitasvir","form":"Tablet","strength":"75mg/12.5mg/50mg"},
+  {"name":"Dasabuvir","form":"Tablet","strength":"250mg"},
+  {"name":"Entecavir","form":"Tablet","strength":"0.5mg"},
+  {"name":"Adefovir","form":"Tablet","strength":"10mg"},
+  {"name":"Telbivudine","form":"Tablet","strength":"600mg"},
+  {"name":"Idoxuridine","form":"Ointment","strength":"0.5%"},
+  {"name":"Trifluridine","form":"Eye drops","strength":"1%"},
+  {"name":"Penciclovir","form":"Cream","strength":"1%"},
+  {"name":"Docosanol","form":"Cream","strength":"10%"},
+  {"name":"Brivudine","form":"Tablet","strength":"125mg"},
+  {"name":"Sofosbuvir/Velpatasvir/Voxilaprevir","form":"Tablet","strength":"400mg/100mg/100mg"},
+  {"name":"Emtricitabine/Tenofovir alafenamide","form":"Tablet","strength":"200mg/25mg"},
+  {"name":"Cabotegravir","form":"Injection","strength":"600mg/ml"},
+  {"name":"Rilpivirine (long-acting)","form":"Injection","strength":"300mg/ml"},
+  {"name":"Remdesivir (Vial)","form":"Injection","strength":"100mg/20ml"},
+  {"name":"Molnupiravir","form":"Capsule","strength":"200mg"},
+  {"name":"Nirmatrelvir/Ritonavir","form":"Tablet","strength":"150mg/100mg"},
+  {"name":"Favipiravir/ER","form":"Tablet","strength":"600mg"},
+  {"name":"Tenofovir disoproxil fumarate","form":"Tablet","strength":"300mg"},
+  {"name":"Dolutegravir/Abacavir/Lamivudine","form":"Tablet","strength":"50mg/600mg/300mg"},
+  {"name":"Bictegravir/Emtricitabine/Tenofovir alafenamide","form":"Tablet","strength":"50mg/200mg/25mg"},
+  {"name":"Oseltamivir/ER","form":"Capsule","strength":"75mg"},
+  {"name":"Zanamivir/Inhalation","form":"Powder","strength":"5mg/dose"},
+  {"name":"Peramivir/ER","form":"Injection","strength":"600mg"},
+  {"name":"Adefovir dipivoxil","form":"Tablet","strength":"10mg"},
+  {"name":"Entecavir/ER","form":"Tablet","strength":"1mg"}
+,
+  {"name":"Imiquimod","form":"Cream","strength":"5%"},
+  {"name":"Docosanol","form":"Cream","strength":"10%"},
+  {"name":"Fomivirsen","form":"Injection","strength":"330μg/ml"},
+  {"name":"Penciclovir","form":"Cream","strength":"1%"},
+  {"name":"Trifluridine","form":"Eye drops","strength":"1%"},
+  {"name":"Idoxuridine","form":"Ointment","strength":"0.5%"},
+  {"name":"Brivudine","form":"Tablet","strength":"125mg"},
+  {"name":"Maribavir","form":"Tablet","strength":"400mg"},
+  {"name":"Letermovir","form":"Tablet","strength":"480mg"},
+  {"name":"Ganciclovir/Suspension","form":"Suspension","strength":"50mg/ml"},
+  {"name":"Valganciclovir/ER","form":"Tablet","strength":"450mg"},
+  {"name":"Cidofovir/Solution","form":"Injection","strength":"75mg/ml"},
+  {"name":"Foscarnet/Solution","form":"Injection","strength":"24mg/ml"},
+  {"name":"Baloxavir marboxil","form":"Tablet","strength":"40mg"},
+  {"name":"Favipiravir/Suspension","form":"Suspension","strength":"200mg/5ml"},
+  {"name":"Molnupiravir/Suspension","form":"Suspension","strength":"200mg/5ml"},
+  {"name":"Nirmatrelvir/Ritonavir","form":"Tablet","strength":"150mg/100mg"},
+  {"name":"Remdesivir/Solution","form":"Injection","strength":"100mg/20ml"},
+  {"name":"Cabotegravir (long-acting)","form":"Injection","strength":"600mg/ml"},
+  {"name":"Rilpivirine (long-acting)","form":"Injection","strength":"300mg/ml"},
+  {"name":"Dolutegravir/Abacavir/Lamivudine","form":"Tablet","strength":"50mg/600mg/300mg"},
+  {"name":"Bictegravir/Emtricitabine/Tenofovir alafenamide","form":"Tablet","strength":"50mg/200mg/25mg"},
+  {"name":"Emtricitabine/Tenofovir alafenamide","form":"Tablet","strength":"200mg/25mg"},
+  {"name":"Entecavir/ER","form":"Tablet","strength":"1mg"},
+  {"name":"Tenofovir disoproxil fumarate","form":"Tablet","strength":"300mg"},
+  {"name":"Adefovir dipivoxil","form":"Tablet","strength":"10mg"},
+  {"name":"Sofosbuvir/Velpatasvir/Voxilaprevir","form":"Tablet","strength":"400mg/100mg/100mg"},
+  {"name":"Glecaprevir/Pibrentasvir","form":"Tablet","strength":"100mg/40mg"},
+  {"name":"Elbasvir/Grazoprevir","form":"Tablet","strength":"50mg/100mg"},
+  {"name":"Ledipasvir/Sofosbuvir","form":"Tablet","strength":"90mg/400mg"},
+  {"name":"Velpatasvir/Sofosbuvir","form":"Tablet","strength":"100mg/400mg"},
+  {"name":"Daclatasvir","form":"Tablet","strength":"60mg"},
+  {"name":"Simeprevir","form":"Capsule","strength":"150mg"},
+  {"name":"Paritaprevir/Ritonavir/Ombitasvir","form":"Tablet","strength":"75mg/12.5mg/50mg"},
+  {"name":"Dasabuvir","form":"Tablet","strength":"250mg"},
+  {"name":"Sofosbuvir","form":"Tablet","strength":"400mg"},
+  {"name":"Telbivudine","form":"Tablet","strength":"600mg"},
+  {"name":"Lamivudine","form":"Tablet","strength":"150mg"},
+  {"name":"Zidovudine","form":"Tablet","strength":"300mg"},
+  {"name":"Abacavir","form":"Tablet","strength":"300mg"},
+  {"name":"Efavirenz","form":"Tablet","strength":"600mg"},
+  {"name":"Dolutegravir","form":"Tablet","strength":"50mg"},
+  {"name":"Rilpivirine","form":"Tablet","strength":"25mg"},
+  {"name":"Atazanavir","form":"Tablet","strength":"300mg"},
+  {"name":"Darunavir","form":"Tablet","strength":"800mg"},
+  {"name":"Lopinavir/Ritonavir","form":"Tablet","strength":"200mg/50mg"},
+  {"name":"Saquinavir","form":"Tablet","strength":"500mg"},
+  {"name":"Indinavir","form":"Capsule","strength":"400mg"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

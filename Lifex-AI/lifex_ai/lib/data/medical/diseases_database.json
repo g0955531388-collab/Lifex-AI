@@ -1,0 +1,3019 @@
+{
+  "_meta": {
+    "fileName": "diseases_database.json",
+    "path": "lib/data/medical/diseases_database.json",
+    "description": "قاعدة بيانات مرجعية موسّعة وشاملة للأمراض الجسدية والنفسية والنسائية وأعراض الأطفال والحواس والأسنان — نظام Lifex-AI",
+    "disclaimer_ar": "هذه البيانات مرجعية عامة ولا تُعد تشخيصاً أو نصيحة طبية. يجب دائماً استشارة طبيب مختص. لا يعتمد Lifex-AI على هذه القاعدة لاتخاذ أي قرار علاجي نهائي.",
+    "disclaimer_en": "This is general reference data only and does not constitute a medical diagnosis or advice. Always consult a licensed physician.",
+    "schemaVersion": "7.1.0",
+    "lastUpdated": "2026-09-16",
+    "mergedFrom": "lifex-ai-diseases-database-v1.json (131 unique records; added 102 missing)"
+  },
+  "diseases": [
+    {
+      "id": "d001",
+      "nameAr": "ارتفاع ضغط الدم الشرياني",
+      "nameEn": "Hypertension",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s001",
+        "s002",
+        "s014",
+        "s015",
+        "s016",
+        "s013",
+        "s123"
+      ],
+      "riskFactors": [
+        "العمر",
+        "السمنة",
+        "التدخين",
+        "التاريخ العائلي",
+        "الإفراط في الصوديوم",
+        "انقطاع التنفس الانسدادي النومي",
+        "التوتر النفسي المزمن"
+      ],
+      "generalInfoAr": "حالة مزمنة شائعة تتطلب متابعة دورية للضغط ونمط حياة صحي، وتُدار عادة بإشراف طبيب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d002",
+      "nameAr": "داء السكري من النوع الثاني",
+      "nameEn": "Type 2 Diabetes",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s003",
+        "s004",
+        "s005",
+        "s017",
+        "s018",
+        "s019",
+        "s048",
+        "s109",
+        "s112",
+        "s172",
+        "s185"
+      ],
+      "riskFactors": [
+        "السمنة",
+        "قلة الحركة",
+        "التاريخ العائلي",
+        "النظام الغذائي غير الصحي"
+      ],
+      "generalInfoAr": "اضطراب مزمن في استقلاب السكر، يتطلب متابعة مستمرة للقراءات والتزاماً بخطة الطبيب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d003",
+      "nameAr": "الربو القصبي الحاد والمزمن",
+      "nameEn": "Asthma",
+      "category": "respiratory",
+      "commonSymptomsIds": [
+        "s006",
+        "s007",
+        "s020",
+        "s021",
+        "s106",
+        "s107",
+        "s189",
+        "s191"
+      ],
+      "riskFactors": [
+        "الحساسية",
+        "التاريخ العائلي",
+        "التلوث بيئياً",
+        "التدخين السلبي",
+        "الارتجاع المريئي"
+      ],
+      "generalInfoAr": "مرض مزمن في الشعب الهوائية، قد تتطلب النوبة الحادة منه تدخلاً طبياً عاجلاً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d004",
+      "nameAr": "الجلطة القلبية (احتشاء العضلة القلبية)",
+      "nameEn": "Myocardial Infarction",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s008",
+        "s009",
+        "s010",
+        "s022",
+        "s023",
+        "s049",
+        "s105",
+        "s124",
+        "s197"
+      ],
+      "riskFactors": [
+        "التدخين",
+        "ارتفاع الضغط",
+        "السكري",
+        "الكوليسترول",
+        "الإجهاد البدني العنيف",
+        "نوبات الهلع الشديدة"
+      ],
+      "generalInfoAr": "حالة طارئة تهدد الحياة وتتطلب اتصالاً فورياً بالإسعاف؛ لا تُدار داخل التطبيق عشوائياً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d005",
+      "nameAr": "فقر الدم بعوز الحديد والأمراض الوعائية",
+      "nameEn": "Iron Deficiency Anemia",
+      "category": "hematology",
+      "commonSymptomsIds": [
+        "s011",
+        "s012",
+        "s013",
+        "s024",
+        "s025",
+        "s050",
+        "s051",
+        "s104",
+        "s177"
+      ],
+      "riskFactors": [
+        "سوء التغذية",
+        "الحمل",
+        "فقدان الدم المزمن",
+        "غزارة الطمث الوظيفية",
+        "اضطرابات الامتصاص المعوي"
+      ],
+      "generalInfoAr": "من أشيع أنواع فقر الدم، يُشخَّص ويُعالَج بإشراف طبي بعد تحليل الدم الشامل.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d006",
+      "nameAr": "السكتة الدماغية الإقفارية الحادة",
+      "nameEn": "Acute Ischemic Stroke",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s026",
+        "s027",
+        "s028",
+        "s052",
+        "s053",
+        "s173",
+        "s174",
+        "s175"
+      ],
+      "riskFactors": [
+        "ارتفاع ضغط الدم الشرياني",
+        "الرجفان الأذيني للقلب",
+        "التدخين المزمن",
+        "السكري"
+      ],
+      "generalInfoAr": "حالة طبية طارئة حادة تحدث نتيجة انقطاع تدفق الدم عن أجزاء من الدماغ، وتتطلب نقلاً فورياً للمستشفى لإنقاذ الأنسجة العصبية.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d007",
+      "nameAr": "مرض الارتجاع المعدي المريئي",
+      "nameEn": "Gastroesophageal Reflux Disease (GERD)",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s029",
+        "s030",
+        "s054",
+        "s055",
+        "s099",
+        "s103",
+        "s171",
+        "s186"
+      ],
+      "riskFactors": [
+        "السمنة",
+        "التدخين",
+        "تناول الأطعمة الدهنية والحارة",
+        "الحمل",
+        "فتق الحجاب الحاجز"
+      ],
+      "generalInfoAr": "اضطراب هضمي مزمن يحدث عندما تتدفق عصارة المعدة الحمضية إلى المريء، مسببة تهيجاً وتآكلاً في بطانته الوعائية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d021",
+      "nameAr": "اضطراب الاكتئاب الجسيم والكآبة المعنوية",
+      "nameEn": "Major Devastating Depression",
+      "category": "psychiatric",
+      "commonSymptomsIds": [
+        "s091",
+        "s092",
+        "s005",
+        "s093",
+        "s094",
+        "s108",
+        "s122",
+        "s184",
+        "s192"
+      ],
+      "riskFactors": [
+        "الاستعداد الجيني الوظيفي",
+        "الصدمات النفسية الحادة",
+        "اضطراب النواقل العصبية بالدماغ",
+        "الأمراض المزمنة بجسد المريض"
+      ],
+      "generalInfoAr": "اضطراب نفسي مزاجي حاد يؤثر سلباً على تفكير المريض، مشاعره، وسلوكه، ويصاحبه خمول معنوي وفقدان الشغف التام بالأنشطة اليومية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d022",
+      "nameAr": "اضطراب القلق العام ونوبات الهلع الحادة",
+      "nameEn": "Generalized Anxiety and Panic Disorder",
+      "category": "psychiatric",
+      "commonSymptomsIds": [
+        "s095",
+        "s096",
+        "s013",
+        "s010",
+        "s021",
+        "s123",
+        "s124",
+        "s184",
+        "s200"
+      ],
+      "riskFactors": [
+        "التوتر البيئي المتراكم",
+        "الشخصية الحساسة المفرطة",
+        "التاريخ العائلي للاضطرابات النفسية الحادة"
+      ],
+      "generalInfoAr": "حالة نفسية تتميز بالقلق والتوتر المفرط والمستمر، مع صعوبة بالغة في السيطرة على الأفكار المقلقة، وينعكس بأعراض جسدية واضحة كخفقان القلب وضيق الصدر.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d023",
+      "nameAr": "اضطراب تبدد الشخصية والاغتراب عن الواقع والشعور بالغربة",
+      "nameEn": "Depersonalization-Derealization Disorder",
+      "category": "psychiatric",
+      "commonSymptomsIds": [
+        "s097",
+        "s098",
+        "s002",
+        "s092"
+      ],
+      "riskFactors": [
+        "التعرض لصدمات طفولة حادة",
+        "الإجهاد النفسي الشديد الفجائي",
+        "نوبات الهلع الحادة المتكررة والضغط المعنوي"
+      ],
+      "generalInfoAr": "اضطراب تفارقي نفسي يشعر فيه الشخص باستمرار بأنه يراقب نفسه من الخارج (تبدد الشخصية) أو يشعر بأن محيطه غير حقيقي أو ضبابي ومغترب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d024",
+      "nameAr": "التهاب ملتحمة العين الحاد وحرقة العيون",
+      "nameEn": "Acute Conjunctivitis and Eye Burning",
+      "category": "ophthalmologic",
+      "commonSymptomsIds": [
+        "s113",
+        "s114",
+        "s115",
+        "s116"
+      ],
+      "riskFactors": [
+        "التعرض للعدوى الفيروسية أو البكتيرية",
+        "المحسسات البيئية كالغبار والدخان والأبخرة",
+        "استخدام العدسات اللاصقة الملوثة"
+      ],
+      "generalInfoAr": "التهاب يصيب الغشاء الشفاف المبطن للجفن والملتحمة، ويؤدي إلى احمرار شديد وحرقة بالعين مع إفرازات دمعية ومخاطية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d025",
+      "nameAr": "متلازمة القولون العصبي التشنجي واضطرابات البراز",
+      "nameEn": "Irritable Bowel Syndrome (IBS)",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s034",
+        "s099",
+        "s100",
+        "s101",
+        "s102",
+        "s095",
+        "s108",
+        "s170"
+      ],
+      "riskFactors": [
+        "التوتر والضغط النفسي المعنوي",
+        "الحساسية الغذائية لبعض الأطعمة واللاكتوز",
+        "اضطراب حركة الأمعاء الدقيقة والخلل البكتيري"
+      ],
+      "generalInfoAr": "اضطراب وظيفي شائع في الجهاز الهضمي يؤثر على الأمعاء الغليظة، ويرتبط ارتباطاً وثيقاً بالحالة النفسية والمعنوية للمستخدم وتغير شكل البراز وطبيعته.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d026",
+      "nameAr": "التهاب المسالك البولية الحاد وتغير لون البول",
+      "nameEn": "Urinary Tract Infection (UTI)",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s004",
+        "s110",
+        "s111",
+        "s042",
+        "s112",
+        "s126",
+        "s109"
+      ],
+      "riskFactors": [
+        "إهمال شرب المياه والسوائل",
+        "حبس البول لفترات طويلة",
+        "مرض السكري غير المنضبط",
+        "الحصوات الكلوية الحوضية"
+      ],
+      "generalInfoAr": "عدوى بكتيرية تصيب جزءاً من الجهاز البولي، وعادة ما تكون في المثانة أو الإحليل، وتسبب آلاماً حارقة أثناء التبول وتغيرات في لون البول ورائحته وكثافته الرغوية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d027",
+      "nameAr": "عسر الطمث الأولي وآلام الدورة الشهرية والمغص الحوضي",
+      "nameEn": "Primary Dysmenorrhea and Menstrual Pain",
+      "category": "gynecological",
+      "commonSymptomsIds": [
+        "s127",
+        "s128",
+        "s129",
+        "s033",
+        "s001"
+      ],
+      "riskFactors": [
+        "العمر المبكر",
+        "البلوغ المفاجئ",
+        "غزارة الطمث الوظيفية",
+        "التاريخ العائلي لعسر الطمث الميكانيكي",
+        "التدخين"
+      ],
+      "generalInfoAr": "آلام ومغص أسفل البطن والحوض تصاحب بداية فترة الطمث نتيجة إفراز البروستاجلاندين، وتزول تدريجياً بعد الأيام الأولى لنزول الدم.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d028",
+      "nameAr": "متلازمة تكيس المبايض والخلل الهرموني النسائي",
+      "nameEn": "Polycystic Ovary Syndrome (PCOS)",
+      "category": "gynecological_endocrine",
+      "commonSymptomsIds": [
+        "s130",
+        "s131",
+        "s132",
+        "s039",
+        "s078",
+        "s091"
+      ],
+      "riskFactors": [
+        "مقاومة الأنسولين الخلوية",
+        "العوامل الوراثية الجينية",
+        "السمنة المفرطة وتراكم الدهون",
+        "الالتهابات منخفضة الدرجة المزمنة"
+      ],
+      "generalInfoAr": "اضطراب هرموني شائع يسبب تضخماً في المبايض مع ظهور أكياس صغيرة على الحواف، ويؤدي إلى اضطراب الإباضة وتأخر الدورة والخصوبة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d029",
+      "nameAr": "بطانة الرحم المهاجرة والالتصاقات الحوضية الحادة",
+      "nameEn": "Endometriosis",
+      "category": "gynecological",
+      "commonSymptomsIds": [
+        "s127",
+        "s133",
+        "s134",
+        "s126",
+        "s005",
+        "s101"
+      ],
+      "riskFactors": [
+        "عدم الإنجاب المسبق",
+        "فترات طمث قصيرة أو غزيرة جداً ومليئة بالتخثرات",
+        "مستويات إستروجين مرتفعة في الجسم",
+        "تشوهات تشريحية في الرحم"
+      ],
+      "generalInfoAr": "حالة مؤلمة تنمو فيها أنسجة شبيهة ببطانة الرحم خارج تجويف الرحم (كالمبايض وقنوات فالوب)، وتسبب التصاقات حوضية حادة وآلاماً أثناء الجماع.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d030",
+      "nameAr": "متلازمة انقطاع الطمث الطبيعي وسن الأياس للمرأة",
+      "nameEn": "Menopause Transition",
+      "category": "gynecological_endocrine",
+      "commonSymptomsIds": [
+        "s135",
+        "s136",
+        "s137",
+        "s095",
+        "s040",
+        "s091"
+      ],
+      "riskFactors": [
+        "التقدم البيولوجي الطبيعي في السن",
+        "الاستئصال الجراحي للمبايض والرحم",
+        "العلاج الكيميائي أو الإشعاعي المسبق"
+      ],
+      "generalInfoAr": "مرحلة بيولوجية طبيعية تنخفض فيها هرمونات المبيض تدريجياً حتى توقف الطمث تماماً وصاحبها هبات ساخنة وتعرق ليلي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d031",
+      "nameAr": "النزيف الرحمي غير الطبيعي والاستحاضة خارج الدورة",
+      "nameEn": "Abnormal Uterine Bleeding (AUB)",
+      "category": "gynecological",
+      "commonSymptomsIds": [
+        "s133",
+        "s138",
+        "s011",
+        "s012",
+        "s005"
+      ],
+      "riskFactors": [
+        "الأورام الليفية الحميدة في الرحم",
+        "الخلل الهرموني المحوري",
+        "استخدام وسائل منع الحمل الرحمية (اللولب)",
+        "سماكة بطانة الرحم الوظيفية"
+      ],
+      "generalInfoAr": "أي نزيف مهبلي يختلف عن النمط المعتاد للدورة الشهرية من حيث المدة، أو الغزارة، أو التوقيت، ويتطلب استقصاءً دقيقاً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d032",
+      "nameAr": "تغيرات مرحلة التبويض الفسيولوجية الطبيعية عند الإناث",
+      "nameEn": "Ovulation Phase Changes",
+      "category": "physiological_gynecological",
+      "commonSymptomsIds": [
+        "s139",
+        "s140",
+        "s141",
+        "s142"
+      ],
+      "riskFactors": [
+        "الدورة الشهرية المنتظمة المنتجة للبويضات الحية والنشاط الهرموني السليم"
+      ],
+      "generalInfoAr": "علامات فسيولوجية طبيعية تحدث في منتصف الدورة الشهرية تشير إلى نضوج البويضة وانطلاقها من المبيض.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d033",
+      "nameAr": "البواسير الشرجية والاحتقان الوريدي السفلي وعلامات الدم",
+      "nameEn": "Hemorrhoids",
+      "category": "gastrointestinal_vascular",
+      "commonSymptomsIds": [
+        "s143",
+        "s144",
+        "s145",
+        "s100",
+        "s180"
+      ],
+      "riskFactors": [
+        "الإمساك المزمن وضغط البراز الصلب",
+        "الحمل والولادة المتكررة ميكانيكياً",
+        "الجلوس لفترات طويلة دون حركة"
+      ],
+      "generalInfoAr": "أوردة متسعة ومنتفخة في الشرج والمستقيم السفلي، تسبب ألماً ونزفاً أحمر قرمزي قانٍ أثناء أو بعد التبرز الصعب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d034",
+      "nameAr": "الناسور الشرجي والناسور المهبلي ونزح المفرزات الشرجية",
+      "nameEn": "Anal and Vaginal Fistula",
+      "category": "surgical_gastrointestinal",
+      "commonSymptomsIds": [
+        "s146",
+        "s147",
+        "s148",
+        "s042",
+        "s196"
+      ],
+      "riskFactors": [
+        "خراجات شرجية سابقة غير معالجة بدقة",
+        "مرض كرون الهضمي المناعي",
+        "إصابات الولادة المتعسرة جراحياً"
+      ],
+      "generalInfoAr": "نفق أو ممر غير طبيعي يربط بين تجويف داخلي والجلد الخارجي أو المهبل، ويؤدي لنزح مستمر للمفرزات والصديد والغازات ويستدعي إصلاحاً جراحياً.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d035",
+      "nameAr": "داء المبيضات والتهابات الفطريات المهبلية وحكة الشفرين",
+      "nameEn": "Vaginal Candidiasis and Vulvar Fungal Infection",
+      "category": "gynecological_infectious",
+      "commonSymptomsIds": [
+        "s149",
+        "s150",
+        "s151",
+        "s134"
+      ],
+      "riskFactors": [
+        "الاستخدام المفرط والمفتوح للمضادات الحيوية",
+        "الحمل والتقلب الهرموني",
+        "مرض السكري غير المنضبط"
+      ],
+      "generalInfoAr": "عدوى فطرية تصيب المهبل والأنسجة المحيطة، وتتسبب في تهيج حاد وحكة شديدة وإفرازات سميكة متجبنة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d036",
+      "nameAr": "التهابات وأورام الثدي وتصلب الأنسجة ومفرزات الحلمة",
+      "nameEn": "Breast Disorders and Mastitis",
+      "category": "mastology_gynecological",
+      "commonSymptomsIds": [
+        "s152",
+        "s153",
+        "s154",
+        "s155",
+        "s126"
+      ],
+      "riskFactors": [
+        "الرضاعة الطبيعية",
+        "التغيرات الهرمونية الدورية العنيفة",
+        "التاريخ العائلي لأمراض وأورام الثدي"
+      ],
+      "generalInfoAr": "تشمل طيفاً واسعاً من الاضطرابات؛ وجود مفرزات مدممة أو كتلة صلبة بالثدي يتطلب استقصاءً شعاعياً فورياً ودقيقاً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d037",
+      "nameAr": "اضطراب المشاعر الحميمية والدافع الجنسي",
+      "nameEn": "Sexual Desire and Intimacy Disorders",
+      "category": "psychiatric_endocrine",
+      "commonSymptomsIds": [
+        "s156",
+        "s157",
+        "s005",
+        "s091",
+        "s095"
+      ],
+      "riskFactors": [
+        "اضطرابات النواقل العصبية بالدماغ والهرمونات",
+        "الضغوط النفسية والمعنوية والخلافات الزوجية"
+      ],
+      "generalInfoAr": "خلل في الدافع الحميمي يظهر إما كقلة شديدة وانعدام في الرغبة أو كإفراط وهوس جنسي قهري.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d038",
+      "nameAr": "التهاب الأذن الوسطى الحاد عند الأطفال والرضع",
+      "nameEn": "Acute Otitis Media in Children",
+      "category": "pediatric",
+      "commonSymptomsIds": [
+        "s158",
+        "s159",
+        "s160",
+        "s042",
+        "s043",
+        "s196",
+        "s198",
+        "s199",
+        "s200"
+      ],
+      "riskFactors": [
+        "الإصابة بنزلات البرد والرشح المتكررة عند الرضع",
+        "التغذية بالزجاجة أثناء الاستلقاء الخاطئ",
+        "التعرض لدخان السجائر"
+      ],
+      "generalInfoAr": "عدوى بكتيرية أو فيروسية تصيب الأذن الوسطى لدى الرضع والأطفال، وتسبب ألماً حاداً وبكاءً وهياجاً مستمراً ونقصاً مؤقتاً في السمع.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d039",
+      "nameAr": "الجفاف الحاد الناتج عن النزلات المعوية للأطفال والرضع",
+      "nameEn": "Pediatric Gastroenteritis and Severe Dehydration",
+      "category": "pediatric",
+      "commonSymptomsIds": [
+        "s101",
+        "s105",
+        "s161",
+        "s162",
+        "s163",
+        "s042"
+      ],
+      "riskFactors": [
+        "عدوى فيروس الروتا أو البكتيريا المعوية الملوثة",
+        "عدم غسل الأيدي وتعقيم الرضّاعات بدقة فطرية"
+      ],
+      "generalInfoAr": "حالة خطيرة تؤدي إلى فقدان سريع وسام للسوائل والأملاح لدى الطفل من خلال الإسهال والإقياء، وتتطلب مراقبة فورية ورعاية طبية.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d040",
+      "nameAr": "متلازمة انقطاع التنفس الانسدادي النومي واضطرابات التنفس",
+      "nameEn": "Obstructive Sleep Apnea Syndrome (OSAS)",
+      "category": "respiratory_sleep",
+      "commonSymptomsIds": [
+        "s189",
+        "s190",
+        "s191",
+        "s192",
+        "s001",
+        "s005"
+      ],
+      "riskFactors": [
+        "السمنة المفرطة وضيق المجرى الهوائي العلوي",
+        "ارتخاء عضلات الحلق",
+        "التاريخ العائلي للشخير الحاد"
+      ],
+      "generalInfoAr": "اضطراب نومي شائع وخطير يتصف بانسداد متكرر للمجرى الهوائي العلوي أثناء النوم، مما يؤدي إلى انقطاع كامل أو جزئي للتنفس والاستيقاظ المتكرر.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d041",
+      "nameAr": "اضطرابات المفصل الفكي الصدغي وصرير الأسنان",
+      "nameEn": "Temporomandibular Joint Disorders (TMJD)",
+      "category": "dentistry_neurological",
+      "commonSymptomsIds": [
+        "s184",
+        "s193",
+        "s194",
+        "s195",
+        "s183",
+        "s001"
+      ],
+      "riskFactors": [
+        "الضغط النفسي والتوتر العصبي المستمر",
+        "إصابات الفك المباشرة",
+        "سوء إطباق الأسنان وهيكليتها"
+      ],
+      "generalInfoAr": "خلل وظيفي يصيب المفصل الذي يربط الفك السفلي بالجمجمة، مما يتسبب في صعوبة في المضغ وصرير مزمن بالأسنان تزامناً مع التوتر المعنوي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d042",
+      "nameAr": "التهابات الفم السنية واللثوية الحادة",
+      "nameEn": "Acute Periodontal and Oral Infections",
+      "category": "dentistry",
+      "commonSymptomsIds": [
+        "s171",
+        "s179",
+        "s180",
+        "s181",
+        "s182",
+        "s183",
+        "s185"
+      ],
+      "riskFactors": [
+        "إهمال النظافة الفموية اليومية",
+        "التدخين",
+        "ضعف الجهاز المناعي الموضعي",
+        "نقص الفيتامينات الأساسية كفيتامين C"
+      ],
+      "generalInfoAr": "أمراض التهابية وبكتيرية تصيب اللثة والأنسجة الداعمة للأسنان، تؤدي إلى تقرحات مؤلمة، ونزف لثوي، وتخلخل الأسنان إن تركت دون علاج.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d043",
+      "nameAr": "اضطرابات الشم والتذوق العصبية الفيروسية",
+      "nameEn": "Olfactory and Gustatory Disorders",
+      "category": "neurological_otolaryngology",
+      "commonSymptomsIds": [
+        "s164",
+        "s165",
+        "s166",
+        "s167",
+        "s168",
+        "s169",
+        "s170"
+      ],
+      "riskFactors": [
+        "العدوى الفيروسية التنفسية الحادة كالإنفلونزا",
+        "إصابات الرأس المباشرة",
+        "التعرض المزمن للمواد الكيميائية السامة"
+      ],
+      "generalInfoAr": "اضطرابات وظيفية عصبية تصيب المستقبلات الحسية للشم والتذوق، مسببة إما فقداً كاملاً أو تشوهاً في التذوق كالشعور بطعم معدني.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d044",
+      "nameAr": "قصور القلب الاحتقاني",
+      "nameEn": "Congestive Heart Failure",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s006",
+        "s234",
+        "s005",
+        "s013",
+        "s021"
+      ],
+      "riskFactors": [
+        "ارتفاع ضغط الدم المزمن",
+        "أمراض الشرايين التاجية",
+        "اعتلال عضلة القلب",
+        "التقدم بالعمر"
+      ],
+      "generalInfoAr": "ضعف قدرة القلب على ضخ الدم بكفاءة كافية لتلبية احتياجات الجسم، يؤدي لتراكم السوائل وضيق التنفس.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d045",
+      "nameAr": "اضطراب نظم القلب",
+      "nameEn": "Cardiac Arrhythmia",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s013",
+        "s002",
+        "s224"
+      ],
+      "riskFactors": [
+        "أمراض القلب الهيكلية",
+        "اضطراب الشوارد",
+        "التوتر والكافيين الزائد",
+        "التدخين"
+      ],
+      "generalInfoAr": "خلل في انتظام أو سرعة أو بطء ضربات القلب، يتراوح من حميد لخطير حسب النوع والسبب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d046",
+      "nameAr": "الرجفان الأذيني",
+      "nameEn": "Atrial Fibrillation",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s013",
+        "s006",
+        "s002",
+        "s005"
+      ],
+      "riskFactors": [
+        "التقدم بالعمر",
+        "ارتفاع ضغط الدم",
+        "أمراض صمامات القلب",
+        "فرط نشاط الغدة الدرقية"
+      ],
+      "generalInfoAr": "اضطراب نظم قلبي شائع يزيد خطر تكوّن جلطات دموية والسكتة الدماغية، ويتطلب متابعة دقيقة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d047",
+      "nameAr": "أمراض صمامات القلب",
+      "nameEn": "Valvular Heart Disease",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s006",
+        "s234",
+        "s013",
+        "s005"
+      ],
+      "riskFactors": [
+        "الحمى الروماتيزمية السابقة",
+        "التقدم بالعمر",
+        "العيوب الخلقية",
+        "التهاب الشغاف"
+      ],
+      "generalInfoAr": "تلف أو ضعف في أحد صمامات القلب الأربعة يؤثر على تدفق الدم الطبيعي داخل حجرات القلب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d048",
+      "nameAr": "اعتلال عضلة القلب",
+      "nameEn": "Cardiomyopathy",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s006",
+        "s013",
+        "s234",
+        "s005"
+      ],
+      "riskFactors": [
+        "التاريخ العائلي الوراثي",
+        "ارتفاع ضغط الدم المزمن",
+        "إدمان الكحول",
+        "العدوى الفيروسية السابقة"
+      ],
+      "generalInfoAr": "مرض يصيب عضلة القلب نفسها ويضعف قدرتها على الانقباض أو الاسترخاء بشكل طبيعي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d049",
+      "nameAr": "التهاب عضلة القلب",
+      "nameEn": "Myocarditis",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s008",
+        "s005",
+        "s013",
+        "s042"
+      ],
+      "riskFactors": [
+        "العدوى الفيروسية الحديثة",
+        "أمراض المناعة الذاتية",
+        "بعض الأدوية والسموم"
+      ],
+      "generalInfoAr": "التهاب حاد في عضلة القلب غالباً بسبب عدوى فيروسية، قد يؤثر على وظيفة القلب مؤقتاً أو دائماً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d050",
+      "nameAr": "التهاب التامور",
+      "nameEn": "Pericarditis",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s008",
+        "s042",
+        "s006"
+      ],
+      "riskFactors": [
+        "العدوى الفيروسية",
+        "أمراض المناعة الذاتية",
+        "الجلطة القلبية الحديثة",
+        "الفشل الكلوي"
+      ],
+      "generalInfoAr": "التهاب الغشاء المحيط بالقلب (التامور)، يسبب ألماً صدرياً يتغير مع وضعية الجسم والتنفس.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d051",
+      "nameAr": "أمراض الشرايين الطرفية",
+      "nameEn": "Peripheral Artery Disease",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [
+        "s024",
+        "s126",
+        "s234"
+      ],
+      "riskFactors": [
+        "التدخين",
+        "السكري",
+        "ارتفاع ضغط الدم",
+        "ارتفاع الكوليسترول",
+        "التقدم بالعمر"
+      ],
+      "generalInfoAr": "تضيق الشرايين الطرفية (غالباً بالساقين) نتيجة تصلبها، يسبب ألماً عند المشي ويقل بالراحة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d052",
+      "nameAr": "قصور الغدة الدرقية",
+      "nameEn": "Hypothyroidism",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s005",
+        "s078",
+        "s040",
+        "s024"
+      ],
+      "riskFactors": [
+        "التاريخ العائلي",
+        "أمراض المناعة الذاتية",
+        "الجنس الأنثوي",
+        "بعد الولادة"
+      ],
+      "generalInfoAr": "نقص إفراز هرمونات الغدة الدرقية، يبطئ عمليات الاستقلاب ويسبب خمولاً وزيادة وزن.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d053",
+      "nameAr": "فرط نشاط الغدة الدرقية",
+      "nameEn": "Hyperthyroidism",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s013",
+        "s018",
+        "s040",
+        "s005"
+      ],
+      "riskFactors": [
+        "مرض غريفز المناعي",
+        "عقيدات الغدة الدرقية النشطة",
+        "التاريخ العائلي"
+      ],
+      "generalInfoAr": "فرط إفراز هرمونات الغدة الدرقية، يسرّع عمليات الاستقلاب ويسبب فقدان وزن وتسارع نبض.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d054",
+      "nameAr": "التهاب الغدة الدرقية المناعي (هاشيموتو)",
+      "nameEn": "Hashimoto's Thyroiditis",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s005",
+        "s078",
+        "s040"
+      ],
+      "riskFactors": [
+        "الاستعداد المناعي الذاتي الوراثي",
+        "الجنس الأنثوي",
+        "أمراض مناعية ذاتية أخرى مصاحبة"
+      ],
+      "generalInfoAr": "التهاب مناعي ذاتي مزمن في الغدة الدرقية، يؤدي تدريجياً لقصور وظيفتها.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d055",
+      "nameAr": "متلازمة كوشينغ",
+      "nameEn": "Cushing's Syndrome",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s078",
+        "s005",
+        "s019"
+      ],
+      "riskFactors": [
+        "الاستخدام المطوّل لأدوية الكورتيزون",
+        "ورم بالغدة النخامية أو الكظرية"
+      ],
+      "generalInfoAr": "فرط مزمن في هرمون الكورتيزول بالجسم، يسبب زيادة وزن مركزية وضعف عضلي وهشاشة عظام.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d056",
+      "nameAr": "مرض أديسون",
+      "nameEn": "Addison's Disease",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s005",
+        "s018",
+        "s104"
+      ],
+      "riskFactors": [
+        "تدمير مناعي ذاتي للغدة الكظرية",
+        "عدوى مزمنة كالسل",
+        "التوقف المفاجئ عن أدوية الكورتيزون"
+      ],
+      "generalInfoAr": "قصور مزمن في إفراز هرمونات الغدة الكظرية، يستدعي تعويضاً دوائياً دائماً بإشراف طبي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d057",
+      "nameAr": "مقاومة الإنسولين",
+      "nameEn": "Insulin Resistance",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s078",
+        "s005",
+        "s017"
+      ],
+      "riskFactors": [
+        "السمنة",
+        "قلة الحركة",
+        "التاريخ العائلي للسكري",
+        "النظام الغذائي الغني بالسكريات"
+      ],
+      "generalInfoAr": "حالة استقلابية يقل فيها استجابة خلايا الجسم للإنسولين، وتُعد مرحلة سابقة شائعة لداء السكري.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d058",
+      "nameAr": "السمنة المرضية",
+      "nameEn": "Morbid Obesity",
+      "category": "endocrine",
+      "commonSymptomsIds": [
+        "s078",
+        "s005",
+        "s190"
+      ],
+      "riskFactors": [
+        "نمط الحياة الخامل",
+        "العوامل الوراثية",
+        "الاضطرابات الهرمونية",
+        "بعض الأدوية"
+      ],
+      "generalInfoAr": "زيادة مفرطة في الوزن (مؤشر كتلة جسم مرتفع جداً) ترفع خطر أمراض القلب والسكري والمفاصل.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d059",
+      "nameAr": "اضطرابات الدهون والكوليسترول",
+      "nameEn": "Dyslipidemia",
+      "category": "endocrine",
+      "commonSymptomsIds": [],
+      "riskFactors": [
+        "النظام الغذائي الغني بالدهون المشبعة",
+        "التاريخ العائلي",
+        "قلة الحركة",
+        "السمنة"
+      ],
+      "generalInfoAr": "اضطراب في مستويات الدهون بالدم (كوليسترول/دهون ثلاثية)، غالباً بلا أعراض ويُكتشف بالتحليل.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d060",
+      "nameAr": "القصور الكلوي الحاد",
+      "nameEn": "Acute Kidney Injury",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s005",
+        "s234",
+        "s112",
+        "s104"
+      ],
+      "riskFactors": [
+        "الجفاف الشديد",
+        "بعض الأدوية السامة للكلى",
+        "انخفاض ضغط الدم الحاد",
+        "انسداد المسالك البولية"
+      ],
+      "generalInfoAr": "تدهور مفاجئ وسريع في وظيفة الكلى، غالباً قابل للعكس إذا عولج السبب مبكراً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d061",
+      "nameAr": "القصور الكلوي المزمن",
+      "nameEn": "Chronic Kidney Disease",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s005",
+        "s234",
+        "s104",
+        "s019"
+      ],
+      "riskFactors": [
+        "السكري غير المنضبط",
+        "ارتفاع ضغط الدم المزمن",
+        "التاريخ العائلي",
+        "الالتهابات الكلوية المتكررة"
+      ],
+      "generalInfoAr": "تدهور تدريجي ومستمر في وظيفة الكلى عبر أشهر أو سنوات، قد يصل لمرحلة الفشل الكلوي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d062",
+      "nameAr": "حصى الكلى",
+      "nameEn": "Kidney Stones",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s126",
+        "s110",
+        "s109"
+      ],
+      "riskFactors": [
+        "قلة شرب الماء",
+        "النظام الغذائي الغني بالأملاح",
+        "التاريخ العائلي",
+        "بعض الاضطرابات الاستقلابية"
+      ],
+      "generalInfoAr": "تكوّن كتل صلبة من الأملاح المعدنية داخل الكلى، تسبب ألماً حاداً متقطعاً عند تحركها.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d063",
+      "nameAr": "التهاب الكلية",
+      "nameEn": "Glomerulonephritis",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s234",
+        "s109",
+        "s042"
+      ],
+      "riskFactors": [
+        "العدوى البكتيرية أو الفيروسية السابقة",
+        "أمراض المناعة الذاتية"
+      ],
+      "generalInfoAr": "التهاب في وحدات الترشيح الدقيقة بالكلى، قد يؤثر على قدرتها على تنقية الدم بشكل طبيعي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d064",
+      "nameAr": "المتلازمة النفروزية",
+      "nameEn": "Nephrotic Syndrome",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s234",
+        "s112",
+        "s078"
+      ],
+      "riskFactors": [
+        "أمراض الكلى المزمنة",
+        "السكري",
+        "أمراض المناعة الذاتية"
+      ],
+      "generalInfoAr": "مجموعة أعراض ناتجة عن تسرّب كميات كبيرة من البروتين في البول نتيجة تلف كلوي.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d065",
+      "nameAr": "تضخم البروستاتا الحميد",
+      "nameEn": "Benign Prostatic Hyperplasia",
+      "category": "renal_urinary",
+      "commonSymptomsIds": [
+        "s004",
+        "s110"
+      ],
+      "riskFactors": [
+        "التقدم بالعمر",
+        "التاريخ العائلي",
+        "الخلل الهرموني المرتبط بالعمر"
+      ],
+      "generalInfoAr": "تضخم غير سرطاني في غدة البروستاتا لدى الرجال الأكبر سناً، يسبب صعوبة وتكرار التبول.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d066",
+      "nameAr": "سرطان البروستاتا",
+      "nameEn": "Prostate Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s004",
+        "s110",
+        "s018",
+        "s219"
+      ],
+      "riskFactors": [
+        "التقدم بالعمر",
+        "التاريخ العائلي",
+        "العرق",
+        "النظام الغذائي عالي الدهون"
+      ],
+      "generalInfoAr": "من أشيع أورام الرجال، غالباً بطيء النمو، ويُكتشف مبكراً عبر الفحص الدوري والواسمات الورمية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d067",
+      "nameAr": "التهاب الكبد الفيروسي",
+      "nameEn": "Viral Hepatitis A/B/C",
+      "category": "hepatic",
+      "commonSymptomsIds": [
+        "s220",
+        "s104",
+        "s005",
+        "s103"
+      ],
+      "riskFactors": [
+        "نقل الدم غير المفحوص",
+        "الاتصال الجنسي غير الآمن",
+        "مياه وطعام ملوث (النوع A)",
+        "الإبر المشتركة"
+      ],
+      "generalInfoAr": "التهاب كبدي فيروسي يختلف نوعه (A/B/C) في طرق العدوى وشدته واحتمال تحوله لمزمن.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d068",
+      "nameAr": "تشحم الكبد",
+      "nameEn": "Fatty Liver Disease",
+      "category": "hepatic",
+      "commonSymptomsIds": [
+        "s005",
+        "s078"
+      ],
+      "riskFactors": [
+        "السمنة",
+        "السكري",
+        "ارتفاع الدهون الثلاثية",
+        "إدمان الكحول"
+      ],
+      "generalInfoAr": "تراكم دهون زائدة في خلايا الكبد، قد يتطور لالتهاب أو تليف إن لم يُعالج سببه.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d069",
+      "nameAr": "تليف الكبد",
+      "nameEn": "Liver Cirrhosis",
+      "category": "hepatic",
+      "commonSymptomsIds": [
+        "s220",
+        "s221",
+        "s005",
+        "s104"
+      ],
+      "riskFactors": [
+        "إدمان الكحول المزمن",
+        "التهاب الكبد الفيروسي المزمن",
+        "تشحم الكبد المتقدم"
+      ],
+      "generalInfoAr": "تندّب دائم ومتقدم في نسيج الكبد نتيجة تلف مزمن، يضعف وظائف الكبد الحيوية تدريجياً.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d070",
+      "nameAr": "التهاب البنكرياس",
+      "nameEn": "Pancreatitis",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s049",
+        "s105",
+        "s042"
+      ],
+      "riskFactors": [
+        "حصى المرارة",
+        "إدمان الكحول",
+        "ارتفاع الدهون الثلاثية الحاد"
+      ],
+      "generalInfoAr": "التهاب حاد أو مزمن في البنكرياس، يسبب ألماً حاداً أعلى البطن قد ينتشر للظهر.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d071",
+      "nameAr": "قرحة المعدة",
+      "nameEn": "Peptic Ulcer Disease",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s049",
+        "s029",
+        "s104"
+      ],
+      "riskFactors": [
+        "عدوى بكتيريا هيليكوباكتر بيلوري",
+        "الاستخدام المزمن لمضادات الالتهاب",
+        "التدخين",
+        "التوتر الشديد"
+      ],
+      "generalInfoAr": "تقرّح في بطانة المعدة أو الاثني عشر، قد ينزف إن لم يُعالج مبكراً.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d072",
+      "nameAr": "داء كرون",
+      "nameEn": "Crohn's Disease",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s099",
+        "s222",
+        "s018",
+        "s005"
+      ],
+      "riskFactors": [
+        "الاستعداد الوراثي",
+        "اضطراب المناعة الذاتية",
+        "التدخين"
+      ],
+      "generalInfoAr": "مرض التهابي مزمن يمكن أن يصيب أي جزء من الجهاز الهضمي، ويتطور على شكل نوبات وهدأة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d073",
+      "nameAr": "التهاب القولون التقرحي",
+      "nameEn": "Ulcerative Colitis",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s101",
+        "s222",
+        "s099"
+      ],
+      "riskFactors": [
+        "الاستعداد الوراثي",
+        "اضطراب المناعة الذاتية"
+      ],
+      "generalInfoAr": "التهاب مزمن يصيب بطانة القولون والمستقيم تحديداً، ويسبب نوبات إسهال دموي متكررة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d074",
+      "nameAr": "الداء الزلاقي",
+      "nameEn": "Celiac Disease",
+      "category": "gastrointestinal",
+      "commonSymptomsIds": [
+        "s223",
+        "s034",
+        "s101"
+      ],
+      "riskFactors": [
+        "الاستعداد الوراثي والمناعي",
+        "التاريخ العائلي"
+      ],
+      "generalInfoAr": "حساسية مناعية مزمنة تجاه بروتين الغلوتين، تضر بطانة الأمعاء الدقيقة وتسبب سوء امتصاص.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d075",
+      "nameAr": "الصرع",
+      "nameEn": "Epilepsy",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s204",
+        "s002"
+      ],
+      "riskFactors": [
+        "إصابات الرأس السابقة",
+        "التاريخ العائلي",
+        "عدوى دماغية سابقة",
+        "تشوهات خلقية بالدماغ"
+      ],
+      "generalInfoAr": "اضطراب عصبي مزمن يتميز بنوبات تشنجية متكررة ناتجة عن نشاط كهربائي غير طبيعي بالدماغ.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d076",
+      "nameAr": "مرض باركنسون",
+      "nameEn": "Parkinson's Disease",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s201",
+        "s203",
+        "s028"
+      ],
+      "riskFactors": [
+        "التقدم بالعمر",
+        "التاريخ العائلي",
+        "التعرض لبعض السموم البيئية"
+      ],
+      "generalInfoAr": "اضطراب عصبي تنكسي تدريجي يؤثر على الحركة، ويسبب رعشة وتيبساً وبطء حركة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d077",
+      "nameAr": "مرض الزهايمر",
+      "nameEn": "Alzheimer's Disease",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s202",
+        "s050"
+      ],
+      "riskFactors": [
+        "التقدم بالعمر",
+        "التاريخ العائلي",
+        "أمراض القلب والأوعية"
+      ],
+      "generalInfoAr": "أشيع أسباب الخرف، اضطراب تنكسي تدريجي يصيب الذاكرة والإدراك مع التقدم بالعمر.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d078",
+      "nameAr": "التصلب المتعدد",
+      "nameEn": "Multiple Sclerosis",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s231",
+        "s232",
+        "s019"
+      ],
+      "riskFactors": [
+        "الاستعداد المناعي الذاتي",
+        "الجنس الأنثوي",
+        "نقص فيتامين D",
+        "العوامل الجغرافية"
+      ],
+      "generalInfoAr": "مرض مناعي ذاتي مزمن يصيب الجهاز العصبي المركزي، بأعراض متغيرة تأتي وتذهب.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d079",
+      "nameAr": "الاعتلال العصبي السكري",
+      "nameEn": "Diabetic Neuropathy",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s019",
+        "s024"
+      ],
+      "riskFactors": [
+        "السكري غير المنضبط لفترة طويلة",
+        "ارتفاع الدهون بالدم",
+        "التدخين"
+      ],
+      "generalInfoAr": "تلف تدريجي في الأعصاب الطرفية نتيجة ارتفاع سكر الدم المزمن، يبدأ غالباً بالقدمين.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d080",
+      "nameAr": "الشقيقة (الصداع النصفي)",
+      "nameEn": "Migraine",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s001",
+        "s217",
+        "s103"
+      ],
+      "riskFactors": [
+        "التاريخ العائلي",
+        "التوتر",
+        "بعض الأطعمة والمحفزات",
+        "التغيرات الهرمونية"
+      ],
+      "generalInfoAr": "نوع من الصداع الشديد المتكرر، غالباً بجانب واحد من الرأس، وقد يصاحبه غثيان وحساسية للضوء.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d081",
+      "nameAr": "التهاب الأعصاب",
+      "nameEn": "Neuritis",
+      "category": "neurological",
+      "commonSymptomsIds": [
+        "s019",
+        "s125"
+      ],
+      "riskFactors": [
+        "العدوى الفيروسية",
+        "نقص فيتامينات B",
+        "السكري",
+        "الإصابات المباشرة"
+      ],
+      "generalInfoAr": "التهاب يصيب عصباً واحداً أو أكثر، يسبب ألماً أو تنميلاً أو ضعفاً في المنطقة المتأثرة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d082",
+      "nameAr": "مرض الانسداد الرئوي المزمن",
+      "nameEn": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "category": "respiratory",
+      "commonSymptomsIds": [
+        "s006",
+        "s007",
+        "s020"
+      ],
+      "riskFactors": [
+        "التدخين المزمن (السبب الأول)",
+        "التعرض المهني للأتربة والأبخرة",
+        "التلوث الهوائي المزمن"
+      ],
+      "generalInfoAr": "مرض تنفسي تدريجي ومزمن يضيق مجرى الهواء بشكل دائم، ويزداد سوءاً مع استمرار التدخين.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d083",
+      "nameAr": "الالتهاب الرئوي",
+      "nameEn": "Pneumonia",
+      "category": "respiratory",
+      "commonSymptomsIds": [
+        "s007",
+        "s042",
+        "s006",
+        "s233"
+      ],
+      "riskFactors": [
+        "العدوى البكتيرية أو الفيروسية",
+        "ضعف المناعة",
+        "التقدم بالعمر",
+        "التدخين"
+      ],
+      "generalInfoAr": "عدوى تصيب أحد الرئتين أو كليهما، تسبب التهاب الحويصلات الهوائية وتجمّع السوائل بها.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d084",
+      "nameAr": "تليف الرئة",
+      "nameEn": "Pulmonary Fibrosis",
+      "category": "respiratory",
+      "commonSymptomsIds": [
+        "s006",
+        "s007",
+        "s005"
+      ],
+      "riskFactors": [
+        "التدخين",
+        "التعرض المهني طويل الأمد لبعض الغبار",
+        "بعض الأمراض المناعية الذاتية"
+      ],
+      "generalInfoAr": "تندّب تدريجي ودائم في أنسجة الرئة، يقلل مرونتها وقدرتها على تبادل الأكسجين بكفاءة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d085",
+      "nameAr": "توسع القصبات",
+      "nameEn": "Bronchiectasis",
+      "category": "respiratory",
+      "commonSymptomsIds": [
+        "s007",
+        "s218",
+        "s042"
+      ],
+      "riskFactors": [
+        "عدوى تنفسية متكررة في الطفولة",
+        "الداء الليفي الكيسي",
+        "ضعف المناعة المزمن"
+      ],
+      "generalInfoAr": "تلف دائم ومرضي يوسّع القصبات الهوائية، مما يسبب تراكم مخاط وعدوى متكررة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d086",
+      "nameAr": "الصدفية",
+      "nameEn": "Psoriasis",
+      "category": "dermatology",
+      "commonSymptomsIds": [
+        "s209",
+        "s206"
+      ],
+      "riskFactors": [
+        "الاستعداد الوراثي المناعي",
+        "التوتر النفسي",
+        "بعض العدوى المسبقة"
+      ],
+      "generalInfoAr": "مرض جلدي مناعي مزمن يسبب تجدداً سريعاً لخلايا الجلد، ويظهر كبقع حمراء مغطاة بقشور فضية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d087",
+      "nameAr": "الأكزيما",
+      "nameEn": "Eczema (Atopic Dermatitis)",
+      "category": "dermatology",
+      "commonSymptomsIds": [
+        "s210"
+      ],
+      "riskFactors": [
+        "التاريخ العائلي للحساسية",
+        "الجلد الجاف",
+        "المهيّجات البيئية"
+      ],
+      "generalInfoAr": "التهاب جلدي مزمن يسبب جفافاً وحكة شديدة، شائع لدى الأطفال وقد يستمر للبلوغ.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d088",
+      "nameAr": "حب الشباب",
+      "nameEn": "Acne Vulgaris",
+      "category": "dermatology",
+      "commonSymptomsIds": [
+        "s213"
+      ],
+      "riskFactors": [
+        "التغيرات الهرمونية (المراهقة)",
+        "الاستعداد الوراثي",
+        "بعض مستحضرات التجميل الدهنية"
+      ],
+      "generalInfoAr": "حالة جلدية شائعة جداً تنتج عن انسداد المسام الدهنية، غالباً في الوجه والظهر.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d089",
+      "nameAr": "التهاب الجلد التحسسي",
+      "nameEn": "Allergic Contact Dermatitis",
+      "category": "dermatology",
+      "commonSymptomsIds": [
+        "s210",
+        "s150"
+      ],
+      "riskFactors": [
+        "التعرض المباشر لمادة مسببة للحساسية",
+        "الاستعداد الشخصي للحساسية"
+      ],
+      "generalInfoAr": "تفاعل التهابي جلدي موضعي ينتج عن ملامسة مادة مهيّجة أو مسببة للحساسية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d090",
+      "nameAr": "البهاق",
+      "nameEn": "Vitiligo",
+      "category": "dermatology",
+      "commonSymptomsIds": [
+        "s211"
+      ],
+      "riskFactors": [
+        "الاستعداد المناعي الذاتي",
+        "التاريخ العائلي"
+      ],
+      "generalInfoAr": "حالة جلدية مناعية تفقد فيها مناطق من الجلد صبغتها الطبيعية تدريجياً.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d091",
+      "nameAr": "الهربس النطاقي (الحزام الناري)",
+      "nameEn": "Herpes Zoster (Shingles)",
+      "category": "dermatology",
+      "commonSymptomsIds": [
+        "s212",
+        "s001"
+      ],
+      "riskFactors": [
+        "إصابة سابقة بجدري الماء",
+        "ضعف المناعة",
+        "التقدم بالعمر",
+        "التوتر الشديد"
+      ],
+      "generalInfoAr": "عدوى فيروسية تنشط من فيروس جدري الماء الكامن، تسبب طفحاً مؤلماً على مسار عصبي واحد.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d092",
+      "nameAr": "الذئبة الحمراء",
+      "nameEn": "Systemic Lupus Erythematosus",
+      "category": "rheumatology",
+      "commonSymptomsIds": [
+        "s206",
+        "s207",
+        "s042",
+        "s005"
+      ],
+      "riskFactors": [
+        "الجنس الأنثوي",
+        "الاستعداد الوراثي المناعي",
+        "التعرض الشمسي المفرط"
+      ],
+      "generalInfoAr": "مرض مناعي ذاتي مزمن يمكن أن يصيب عدة أعضاء بالجسم، بأعراض متنوعة تتفاوت شدتها.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d093",
+      "nameAr": "التهاب المفاصل الروماتويدي",
+      "nameEn": "Rheumatoid Arthritis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [
+        "s206",
+        "s207",
+        "s005"
+      ],
+      "riskFactors": [
+        "الجنس الأنثوي",
+        "الاستعداد الوراثي",
+        "التدخين"
+      ],
+      "generalInfoAr": "مرض مناعي ذاتي مزمن يهاجم بطانة المفاصل، ويسبب التهاباً وتيبساً وتشوهاً تدريجياً إن لم يُعالج.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d094",
+      "nameAr": "التهاب المفاصل الصدفي",
+      "nameEn": "Psoriatic Arthritis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [
+        "s207",
+        "s209",
+        "s206"
+      ],
+      "riskFactors": [
+        "الإصابة المسبقة بالصدفية الجلدية",
+        "التاريخ العائلي"
+      ],
+      "generalInfoAr": "التهاب مفصلي مزمن يصيب بعض المصابين بمرض الصدفية الجلدية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d095",
+      "nameAr": "متلازمة شوغرن",
+      "nameEn": "Sjögren's Syndrome",
+      "category": "rheumatology",
+      "commonSymptomsIds": [
+        "s208",
+        "s005"
+      ],
+      "riskFactors": [
+        "الجنس الأنثوي",
+        "الاستعداد المناعي الذاتي",
+        "التقدم بالعمر"
+      ],
+      "generalInfoAr": "مرض مناعي ذاتي مزمن يهاجم الغدد المفرزة للسوائل، مسبباً جفافاً شديداً بالعين والفم.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d096",
+      "nameAr": "التهاب الأوعية المناعي",
+      "nameEn": "Vasculitis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [
+        "s042",
+        "s005",
+        "s019"
+      ],
+      "riskFactors": [
+        "اضطراب المناعة الذاتية",
+        "بعض العدوى السابقة",
+        "بعض الأدوية"
+      ],
+      "generalInfoAr": "التهاب يصيب جدران الأوعية الدموية، قد يؤثر على تدفق الدم لأعضاء مختلفة بالجسم.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d097",
+      "nameAr": "الإنفلونزا",
+      "nameEn": "Influenza",
+      "category": "infectious",
+      "commonSymptomsIds": [
+        "s042",
+        "s007",
+        "s005",
+        "s001"
+      ],
+      "riskFactors": [
+        "ضعف المناعة",
+        "عدم أخذ اللقاح الموسمي",
+        "التقدم بالعمر",
+        "الازدحام في الأماكن المغلقة"
+      ],
+      "generalInfoAr": "عدوى فيروسية تنفسية موسمية شائعة، غالباً تُشفى ذاتياً لكن قد تتفاقم لدى الفئات الضعيفة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d098",
+      "nameAr": "كوفيد-19 ومضاعفاته",
+      "nameEn": "COVID-19 and Complications",
+      "category": "infectious",
+      "commonSymptomsIds": [
+        "s042",
+        "s007",
+        "s006",
+        "s164"
+      ],
+      "riskFactors": [
+        "ضعف المناعة",
+        "عدم أخذ اللقاح",
+        "الأمراض المزمنة المصاحبة",
+        "التقدم بالعمر"
+      ],
+      "generalInfoAr": "عدوى فيروسية تنفسية قد تتراوح من أعراض خفيفة إلى مضاعفات رئوية وجهازية خطيرة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d099",
+      "nameAr": "السل الرئوي",
+      "nameEn": "Tuberculosis",
+      "category": "infectious",
+      "commonSymptomsIds": [
+        "s218",
+        "s042",
+        "s018",
+        "s136"
+      ],
+      "riskFactors": [
+        "ضعف المناعة",
+        "الازدحام السكاني",
+        "سوء التغذية",
+        "الاتصال المباشر بمريض نشط"
+      ],
+      "generalInfoAr": "عدوى بكتيرية معدية مزمنة تصيب الرئتين غالباً، وتتطلب علاجاً طويل الأمد ومتابعة صارمة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d100",
+      "nameAr": "التهاب السحايا",
+      "nameEn": "Meningitis",
+      "category": "infectious",
+      "commonSymptomsIds": [
+        "s216",
+        "s042",
+        "s215",
+        "s217"
+      ],
+      "riskFactors": [
+        "ضعف المناعة",
+        "العيش في أماكن مزدحمة",
+        "عدم أخذ اللقاحات المتاحة"
+      ],
+      "generalInfoAr": "التهاب حاد وخطير في الأغشية المحيطة بالدماغ والحبل الشوكي، يتطلب تدخلاً طبياً فورياً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d101",
+      "nameAr": "الإنتان (تسمم الدم)",
+      "nameEn": "Sepsis / Bloodstream Infection",
+      "category": "infectious",
+      "commonSymptomsIds": [
+        "s214",
+        "s224",
+        "s215"
+      ],
+      "riskFactors": [
+        "عدوى غير معالجة في أي جزء بالجسم",
+        "ضعف المناعة",
+        "الجروح والقسطرة الطبية المزمنة"
+      ],
+      "generalInfoAr": "استجابة مناعية شديدة ومهددة للحياة تجاه عدوى منتشرة بالدم، تتطلب دخول المستشفى فوراً.",
+      "requiresImmediateAttention": true
+    },
+    {
+      "id": "d102",
+      "nameAr": "سرطان الرئة",
+      "nameEn": "Lung Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s218",
+        "s018",
+        "s006",
+        "s219"
+      ],
+      "riskFactors": [
+        "التدخين (السبب الأول)",
+        "التعرض المهني للأسبستوس والملوثات",
+        "التاريخ العائلي"
+      ],
+      "generalInfoAr": "من أكثر الأورام فتكاً عالمياً، يرتبط بشدة بالتدخين، ويُكتشف غالباً في مراحل متأخرة دون فحص دوري.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d103",
+      "nameAr": "سرطان القولون والمستقيم",
+      "nameEn": "Colorectal Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s143",
+        "s018",
+        "s102",
+        "s219"
+      ],
+      "riskFactors": [
+        "التقدم بالعمر",
+        "التاريخ العائلي",
+        "النظام الغذائي منخفض الألياف",
+        "التدخين"
+      ],
+      "generalInfoAr": "ورم شائع في القولون أو المستقيم، يُكتشف مبكراً غالباً عبر فحوصات الكشف الدوري الموصى بها.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d104",
+      "nameAr": "سرطان الكبد",
+      "nameEn": "Liver Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s220",
+        "s221",
+        "s018",
+        "s219"
+      ],
+      "riskFactors": [
+        "التهاب الكبد الفيروسي المزمن B/C",
+        "تليف الكبد",
+        "إدمان الكحول المزمن"
+      ],
+      "generalInfoAr": "ورم خبيث غالباً ما ينشأ على خلفية تليف كبدي أو التهاب فيروسي مزمن غير معالج.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d105",
+      "nameAr": "سرطان البنكرياس",
+      "nameEn": "Pancreatic Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s220",
+        "s018",
+        "s049",
+        "s219"
+      ],
+      "riskFactors": [
+        "التدخين",
+        "التاريخ العائلي",
+        "التهاب البنكرياس المزمن",
+        "السكري"
+      ],
+      "generalInfoAr": "من الأورام صعبة الاكتشاف المبكر لأن أعراضه غالباً غير محددة حتى مراحل متقدمة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d107",
+      "nameAr": "سرطان الدم (اللوكيميا)",
+      "nameEn": "Leukemia",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s005",
+        "s042",
+        "s011",
+        "s219"
+      ],
+      "riskFactors": [
+        "التعرض للإشعاع أو مواد كيميائية معينة",
+        "بعض المتلازمات الوراثية",
+        "العلاج الكيميائي السابق"
+      ],
+      "generalInfoAr": "سرطان ينشأ في نخاع العظم وخلايا الدم، ويؤثر على إنتاج خلايا الدم الطبيعية.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d108",
+      "nameAr": "سرطان الجلد (الميلانوما وغيرها)",
+      "nameEn": "Skin Cancer (Melanoma and others)",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s219"
+      ],
+      "riskFactors": [
+        "التعرض الشمسي المفرط دون حماية",
+        "البشرة الفاتحة جداً",
+        "التاريخ العائلي",
+        "الشامات الكثيرة أو غير المنتظمة"
+      ],
+      "generalInfoAr": "أورام تنشأ في خلايا الجلد، يزيد خطرها التعرض الشمسي المتراكم دون حماية كافية عبر السنين.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d109",
+      "nameAr": "سرطان المبيض",
+      "nameEn": "Ovarian Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s126",
+        "s034",
+        "s219",
+        "s018"
+      ],
+      "riskFactors": [
+        "التاريخ العائلي والوراثي (BRCA)",
+        "التقدم بالعمر",
+        "عدم الإنجاب"
+      ],
+      "generalInfoAr": "ورم نسائي يصعب اكتشافه مبكراً لأن أعراضه الأولى غالباً غير محددة وشبيهة بمشاكل هضمية بسيطة.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d110",
+      "nameAr": "سرطان عنق الرحم",
+      "nameEn": "Cervical Cancer",
+      "category": "oncology",
+      "commonSymptomsIds": [
+        "s133",
+        "s134",
+        "s138"
+      ],
+      "riskFactors": [
+        "عدوى فيروس الورم الحليمي البشري (HPV)",
+        "عدم انتظام الفحص الدوري (مسحة عنق الرحم)",
+        "التدخين"
+      ],
+      "generalInfoAr": "ورم نسائي يرتبط غالباً بعدوى فيروس HPV، ويُعد من أكثر الأورام قابلية للوقاية عبر اللقاح والفحص الدوري.",
+      "requiresImmediateAttention": false
+    },
+    {
+      "id": "d111",
+      "nameAr": "Coronary Artery Disease",
+      "nameEn": "Coronary Artery Disease",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تضيق الشرايين التاجية يقلل تدفق الدم للقلب.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d112",
+      "nameAr": "Stroke",
+      "nameEn": "Stroke",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انقطاع مفاجئ لتدفق الدم إلى الدماغ.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d113",
+      "nameAr": "انخفاض ضغط الدم",
+      "nameEn": "Hypotension",
+      "category": "cardiovascular",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انخفاض غير طبيعي في ضغط الدم قد يسبب دوخة وإغماء.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d114",
+      "nameAr": "Diabetes Mellitus Type 1",
+      "nameEn": "Diabetes Mellitus Type 1",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مرض مناعي يسبب نقص الإنسولين.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d115",
+      "nameAr": "Diabetes Mellitus Type 2",
+      "nameEn": "Diabetes Mellitus Type 2",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب أيضي مع مقاومة الإنسولين.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d116",
+      "nameAr": "التهاب الغدة الدرقية بعد الولادة",
+      "nameEn": "التهاب الغدة الدرقية بعد الولادة",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب يصيب الغدة الدرقية بعد الولادة، غالباً ما يسبب قصوراً مؤقتاً أو دائماً في نشاطها.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d117",
+      "nameAr": "داء السكري",
+      "nameEn": "Diabetes Mellitus",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب استقلابي يتميز بمستويات مرتفعة من السكر في الدم بسبب نقص إنتاج الأنسولين أو مقاومة تأثيره.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d118",
+      "nameAr": "قصور الغدد التناسلية",
+      "nameEn": "قصور الغدد التناسلية",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "نقص في إنتاج الهرمونات الجنسية (التستوستيرون أو الإستروجين) من الغدد التناسلية (الخصيتين أو المبيضين).",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d119",
+      "nameAr": "Urinary Tract Infection",
+      "nameEn": "Urinary Tract Infection",
+      "category": "nephrology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى في الجهاز البولي.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d120",
+      "nameAr": "التهاب المثانة",
+      "nameEn": "Cystitis",
+      "category": "nephrology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى في المثانة تسبب التهابها وألم أثناء التبول.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d121",
+      "nameAr": "Ankylosing Spondylitis",
+      "nameEn": "Ankylosing Spondylitis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب مفاصل مزمن للعمود الفقري.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d122",
+      "nameAr": "Chronic Fatigue Syndrome",
+      "nameEn": "Chronic Fatigue Syndrome",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "إرهاق شديد مستمر.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d123",
+      "nameAr": "Fibromyalgia",
+      "nameEn": "Fibromyalgia",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب ألم مزمن للعضلات والأنسجة الرخوة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d124",
+      "nameAr": "Gout",
+      "nameEn": "Gout",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "ترسب بلورات حمض اليوريك في المفاصل.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d125",
+      "nameAr": "Osteoarthritis",
+      "nameEn": "Osteoarthritis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مرض مفاصل تنكسي.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d126",
+      "nameAr": "Osteoporosis",
+      "nameEn": "Osteoporosis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "فقدان كثافة العظام وزيادة خطر الكسور.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d127",
+      "nameAr": "التهاب المفاصل التفاعلي",
+      "nameEn": "Reiter's Syndrome",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "شكل من التهاب المفاصل يظهر بعد عدوى في مكان آخر من الجسم (مثل الجهاز البولي التناسلي أو الجهاز الهضمي).",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d128",
+      "nameAr": "التهاب المفاصل الروماتويدي اليفعي",
+      "nameEn": "التهاب المفاصل الروماتويدي اليفعي",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب مزمن يصيب مفاصل الأطفال تحت سن 16 عامًا.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d129",
+      "nameAr": "التهاب المفاصل في العمود الفقري",
+      "nameEn": "Spondylitis",
+      "category": "rheumatology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب يصيب مفاصل العمود الفقري أو الفقرات.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d130",
+      "nameAr": "أظافر الكفين المصابة بالفطريات",
+      "nameEn": "Fungal Nail Infection - Hands",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تغير في شكل أو لون أظافر اليدين بسبب عدوى فطرية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d131",
+      "nameAr": "أظافر بيضاء جزئية",
+      "nameEn": "Leukonychia Partialis",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "بقع بيضاء على الظفر نتيجة صدمات صغيرة أو نقص معادن.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d132",
+      "nameAr": "أظافر بيضاء كاملة",
+      "nameEn": "Leukonychia Totalis",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "ظهور اللون الأبيض على كامل الظفر نتيجة اضطراب في إنتاج الكيراتين أو نقص تغذية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d133",
+      "nameAr": "أظافر حمراء متورمة",
+      "nameEn": "Inflammatory Nail Changes",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "احمرار وتورم الظفر نتيجة التهاب جلدي أو مرض مناعي.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d134",
+      "nameAr": "أظافر رمادية أو متصبغة",
+      "nameEn": "Melanonychia",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "خطوط داكنة أو بقع على الظفر نتيجة فرط صبغة الميلانين أو أورام نادرة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d135",
+      "nameAr": "أظافر زرقاء",
+      "nameEn": "Cyanotic Nails",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تغير لون الأظافر إلى الأزرق نتيجة نقص الأكسجين في الدم أو مشاكل في الدورة الدموية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d136",
+      "nameAr": "أظافر سوداء أو نزفية",
+      "nameEn": "Subungual Hematoma",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تجمع دموي تحت الظفر نتيجة صدمة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d137",
+      "nameAr": "أظافر شريطية أو خطوط",
+      "nameEn": "Beau's Lines",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "خطوط عرضية على الأظافر نتيجة توقف مؤقت في نمو الظفر بسبب مرض أو ضغط شديد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d138",
+      "nameAr": "أظافر صدفية",
+      "nameEn": "Psoriatic Nails",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تأثير الصدفية على الأظافر مع تغيرات متعددة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d139",
+      "nameAr": "أظافر صفراء",
+      "nameEn": "Yellow Nail Syndrome",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اصفرار الأظافر نتيجة خلل في تصريف اللمف أو عدوى فطرية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d140",
+      "nameAr": "أظافر غائرة أو مخروطية",
+      "nameEn": "Pitted Nails",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "ثقوب صغيرة أو انخسافات في سطح الأظافر غالباً بسبب الصدفية أو أمراض جلدية أخرى.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d141",
+      "nameAr": "أظافر مترهلة",
+      "nameEn": "Koilonychia / Spoon Nails",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انحناء الظفر إلى الداخل يشبه الملعقة، غالباً بسبب فقر الدم أو نقص الحديد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d142",
+      "nameAr": "أظافر متشققة بسبب الغدة الدرقية",
+      "nameEn": "Thyroid Nail Changes",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تغيرات في الأظافر نتيجة اضطرابات الغدة الدرقية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d143",
+      "nameAr": "أظافر متقشرة",
+      "nameEn": "Onychoschizia",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تقصف الأظافر بشكل طبقات نتيجة جفاف الأظافر أو التعرض للمواد الكيميائية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d144",
+      "nameAr": "أظافر متقصفة طولية",
+      "nameEn": "Longitudinal Ridging",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "خطوط طولية واضحة على الظفر غالباً نتيجة الشيخوخة أو نقص العناصر الغذائية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d145",
+      "nameAr": "أظافر مصفرة نتيجة التدخين",
+      "nameEn": "Nicotine Staining",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اصفرار الأظافر بسبب التعرض المستمر للنيكوتين.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d146",
+      "nameAr": "أظافر مغرقة",
+      "nameEn": "Clubbing",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تغير في شكل الأظافر بحيث تصبح منتفخة ومنحنية، غالباً بسبب مشاكل في القلب أو الرئة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d147",
+      "nameAr": "أظافر ملتهبة متكررة",
+      "nameEn": "Chronic Paronychia",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب مزمن حول الظفر غالباً نتيجة عدوى فطرية أو بكتيرية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d148",
+      "nameAr": "أظافر هشة",
+      "nameEn": "Brittle Nails",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "ضعف وسهولة تكسر الأظافر بسبب نقص المعادن أو التعرض المستمر للماء والمواد الكيميائية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d149",
+      "nameAr": "التهاب الجلد التماسي (Contact Dermatitis) - الكفين",
+      "nameEn": "التهاب الجلد التماسي (Contact Dermatitis) - الكفين",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "طفح جلدي يظهر عند ملامسة مواد مهيجة أو مسببة للحساسية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d150",
+      "nameAr": "التهاب الجلد حول الأظافر",
+      "nameEn": "Paronychia",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى أو التهاب يصيب الجلد المحيط بالأظافر.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d151",
+      "nameAr": "تورم اليدين",
+      "nameEn": "Hand Edema",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انتفاخ الكفين نتيجة احتباس السوائل أو مشاكل في الدورة الدموية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d152",
+      "nameAr": "جفاف الكفين",
+      "nameEn": "Dry Hands",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "جلد الكفين جاف ومتشقق، قد يسبب الحكة والألم.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d153",
+      "nameAr": "فطار الأظافر",
+      "nameEn": "Onychomycosis",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى فطرية تصيب الأظافر وتسبب تغير اللون وسماكة الأظافر.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d154",
+      "nameAr": "فطريات الكفين",
+      "nameEn": "Hand Fungal Infection",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى فطرية تؤثر على جلد الكفين وتسبب تقشر وحكة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d155",
+      "nameAr": "Chronic Obstructive Pulmonary Disease",
+      "nameEn": "Chronic Obstructive Pulmonary Disease",
+      "category": "respiratory",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مرض رئوي تدريجي يشمل النفاخ والتهاب الشعب المزمن.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d156",
+      "nameAr": "التليف الكيسي",
+      "nameEn": "Cystic Fibrosis",
+      "category": "respiratory",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مرض وراثي يسبب تلفاً شديداً في الرئتين والجهاز الهضمي وأعضاء أخرى.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d157",
+      "nameAr": "التهاب الشعب الهوائية الحاد",
+      "nameEn": "التهاب الشعب الهوائية الحاد",
+      "category": "respiratory",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب مؤقت في بطانة أنابيب الشعب الهوائية، وغالباً ما يحدث بعد نزلة برد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d158",
+      "nameAr": "السل",
+      "nameEn": "Tuberculosis - TB",
+      "category": "respiratory",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى بكتيرية خطيرة تصيب الرئتين بشكل أساسي، ولكنها يمكن أن تؤثر على أجزاء أخرى من الجسم.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d159",
+      "nameAr": "انتفاخ الرئة",
+      "nameEn": "Emphysema",
+      "category": "respiratory",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تلف تدريجي لأكياس الهواء في الرئتين (الحويصلات الهوائية)، وغالباً ما يكون جزءاً من COPD.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d160",
+      "nameAr": "متلازمة الضائقة التنفسية الحادة",
+      "nameEn": "ARDS",
+      "category": "respiratory",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حالة تهدد الحياة تتراكم فيها السوائل في أكياس الهواء في الرئتين، مما يمنع الأكسجين من الوصول إلى الدم.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d161",
+      "nameAr": "Anemia",
+      "nameEn": "Anemia",
+      "category": "oncology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "نقص خلايا الدم الحمراء أو الهيموغلوبين.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d162",
+      "nameAr": "Lymphoma",
+      "nameEn": "Lymphoma",
+      "category": "oncology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "سرطان الجهاز اللمفاوي.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d163",
+      "nameAr": "Pernicious Anemia",
+      "nameEn": "Pernicious Anemia",
+      "category": "oncology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "نقص مناعي لفيتامين B12.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d164",
+      "nameAr": "Vitamin B12 Deficiency",
+      "nameEn": "Vitamin B12 Deficiency",
+      "category": "oncology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "نقص فيتامين B12 يؤثر على الدم والأعصاب.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d165",
+      "nameAr": "فقر الدم اللاتنسجي",
+      "nameEn": "Aplastic Anemia",
+      "category": "oncology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حالة نادرة تتوقف فيها نخاع العظم عن إنتاج ما يكفي من خلايا الدم الجديدة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d166",
+      "nameAr": "كثرة الحمر الحقيقية",
+      "nameEn": "Polycythemia Vera",
+      "category": "oncology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "نوع من سرطان الدم حيث ينتج نخاع العظم الكثير من خلايا الدم الحمراء، مما يزيد من لزوجة الدم.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d167",
+      "nameAr": "متلازمة النفق الرسغي",
+      "nameEn": "Carpal Tunnel Syndrome",
+      "category": "neurology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انضغاط العصب المتوسط في الرسغ، مما يسبب خدراً وضعفًا في اليد والذراع.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d168",
+      "nameAr": "متلازمة النفق الكعبري",
+      "nameEn": "متلازمة النفق الكعبري",
+      "category": "neurology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انضغاط العصب الكعبري في الذراع أو المرفق، مما يسبب ألماً في الساعد أو الجزء الخلفي من اليد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d169",
+      "nameAr": "متلازمة ذيل الفرس",
+      "nameEn": "Cauda Equina Syndrome",
+      "category": "neurology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حالة طارئة تتطلب تدخلاً جراحياً، تنضغط فيها جذور الأعصاب في نهاية الحبل الشوكي.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d170",
+      "nameAr": "Cholelithiasis",
+      "nameEn": "Cholelithiasis",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حصوات في المرارة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d171",
+      "nameAr": "Cirrhosis",
+      "nameEn": "Cirrhosis",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تلف مزمن للكبد مع تليف.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d172",
+      "nameAr": "Gastroesophageal Reflux Disease",
+      "nameEn": "Gastroesophageal Reflux Disease",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "ارتجاع حمض المعدة المزمن.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d173",
+      "nameAr": "Hepatitis B",
+      "nameEn": "Hepatitis B",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى فيروسية للكبد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d174",
+      "nameAr": "Hepatitis C",
+      "nameEn": "Hepatitis C",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى فيروسية مزمنة للكبد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d175",
+      "nameAr": "Irritable Bowel Syndrome",
+      "nameEn": "Irritable Bowel Syndrome",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب وظيفي للأمعاء يسبب آلام البطن.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d176",
+      "nameAr": "التسمم الغذائي بالبكتيريا",
+      "nameEn": "التسمم الغذائي بالبكتيريا",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مرض يحدث بسبب تناول طعام ملوث بالبكتيريا، مثل السالمونيلا أو الإشريكية القولونية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d177",
+      "nameAr": "التهاب البنكرياس المزمن",
+      "nameEn": "التهاب البنكرياس المزمن",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب مستمر في البنكرياس يؤدي إلى تلف دائم وفقدان وظيفته.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d178",
+      "nameAr": "التهاب الكبد ب المزمن",
+      "nameEn": "التهاب الكبد ب المزمن",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى مزمنة وطويلة الأمد بفيروس التهاب الكبد B، قد تؤدي إلى تليف الكبد أو السرطان.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d179",
+      "nameAr": "عدوى المطثية العسيرة",
+      "nameEn": "C. Difficile Infection",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى بكتيرية في القولون تسبب التهاباً وإسهالاً حاداً، وغالباً ما تحدث بعد استخدام المضادات الحيوية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d180",
+      "nameAr": "Basal Cell Carcinoma",
+      "nameEn": "Basal Cell Carcinoma",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "أكثر أنواع سرطان الجلد شيوعًا.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d181",
+      "nameAr": "Eczema",
+      "nameEn": "Eczema",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حالة جلدية التهابية تسبب حكة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d182",
+      "nameAr": "Melanoma",
+      "nameEn": "Melanoma",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "سرطان الجلد الخطير من الخلايا الصباغية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d183",
+      "nameAr": "التهاب الجلد التماسي",
+      "nameEn": "Contact Dermatitis",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "طفح جلدي ناتج عن ملامسة مادة مهيجة أو مسببة للحساسية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d184",
+      "nameAr": "الجرب",
+      "nameEn": "Scabies",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "إصابة جلدية شديدة الحكة ناتجة عن عث صغير يحفر في الجلد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d185",
+      "nameAr": "الشَرَى",
+      "nameEn": "Hives / Urticaria",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حالة جلدية تظهر فيها نتوءات جلدية مرتفعة وحمراء ومثيرة للحكة، غالباً بسبب رد فعل تحسسي.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d186",
+      "nameAr": "الهربس النطاقي",
+      "nameEn": "Shingles",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى فيروسية تنتج عن إعادة تنشيط فيروس جدري الماء، تسبب طفحاً جلدياً مؤلماً.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d187",
+      "nameAr": "تصلب الجلد",
+      "nameEn": "Scleroderma",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مرض مناعي ذاتي يؤدي إلى تصلب وشد في الجلد والأنسجة الضامة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d188",
+      "nameAr": "سعفة القدم",
+      "nameEn": "Athlete's Foot",
+      "category": "general",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى فطرية تصيب جلد القدمين، وغالباً ما تبدأ بين أصابع القدم.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d189",
+      "nameAr": "إدمان الكحول",
+      "nameEn": "Alcohol Dependence",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "الاستخدام المفرط والقهري للكحول على الرغم من العواقب السلبية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d190",
+      "nameAr": "اضطراب الشخصية الحدية",
+      "nameEn": "BPD",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب يتميز بعدم الاستقرار في العلاقات والمزاج والصورة الذاتية والسلوك.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d191",
+      "nameAr": "اضطراب القلق الاجتماعي",
+      "nameEn": "Social Anxiety Disorder",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "خوف وقلق شديد من المواقف الاجتماعية حيث قد يشعر الشخص بالحكم السلبي أو الإحراج.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d192",
+      "nameAr": "اضطراب الكرب التالي للصدمة",
+      "nameEn": "PTSD",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "رد فعل نفسي يحدث بعد تجربة حدث صادم أو مشاهدته، يتميز باستعادة الذكريات وتجنب المحفزات.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d193",
+      "nameAr": "اضطراب الهلع",
+      "nameEn": "Panic Disorder",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "نوبات هلع متكررة وغير متوقعة تتضمن خوفًا شديدًا وأعراضًا جسدية حادة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d194",
+      "nameAr": "اضطرابات الأكل",
+      "nameEn": "Eating Disorders",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطرابات نفسية خطيرة تتضمن هوسًا بالوزن، وشكل الجسم، والطعام.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d195",
+      "nameAr": "الاضطراب الوسواس القهري",
+      "nameEn": "OCD",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "أفكار متكررة وغير مرغوب فيها (وساوس) وسلوكيات متكررة (أفعال قهرية) يشعر الشخص بدافع لأدائها.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d196",
+      "nameAr": "الفصام",
+      "nameEn": "Schizophrenia",
+      "category": "psychiatry",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب عقلي مزمن يؤثر على طريقة تفكير الشخص وشعوره وتصرفه.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d197",
+      "nameAr": "إعتام عدسة العين",
+      "nameEn": "Cataract",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تغيم عدسة العين، مما يؤدي إلى تدهور الرؤية بمرور الوقت.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d198",
+      "nameAr": "التنكس البقعي",
+      "nameEn": "Macular Degeneration",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "تلف الجزء المركزي من الشبكية (البقعة)، مما يؤدي إلى فقدان الرؤية المركزية الحادة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d199",
+      "nameAr": "التهاب الشبكية الصباغي",
+      "nameEn": "Retinitis Pigmentosa",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مجموعة نادرة من اضطرابات العين الوراثية التي تسبب تلفًا تدريجيًا لشبكية العين.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d200",
+      "nameAr": "التهاب العصب البصري",
+      "nameEn": "التهاب العصب البصري",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب يصيب العصب البصري، غالباً ما يرتبط بالتصلب المتعدد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d201",
+      "nameAr": "التهاب القرنية",
+      "nameEn": "Keratitis",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب يصيب القرنية (الطبقة الشفافة في مقدمة العين)، وغالباً ما ينتج عن عدوى.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d202",
+      "nameAr": "التهاب الملتحمة",
+      "nameEn": "Conjunctivitis",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب أو عدوى في الغشاء الشفاف الذي يغطي بياض العين والجفن (العين الوردية).",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d203",
+      "nameAr": "الزرق",
+      "nameEn": "Glaucoma",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "مجموعة من أمراض العين التي تؤدي إلى تلف العصب البصري، غالباً بسبب ارتفاع الضغط داخل العين.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d204",
+      "nameAr": "انفصال الشبكية",
+      "nameEn": "انفصال الشبكية",
+      "category": "ophthalmology",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "حالة طارئة تنفصل فيها الشبكية عن طبقة الأنسجة التي تزودها بالأكسجين والمواد الغذائية.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d205",
+      "nameAr": "التهاب الأذن الوسطى المزمن",
+      "nameEn": "التهاب الأذن الوسطى المزمن",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب مستمر أو متكرر في الأذن الوسطى يؤدي إلى تلف طبلة الأذن أو العظام الصغيرة.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d206",
+      "nameAr": "التهاب الجيوب الأنفية المزمن",
+      "nameEn": "التهاب الجيوب الأنفية المزمن",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب وتورم في بطانة الجيوب الأنفية يستمر لأكثر من 12 أسبوعاً.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d207",
+      "nameAr": "التهاب اللوزتين",
+      "nameEn": "Tonsillitis",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "التهاب اللوزتين، غالباً بسبب عدوى فيروسية أو بكتيرية (البكتيريا العقدية).",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d208",
+      "nameAr": "انحراف الحاجز الأنفي",
+      "nameEn": "انحراف الحاجز الأنفي",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "انزياح العظم أو الغضروف الفاصل بين فتحتي الأنف عن المركز.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d209",
+      "nameAr": "انقطاع التنفس أثناء النوم الانسدادي",
+      "nameEn": "OSA",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب نوم خطير يتوقف فيه التنفس بشكل متكرر أثناء النوم بسبب انسداد جزئي أو كلي لمجرى الهواء.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d210",
+      "nameAr": "طنين الأذن",
+      "nameEn": "Tinnitus",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "الشعور بسماع ضوضاء أو رنين في الأذن دون وجود مصدر خارجي لها.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d211",
+      "nameAr": "مرض مينيير",
+      "nameEn": "Ménière's Disease",
+      "category": "ent",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "اضطراب في الأذن الداخلية يسبب نوبات من الدوار (الدوخة) وفقدان السمع وطنين الأذن.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    },
+    {
+      "id": "d212",
+      "nameAr": "مرض لايم",
+      "nameEn": "Lyme Disease",
+      "category": "infectious",
+      "commonSymptomsIds": [],
+      "riskFactors": [],
+      "generalInfoAr": "عدوى بكتيرية تنتقل عن طريق القراد.",
+      "requiresImmediateAttention": false,
+      "source": "lifex-ai-diseases-database-v1"
+    }
+  ]
+}

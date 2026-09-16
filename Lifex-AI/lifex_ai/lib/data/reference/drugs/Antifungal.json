@@ -1,0 +1,83 @@
+[
+  {"name":"Fluconazole","form":"Tablet","strength":"150mg"},
+  {"name":"Fluconazole","form":"Injection","strength":"2mg/ml"},
+  {"name":"Itraconazole","form":"Capsule","strength":"100mg"},
+  {"name":"Itraconazole","form":"Suspension","strength":"10mg/ml"},
+  {"name":"Voriconazole","form":"Tablet","strength":"200mg"},
+  {"name":"Voriconazole","form":"Injection","strength":"200mg/19ml"},
+  {"name":"Posaconazole","form":"Tablet","strength":"300mg"},
+  {"name":"Posaconazole","form":"Suspension","strength":"40mg/ml"},
+  {"name":"Ketoconazole","form":"Tablet","strength":"200mg"},
+  {"name":"Ketoconazole","form":"Cream","strength":"2%"},
+  {"name":"Ketoconazole","form":"Shampoo","strength":"2%"},
+  {"name":"Clotrimazole","form":"Cream","strength":"1%"},
+  {"name":"Clotrimazole","form":"Lozenge","strength":"10mg"},
+  {"name":"Miconazole","form":"Cream","strength":"2%"},
+  {"name":"Miconazole","form":"Gel","strength":"2%"},
+  {"name":"Miconazole","form":"Oral Gel","strength":"20mg/g"},
+  {"name":"Terbinafine","form":"Tablet","strength":"250mg"},
+  {"name":"Terbinafine","form":"Cream","strength":"1%"},
+  {"name":"Terbinafine","form":"Spray","strength":"1%"},
+  {"name":"Amphotericin B","form":"Injection","strength":"50mg/vial"},
+  {"name":"Nystatin","form":"Suspension","strength":"100000 IU/ml"},
+  {"name":"Nystatin","form":"Ointment","strength":"100000 IU/g"},
+  {"name":"Caspofungin","form":"Injection","strength":"50mg/vial"},
+  {"name":"Micafungin","form":"Injection","strength":"50mg/vial"},
+  {"name":"Anidulafungin","form":"Injection","strength":"100mg/vial"},
+  {"name":"Griseofulvin","form":"Tablet","strength":"500mg"},
+  {"name":"Griseofulvin","form":"Suspension","strength":"125mg/5ml"},
+  {"name":"Flucytosine","form":"Tablet","strength":"500mg"},
+  {"name":"Flucytosine","form":"Suspension","strength":"250mg/5ml"},
+  {"name":"Itraconazole/Topical","form":"Cream","strength":"1%"},
+  {"name":"Voriconazole/Topical","form":"Cream","strength":"1%"},
+  {"name":"Ketoconazole/Topical","form":"Cream","strength":"2%"},
+  {"name":"Clotrimazole/Topical","form":"Cream","strength":"1%"},
+  {"name":"Miconazole/Topical","form":"Cream","strength":"2%"},
+  {"name":"Econazole","form":"Cream","strength":"1%"},
+  {"name":"Oxiconazole","form":"Cream","strength":"1%"},
+  {"name":"Sulconazole","form":"Cream","strength":"1%"},
+  {"name":"Tioconazole","form":"Ointment","strength":"6.5%"},
+  {"name":"Ciclopirox","form":"Cream","strength":"1%"},
+  {"name":"Ciclopirox","form":"Lotion","strength":"1%"},
+  {"name":"Ciclopirox","form":"Nail Lacquer","strength":"8%"},
+  {"name":"Naftifine","form":"Cream","strength":"1%"},
+  {"name":"Naftifine","form":"Gel","strength":"1%"},
+  {"name":"Butenafine","form":"Cream","strength":"1%"},
+  {"name":"Butenafine","form":"Spray","strength":"1%"},
+  {"name":"Terbinafine/Topical","form":"Cream","strength":"1%"},
+  {"name":"Amphotericin B/Lipid","form":"Injection","strength":"50mg/vial"},
+  {"name":"Amphotericin B/Topical","form":"Cream","strength":"3%"},
+  {"name":"Voriconazole/Oral Suspension","form":"Suspension","strength":"40mg/ml"},
+  {"name":"Posaconazole/Oral Suspension","form":"Suspension","strength":"40mg/ml"},
+  {"name":"Fluconazole/Suspension","form":"Suspension","strength":"10mg/ml"},
+  {"name":"Itraconazole/Capsule","form":"Capsule","strength":"200mg"},
+  {"name":"Terbinafine/Topical Gel","form":"Gel","strength":"1%"},
+  {"name":"Ketoconazole/Topical Shampoo","form":"Shampoo","strength":"1%"},
+  {"name":"Miconazole/Topical Cream","form":"Cream","strength":"2%"},
+  {"name":"Clotrimazole/Topical Cream","form":"Cream","strength":"1%"},
+  {"name":"Ciclopirox/Topical Cream","form":"Cream","strength":"1%"},
+  {"name":"Efinaconazole","form":"Topical Solution","strength":"10%"},
+  {"name":"Tavaborole","form":"Topical Solution","strength":"5%"},
+  {"name":"Luliconazole","form":"Topical Cream","strength":"1%"},
+  {"name":"Isavuconazole","form":"Tablet","strength":"100mg"},
+  {"name":"Isavuconazole","form":"Injection","strength":"100mg/vial"},
+  {"name":"Voriconazole/IV","form":"Injection","strength":"200mg/vial"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

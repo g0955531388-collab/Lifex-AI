@@ -1,0 +1,571 @@
+[
+  "Paracetamol",
+  "Ibuprofen",
+  "Aspirin",
+  "Naproxen",
+  "Diclofenac",
+  "Ketorolac",
+  "Celecoxib",
+  "Indomethacin",
+  "Meloxicam",
+  "Piroxicam",
+  "Tramadol",
+  "Codeine",
+  "Morphine",
+  "Oxycodone",
+  "Hydrocodone",
+  "Fentanyl",
+  "Tapentadol",
+  "Acetaminophen",
+  "Nabumetone",
+  "Etodolac",
+  "Oxaprozin",
+  "Sulindac",
+  "Tolmetin",
+  "Meclofenamate",
+  "Flurbiprofen",
+  "Ketoprofen",
+  "Fenoprofen",
+  "Nefopam",
+  "Metamizole",
+  "Phenazone",
+  "Propoxyphene",
+  "Dextropropoxyphene",
+  "Buprenorphine",
+  "Pentazocine",
+  "Nalbuphine",
+  "Hydromorphone",
+  "Levorphanol",
+  "Tapentadol ER",
+  "Sufentanil",
+  "Remifentanil",
+  "Alfentanil",
+  "Meperidine",
+  "Pethidine",
+  "Acetaminophen/Codeine",
+  "Acetaminophen/Tramadol",
+  "Ibuprofen/Famotidine",
+  "Ibuprofen/Pseudoephedrine",
+  "Diclofenac/Misoprostol",
+  "Diclofenac/Methocarbamol",
+  "Ketorolac Tromethamine",
+  "Ketoprofen Lysine"
+,
+  {"name":"Paracetamol","form":"Tablet","strength":"500mg"},
+  {"name":"Ibuprofen","form":"Tablet","strength":"400mg"},
+  {"name":"Aspirin","form":"Tablet","strength":"100mg"},
+  {"name":"Diclofenac","form":"Tablet","strength":"50mg"},
+  {"name":"Naproxen","form":"Tablet","strength":"250mg"},
+  {"name":"Ketorolac","form":"Tablet","strength":"10mg"},
+  {"name":"Tramadol","form":"Tablet","strength":"50mg"},
+  {"name":"Codeine","form":"Tablet","strength":"30mg"},
+  {"name":"Morphine","form":"Injection","strength":"10mg/ml"},
+  {"name":"Fentanyl","form":"Injection","strength":"50mcg/ml"},
+  {"name":"Celecoxib","form":"Capsule","strength":"200mg"},
+  {"name":"Etoricoxib","form":"Tablet","strength":"120mg"},
+  {"name":"Indomethacin","form":"Capsule","strength":"25mg"},
+  {"name":"Meloxicam","form":"Tablet","strength":"15mg"},
+  {"name":"Piroxicam","form":"Capsule","strength":"20mg"},
+  {"name":"Nabumetone","form":"Tablet","strength":"500mg"},
+  {"name":"Oxaprozin","form":"Tablet","strength":"600mg"},
+  {"name":"Flurbiprofen","form":"Tablet","strength":"100mg"},
+  {"name":"Ketoprofen","form":"Tablet","strength":"50mg"},
+  {"name":"Salsalate","form":"Tablet","strength":"500mg"},
+  {"name":"Meperidine","form":"Injection","strength":"50mg/ml"},
+  {"name":"Hydromorphone","form":"Tablet","strength":"2mg"},
+  {"name":"Oxycodone","form":"Tablet","strength":"10mg"},
+  {"name":"Tapentadol","form":"Tablet","strength":"50mg"},
+  {"name":"Nefopam","form":"Tablet","strength":"30mg"},
+  {"name":"Acetaminophen","form":"Suspension","strength":"160mg/5ml"},
+  {"name":"Paracetamol/Codeine","form":"Tablet","strength":"500mg/30mg"},
+  {"name":"Ibuprofen/Pseudoephedrine","form":"Tablet","strength":"200mg/30mg"},
+  {"name":"Aspirin/Paracetamol/Caffeine","form":"Tablet","strength":"500mg/30mg/65mg"},
+  {"name":"Diclofenac/Misoprostol","form":"Tablet","strength":"50mg/200mcg"},
+  {"name":"Ketorolac/Gel","form":"Topical","strength":"2.5%"},
+  {"name":"Diclofenac/Gel","form":"Topical","strength":"1%"},
+  {"name":"Ibuprofen/Gel","form":"Topical","strength":"5%"},
+  {"name":"Lidocaine","form":"Patch","strength":"5%"},
+  {"name":"Capsaicin","form":"Cream","strength":"0.075%"},
+  {"name":"Morphine/Gel","form":"Topical","strength":"0.1%"},
+  {"name":"Fentanyl/Patch","form":"Transdermal","strength":"25mcg/hr"},
+  {"name":"Buprenorphine/Patch","form":"Transdermal","strength":"5mcg/hr"},
+  {"name":"Hydrocodone","form":"Tablet","strength":"10mg"},
+  {"name":"Codeine/Paracetamol","form":"Tablet","strength":"30mg/500mg"},
+  {"name":"Tramadol/Paracetamol","form":"Tablet","strength":"37.5mg/325mg"},
+  {"name":"Acetaminophen/Propoxyphene","form":"Tablet","strength":"325mg/65mg"},
+  {"name":"Naproxen/Sodium","form":"Tablet","strength":"250mg"},
+  {"name":"Ibuprofen/Lysine","form":"Tablet","strength":"400mg"}
+,
+  {"name":"Paracetamol","form":"Tablet","strength":"500mg"},
+  {"name":"Paracetamol","form":"Syrup","strength":"160mg/5ml"},
+  {"name":"Paracetamol","form":"Suppository","strength":"125mg"},
+  {"name":"Acetaminophen","form":"Tablet","strength":"500mg"},
+  {"name":"Acetaminophen","form":"Syrup","strength":"160mg/5ml"},
+  {"name":"Acetaminophen/Propoxyphene","form":"Tablet","strength":"325mg/65mg"},
+  {"name":"Ibuprofen","form":"Tablet","strength":"200mg"},
+  {"name":"Ibuprofen","form":"Tablet","strength":"400mg"},
+  {"name":"Ibuprofen","form":"Syrup","strength":"100mg/5ml"},
+  {"name":"Ibuprofen/Gel","form":"Topical","strength":"5%"},
+  {"name":"Ibuprofen/Lysine","form":"Tablet","strength":"400mg"},
+  {"name":"Diclofenac","form":"Tablet","strength":"50mg"},
+  {"name":"Diclofenac","form":"SR Tablet","strength":"75mg"},
+  {"name":"Diclofenac","form":"ER Tablet","strength":"100mg"},
+  {"name":"Diclofenac/Gel","form":"Topical","strength":"1%"},
+  {"name":"Diclofenac/Misoprostol","form":"Tablet","strength":"50mg/200mcg"},
+  {"name":"Naproxen","form":"Tablet","strength":"250mg"},
+  {"name":"Naproxen","form":"SR Tablet","strength":"500mg"},
+  {"name":"Naproxen","form":"Suspension","strength":"125mg/5ml"},
+  {"name":"Ketorolac","form":"Tablet","strength":"10mg"},
+  {"name":"Ketorolac","form":"Injection","strength":"30mg/ml"},
+  {"name":"Ketorolac","form":"SR Tablet","strength":"10mg"},
+  {"name":"Ketorolac/Gel","form":"Topical","strength":"2.5%"},
+  {"name":"Tramadol","form":"Tablet","strength":"50mg"},
+  {"name":"Tramadol/ER","form":"Tablet","strength":"100mg"},
+  {"name":"Tramadol/Paracetamol","form":"Tablet","strength":"37.5mg/325mg"},
+  {"name":"Tramadol/Syrup","form":"Syrup","strength":"10mg/5ml"},
+  {"name":"Codeine","form":"Tablet","strength":"30mg"},
+  {"name":"Codeine/ER","form":"Tablet","strength":"60mg"},
+  {"name":"Codeine/Paracetamol","form":"Tablet","strength":"30mg/500mg"},
+  {"name":"Codeine/Syrup","form":"Syrup","strength":"10mg/5ml"},
+  {"name":"Morphine","form":"Injection","strength":"10mg/ml"},
+  {"name":"Morphine","form":"SR Tablet","strength":"30mg"},
+  {"name":"Morphine/Gel","form":"Topical","strength":"0.1%"},
+  {"name":"Fentanyl","form":"Injection","strength":"50mcg/ml"},
+  {"name":"Fentanyl","form":"Patch","strength":"25mcg/hr"},
+  {"name":"Fentanyl/Lozenge","form":"Lozenge","strength":"200mcg"},
+  {"name":"Buprenorphine/Patch","form":"Transdermal","strength":"5mcg/hr"},
+  {"name":"Buprenorphine/ER","form":"Patch","strength":"10mcg/hr"},
+  {"name":"Hydrocodone","form":"Tablet","strength":"10mg"},
+  {"name":"Hydrocodone/ER","form":"Tablet","strength":"10mg"},
+  {"name":"Hydromorphone","form":"Tablet","strength":"2mg"},
+  {"name":"Hydromorphone/ER","form":"Tablet","strength":"4mg"},
+  {"name":"Oxycodone","form":"Tablet","strength":"5mg"},
+  {"name":"Oxycodone/ER","form":"Tablet","strength":"10mg"},
+  {"name":"Oxycodone/Acetaminophen","form":"Tablet","strength":"5mg/325mg"},
+  {"name":"Tapentadol","form":"Tablet","strength":"50mg"},
+  {"name":"Tapentadol/ER","form":"Tablet","strength":"100mg"},
+  {"name":"Tapentadol/Solution","form":"Solution","strength":"50mg/5ml"},
+  {"name":"Nefopam","form":"Tablet","strength":"30mg"},
+  {"name":"Nefopam/ER","form":"Tablet","strength":"60mg"},
+  {"name":"Nefopam/Injection","form":"Injection","strength":"20mg/ml"},
+  {"name":"Celecoxib","form":"Capsule","strength":"200mg"},
+  {"name":"Celecoxib/ER","form":"Capsule","strength":"200mg"},
+  {"name":"Celecoxib/Suspension","form":"Suspension","strength":"50mg/5ml"},
+  {"name":"Etoricoxib","form":"Tablet","strength":"120mg"},
+  {"name":"Etoricoxib/Suspension","form":"Suspension","strength":"30mg/5ml"},
+  {"name":"Etoricoxib/ER","form":"Tablet","strength":"120mg"},
+  {"name":"Indomethacin","form":"Capsule","strength":"25mg"},
+  {"name":"Indomethacin/Suppository","form":"Suppository","strength":"50mg"},
+  {"name":"Indomethacin/ER","form":"Capsule","strength":"75mg"},
+  {"name":"Meloxicam","form":"Tablet","strength":"15mg"},
+  {"name":"Meloxicam/Suspension","form":"Suspension","strength":"7.5mg/5ml"},
+  {"name":"Meloxicam/Injection","form":"Injection","strength":"15mg/ml"},
+  {"name":"Piroxicam","form":"Capsule","strength":"20mg"},
+  {"name":"Piroxicam/Injection","form":"Injection","strength":"20mg/ml"},
+  {"name":"Nabumetone","form":"Tablet","strength":"500mg"},
+  {"name":"Nabumetone/Suspension","form":"Suspension","strength":"500mg/5ml"},
+  {"name":"Oxaprozin","form":"Tablet","strength":"600mg"},
+  {"name":"Oxaprozin/Suspension","form":"Suspension","strength":"600mg/5ml"},
+  {"name":"Flurbiprofen","form":"Tablet","strength":"100mg"},
+  {"name":"Flurbiprofen/Suspension","form":"Suspension","strength":"50mg/5ml"},
+  {"name":"Flurbiprofen/Gel","form":"Topical","strength":"3%"},
+  {"name":"Ketoprofen","form":"Tablet","strength":"50mg"},
+  {"name":"Ketoprofen/Suspension","form":"Suspension","strength":"25mg/5ml"},
+  {"name":"Ketoprofen/ER","form":"Tablet","strength":"75mg"},
+  {"name":"Salsalate","form":"Tablet","strength":"500mg"},
+  {"name":"Salsalate/Suspension","form":"Suspension","strength":"500mg/5ml"},
+  {"name":"Lidocaine","form":"Patch","strength":"5%"},
+  {"name":"Capsaicin","form":"Cream","strength":"0.075%"}
+,
+  {"name":"Methadone","form":"Tablet","strength":"5mg"},
+  {"name":"Methadone","form":"Syrup","strength":"2mg/5ml"},
+  {"name":"Buprenorphine","form":"Sublingual Tablet","strength":"2mg"},
+  {"name":"Buprenorphine","form":"Sublingual Tablet","strength":"8mg"},
+  {"name":"Tapentadol/ER","form":"Tablet","strength":"200mg"},
+  {"name":"Tramadol/ER","form":"Tablet","strength":"150mg"},
+  {"name":"Tramadol/ER","form":"Tablet","strength":"200mg"},
+  {"name":"Oxycodone/ER","form":"Tablet","strength":"20mg"},
+  {"name":"Oxycodone/ER","form":"Tablet","strength":"40mg"},
+  {"name":"Fentanyl/ER","form":"Patch","strength":"75mcg/hr"},
+  {"name":"Fentanyl/ER","form":"Patch","strength":"100mcg/hr"},
+  {"name":"Hydromorphone/ER","form":"Tablet","strength":"8mg"},
+  {"name":"Hydromorphone/ER","form":"Tablet","strength":"12mg"},
+  {"name":"Codeine/ER","form":"Tablet","strength":"90mg"},
+  {"name":"Acetaminophen/ER","form":"Tablet","strength":"650mg"},
+  {"name":"Paracetamol/ER","form":"Tablet","strength":"650mg"},
+  {"name":"Ibuprofen/ER","form":"Tablet","strength":"600mg"},
+  {"name":"Aspirin/ER","form":"Tablet","strength":"500mg"},
+  {"name":"Diclofenac/ER","form":"Tablet","strength":"100mg"},
+  {"name":"Naproxen/ER","form":"Tablet","strength":"750mg"},
+  {"name":"Ketorolac/ER","form":"Tablet","strength":"20mg"},
+  {"name":"Celecoxib/ER","form":"Capsule","strength":"200mg"},
+  {"name":"Etoricoxib/ER","form":"Tablet","strength":"120mg"},
+  {"name":"Indomethacin/ER","form":"Capsule","strength":"75mg"},
+  {"name":"Meloxicam/ER","form":"Tablet","strength":"15mg"},
+  {"name":"Piroxicam/ER","form":"Capsule","strength":"20mg"},
+  {"name":"Nabumetone/ER","form":"Tablet","strength":"1000mg"},
+  {"name":"Oxaprozin/ER","form":"Tablet","strength":"800mg"},
+  {"name":"Flurbiprofen/ER","form":"Tablet","strength":"100mg"},
+  {"name":"Ketoprofen/ER","form":"Tablet","strength":"75mg"},
+  {"name":"Salsalate/ER","form":"Tablet","strength":"1000mg"},
+  {"name":"Meperidine/ER","form":"Tablet","strength":"100mg"},
+  {"name":"Hydromorphone/Solution","form":"Solution","strength":"2mg/ml"},
+  {"name":"Oxycodone/Solution","form":"Solution","strength":"20mg/5ml"},
+  {"name":"Tapentadol/Solution","form":"Solution","strength":"50mg/5ml"},
+  {"name":"Tramadol/Solution","form":"Solution","strength":"20mg/5ml"},
+  {"name":"Codeine/Solution","form":"Solution","strength":"15mg/5ml"},
+  {"name":"Morphine/Solution","form":"Syrup","strength":"10mg/5ml"},
+  {"name":"Fentanyl/Solution","form":"Syrup","strength":"20mcg/5ml"},
+  {"name":"Buprenorphine/Solution","form":"Syrup","strength":"2mg/5ml"},
+  {"name":"Hydrocodone/Solution","form":"Syrup","strength":"5mg/5ml"},
+  {"name":"Tramadol/Injection","form":"Injection","strength":"50mg/ml"},
+  {"name":"Tapentadol/Injection","form":"Injection","strength":"50mg/ml"},
+  {"name":"Nefopam/Injection","form":"Injection","strength":"20mg/ml"},
+  {"name":"Acetaminophen/Injection","form":"Injection","strength":"500mg/100ml"},
+  {"name":"Paracetamol/Injection","form":"Injection","strength":"500mg/100ml"},
+  {"name":"Ketorolac/Solution","form":"Solution","strength":"30mg/ml"},
+  {"name":"Lidocaine/Injection","form":"Injection","strength":"20mg/ml"},
+  {"name":"Bupivacaine","form":"Injection","strength":"5mg/ml"},
+  {"name":"Ropivacaine","form":"Injection","strength":"7.5mg/ml"},
+  {"name":"Capsaicin/Plaster","form":"Patch","strength":"8%"},
+  {"name":"Diclofenac/Micronized","form":"Tablet","strength":"25mg"},
+  {"name":"Ibuprofen/Micronized","form":"Tablet","strength":"200mg"},
+  {"name":"Ketoprofen/Micronized","form":"Tablet","strength":"25mg"},
+  {"name":"Paracetamol/Codeine/ER","form":"Tablet","strength":"500mg/30mg"},
+  {"name":"Tramadol/Paracetamol/ER","form":"Tablet","strength":"75mg/325mg"},
+  {"name":"Oxycodone/Acetaminophen/ER","form":"Tablet","strength":"10mg/325mg"},
+  {"name":"Morphine/ER","form":"Tablet","strength":"60mg"},
+  {"name":"Fentanyl/Lozenge/ER","form":"Lozenge","strength":"400mcg"},
+  {"name":"Buprenorphine/Sublingual/ER","form":"Tablet","strength":"12mg"},
+  {"name":"Hydromorphone/Injection/ER","form":"Injection","strength":"4mg/ml"}
+,
+  {"name":"Aspirin/Paracetamol/Caffeine/Codeine","form":"Tablet","strength":"325mg/500mg/30mg/30mg"},
+  {"name":"Paracetamol/Tramadol","form":"Tablet","strength":"325mg/37.5mg"},
+  {"name":"Ibuprofen/Codeine","form":"Tablet","strength":"200mg/30mg"},
+  {"name":"Naproxen/Codeine","form":"Tablet","strength":"250mg/30mg"},
+  {"name":"Diclofenac/Codeine","form":"Tablet","strength":"50mg/30mg"},
+  {"name":"Ketorolac/Paracetamol","form":"Tablet","strength":"10mg/500mg"},
+  {"name":"Celecoxib/Tramadol","form":"Capsule","strength":"200mg/50mg"},
+  {"name":"Etoricoxib/Paracetamol","form":"Tablet","strength":"120mg/500mg"},
+  {"name":"Indomethacin/Codeine","form":"Capsule","strength":"25mg/30mg"},
+  {"name":"Meloxicam/Paracetamol","form":"Tablet","strength":"15mg/500mg"},
+  {"name":"Piroxicam/Paracetamol","form":"Capsule","strength":"20mg/500mg"},
+  {"name":"Nabumetone/Tramadol","form":"Tablet","strength":"500mg/50mg"},
+  {"name":"Oxaprozin/Paracetamol","form":"Tablet","strength":"600mg/500mg"},
+  {"name":"Flurbiprofen/Codeine","form":"Tablet","strength":"100mg/30mg"},
+  {"name":"Ketoprofen/Paracetamol","form":"Tablet","strength":"50mg/500mg"},
+  {"name":"Salsalate/Codeine","form":"Tablet","strength":"500mg/30mg"},
+  {"name":"Meperidine/Paracetamol","form":"Tablet","strength":"50mg/500mg"},
+  {"name":"Hydromorphone/Paracetamol","form":"Tablet","strength":"2mg/500mg"},
+  {"name":"Oxycodone/Paracetamol","form":"Tablet","strength":"5mg/325mg"},
+  {"name":"Tapentadol/Paracetamol","form":"Tablet","strength":"50mg/500mg"},
+  {"name":"Nefopam/Paracetamol","form":"Tablet","strength":"30mg/500mg"},
+  {"name":"Lidocaine/Prilocaine","form":"Cream","strength":"2.5%/2.5%"},
+  {"name":"Bupivacaine/Morphine","form":"Injection","strength":"2mg/ml/0.1mg/ml"},
+  {"name":"Ropivacaine/Morphine","form":"Injection","strength":"7.5mg/ml/0.1mg/ml"},
+  {"name":"Capsaicin/Lidocaine","form":"Patch","strength":"8%/5%"},
+  {"name":"Diclofenac/Misoprostol/Paracetamol","form":"Tablet","strength":"50mg/200mcg/500mg"},
+  {"name":"Ibuprofen/Gel/Tramadol","form":"Topical","strength":"5%/1%"},
+  {"name":"Ketoprofen/Gel/Paracetamol","form":"Topical","strength":"2.5%/500mg"},
+  {"name":"Morphine/Gel/Paracetamol","form":"Topical","strength":"0.1%/500mg"},
+  {"name":"Fentanyl/Patch/Paracetamol","form":"Transdermal","strength":"25mcg/hr/500mg"},
+  {"name":"Buprenorphine/Patch/Paracetamol","form":"Transdermal","strength":"5mcg/hr/500mg"},
+  {"name":"Hydrocodone/Paracetamol","form":"Tablet","strength":"10mg/500mg"},
+  {"name":"Codeine/Paracetamol/ER","form":"Tablet","strength":"30mg/500mg"},
+  {"name":"Tramadol/Paracetamol/ER","form":"Tablet","strength":"37.5mg/325mg"},
+  {"name":"Acetaminophen/Propoxyphene","form":"Tablet","strength":"325mg/65mg"},
+  {"name":"Naproxen/Sodium/ER","form":"Tablet","strength":"500mg"},
+  {"name":"Ibuprofen/Lysine/ER","form":"Tablet","strength":"400mg"},
+  {"name":"Flurbiprofen/Gel/ER","form":"Topical","strength":"3%"},
+  {"name":"Ketorolac/Injection/ER","form":"Injection","strength":"30mg/ml"},
+  {"name":"Meperidine/Tablet/ER","form":"Tablet","strength":"50mg"},
+  {"name":"Oxycodone/Acetaminophen/ER","form":"Tablet","strength":"5mg/325mg"},
+  {"name":"Hydromorphone/Injection/ER","form":"Injection","strength":"1mg/ml"},
+  {"name":"Tapentadol/ER","form":"Tablet","strength":"50mg"},
+  {"name":"Nefopam/Injection/ER","form":"Injection","strength":"20mg/ml"},
+  {"name":"Paracetamol/Injection/ER","form":"Injection","strength":"1000mg/100ml"},
+  {"name":"Acetaminophen/Rectal/ER","form":"Suppository","strength":"125mg"},
+  {"name":"Ibuprofen/Suspension/ER","form":"Suspension","strength":"100mg/5ml"},
+  {"name":"Naproxen/Suspension/ER","form":"Suspension","strength":"125mg/5ml"},
+  {"name":"Diclofenac/Solution/ER","form":"Solution","strength":"75mg/3ml"},
+  {"name":"Ketorolac/Solution/ER","form":"Solution","strength":"30mg/ml"},
+  {"name":"Piroxicam/Capsule/ER","form":"Capsule","strength":"20mg"},
+  {"name":"Meloxicam/Suspension/ER","form":"Suspension","strength":"7.5mg/5ml"},
+  {"name":"Indomethacin/Suppository/ER","form":"Suppository","strength":"50mg"},
+  {"name":"Celecoxib/Capsule/ER","form":"Capsule","strength":"100mg"},
+  {"name":"Etoricoxib/Tablet/ER","form":"Tablet","strength":"90mg"},
+  {"name":"Nabumetone/Tablet/ER","form":"Tablet","strength":"500mg"},
+  {"name":"Oxaprozin/Tablet/ER","form":"Tablet","strength":"600mg"},
+  {"name":"Flurbiprofen/Tablet/ER","form":"Tablet","strength":"50mg"},
+  {"name":"Ketoprofen/Tablet/ER","form":"Tablet","strength":"25mg"},
+  {"name":"Salsalate/Tablet/ER","form":"Tablet","strength":"500mg"},
+  {"name":"Meperidine/Injection/ER","form":"Injection","strength":"50mg/ml"},
+  {"name":"Hydromorphone/Tablet/ER","form":"Tablet","strength":"2mg"},
+  {"name":"Oxycodone/Tablet/ER","form":"Tablet","strength":"5mg"},
+  {"name":"Tapentadol/Tablet/ER","form":"Tablet","strength":"50mg"},
+  {"name":"Nefopam/Tablet/ER","form":"Tablet","strength":"30mg"},
+  {"name":"Acetaminophen/Syrup/ER","form":"Syrup","strength":"160mg/5ml"},
+  {"name":"Paracetamol/Codeine/Tablet/ER","form":"Tablet","strength":"500mg/30mg"},
+  {"name":"Ibuprofen/Capsule/ER","form":"Capsule","strength":"200mg"},
+  {"name":"Aspirin/Chewable/ER","form":"Tablet","strength":"81mg"},
+  {"name":"Diclofenac/SR/ER","form":"Tablet","strength":"75mg"},
+  {"name":"Naproxen/SR/ER","form":"Tablet","strength":"500mg"},
+  {"name":"Ketorolac/SR/ER","form":"Tablet","strength":"10mg"},
+  {"name":"Tramadol/ER/ER","form":"Tablet","strength":"100mg"},
+  {"name":"Codeine/Solution/ER","form":"Syrup","strength":"10mg/5ml"},
+  {"name":"Morphine/SR/ER","form":"Tablet","strength":"30mg"},
+  {"name":"Fentanyl/Lozenge/ER","form":"Lozenge","strength":"200mcg"},
+  {"name":"Celecoxib/Suspension/ER","form":"Suspension","strength":"50mg/5ml"},
+  {"name":"Etoricoxib/Suspension/ER","form":"Suspension","strength":"30mg/5ml"},
+  {"name":"Indomethacin/Injection/ER","form":"Injection","strength":"10mg/ml"},
+  {"name":"Meloxicam/Injection/ER","form":"Injection","strength":"15mg/ml"},
+  {"name":"Piroxicam/Injection/ER","form":"Injection","strength":"20mg/ml"},
+  {"name":"Nabumetone/Suspension/ER","form":"Suspension","strength":"500mg/5ml"},
+  {"name":"Oxaprozin/Suspension/ER","form":"Suspension","strength":"600mg/5ml"},
+  {"name":"Flurbiprofen/Suspension/ER","form":"Suspension","strength":"100mg/5ml"},
+  {"name":"Ketoprofen/Suspension/ER","form":"Suspension","strength":"50mg/5ml"},
+  {"name":"Salsalate/Suspension/ER","form":"Suspension","strength":"500mg/5ml"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

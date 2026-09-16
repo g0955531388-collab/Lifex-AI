@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ibuprofen",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Ibuprofen",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Ibuprofen",
+    "form": "Suspension",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Naproxen",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Naproxen",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Naproxen/Suspension",
+    "form": "Suspension",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Diclofenac",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Diclofenac",
+    "form": "SR",
+    "strength": "75mg"
+  }
+]

@@ -1,0 +1,1543 @@
+[
+  {
+    "age_group": "0-1 month",
+    "male": {
+      "height_cm": 50,
+      "weight_kg": 3.3
+    },
+    "female": {
+      "height_cm": 49,
+      "weight_kg": 3.2
+    }
+  },
+  {
+    "age_group": "1-3 months",
+    "male": {
+      "height_cm": 54,
+      "weight_kg": 4.5
+    },
+    "female": {
+      "height_cm": 53,
+      "weight_kg": 4.2
+    }
+  },
+  {
+    "age_group": "3-6 months",
+    "male": {
+      "height_cm": 60,
+      "weight_kg": 6.0
+    },
+    "female": {
+      "height_cm": 59,
+      "weight_kg": 5.5
+    }
+  },
+  {
+    "age_group": "6-12 months",
+    "male": {
+      "height_cm": 70,
+      "weight_kg": 8.0
+    },
+    "female": {
+      "height_cm": 69,
+      "weight_kg": 7.5
+    }
+  },
+  {
+    "age_group": "1-2 years",
+    "male": {
+      "height_cm": 85,
+      "weight_kg": 11.5
+    },
+    "female": {
+      "height_cm": 84,
+      "weight_kg": 11.0
+    }
+  },
+  {
+    "age_group": "2-3 years",
+    "male": {
+      "height_cm": 95,
+      "weight_kg": 14.0
+    },
+    "female": {
+      "height_cm": 94,
+      "weight_kg": 13.5
+    }
+  },
+  {
+    "age_group": "3-5 years",
+    "male": {
+      "height_cm": 105,
+      "weight_kg": 17.5
+    },
+    "female": {
+      "height_cm": 104,
+      "weight_kg": 17.0
+    }
+  },
+  {
+    "age_group": "5-7 years",
+    "male": {
+      "height_cm": 120,
+      "weight_kg": 23.0
+    },
+    "female": {
+      "height_cm": 119,
+      "weight_kg": 22.5
+    }
+  },
+  {
+    "age_group": "7-10 years",
+    "male": {
+      "height_cm": 135,
+      "weight_kg": 30.0
+    },
+    "female": {
+      "height_cm": 134,
+      "weight_kg": 29.0
+    }
+  },
+  {
+    "age_group": "10-13 years",
+    "male": {
+      "height_cm": 150,
+      "weight_kg": 42.0
+    },
+    "female": {
+      "height_cm": 150,
+      "weight_kg": 42.0
+    }
+  },
+  {
+    "age_group": "13-16 years",
+    "male": {
+      "height_cm": 170,
+      "weight_kg": 60.0
+    },
+    "female": {
+      "height_cm": 160,
+      "weight_kg": 55.0
+    }
+  },
+  {
+    "age_group": "16-18 years",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 65.0
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 57.0
+    }
+  },
+  {
+    "age_group": "Adult",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 70.0
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 60.0
+    }
+  },
+  {
+    "age_group": "0-1 month",
+    "male": {
+      "height_cm": 50,
+      "weight_kg": 3.3,
+      "BMI": 13.2,
+      "head_circumference_cm": 35
+    },
+    "female": {
+      "height_cm": 49,
+      "weight_kg": 3.2,
+      "BMI": 13.3,
+      "head_circumference_cm": 34.5
+    }
+  },
+  {
+    "age_group": "1-3 months",
+    "male": {
+      "height_cm": 54,
+      "weight_kg": 4.5,
+      "BMI": 15.4,
+      "head_circumference_cm": 37
+    },
+    "female": {
+      "height_cm": 53,
+      "weight_kg": 4.2,
+      "BMI": 14.9,
+      "head_circumference_cm": 36.5
+    }
+  },
+  {
+    "age_group": "3-6 months",
+    "male": {
+      "height_cm": 60,
+      "weight_kg": 6.0,
+      "BMI": 16.7,
+      "head_circumference_cm": 40
+    },
+    "female": {
+      "height_cm": 59,
+      "weight_kg": 5.5,
+      "BMI": 15.8,
+      "head_circumference_cm": 39
+    }
+  },
+  {
+    "age_group": "6-12 months",
+    "male": {
+      "height_cm": 70,
+      "weight_kg": 8.0,
+      "BMI": 16.3,
+      "head_circumference_cm": 43
+    },
+    "female": {
+      "height_cm": 69,
+      "weight_kg": 7.5,
+      "BMI": 15.7,
+      "head_circumference_cm": 42
+    }
+  },
+  {
+    "age_group": "1-2 years",
+    "male": {
+      "height_cm": 85,
+      "weight_kg": 11.5,
+      "BMI": 15.9,
+      "waist_cm": 50
+    },
+    "female": {
+      "height_cm": 84,
+      "weight_kg": 11.0,
+      "BMI": 15.6,
+      "waist_cm": 49
+    }
+  },
+  {
+    "age_group": "2-3 years",
+    "male": {
+      "height_cm": 95,
+      "weight_kg": 14.0,
+      "BMI": 15.5,
+      "waist_cm": 52
+    },
+    "female": {
+      "height_cm": 94,
+      "weight_kg": 13.5,
+      "BMI": 15.3,
+      "waist_cm": 51
+    }
+  },
+  {
+    "age_group": "3-5 years",
+    "male": {
+      "height_cm": 105,
+      "weight_kg": 17.5,
+      "BMI": 15.9,
+      "waist_cm": 54
+    },
+    "female": {
+      "height_cm": 104,
+      "weight_kg": 17.0,
+      "BMI": 15.7,
+      "waist_cm": 53
+    }
+  },
+  {
+    "age_group": "5-7 years",
+    "male": {
+      "height_cm": 120,
+      "weight_kg": 23.0,
+      "BMI": 16.0,
+      "waist_cm": 56
+    },
+    "female": {
+      "height_cm": 119,
+      "weight_kg": 22.5,
+      "BMI": 15.9,
+      "waist_cm": 55
+    }
+  },
+  {
+    "age_group": "7-10 years",
+    "male": {
+      "height_cm": 135,
+      "weight_kg": 30.0,
+      "BMI": 16.5,
+      "waist_cm": 58
+    },
+    "female": {
+      "height_cm": 134,
+      "weight_kg": 29.0,
+      "BMI": 16.1,
+      "waist_cm": 57
+    }
+  },
+  {
+    "age_group": "10-13 years",
+    "male": {
+      "height_cm": 150,
+      "weight_kg": 42.0,
+      "BMI": 18.7,
+      "waist_cm": 62
+    },
+    "female": {
+      "height_cm": 150,
+      "weight_kg": 42.0,
+      "BMI": 18.7,
+      "waist_cm": 63
+    }
+  },
+  {
+    "age_group": "13-16 years",
+    "male": {
+      "height_cm": 170,
+      "weight_kg": 60.0,
+      "BMI": 20.8,
+      "waist_cm": 68
+    },
+    "female": {
+      "height_cm": 160,
+      "weight_kg": 55.0,
+      "BMI": 21.5,
+      "waist_cm": 65
+    }
+  },
+  {
+    "age_group": "16-18 years",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 65.0,
+      "BMI": 21.2,
+      "waist_cm": 70
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 57.0,
+      "BMI": 21.7,
+      "waist_cm": 67
+    }
+  },
+  {
+    "age_group": "Adult",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 70.0,
+      "BMI": 22.9,
+      "waist_cm": 80,
+      "hip_cm": 95
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 60.0,
+      "BMI": 22.9,
+      "waist_cm": 70,
+      "hip_cm": 95
+    }
+  },
+  {
+    "age_group": "0-1 month",
+    "male": {
+      "height_cm": 50,
+      "weight_kg": 3.3,
+      "BMI": 13.2,
+      "head_circumference_cm": 35,
+      "heart_rate_bpm": 140,
+      "blood_pressure_mmHg": "65/40",
+      "body_fat_percent": 15
+    },
+    "female": {
+      "height_cm": 49,
+      "weight_kg": 3.2,
+      "BMI": 13.3,
+      "head_circumference_cm": 34.5,
+      "heart_rate_bpm": 140,
+      "blood_pressure_mmHg": "60/40",
+      "body_fat_percent": 16
+    }
+  },
+  {
+    "age_group": "1-3 months",
+    "male": {
+      "height_cm": 54,
+      "weight_kg": 4.5,
+      "BMI": 15.4,
+      "head_circumference_cm": 37,
+      "heart_rate_bpm": 135,
+      "blood_pressure_mmHg": "70/45",
+      "body_fat_percent": 14
+    },
+    "female": {
+      "height_cm": 53,
+      "weight_kg": 4.2,
+      "BMI": 14.9,
+      "head_circumference_cm": 36.5,
+      "heart_rate_bpm": 135,
+      "blood_pressure_mmHg": "65/45",
+      "body_fat_percent": 15
+    }
+  },
+  {
+    "age_group": "3-6 months",
+    "male": {
+      "height_cm": 60,
+      "weight_kg": 6.0,
+      "BMI": 16.7,
+      "head_circumference_cm": 40,
+      "heart_rate_bpm": 130,
+      "blood_pressure_mmHg": "75/50",
+      "body_fat_percent": 13
+    },
+    "female": {
+      "height_cm": 59,
+      "weight_kg": 5.5,
+      "BMI": 15.8,
+      "head_circumference_cm": 39,
+      "heart_rate_bpm": 130,
+      "blood_pressure_mmHg": "70/50",
+      "body_fat_percent": 14
+    }
+  },
+  {
+    "age_group": "6-12 months",
+    "male": {
+      "height_cm": 70,
+      "weight_kg": 8.0,
+      "BMI": 16.3,
+      "head_circumference_cm": 43,
+      "heart_rate_bpm": 120,
+      "blood_pressure_mmHg": "80/55",
+      "body_fat_percent": 12
+    },
+    "female": {
+      "height_cm": 69,
+      "weight_kg": 7.5,
+      "BMI": 15.7,
+      "head_circumference_cm": 42,
+      "heart_rate_bpm": 120,
+      "blood_pressure_mmHg": "75/55",
+      "body_fat_percent": 13
+    }
+  },
+  {
+    "age_group": "1-2 years",
+    "male": {
+      "height_cm": 85,
+      "weight_kg": 11.5,
+      "BMI": 15.9,
+      "waist_cm": 50,
+      "heart_rate_bpm": 110,
+      "blood_pressure_mmHg": "85/55",
+      "body_fat_percent": 18
+    },
+    "female": {
+      "height_cm": 84,
+      "weight_kg": 11.0,
+      "BMI": 15.6,
+      "waist_cm": 49,
+      "heart_rate_bpm": 110,
+      "blood_pressure_mmHg": "80/55",
+      "body_fat_percent": 19
+    }
+  },
+  {
+    "age_group": "2-3 years",
+    "male": {
+      "height_cm": 95,
+      "weight_kg": 14.0,
+      "BMI": 15.5,
+      "waist_cm": 52,
+      "heart_rate_bpm": 105,
+      "blood_pressure_mmHg": "90/60",
+      "body_fat_percent": 17
+    },
+    "female": {
+      "height_cm": 94,
+      "weight_kg": 13.5,
+      "BMI": 15.3,
+      "waist_cm": 51,
+      "heart_rate_bpm": 105,
+      "blood_pressure_mmHg": "85/60",
+      "body_fat_percent": 18
+    }
+  },
+  {
+    "age_group": "3-5 years",
+    "male": {
+      "height_cm": 105,
+      "weight_kg": 17.5,
+      "BMI": 15.9,
+      "waist_cm": 54,
+      "heart_rate_bpm": 100,
+      "blood_pressure_mmHg": "95/60",
+      "body_fat_percent": 16
+    },
+    "female": {
+      "height_cm": 104,
+      "weight_kg": 17.0,
+      "BMI": 15.7,
+      "waist_cm": 53,
+      "heart_rate_bpm": 100,
+      "blood_pressure_mmHg": "90/60",
+      "body_fat_percent": 17
+    }
+  },
+  {
+    "age_group": "5-7 years",
+    "male": {
+      "height_cm": 120,
+      "weight_kg": 23.0,
+      "BMI": 16.0,
+      "waist_cm": 56,
+      "heart_rate_bpm": 95,
+      "blood_pressure_mmHg": "100/65",
+      "body_fat_percent": 15
+    },
+    "female": {
+      "height_cm": 119,
+      "weight_kg": 22.5,
+      "BMI": 15.9,
+      "waist_cm": 55,
+      "heart_rate_bpm": 95,
+      "blood_pressure_mmHg": "95/65",
+      "body_fat_percent": 16
+    }
+  },
+  {
+    "age_group": "7-10 years",
+    "male": {
+      "height_cm": 135,
+      "weight_kg": 30.0,
+      "BMI": 16.5,
+      "waist_cm": 58,
+      "heart_rate_bpm": 90,
+      "blood_pressure_mmHg": "105/65",
+      "body_fat_percent": 14
+    },
+    "female": {
+      "height_cm": 134,
+      "weight_kg": 29.0,
+      "BMI": 16.1,
+      "waist_cm": 57,
+      "heart_rate_bpm": 90,
+      "blood_pressure_mmHg": "100/65",
+      "body_fat_percent": 15
+    }
+  },
+  {
+    "age_group": "10-13 years",
+    "male": {
+      "height_cm": 150,
+      "weight_kg": 42.0,
+      "BMI": 18.7,
+      "waist_cm": 62,
+      "heart_rate_bpm": 85,
+      "blood_pressure_mmHg": "110/70",
+      "body_fat_percent": 13
+    },
+    "female": {
+      "height_cm": 150,
+      "weight_kg": 42.0,
+      "BMI": 18.7,
+      "waist_cm": 63,
+      "heart_rate_bpm": 85,
+      "blood_pressure_mmHg": "105/70",
+      "body_fat_percent": 14
+    }
+  },
+  {
+    "age_group": "13-16 years",
+    "male": {
+      "height_cm": 170,
+      "weight_kg": 60.0,
+      "BMI": 20.8,
+      "waist_cm": 68,
+      "heart_rate_bpm": 80,
+      "blood_pressure_mmHg": "115/75",
+      "body_fat_percent": 12
+    },
+    "female": {
+      "height_cm": 160,
+      "weight_kg": 55.0,
+      "BMI": 21.5,
+      "waist_cm": 65,
+      "heart_rate_bpm": 80,
+      "blood_pressure_mmHg": "110/70",
+      "body_fat_percent": 13
+    }
+  },
+  {
+    "age_group": "16-18 years",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 65.0,
+      "BMI": 21.2,
+      "waist_cm": 70,
+      "heart_rate_bpm": 75,
+      "blood_pressure_mmHg": "120/80",
+      "body_fat_percent": 14
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 57.0,
+      "BMI": 21.7,
+      "waist_cm": 67,
+      "heart_rate_bpm": 75,
+      "blood_pressure_mmHg": "115/75",
+      "body_fat_percent": 15
+    }
+  },
+  {
+    "age_group": "Adult",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 70.0,
+      "BMI": 22.9,
+      "waist_cm": 80,
+      "hip_cm": 95,
+      "heart_rate_bpm": 70,
+      "blood_pressure_mmHg": "120/80",
+      "body_fat_percent": 18
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 60.0,
+      "BMI": 22.9,
+      "waist_cm": 70,
+      "hip_cm": 95,
+      "heart_rate_bpm": 72,
+      "blood_pressure_mmHg": "110/70",
+      "body_fat_percent": 22
+    }
+  },
+  {
+    "age_group": "Adult",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 70.0,
+      "BMI": 22.9,
+      "waist_cm": 80,
+      "hip_cm": 95,
+      "heart_rate_bpm": 70,
+      "blood_pressure_mmHg": "120/80",
+      "body_fat_percent": 18,
+      "fasting_glucose_mg_dl": 90,
+      "random_glucose_mg_dl": 120,
+      "cholesterol_total_mg_dl": 190,
+      "HDL_mg_dl": 50,
+      "LDL_mg_dl": 120,
+      "triglycerides_mg_dl": 130,
+      "body_temperature_c": 36.8
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 60.0,
+      "BMI": 22.9,
+      "waist_cm": 70,
+      "hip_cm": 95,
+      "heart_rate_bpm": 72,
+      "blood_pressure_mmHg": "110/70",
+      "body_fat_percent": 22,
+      "fasting_glucose_mg_dl": 85,
+      "random_glucose_mg_dl": 110,
+      "cholesterol_total_mg_dl": 180,
+      "HDL_mg_dl": 55,
+      "LDL_mg_dl": 110,
+      "triglycerides_mg_dl": 120,
+      "body_temperature_c": 36.7
+    }
+  },
+  {
+    "age_group": "Adult",
+    "male": {
+      "height_cm": 175,
+      "weight_kg": 70.0,
+      "BMI": 22.9,
+      "waist_cm": 80,
+      "hip_cm": 95,
+      "head_cm": 57,
+      "heart_rate_bpm": 70,
+      "blood_pressure_mmHg": "120/80",
+      "body_temperature_c": 36.8,
+      "body_fat_percent": 18,
+      "blood_tests": {
+        "WBC_10^3/uL": 6.0,
+        "RBC_million/uL": 5.0,
+        "Hemoglobin_g/dL": 15.0,
+        "Hematocrit_percent": 45,
+        "Platelets_10^3/uL": 250,
+        "Fasting_Glucose_mg/dL": 90,
+        "Random_Glucose_mg/dL": 120,
+        "HbA1c_percent": 5.5,
+        "Cholesterol_total_mg/dL": 190,
+        "HDL_mg/dL": 50,
+        "LDL_mg/dL": 120,
+        "Triglycerides_mg/dL": 130,
+        "ALT_U/L": 25,
+        "AST_U/L": 22,
+        "Bilirubin_mg/dL": 0.8,
+        "Creatinine_mg/dL": 1.0,
+        "Urea_mg/dL": 35,
+        "Iron_ug/dL": 80,
+        "VitaminD_ng/mL": 30,
+        "Calcium_mg/dL": 9.5,
+        "Potassium_mEq/L": 4.2,
+        "Sodium_mEq/L": 140
+      },
+      "urine_tests": {
+        "Color": "Yellow",
+        "Clarity": "Clear",
+        "pH": 6.0,
+        "Protein": "Negative",
+        "Glucose": "Negative",
+        "Ketones": "Negative",
+        "RBC": 0,
+        "WBC": 2
+      }
+    },
+    "female": {
+      "height_cm": 162,
+      "weight_kg": 60.0,
+      "BMI": 22.9,
+      "waist_cm": 70,
+      "hip_cm": 95,
+      "head_cm": 56,
+      "heart_rate_bpm": 72,
+      "blood_pressure_mmHg": "110/70",
+      "body_temperature_c": 36.7,
+      "body_fat_percent": 22,
+      "blood_tests": {
+        "WBC_10^3/uL": 6.5,
+        "RBC_million/uL": 4.8,
+        "Hemoglobin_g/dL": 13.5,
+        "Hematocrit_percent": 40,
+        "Platelets_10^3/uL": 270,
+        "Fasting_Glucose_mg/dL": 85,
+        "Random_Glucose_mg/dL": 110,
+        "HbA1c_percent": 5.3,
+        "Cholesterol_total_mg/dL": 180,
+        "HDL_mg/dL": 55,
+        "LDL_mg/dL": 110,
+        "Triglycerides_mg/dL": 120,
+        "ALT_U/L": 20,
+        "AST_U/L": 18,
+        "Bilirubin_mg/dL": 0.6,
+        "Creatinine_mg/dL": 0.9,
+        "Urea_mg/dL": 30,
+        "Iron_ug/dL": 75,
+        "VitaminD_ng/mL": 32,
+        "Calcium_mg/dL": 9.2,
+        "Potassium_mEq/L": 4.1,
+        "Sodium_mEq/L": 138
+      },
+      "urine_tests": {
+        "Color": "Yellow",
+        "Clarity": "Clear",
+        "pH": 6.5,
+        "Protein": "Negative",
+        "Glucose": "Negative",
+        "Ketones": "Negative",
+        "RBC": 0,
+        "WBC": 3
+      }
+    }
+  },
+  {
+    "test_name": "Semen Analysis",
+    "male_age_group": "Adult",
+    "volume_ml": 3.0,
+    "concentration_million_per_ml": 60,
+    "total_count_million": 180,
+    "motility": {
+      "progressive_percent": 50,
+      "non_progressive_percent": 30,
+      "immotile_percent": 20
+    },
+    "morphology_percent": 15,
+    "pH": 7.2,
+    "WBC_count_per_ml": 0,
+    "fructose_mg_per_ml": 200,
+    "viscosity": "Normal",
+    "vitality_percent": 80
+  },
+  {
+    "Anthropometry": {
+      "Height": {
+        "unit": "cm",
+        "normal_range": "50-250"
+      },
+      "Weight": {
+        "unit": "kg",
+        "normal_range": "2-250"
+      },
+      "BMI": {
+        "unit": "kg/m²",
+        "normal_range": "15-40"
+      }
+    },
+    "Blood_Count": {
+      "Red_Blood_Cells": {
+        "unit": "million/µL",
+        "normal_range": "4.0-6.0"
+      },
+      "White_Blood_Cells": {
+        "unit": "thousand/µL",
+        "normal_range": "4-11"
+      },
+      "Platelets": {
+        "unit": "thousand/µL",
+        "normal_range": "150-450"
+      },
+      "Hemoglobin": {
+        "unit": "g/dL",
+        "normal_range": "12-18"
+      },
+      "Hematocrit": {
+        "unit": "%",
+        "normal_range": "36-50"
+      },
+      "Differential": {
+        "Neutrophils": {
+          "unit": "%",
+          "normal_range": "40-70"
+        },
+        "Lymphocytes": {
+          "unit": "%",
+          "normal_range": "20-45"
+        },
+        "Monocytes": {
+          "unit": "%",
+          "normal_range": "2-10"
+        },
+        "Eosinophils": {
+          "unit": "%",
+          "normal_range": "1-6"
+        },
+        "Basophils": {
+          "unit": "%",
+          "normal_range": "0-1"
+        }
+      }
+    },
+    "Urine_Analysis": {
+      "Color": {
+        "description": "Straw to amber"
+      },
+      "Clarity": {
+        "description": "Clear"
+      },
+      "pH": {
+        "unit": "",
+        "normal_range": "4.5-8"
+      },
+      "Specific_Gravity": {
+        "unit": "",
+        "normal_range": "1.005-1.030"
+      },
+      "Protein": {
+        "unit": "mg/dL",
+        "normal_range": "0-15"
+      },
+      "Glucose": {
+        "unit": "mg/dL",
+        "normal_range": "0"
+      },
+      "Ketones": {
+        "unit": "mg/dL",
+        "normal_range": "0"
+      },
+      "Nitrites": {
+        "unit": "",
+        "normal_range": "Negative"
+      },
+      "RBC": {
+        "unit": "/HPF",
+        "normal_range": "0-3"
+      },
+      "WBC": {
+        "unit": "/HPF",
+        "normal_range": "0-5"
+      },
+      "Casts": {
+        "unit": "",
+        "normal_range": "None"
+      },
+      "Crystals": {
+        "unit": "",
+        "normal_range": "None"
+      }
+    },
+    "Semen_Analysis": {
+      "Volume": {
+        "unit": "mL",
+        "normal_range": "1.5-5"
+      },
+      "Sperm_Count": {
+        "unit": "million/mL",
+        "normal_range": "15-200"
+      },
+      "Motility": {
+        "unit": "%",
+        "normal_range": "40-80"
+      },
+      "Progressive_Motility": {
+        "unit": "%",
+        "normal_range": "32+"
+      },
+      "Morphology": {
+        "unit": "% normal forms",
+        "normal_range": "4-14"
+      },
+      "pH": {
+        "unit": "",
+        "normal_range": "7.2-8.0"
+      },
+      "Liquefaction_Time": {
+        "unit": "minutes",
+        "normal_range": "15-60"
+      },
+      "Viscosity": {
+        "unit": "",
+        "normal_range": "Normal"
+      },
+      "Round_Cells": {
+        "unit": "million/mL",
+        "normal_range": "0-5"
+      }
+    }
+  },
+  {
+    "Endocrine": {
+      "Thyroid": {
+        "TSH": {
+          "unit": "µIU/mL",
+          "normal_range": "0.4-4.0"
+        },
+        "T3": {
+          "unit": "ng/dL",
+          "normal_range": "0.8-2.0"
+        },
+        "T4": {
+          "unit": "µg/dL",
+          "normal_range": "4.5-12.0"
+        },
+        "Free_T3": {
+          "unit": "pg/mL",
+          "normal_range": "2.3-4.2"
+        },
+        "Free_T4": {
+          "unit": "ng/dL",
+          "normal_range": "0.8-1.8"
+        }
+      },
+      "Adrenal": {
+        "Cortisol": {
+          "unit": "µg/dL",
+          "normal_range": "5-23"
+        },
+        "ACTH": {
+          "unit": "pg/mL",
+          "normal_range": "10-60"
+        },
+        "Aldosterone": {
+          "unit": "ng/dL",
+          "normal_range": "4-31"
+        }
+      },
+      "Pituitary": {
+        "GH": {
+          "unit": "ng/mL",
+          "normal_range": "0-10"
+        },
+        "Prolactin": {
+          "unit": "ng/mL",
+          "normal_range": "2-29"
+        },
+        "FSH": {
+          "unit": "mIU/mL",
+          "normal_range": "1.5-12.4"
+        },
+        "LH": {
+          "unit": "mIU/mL",
+          "normal_range": "1.7-8.6"
+        }
+      },
+      "Gonadal": {
+        "Testosterone": {
+          "unit": "ng/dL",
+          "normal_range": "300-1000"
+        },
+        "Estradiol": {
+          "unit": "pg/mL",
+          "normal_range": "15-350"
+        },
+        "Progesterone": {
+          "unit": "ng/mL",
+          "normal_range": "0.1-25"
+        },
+        "FSH": {
+          "unit": "mIU/mL",
+          "normal_range": "1.5-12.4"
+        },
+        "LH": {
+          "unit": "mIU/mL",
+          "normal_range": "1.7-8.6"
+        }
+      },
+      "Pancreatic": {
+        "Insulin": {
+          "unit": "µIU/mL",
+          "normal_range": "2-25"
+        },
+        "C_Peptide": {
+          "unit": "ng/mL",
+          "normal_range": "0.8-3.1"
+        },
+        "Glucagon": {
+          "unit": "pg/mL",
+          "normal_range": "50-150"
+        }
+      }
+    }
+  },
+  {
+    "name": "ALT",
+    "unit": "U/L",
+    "normal_male": "7-55",
+    "normal_female": "7-45",
+    "description": "Alanine Aminotransferase – مؤشر لوظائف الكبد"
+  },
+  {
+    "name": "AST",
+    "unit": "U/L",
+    "normal_male": "8-48",
+    "normal_female": "8-40",
+    "description": "Aspartate Aminotransferase – مؤشر لوظائف الكبد"
+  },
+  {
+    "name": "ALP",
+    "unit": "U/L",
+    "normal_male": "40-129",
+    "normal_female": "35-104",
+    "description": "Alkaline Phosphatase – إنزيم يعكس صحة القنوات الصفراوية"
+  },
+  {
+    "name": "GGT",
+    "unit": "U/L",
+    "normal_male": "9-48",
+    "normal_female": "9-36",
+    "description": "Gamma-Glutamyl Transferase – مؤشر على تلف الكبد أو انسداد القنوات الصفراوية"
+  },
+  {
+    "name": "Bilirubin_Total",
+    "unit": "mg/dL",
+    "normal": "0.1-1.2",
+    "description": "البيليروبين الكلي – قياس وظائف الكبد وتحلل الدم"
+  },
+  {
+    "name": "Bilirubin_Direct",
+    "unit": "mg/dL",
+    "normal": "0-0.3",
+    "description": "البيليروبين المباشر – يوضح حالة انسداد القنوات الصفراوية"
+  },
+  {
+    "name": "Bilirubin_Indirect",
+    "unit": "mg/dL",
+    "normal": "0.2-0.8",
+    "description": "البيليروبين غير المباشر – يشير لتحلل الدم"
+  },
+  {
+    "name": "Albumin",
+    "unit": "g/dL",
+    "normal": "3.5-5.0",
+    "description": "ألبومين – بروتين أساسي للكبد"
+  },
+  {
+    "name": "Total_Protein",
+    "unit": "g/dL",
+    "normal": "6.0-8.3",
+    "description": "إجمالي البروتين في الدم"
+  },
+  {
+    "name": "Prothrombin_Time",
+    "unit": "seconds",
+    "normal": "11-13.5",
+    "description": "زمن البروثرومبين – يقيس قدرة الدم على التخثر ووظائف الكبد"
+  },
+  {
+    "name": "Creatinine",
+    "unit": "mg/dL",
+    "normal_male": "0.7-1.3",
+    "normal_female": "0.6-1.1",
+    "description": "مؤشر على وظيفة الكلى"
+  },
+  {
+    "name": "BUN",
+    "unit": "mg/dL",
+    "normal": "7-20",
+    "description": "Blood Urea Nitrogen – يوضح حالة التخلص من النفايات"
+  },
+  {
+    "name": "eGFR",
+    "unit": "mL/min/1.73m²",
+    "normal": ">60",
+    "description": "معدل الترشيح الكبيبي – يوضح كفاءة الكلى"
+  },
+  {
+    "name": "Urine_Protein",
+    "unit": "mg/dL",
+    "normal": "0",
+    "description": "البروتين في البول – مؤشر على تلف الكلى"
+  },
+  {
+    "name": "Urine_Glucose",
+    "unit": "mg/dL",
+    "normal": "0",
+    "description": "السكر في البول – مؤشر على مرض السكري أو مشاكل الكلى"
+  },
+  {
+    "name": "Hemoglobin",
+    "unit": "g/dL",
+    "normal_male": "13.8-17.2",
+    "normal_female": "12.1-15.1",
+    "description": "مستوى الهيموغلوبين"
+  },
+  {
+    "name": "Hematocrit",
+    "unit": "%",
+    "normal_male": "40.7-50.3",
+    "normal_female": "36.1-44.3",
+    "description": "نسبة خلايا الدم الحمراء"
+  },
+  {
+    "name": "RBC_Count",
+    "unit": "million/µL",
+    "normal_male": "4.7-6.1",
+    "normal_female": "4.2-5.4",
+    "description": "عدد كريات الدم الحمراء"
+  },
+  {
+    "name": "WBC_Count",
+    "unit": "thousand/µL",
+    "normal": "4.0-11.0",
+    "description": "عدد كريات الدم البيضاء"
+  },
+  {
+    "name": "Platelet_Count",
+    "unit": "thousand/µL",
+    "normal": "150-450",
+    "description": "عدد الصفائح الدموية"
+  },
+  {
+    "name": "Total_Cholesterol",
+    "unit": "mg/dL",
+    "normal": "<200",
+    "description": "الكوليسترول الكلي"
+  },
+  {
+    "name": "LDL",
+    "unit": "mg/dL",
+    "normal": "<100",
+    "description": "الكوليسترول الضار"
+  },
+  {
+    "name": "HDL",
+    "unit": "mg/dL",
+    "normal_male": ">40",
+    "normal_female": ">50",
+    "description": "الكوليسترول النافع"
+  },
+  {
+    "name": "Triglycerides",
+    "unit": "mg/dL",
+    "normal": "<150",
+    "description": "الدهون الثلاثية"
+  },
+  {
+    "name": "Fasting_Glucose",
+    "unit": "mg/dL",
+    "normal": "70-100",
+    "description": "سكر صائم"
+  },
+  {
+    "name": "Random_Glucose",
+    "unit": "mg/dL",
+    "normal": "<140",
+    "description": "سكر عشوائي"
+  },
+  {
+    "name": "HbA1c",
+    "unit": "%",
+    "normal": "<5.7",
+    "description": "متوسط سكر الدم خلال 3 أشهر"
+  },
+  {
+    "name": "TSH",
+    "unit": "µIU/mL",
+    "normal": "0.4-4.0",
+    "description": "هرمون الغدة الدرقية المنبه"
+  },
+  {
+    "name": "T3",
+    "unit": "ng/dL",
+    "normal": "80-200",
+    "description": "Triiodothyronine – هرمون الغدة الدرقية"
+  },
+  {
+    "name": "T4",
+    "unit": "µg/dL",
+    "normal": "5.0-12.0",
+    "description": "Thyroxine – هرمون الغدة الدرقية"
+  },
+  {
+    "name": "Cortisol",
+    "unit": "µg/dL",
+    "normal_morning": "6-23",
+    "normal_evening": "3-13",
+    "description": "هرمون الكورتيزول"
+  },
+  {
+    "name": "ACTH",
+    "unit": "pg/mL",
+    "normal": "10-60",
+    "description": "هرمون الغدة النخامية"
+  },
+  {
+    "type": "Urine Analysis",
+    "tests": [
+      {
+        "name": "Urine_Color",
+        "normal": "Yellow",
+        "description": "لون البول"
+      },
+      {
+        "name": "Urine_Clarity",
+        "normal": "Clear",
+        "description": "صفاء البول"
+      },
+      {
+        "name": "Urine_Specific_Gravity",
+        "unit": "1.005-1.030",
+        "description": "الكثافة النوعية للبول"
+      },
+      {
+        "name": "Urine_pH",
+        "unit": "4.6-8.0",
+        "description": "الحموضة"
+      },
+      {
+        "name": "Protein",
+        "unit": "mg/dL",
+        "normal": "0",
+        "description": "البروتين في البول"
+      },
+      {
+        "name": "Glucose",
+        "unit": "mg/dL",
+        "normal": "0",
+        "description": "السكر في البول"
+      },
+      {
+        "name": "Ketones",
+        "unit": "mg/dL",
+        "normal": "0",
+        "description": "الكيتونات في البول"
+      },
+      {
+        "name": "Bilirubin",
+        "unit": "mg/dL",
+        "normal": "0",
+        "description": "البيليروبين"
+      },
+      {
+        "name": "Urobilinogen",
+        "unit": "mg/dL",
+        "normal": "0.1-1",
+        "description": "يوروبيلينوجين"
+      },
+      {
+        "name": "Nitrite",
+        "normal": "Negative",
+        "description": "النتريت"
+      },
+      {
+        "name": "Leukocyte_Esterase",
+        "normal": "Negative",
+        "description": "استراز الكريات البيضاء"
+      },
+      {
+        "name": "RBCs",
+        "unit": "cells/HPF",
+        "normal": "0-3",
+        "description": "الكريات الحمراء"
+      },
+      {
+        "name": "WBCs",
+        "unit": "cells/HPF",
+        "normal": "0-5",
+        "description": "الكريات البيضاء"
+      },
+      {
+        "name": "Epithelial_Cells",
+        "unit": "cells/HPF",
+        "normal": "0-5",
+        "description": "خلايا طلائية"
+      },
+      {
+        "name": "Casts",
+        "unit": "casts/LPF",
+        "normal": "0",
+        "description": "الأسطوانات البولية"
+      },
+      {
+        "name": "Crystals",
+        "unit": "crystals/LPF",
+        "normal": "0",
+        "description": "البلورات"
+      }
+    ]
+  },
+  {
+    "type": "Semen Analysis",
+    "tests": [
+      {
+        "name": "Semen_Volume",
+        "unit": "mL",
+        "normal": "1.5-5",
+        "description": "حجم السائل المنوي"
+      },
+      {
+        "name": "Sperm_Count",
+        "unit": "million/mL",
+        "normal": "15-250",
+        "description": "عدد الحيوانات المنوية"
+      },
+      {
+        "name": "Motility",
+        "unit": "%",
+        "normal": "40",
+        "description": "حركة الحيوانات المنوية"
+      },
+      {
+        "name": "Morphology",
+        "unit": "% normal",
+        "normal": "4-14",
+        "description": "شكل الحيوانات المنوية"
+      },
+      {
+        "name": "pH",
+        "unit": "",
+        "normal": "7.2-8.0",
+        "description": "حموضة السائل المنوي"
+      },
+      {
+        "name": "Liquefaction_Time",
+        "unit": "minutes",
+        "normal": "20-30",
+        "description": "زمن تسييل السائل المنوي"
+      }
+    ]
+  },
+  {
+    "type": "Liver Function Tests",
+    "tests": [
+      {
+        "name": "ALT",
+        "unit": "U/L",
+        "normal": "7-56",
+        "description": "Alanine Aminotransferase"
+      },
+      {
+        "name": "AST",
+        "unit": "U/L",
+        "normal": "10-40",
+        "description": "Aspartate Aminotransferase"
+      },
+      {
+        "name": "ALP",
+        "unit": "U/L",
+        "normal": "44-147",
+        "description": "Alkaline Phosphatase"
+      },
+      {
+        "name": "GGT",
+        "unit": "U/L",
+        "normal": "9-48",
+        "description": "Gamma-Glutamyl Transferase"
+      },
+      {
+        "name": "Bilirubin_Total",
+        "unit": "mg/dL",
+        "normal": "0.3-1.2",
+        "description": "البيليروبين الكلي"
+      },
+      {
+        "name": "Bilirubin_Direct",
+        "unit": "mg/dL",
+        "normal": "0.0-0.3",
+        "description": "البيليروبين المباشر"
+      },
+      {
+        "name": "Albumin",
+        "unit": "g/dL",
+        "normal": "3.5-5.0",
+        "description": "الألبومين"
+      },
+      {
+        "name": "Total_Protein",
+        "unit": "g/dL",
+        "normal": "6.3-7.9",
+        "description": "إجمالي البروتين"
+      }
+    ]
+  },
+  {
+    "type": "Electrolytes",
+    "tests": [
+      {
+        "name": "Sodium",
+        "unit": "mmol/L",
+        "normal": "135-145",
+        "description": "صوديوم"
+      },
+      {
+        "name": "Potassium",
+        "unit": "mmol/L",
+        "normal": "3.5-5.0",
+        "description": "بوتاسيوم"
+      },
+      {
+        "name": "Chloride",
+        "unit": "mmol/L",
+        "normal": "98-107",
+        "description": "كلوريد"
+      },
+      {
+        "name": "Calcium",
+        "unit": "mg/dL",
+        "normal": "8.5-10.2",
+        "description": "كالسيوم"
+      },
+      {
+        "name": "Magnesium",
+        "unit": "mg/dL",
+        "normal": "1.7-2.2",
+        "description": "مغنيسيوم"
+      },
+      {
+        "name": "Phosphate",
+        "unit": "mg/dL",
+        "normal": "2.5-4.5",
+        "description": "فوسفات"
+      }
+    ]
+  },
+  {
+    "type": "Minerals and Vitamins",
+    "tests": [
+      {
+        "name": "Iron",
+        "unit": "µg/dL",
+        "normal_male": "65-176",
+        "normal_female": "50-170",
+        "description": "حديد الدم"
+      },
+      {
+        "name": "Ferritin",
+        "unit": "ng/mL",
+        "normal_male": "24-336",
+        "normal_female": "11-307",
+        "description": "مخزون الحديد"
+      },
+      {
+        "name": "Vitamin_B12",
+        "unit": "pg/mL",
+        "normal": "200-900",
+        "description": "فيتامين ب12"
+      },
+      {
+        "name": "Folate",
+        "unit": "ng/mL",
+        "normal": "2-20",
+        "description": "حمض الفوليك"
+      },
+      {
+        "name": "Vitamin_D",
+        "unit": "ng/mL",
+        "normal": "20-50",
+        "description": "فيتامين د"
+      },
+      {
+        "name": "Vitamin_A",
+        "unit": "µg/dL",
+        "normal": "20-60",
+        "description": "فيتامين أ"
+      },
+      {
+        "name": "Vitamin_E",
+        "unit": "mg/L",
+        "normal": "5-20",
+        "description": "فيتامين هـ"
+      }
+    ]
+  },
+  {
+    "type": "Hormonal Profile",
+    "tests": [
+      {
+        "name": "FSH",
+        "unit": "mIU/mL",
+        "normal_male": "1.5-12.4",
+        "normal_female": "4.7-21.5",
+        "description": "الهرمون المنشط للحويصلات"
+      },
+      {
+        "name": "LH",
+        "unit": "mIU/mL",
+        "normal_male": "1.7-8.6",
+        "normal_female": "5-20",
+        "description": "الهرمون الملوتن"
+      },
+      {
+        "name": "Prolactin",
+        "unit": "ng/mL",
+        "normal_male": "2-18",
+        "normal_female": "2-29",
+        "description": "البرولاكتين"
+      },
+      {
+        "name": "Estradiol",
+        "unit": "pg/mL",
+        "normal_male": "10-40",
+        "normal_female_follicular": "19-144",
+        "normal_female_luteal": "64-357",
+        "description": "الإستراديول"
+      },
+      {
+        "name": "Progesterone",
+        "unit": "ng/mL",
+        "normal_female_follicular": "0.1-0.8",
+        "normal_female_luteal": "2-25",
+        "description": "البروجيستيرون"
+      },
+      {
+        "name": "Testosterone",
+        "unit": "ng/dL",
+        "normal_male": "300-1000",
+        "normal_female": "15-70",
+        "description": "التستوستيرون"
+      },
+      {
+        "name": "DHEA-S",
+        "unit": "µg/dL",
+        "normal_male": "35-430",
+        "normal_female": "65-380",
+        "description": "ديهدرو إيبي أندروستيرون سولفات"
+      }
+    ]
+  }
+]

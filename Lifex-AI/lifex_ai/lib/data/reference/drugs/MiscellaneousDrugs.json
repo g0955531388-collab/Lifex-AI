@@ -1,0 +1,225 @@
+[
+  {"name":"Omeprazole","form":"Capsule","strength":"20mg"},
+  {"name":"Pantoprazole","form":"Tablet","strength":"40mg"},
+  {"name":"Esomeprazole","form":"Capsule","strength":"40mg"},
+  {"name":"Lansoprazole","form":"Capsule","strength":"30mg"},
+  {"name":"Ranitidine","form":"Tablet","strength":"150mg"},
+  {"name":"Famotidine","form":"Tablet","strength":"20mg"},
+  {"name":"Sucralfate","form":"Tablet","strength":"1g"},
+  {"name":"Bismuth Subsalicylate","form":"Tablet","strength":"262mg"},
+  {"name":"Loperamide","form":"Tablet","strength":"2mg"},
+  {"name":"Dicyclomine","form":"Tablet","strength":"20mg"},
+  {"name":"Ondansetron","form":"Tablet","strength":"4mg"},
+  {"name":"Metoclopramide","form":"Tablet","strength":"10mg"},
+  {"name":"Domperidone","form":"Tablet","strength":"10mg"},
+  {"name":"Simethicone","form":"Capsule","strength":"80mg"},
+  {"name":"Aluminum Hydroxide","form":"Tablet","strength":"600mg"},
+  {"name":"Magnesium Hydroxide","form":"Suspension","strength":"400mg/5ml"},
+  {"name":"Calcium Carbonate","form":"Tablet","strength":"500mg"},
+  {"name":"Prednisone","form":"Tablet","strength":"5mg"},
+  {"name":"Hydrocortisone","form":"Tablet","strength":"20mg"},
+  {"name":"Methylprednisolone","form":"Tablet","strength":"4mg"},
+  {"name":"Dexamethasone","form":"Tablet","strength":"0.5mg"},
+  {"name":"Fludrocortisone","form":"Tablet","strength":"0.1mg"},
+  {"name":"Levothyroxine","form":"Tablet","strength":"50mcg"},
+  {"name":"Liothyronine","form":"Tablet","strength":"25mcg"},
+  {"name":"Methimazole","form":"Tablet","strength":"5mg"},
+  {"name":"Propylthiouracil","form":"Tablet","strength":"50mg"},
+  {"name":"Insulin Glargine","form":"Injection","strength":"100 IU/ml"},
+  {"name":"Insulin Aspart","form":"Injection","strength":"100 IU/ml"},
+  {"name":"Insulin Detemir","form":"Injection","strength":"100 IU/ml"},
+  {"name":"Insulin Lispro","form":"Injection","strength":"100 IU/ml"},
+  {"name":"Metformin","form":"Tablet","strength":"500mg"},
+  {"name":"Glimepiride","form":"Tablet","strength":"2mg"},
+  {"name":"Gliclazide","form":"Tablet","strength":"80mg"},
+  {"name":"Sitagliptin","form":"Tablet","strength":"100mg"},
+  {"name":"Vildagliptin","form":"Tablet","strength":"50mg"},
+  {"name":"Pioglitazone","form":"Tablet","strength":"15mg"},
+  {"name":"Rosiglitazone","form":"Tablet","strength":"4mg"},
+  {"name":"Acarbose","form":"Tablet","strength":"50mg"},
+  {"name":"Canagliflozin","form":"Tablet","strength":"100mg"},
+  {"name":"Dapagliflozin","form":"Tablet","strength":"10mg"},
+  {"name":"Empagliflozin","form":"Tablet","strength":"10mg"},
+  {"name":"Levocetirizine","form":"Tablet","strength":"5mg"},
+  {"name":"Loratadine","form":"Tablet","strength":"10mg"},
+  {"name":"Fexofenadine","form":"Tablet","strength":"120mg"},
+  {"name":"Diphenhydramine","form":"Capsule","strength":"25mg"},
+  {"name":"Montelukast","form":"Tablet","strength":"10mg"},
+  {"name":"Theophylline","form":"Tablet","strength":"300mg"},
+  {"name":"Salbutamol","form":"Inhaler","strength":"100mcg"},
+  {"name":"Ipratropium","form":"Inhaler","strength":"20mcg"},
+  {"name":"Tiotropium","form":"Inhaler","strength":"18mcg"},
+  {"name":"Fluticasone","form":"Inhaler","strength":"50mcg"},
+  {"name":"Budesonide","form":"Inhaler","strength":"200mcg"},
+  {"name":"Prednisolone Eye Drops","form":"Eye Drops","strength":"1%"},
+  {"name":"Tobramycin Eye Drops","form":"Eye Drops","strength":"0.3%"},
+  {"name":"Artificial Tears","form":"Eye Drops","strength":"—"},
+  {"name":"Latanoprost","form":"Eye Drops","strength":"0.005%"},
+  {"name":"Timolol Eye Drops","form":"Eye Drops","strength":"0.25%"},
+  {"name":"Clotrimazole Cream","form":"Cream","strength":"1%"},
+  {"name":"Miconazole Cream","form":"Cream","strength":"2%"},
+  {"name":"Ketoconazole Cream","form":"Cream","strength":"2%"},
+  {"name":"Terbinafine Cream","form":"Cream","strength":"1%"},
+  {"name":"Hydrocortisone Cream","form":"Cream","strength":"1%"},
+  {"name":"Neomycin Ointment","form":"Ointment","strength":"0.5%"},
+  {"name":"Bacitracin Ointment","form":"Ointment","strength":"500 IU/g"},
+  {"name":"Salicylic Acid","form":"Solution","strength":"2%"},
+  {"name":"Tretinoin Cream","form":"Cream","strength":"0.05%"},
+  {"name":"Isotretinoin","form":"Capsule","strength":"20mg"},
+  {"name":"Finasteride","form":"Tablet","strength":"5mg"},
+  {"name":"Dutasteride","form":"Capsule","strength":"0.5mg"},
+  {"name":"Alendronate","form":"Tablet","strength":"70mg"},
+  {"name":"Risedronate","form":"Tablet","strength":"35mg"},
+  {"name":"Calcitonin","form":"Injection","strength":"100 IU/ml"},
+  {"name":"Denosumab","form":"Injection","strength":"60mg/ml"},
+  {"name":"Hydroxychloroquine","form":"Tablet","strength":"200mg"},
+  {"name":"Methotrexate","form":"Tablet","strength":"2.5mg"},
+  {"name":"Azathioprine","form":"Tablet","strength":"50mg"},
+  {"name":"Mycophenolate Mofetil","form":"Tablet","strength":"500mg"},
+  {"name":"Cyclosporine","form":"Capsule","strength":"100mg"},
+  {"name":"Tacrolimus","form":"Capsule","strength":"0.5mg"},
+  {"name":"Sirolimus","form":"Tablet","strength":"1mg"},
+  {"name":"Colchicine","form":"Tablet","strength":"0.6mg"},
+  {"name":"Allopurinol","form":"Tablet","strength":"100mg"},
+  {"name":"Febuxostat","form":"Tablet","strength":"40mg"},
+  {"name":"Probenecid","form":"Tablet","strength":"500mg"},
+  {"name":"Amiodarone","form":"Tablet","strength":"200mg"},
+  {"name":"Sotalol","form":"Tablet","strength":"80mg"},
+  {"name":"Diltiazem","form":"Tablet","strength":"60mg"},
+  {"name":"Verapamil","form":"Tablet","strength":"80mg"},
+  {"name":"Atenolol","form":"Tablet","strength":"50mg"},
+  {"name":"Metoprolol","form":"Tablet","strength":"50mg"},
+  {"name":"Bisoprolol","form":"Tablet","strength":"5mg"},
+  {"name":"Carvedilol","form":"Tablet","strength":"25mg"},
+  {"name":"Clonidine","form":"Tablet","strength":"0.1mg"},
+  {"name":"Methyldopa","form":"Tablet","strength":"250mg"},
+  {"name":"Hydralazine","form":"Tablet","strength":"25mg"},
+  {"name":"Minoxidil","form":"Tablet","strength":"10mg"},
+  {"name":"Nitroglycerin","form":"Sublingual","strength":"0.3mg"},
+  {"name":"Isosorbide Mononitrate","form":"Tablet","strength":"20mg"},
+  {"name":"Isosorbide Dinitrate","form":"Tablet","strength":"10mg"},
+  {"name":"Digoxin","form":"Tablet","strength":"0.25mg"},
+  {"name":"Atorvastatin","form":"Tablet","strength":"10mg"},
+  {"name":"Simvastatin","form":"Tablet","strength":"20mg"},
+  {"name":"Rosuvastatin","form":"Tablet","strength":"10mg"},
+  {"name":"Pravastatin","form":"Tablet","strength":"20mg"},
+  {"name":"Ezetimibe","form":"Tablet","strength":"10mg"},
+  {"name":"Niacin Extended Release","form":"Tablet","strength":"500mg"}
+,
+  {"name":"Estradiol","form":"Tablet","strength":"1mg"},
+  {"name":"Estriol","form":"Cream","strength":"0.1%"},
+  {"name":"Progesterone","form":"Capsule","strength":"100mg"},
+  {"name":"Medroxyprogesterone","form":"Tablet","strength":"10mg"},
+  {"name":"Testosterone","form":"Gel","strength":"50mg/5g"},
+  {"name":"Levonorgestrel","form":"Tablet","strength":"0.75mg"},
+  {"name":"Clomiphene","form":"Tablet","strength":"50mg"},
+  {"name":"Goserelin","form":"Injection","strength":"3.6mg"},
+  {"name":"Leuprolide","form":"Injection","strength":"3.75mg"},
+  {"name":"Hydrocortisone","form":"Cream","strength":"1%"},
+  {"name":"Prednisolone Eye Drops","form":"Eye Drops","strength":"1%"},
+  {"name":"Betamethasone","form":"Injection","strength":"4mg/ml"},
+  {"name":"Mometasone","form":"Nasal Spray","strength":"50mcg"},
+  {"name":"Fluticasone Nasal Spray","form":"Spray","strength":"50mcg"},
+  {"name":"Ciclesonide","form":"Inhaler","strength":"80mcg"},
+  {"name":"Montelukast","form":"Tablet","strength":"10mg"},
+  {"name":"Omalizumab","form":"Injection","strength":"150mg/1ml"},
+  {"name":"Rituximab","form":"Injection","strength":"100mg/ml"},
+  {"name":"Methimazole","form":"Tablet","strength":"5mg"},
+  {"name":"Propylthiouracil","form":"Tablet","strength":"50mg"},
+  {"name":"Desmopressin","form":"Nasal Spray","strength":"10mcg/dose"},
+  {"name":"Furosemide","form":"Tablet","strength":"40mg"},
+  {"name":"Spironolactone","form":"Tablet","strength":"25mg"},
+  {"name":"Hydrochlorothiazide","form":"Tablet","strength":"25mg"},
+  {"name":"Amiloride","form":"Tablet","strength":"5mg"},
+  {"name":"Tolterodine","form":"Tablet","strength":"2mg"},
+  {"name":"Oxybutynin","form":"Tablet","strength":"5mg"},
+  {"name":"Solifenacin","form":"Tablet","strength":"5mg"},
+  {"name":"Tamsulosin","form":"Capsule","strength":"0.4mg"},
+  {"name":"Alfuzosin","form":"Tablet","strength":"10mg"},
+  {"name":"Donepezil","form":"Tablet","strength":"5mg"},
+  {"name":"Rivastigmine","form":"Capsule","strength":"1.5mg"},
+  {"name":"Galantamine","form":"Tablet","strength":"4mg"},
+  {"name":"Memantine","form":"Tablet","strength":"10mg"},
+  {"name":"Zolpidem","form":"Tablet","strength":"10mg"},
+  {"name":"Zaleplon","form":"Capsule","strength":"10mg"},
+  {"name":"Eszopiclone","form":"Tablet","strength":"3mg"},
+  {"name":"Modafinil","form":"Tablet","strength":"200mg"},
+  {"name":"Armodafinil","form":"Tablet","strength":"150mg"},
+  {"name":"Baclofen","form":"Tablet","strength":"10mg"},
+  {"name":"Tizanidine","form":"Tablet","strength":"2mg"},
+  {"name":"Gabapentin","form":"Capsule","strength":"300mg"},
+  {"name":"Pregabalin","form":"Capsule","strength":"75mg"},
+  {"name":"Levodopa/Carbidopa","form":"Tablet","strength":"100mg/25mg"},
+  {"name":"Ropinirole","form":"Tablet","strength":"0.25mg"},
+  {"name":"Pramipexole","form":"Tablet","strength":"0.125mg"},
+  {"name":"Donepezil","form":"Tablet","strength":"10mg"},
+  {"name":"Timolol Eye Drops","form":"Eye Drops","strength":"0.25%"},
+  {"name":"Brimonidine Eye Drops","form":"Eye Drops","strength":"0.15%"},
+  {"name":"Pilocarpine Eye Drops","form":"Eye Drops","strength":"2%"},
+  {"name":"Ciprofloxacin Ear Drops","form":"Ear Drops","strength":"0.3%"},
+  {"name":"Ofloxacin Ear Drops","form":"Ear Drops","strength":"0.3%"},
+  {"name":"Hydrocortisone Otic Drops","form":"Ear Drops","strength":"1%"},
+  {"name":"Chloramphenicol Eye/Otic Drops","form":"Eye/Ear Drops","strength":"0.5%"},
+  {"name":"Nystatin Oral Suspension","form":"Suspension","strength":"100000 IU/ml"},
+  {"name":"Amphotericin B","form":"Injection","strength":"50mg/ml"},
+  {"name":"Itraconazole","form":"Capsule","strength":"100mg"},
+  {"name":"Voriconazole","form":"Tablet","strength":"200mg"}
+,
+  {"name":"Ethanol","form":"Solution","strength":"70%"},
+  {"name":"Isopropanol","form":"Solution","strength":"70%"},
+  {"name":"Chlorhexidine Gluconate","form":"Solution","strength":"0.05%"},
+  {"name":"Povidone-Iodine","form":"Solution","strength":"10%"},
+  {"name":"Hydrogen Peroxide","form":"Solution","strength":"3%"},
+  {"name":"Sodium Hypochlorite","form":"Solution","strength":"0.5%"},
+  {"name":"Benzalkonium Chloride","form":"Solution","strength":"0.1%"},
+  {"name":"Triclosan","form":"Liquid","strength":"0.3%"},
+  {"name":"Alcohol-based Hand Sanitizer","form":"Gel","strength":"70% Ethanol"},
+  {"name":"Iodophor","form":"Solution","strength":"10%"},
+  {"name":"Phenol","form":"Solution","strength":"1%"},
+  {"name":"Glutaraldehyde","form":"Solution","strength":"2%"},
+  {"name":"Quaternary Ammonium Compounds","form":"Solution","strength":"0.1%"},
+  {"name":"Sodium Dichloroisocyanurate","form":"Tablet","strength":"100mg"},
+  {"name":"Chloroxylenol (PCMX)","form":"Solution","strength":"4%"},
+  {"name":"Octenidine","form":"Solution","strength":"0.1%"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+[
+  {"name":"Sildenafil","form":"Tablet","strength":"50mg"},
+  {"name":"Tadalafil","form":"Tablet","strength":"20mg"},
+  {"name":"Vardenafil","form":"Tablet","strength":"10mg"},
+  {"name":"Avanafil","form":"Tablet","strength":"100mg"},
+  {"name":"L-Arginine","form":"Capsule","strength":"500mg"},
+  {"name":"Yohimbine","form":"Tablet","strength":"5mg"},
+  {"name":"Maca Root Extract","form":"Capsule","strength":"500mg"},
+  {"name":"Ginseng Extract","form":"Capsule","strength":"200mg"},
+  {"name":"DHEA","form":"Capsule","strength":"25mg"},
+  {"name":"Flibanserin","form":"Tablet","strength":"100mg"},
+  {"name":"Bremelanotide","form":"Injection","strength":"1.75mg/ml"},
+  {"name":"Vaginal Wash - Lactic Acid","form":"Liquid","strength":"2%"},
+  {"name":"Vaginal Wash - Chlorhexidine","form":"Liquid","strength":"0.05%"},
+  {"name":"Oral Rinse - Chlorhexidine","form":"Solution","strength":"0.12%"},
+  {"name":"Oral Rinse - Hydrogen Peroxide","form":"Solution","strength":"1.5%"},
+  {"name":"Fenugreek Extract","form":"Capsule","strength":"500mg"},
+  {"name":"Horny Goat Weed Extract","form":"Capsule","strength":"500mg"},
+  {"name":"Tribulus Terrestris Extract","form":"Capsule","strength":"500mg"}
+,
+  {"name":"Folic Acid","form":"Tablet","strength":"400mcg"},
+  {"name":"Iron Sulfate","form":"Tablet","strength":"65mg"},
+  {"name":"Calcium Carbonate","form":"Tablet","strength":"500mg"},
+  {"name":"Vitamin D3","form":"Capsule","strength":"1000IU"},
+  {"name":"Omega-3 (DHA/EPA)","form":"Capsule","strength":"500mg"},
+  {"name":"Prenatal Multivitamins","form":"Tablet","strength":"As per formula"},
+  {"name":"Vitamin B12","form":"Tablet","strength":"250mcg"},
+  {"name":"Magnesium Citrate","form":"Tablet","strength":"250mg"},
+  {"name":"Zinc Sulfate","form":"Tablet","strength":"22mg"},
+  {"name":"Iodine","form":"Tablet","strength":"150mcg"},
+  {"name":"Vitamin C","form":"Tablet","strength":"100mg"},
+  {"name":"Protein Powder for Pregnancy","form":"Powder","strength":"20g per serving"},
+  {"name":"Evening Primrose Oil","form":"Capsule","strength":"500mg"},
+  {"name":"Choline","form":"Capsule","strength":"250mg"},
+  {"name":"Probiotic for Pregnancy","form":"Capsule","strength":"10 billion CFU"}
+]
+
+
+
+
+
+
+
+
+
+
+

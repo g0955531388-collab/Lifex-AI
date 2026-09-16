@@ -1,0 +1,4262 @@
+[
+  {
+    "id": 1,
+    "name": "Amoxicillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 2,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 3,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 4,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 5,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 6,
+    "name": "Ciprofloxacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 7,
+    "name": "Clindamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 8,
+    "name": "Doxycycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 9,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 10,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 11,
+    "name": "Levofloxacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 12,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 13,
+    "name": "Moxifloxacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 14,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 15,
+    "name": "Trimethoprim",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 16,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 17,
+    "name": "Cephalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 18,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 19,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 20,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 21,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 22,
+    "name": "Cefpodoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 23,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 24,
+    "name": "Cefotetan",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 25,
+    "name": "Cefoxitin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 26,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 27,
+    "name": "Ceftibuten",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 28,
+    "name": "Ceftizoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 29,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 30,
+    "name": "Cefradine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 31,
+    "name": "Cefotiam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 32,
+    "name": "Cefmenoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 33,
+    "name": "Cefetamet",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 34,
+    "name": "Cefbuperazone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 35,
+    "name": "Cefaloridine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 36,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 37,
+    "name": "Cefonicid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 38,
+    "name": "Cefoperazone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 39,
+    "name": "Cefotetan",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 40,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 41,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 42,
+    "name": "Cefpirome",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 43,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 44,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 45,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 46,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 47,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 48,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 49,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 50,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 1,
+    "name": "Amoxicillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 2,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 3,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 4,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 5,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 6,
+    "name": "Ciprofloxacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 7,
+    "name": "Clindamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 8,
+    "name": "Doxycycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 9,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 10,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 11,
+    "name": "Levofloxacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 12,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 13,
+    "name": "Moxifloxacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 14,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 15,
+    "name": "Trimethoprim",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 16,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 17,
+    "name": "Cephalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 18,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 19,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 20,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 21,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 22,
+    "name": "Cefpodoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 23,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 24,
+    "name": "Cefotetan",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 25,
+    "name": "Cefoxitin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 26,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 27,
+    "name": "Ceftibuten",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 28,
+    "name": "Ceftizoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 29,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 30,
+    "name": "Cefradine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 31,
+    "name": "Cefotiam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 32,
+    "name": "Cefmenoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 33,
+    "name": "Cefetamet",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 34,
+    "name": "Cefbuperazone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 35,
+    "name": "Cefaloridine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 36,
+    "name": "Cefonicid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 37,
+    "name": "Cefoperazone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 38,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 39,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 40,
+    "name": "Cefpirome",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 41,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 42,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 43,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 44,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 45,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 46,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 47,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 48,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 49,
+    "name": "Spectinomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 50,
+    "name": "Kanamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 51,
+    "name": "Fidaxomicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 52,
+    "name": "Rifampicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 53,
+    "name": "Rifabutin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 54,
+    "name": "Rifapentine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 55,
+    "name": "Daptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 56,
+    "name": "Polymyxin B",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 57,
+    "name": "Polymyxin E (Colistin)",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 58,
+    "name": "Fosfomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 59,
+    "name": "Chloramphenicol",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 60,
+    "name": "Mupirocin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 61,
+    "name": "Cefalotin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 62,
+    "name": "Cefapirin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 63,
+    "name": "Cefatrizine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 64,
+    "name": "Cefazolin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 65,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 66,
+    "name": "Cefetamet",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 67,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 68,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 69,
+    "name": "Cefoperazone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 70,
+    "name": "Cefotetan",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 71,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 72,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 73,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 74,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 75,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 76,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 77,
+    "name": "Cefadroxil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 78,
+    "name": "Cephalothin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 79,
+    "name": "Cefapirin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 80,
+    "name": "Cefamandole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 81,
+    "name": "Cefmetazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 82,
+    "name": "Cefotetan",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 83,
+    "name": "Cefoxitin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 84,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 85,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 86,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 87,
+    "name": "Cefpodoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 88,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 89,
+    "name": "Cefpirome",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 90,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 91,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 92,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 93,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 94,
+    "name": "Ertapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 95,
+    "name": "Imipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 96,
+    "name": "Meropenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 97,
+    "name": "Doripenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 98,
+    "name": "Biapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 99,
+    "name": "Panipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 100,
+    "name": "Tigecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 201,
+    "name": "Eravacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 202,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 203,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 204,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 205,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 206,
+    "name": "Kanamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 207,
+    "name": "Spectinomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 208,
+    "name": "Neomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 209,
+    "name": "Paromomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 210,
+    "name": "Fidaxomicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 211,
+    "name": "Clarithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 212,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 213,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 214,
+    "name": "Roxithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 215,
+    "name": "Spiramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 216,
+    "name": "Telithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 217,
+    "name": "Quinupristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 218,
+    "name": "Dalfopristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 219,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 220,
+    "name": "Tedizolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 221,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 222,
+    "name": "Teicoplanin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 223,
+    "name": "Daptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 224,
+    "name": "Polymyxin B",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 225,
+    "name": "Polymyxin E (Colistin)",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 226,
+    "name": "Rifampicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 227,
+    "name": "Rifabutin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 228,
+    "name": "Rifaximin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 229,
+    "name": "Fosfomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 230,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 231,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 232,
+    "name": "Tinidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 233,
+    "name": "Cefadroxil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 234,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 235,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 236,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 237,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 238,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 239,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 240,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 241,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 242,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 243,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 244,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 245,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 246,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 247,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 248,
+    "name": "Ertapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 249,
+    "name": "Imipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 250,
+    "name": "Meropenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 251,
+    "name": "Doripenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 252,
+    "name": "Biapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 253,
+    "name": "Panipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 254,
+    "name": "Tigecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 255,
+    "name": "Sarecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 256,
+    "name": "Omadacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 257,
+    "name": "Eravacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 258,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 259,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 260,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 261,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 262,
+    "name": "Kanamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 263,
+    "name": "Spectinomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 264,
+    "name": "Neomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 265,
+    "name": "Paromomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 266,
+    "name": "Fidaxomicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 267,
+    "name": "Clarithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 268,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 269,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 270,
+    "name": "Roxithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 271,
+    "name": "Spiramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 272,
+    "name": "Telithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 273,
+    "name": "Quinupristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 274,
+    "name": "Dalfopristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 275,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 276,
+    "name": "Tedizolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 277,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 278,
+    "name": "Teicoplanin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 279,
+    "name": "Daptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 280,
+    "name": "Polymyxin B",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 281,
+    "name": "Polymyxin E (Colistin)",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 282,
+    "name": "Rifampicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 283,
+    "name": "Rifabutin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 284,
+    "name": "Rifaximin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 285,
+    "name": "Fosfomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 286,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 287,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 288,
+    "name": "Tinidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 289,
+    "name": "Cefadroxil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 290,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 291,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 292,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 293,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 294,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 295,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 296,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 297,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 298,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 299,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 300,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 301,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 302,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 303,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 304,
+    "name": "Ertapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 305,
+    "name": "Imipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 306,
+    "name": "Meropenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 307,
+    "name": "Doripenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 308,
+    "name": "Biapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 309,
+    "name": "Panipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 310,
+    "name": "Tigecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 311,
+    "name": "Sarecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 312,
+    "name": "Omadacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 313,
+    "name": "Eravacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 314,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 315,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 316,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 317,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 318,
+    "name": "Kanamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 319,
+    "name": "Spectinomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 320,
+    "name": "Neomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 321,
+    "name": "Paromomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 322,
+    "name": "Fidaxomicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 323,
+    "name": "Clarithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 324,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 325,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 326,
+    "name": "Roxithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 327,
+    "name": "Spiramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 328,
+    "name": "Telithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 329,
+    "name": "Quinupristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 330,
+    "name": "Dalfopristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 331,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 332,
+    "name": "Tedizolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 333,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 334,
+    "name": "Teicoplanin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 335,
+    "name": "Daptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 336,
+    "name": "Polymyxin B",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 337,
+    "name": "Polymyxin E (Colistin)",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 338,
+    "name": "Rifampicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 339,
+    "name": "Rifabutin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 340,
+    "name": "Rifaximin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 341,
+    "name": "Fosfomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 342,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 343,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 344,
+    "name": "Tinidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 345,
+    "name": "Cefadroxil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 346,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 347,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 348,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 349,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 350,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 351,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 352,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 353,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 354,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 355,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 356,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 357,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 358,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 359,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 360,
+    "name": "Ertapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 361,
+    "name": "Imipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 362,
+    "name": "Meropenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 363,
+    "name": "Doripenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 364,
+    "name": "Biapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 365,
+    "name": "Panipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 366,
+    "name": "Tigecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 367,
+    "name": "Sarecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 368,
+    "name": "Omadacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 369,
+    "name": "Eravacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 370,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 371,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 372,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 373,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 374,
+    "name": "Kanamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 375,
+    "name": "Spectinomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 376,
+    "name": "Neomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 377,
+    "name": "Paromomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 378,
+    "name": "Fidaxomicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 379,
+    "name": "Clarithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 380,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 381,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 382,
+    "name": "Roxithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 383,
+    "name": "Spiramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 384,
+    "name": "Telithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 385,
+    "name": "Quinupristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 386,
+    "name": "Dalfopristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 387,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 388,
+    "name": "Tedizolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 389,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 390,
+    "name": "Teicoplanin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 391,
+    "name": "Daptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 392,
+    "name": "Polymyxin B",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 393,
+    "name": "Polymyxin E (Colistin)",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 394,
+    "name": "Rifampicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 395,
+    "name": "Rifabutin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 396,
+    "name": "Rifaximin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 397,
+    "name": "Fosfomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 398,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 399,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 400,
+    "name": "Tinidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 401,
+    "name": "Cefadroxil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 402,
+    "name": "Cefalexin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 403,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 404,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 405,
+    "name": "Cefprozil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 406,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 407,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 408,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 409,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 410,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 411,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 412,
+    "name": "Ceftaroline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 413,
+    "name": "Ceftobiprole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 414,
+    "name": "Ceftolozane/Tazobactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 415,
+    "name": "Ceftazidime/Avibactam",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 416,
+    "name": "Ertapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 417,
+    "name": "Imipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 418,
+    "name": "Meropenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 419,
+    "name": "Doripenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 420,
+    "name": "Biapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 421,
+    "name": "Panipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 422,
+    "name": "Tigecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 423,
+    "name": "Sarecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 424,
+    "name": "Omadacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 425,
+    "name": "Eravacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 426,
+    "name": "Gentamicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 427,
+    "name": "Tobramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 428,
+    "name": "Amikacin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 429,
+    "name": "Streptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 430,
+    "name": "Kanamycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 431,
+    "name": "Spectinomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 432,
+    "name": "Neomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 433,
+    "name": "Paromomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 434,
+    "name": "Fidaxomicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 435,
+    "name": "Clarithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 436,
+    "name": "Erythromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 437,
+    "name": "Azithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 438,
+    "name": "Roxithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 439,
+    "name": "Spiramycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 440,
+    "name": "Telithromycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 441,
+    "name": "Quinupristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 442,
+    "name": "Dalfopristin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 443,
+    "name": "Linezolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 444,
+    "name": "Tedizolid",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 445,
+    "name": "Vancomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 446,
+    "name": "Teicoplanin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 447,
+    "name": "Daptomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 448,
+    "name": "Polymyxin B",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 449,
+    "name": "Polymyxin E (Colistin)",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 450,
+    "name": "Rifampicin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 451,
+    "name": "Rifabutin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 452,
+    "name": "Rifaximin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 453,
+    "name": "Fosfomycin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 454,
+    "name": "Nitrofurantoin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 455,
+    "name": "Metronidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 456,
+    "name": "Tinidazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 457,
+    "name": "Sulfonamides",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 458,
+    "name": "Trimethoprim",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 459,
+    "name": "Sulfamethoxazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 460,
+    "name": "Sulfadiazine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 461,
+    "name": "Sulfamethizole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 462,
+    "name": "Sulfamethoxypyridazine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 463,
+    "name": "Sulfapyridine",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 464,
+    "name": "Cotrimoxazole",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 465,
+    "name": "Cefepime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 466,
+    "name": "Cefotaxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 467,
+    "name": "Ceftazidime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 468,
+    "name": "Ceftriaxone",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 469,
+    "name": "Cefixime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 470,
+    "name": "Cefpodoxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 471,
+    "name": "Cefdinir",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 472,
+    "name": "Cefuroxime",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 473,
+    "name": "Cefaclor",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 474,
+    "name": "Cefadroxil",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 475,
+    "name": "Penicillin G",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 476,
+    "name": "Penicillin V",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 477,
+    "name": "Amoxicillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 478,
+    "name": "Ampicillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 479,
+    "name": "Oxacillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 480,
+    "name": "Cloxacillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 481,
+    "name": "Dicloxacillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 482,
+    "name": "Flucloxacillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 483,
+    "name": "Nafcillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 484,
+    "name": "Piperacillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 485,
+    "name": "Ticarcillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 486,
+    "name": "Carbenicillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 487,
+    "name": "Mezlocillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 488,
+    "name": "Azlocillin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 489,
+    "name": "Timentin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 490,
+    "name": "Zosyn",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 491,
+    "name": "Meropenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 492,
+    "name": "Imipenem/Cilastatin",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 493,
+    "name": "Doripenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 494,
+    "name": "Ertapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 495,
+    "name": "Biapenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 496,
+    "name": "Panipenem",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 497,
+    "name": "Tigecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 498,
+    "name": "Omadacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 499,
+    "name": "Eravacycline",
+    "category": "Antibiotic"
+  },
+  {
+    "id": 500,
+    "name": "Sarecycline",
+    "category": "Antibiotic"
+  },
+  {
+    "name": "Amoxicillin/Clavulanic Acid",
+    "form": "Tablet",
+    "strength": "875mg/125mg"
+  },
+  {
+    "name": "Ampicillin/Sulbactam",
+    "form": "Injection",
+    "strength": "1.5g"
+  },
+  {
+    "name": "Piperacillin/Tazobactam",
+    "form": "Injection",
+    "strength": "4.5g"
+  },
+  {
+    "name": "Ticarcillin/Clavulanic Acid",
+    "form": "Injection",
+    "strength": "3.1g"
+  },
+  {
+    "name": "Cefoperazone/Sulbactam",
+    "form": "Injection",
+    "strength": "2g/1g"
+  },
+  {
+    "name": "Ceftazidime/Avibactam",
+    "form": "Injection",
+    "strength": "2g/0.5g"
+  },
+  {
+    "name": "Cefepime/Enmetazobactam",
+    "form": "Injection",
+    "strength": "2g/1g"
+  },
+  {
+    "name": "Meropenem/Vaborbactam",
+    "form": "Injection",
+    "strength": "2g/2g"
+  },
+  {
+    "name": "Imipenem/Cilastatin",
+    "form": "Injection",
+    "strength": "500mg/500mg"
+  },
+  {
+    "name": "Doripenem",
+    "form": "Injection",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ertapenem",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Biapenem",
+    "form": "Injection",
+    "strength": "300mg"
+  },
+  {
+    "name": "Tigecycline",
+    "form": "Injection",
+    "strength": "50mg"
+  },
+  {
+    "name": "Fidaxomicin",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Ceftolozane/Tazobactam",
+    "form": "Injection",
+    "strength": "1.5g"
+  },
+  {
+    "name": "Sultamicillin",
+    "form": "Tablet",
+    "strength": "375mg"
+  },
+  {
+    "name": "Sulbactam/Ampicillin",
+    "form": "Injection",
+    "strength": "1.5g"
+  },
+  {
+    "name": "Ceftriaxone/Sulbactam",
+    "form": "Injection",
+    "strength": "1g/0.5g"
+  },
+  {
+    "name": "Cefuroxime/Axetil",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefixime/Axetil",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefpodoxime/Proxetil",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Cefdinir/Orodispersible",
+    "form": "Tablet",
+    "strength": "300mg"
+  },
+  {
+    "name": "Cefditoren/Pivoxil",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefcapene/Pivoxil",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Cefetamet/Pivoxil",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefodizime",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefmetazole",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefoxitin",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefaclor/ER",
+    "form": "Capsule",
+    "strength": "375mg"
+  },
+  {
+    "name": "Cefprozil/Suspension",
+    "form": "Suspension",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Cefalexin/ER",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefadroxil/ER",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefixime/SR",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefpodoxime/SR",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Cefdinir/SR",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Azithromycin/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Clarithromycin/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Erythromycin/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Roxithromycin/XL",
+    "form": "Tablet",
+    "strength": "150mg"
+  },
+  {
+    "name": "Spiramycin/XL",
+    "form": "Tablet",
+    "strength": "1M IU"
+  },
+  {
+    "name": "Telithromycin/XL",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Clindamycin/XL",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Lincomycin/XL",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Vancomycin/XL",
+    "form": "Injection",
+    "strength": "500mg"
+  },
+  {
+    "name": "Teicoplanin/XL",
+    "form": "Injection",
+    "strength": "400mg"
+  },
+  {
+    "name": "Doxycycline/XL",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Tetracycline/XL",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Minocycline/XL",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Oxytetracycline/XL",
+    "form": "Capsule",
+    "strength": "250mg"
+  },
+  {
+    "name": "Rifampicin/XL",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Rifabutin/XL",
+    "form": "Capsule",
+    "strength": "150mg"
+  },
+  {
+    "name": "Isoniazid/XL",
+    "form": "Tablet",
+    "strength": "300mg"
+  },
+  {
+    "name": "Pyrazinamide/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ethambutol/XL",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Linezolid/XL",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Tedizolid/XL",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Mupirocin/XL",
+    "form": "Ointment",
+    "strength": "2%"
+  },
+  {
+    "name": "Fosfomycin/XL",
+    "form": "Sachet",
+    "strength": "3g"
+  },
+  {
+    "name": "Metronidazole/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Tinidazole/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ornidazole/XL",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Secnidazole/XL",
+    "form": "Tablet",
+    "strength": "2g"
+  },
+  {
+    "name": "Chloramphenicol/XL",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ciprofloxacin",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Levofloxacin",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Moxifloxacin",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Ofloxacin",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Norfloxacin",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Sparfloxacin",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Gatifloxacin",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Gemifloxacin",
+    "form": "Tablet",
+    "strength": "320mg"
+  },
+  {
+    "name": "Trovafloxacin",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Levofloxacin/SR",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ciprofloxacin/SR",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Moxifloxacin/SR",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Ofloxacin/SR",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Norfloxacin/SR",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Sparfloxacin/SR",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Gatifloxacin/SR",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Gemifloxacin/SR",
+    "form": "Tablet",
+    "strength": "320mg"
+  },
+  {
+    "name": "Trovafloxacin/SR",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Prulifloxacin",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Balofloxacin",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Levofloxacin/IV",
+    "form": "Injection",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ciprofloxacin/IV",
+    "form": "Injection",
+    "strength": "400mg"
+  },
+  {
+    "name": "Moxifloxacin/IV",
+    "form": "Injection",
+    "strength": "400mg"
+  },
+  {
+    "name": "Ofloxacin/IV",
+    "form": "Injection",
+    "strength": "200mg"
+  },
+  {
+    "name": "Gatifloxacin/IV",
+    "form": "Injection",
+    "strength": "400mg"
+  },
+  {
+    "name": "Gemifloxacin/IV",
+    "form": "Injection",
+    "strength": "320mg"
+  },
+  {
+    "name": "Trovafloxacin/IV",
+    "form": "Injection",
+    "strength": "200mg"
+  },
+  {
+    "name": "Levofloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "25mg/5ml"
+  },
+  {
+    "name": "Ciprofloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Moxifloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Ofloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Norfloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Sparfloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "25mg/5ml"
+  },
+  {
+    "name": "Gatifloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Gemifloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "40mg/5ml"
+  },
+  {
+    "name": "Trovafloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "25mg/5ml"
+  },
+  {
+    "name": "Prulifloxacin/Suspension",
+    "form": "Suspension",
+    "strength": "60mg/5ml"
+  },
+  {
+    "name": "Paracetamol",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ibuprofen",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Aspirin",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Diclofenac",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Naproxen",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Ketorolac",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Tramadol",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Codeine",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Morphine",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Fentanyl",
+    "form": "Injection",
+    "strength": "50mcg/ml"
+  },
+  {
+    "name": "Celecoxib",
+    "form": "Capsule",
+    "strength": "200mg"
+  },
+  {
+    "name": "Etoricoxib",
+    "form": "Tablet",
+    "strength": "120mg"
+  },
+  {
+    "name": "Indomethacin",
+    "form": "Capsule",
+    "strength": "25mg"
+  },
+  {
+    "name": "Meloxicam",
+    "form": "Tablet",
+    "strength": "15mg"
+  },
+  {
+    "name": "Piroxicam",
+    "form": "Capsule",
+    "strength": "20mg"
+  },
+  {
+    "name": "Nabumetone",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Oxaprozin",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Flurbiprofen",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Ketoprofen",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Salsalate",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Meperidine",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Hydromorphone",
+    "form": "Tablet",
+    "strength": "2mg"
+  },
+  {
+    "name": "Oxycodone",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Tapentadol",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Nefopam",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Acetaminophen",
+    "form": "Suspension",
+    "strength": "160mg/5ml"
+  },
+  {
+    "name": "Paracetamol/Codeine",
+    "form": "Tablet",
+    "strength": "500mg/30mg"
+  },
+  {
+    "name": "Ibuprofen/Pseudoephedrine",
+    "form": "Tablet",
+    "strength": "200mg/30mg"
+  },
+  {
+    "name": "Aspirin/Paracetamol/Caffeine",
+    "form": "Tablet",
+    "strength": "500mg/30mg/65mg"
+  },
+  {
+    "name": "Diclofenac/Misoprostol",
+    "form": "Tablet",
+    "strength": "50mg/200mcg"
+  },
+  {
+    "name": "Ketoprofen/Gel",
+    "form": "Topical",
+    "strength": "2.5%"
+  },
+  {
+    "name": "Diclofenac/Gel",
+    "form": "Topical",
+    "strength": "1%"
+  },
+  {
+    "name": "Ibuprofen/Gel",
+    "form": "Topical",
+    "strength": "5%"
+  },
+  {
+    "name": "Lidocaine",
+    "form": "Patch",
+    "strength": "5%"
+  },
+  {
+    "name": "Capsaicin",
+    "form": "Cream",
+    "strength": "0.075%"
+  },
+  {
+    "name": "Morphine/Gel",
+    "form": "Topical",
+    "strength": "0.1%"
+  },
+  {
+    "name": "Fentanyl/Patch",
+    "form": "Transdermal",
+    "strength": "25mcg/hr"
+  },
+  {
+    "name": "Buprenorphine/Patch",
+    "form": "Transdermal",
+    "strength": "5mcg/hr"
+  },
+  {
+    "name": "Hydrocodone",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Codeine/Paracetamol",
+    "form": "Tablet",
+    "strength": "30mg/500mg"
+  },
+  {
+    "name": "Tramadol/Paracetamol",
+    "form": "Tablet",
+    "strength": "37.5mg/325mg"
+  },
+  {
+    "name": "Acetaminophen/Propoxyphene",
+    "form": "Tablet",
+    "strength": "325mg/65mg"
+  },
+  {
+    "name": "Naproxen/Sodium",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Ibuprofen/Lysine",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Flurbiprofen/Gel",
+    "form": "Topical",
+    "strength": "3%"
+  },
+  {
+    "name": "Ketorolac/Injection",
+    "form": "Injection",
+    "strength": "30mg/ml"
+  },
+  {
+    "name": "Meperidine/Tablet",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Oxycodone/Acetaminophen",
+    "form": "Tablet",
+    "strength": "5mg/325mg"
+  },
+  {
+    "name": "Hydromorphone/Injection",
+    "form": "Injection",
+    "strength": "1mg/ml"
+  },
+  {
+    "name": "Tapentadol/ER",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Nefopam/Injection",
+    "form": "Injection",
+    "strength": "20mg/ml"
+  },
+  {
+    "name": "Paracetamol/Injection",
+    "form": "Injection",
+    "strength": "1000mg/100ml"
+  },
+  {
+    "name": "Acetaminophen/Rectal",
+    "form": "Suppository",
+    "strength": "125mg"
+  },
+  {
+    "name": "Ibuprofen/Suspension",
+    "form": "Suspension",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Naproxen/Suspension",
+    "form": "Suspension",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Diclofenac/Solution",
+    "form": "Solution",
+    "strength": "75mg/3ml"
+  },
+  {
+    "name": "Ketorolac/Solution",
+    "form": "Solution",
+    "strength": "30mg/ml"
+  },
+  {
+    "name": "Piroxicam/Capsule",
+    "form": "Capsule",
+    "strength": "20mg"
+  },
+  {
+    "name": "Meloxicam/Suspension",
+    "form": "Suspension",
+    "strength": "7.5mg/5ml"
+  },
+  {
+    "name": "Indomethacin/Suppository",
+    "form": "Suppository",
+    "strength": "50mg"
+  },
+  {
+    "name": "Celecoxib/Capsule",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Etoricoxib/Tablet",
+    "form": "Tablet",
+    "strength": "90mg"
+  },
+  {
+    "name": "Nabumetone/Tablet",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Oxaprozin/Tablet",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Flurbiprofen/Tablet",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Ketoprofen/Tablet",
+    "form": "Tablet",
+    "strength": "25mg"
+  },
+  {
+    "name": "Salsalate/Tablet",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Meperidine/Injection",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Hydromorphone/Tablet",
+    "form": "Tablet",
+    "strength": "2mg"
+  },
+  {
+    "name": "Oxycodone/Tablet",
+    "form": "Tablet",
+    "strength": "5mg"
+  },
+  {
+    "name": "Tapentadol/Tablet",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Nefopam/Tablet",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Acetaminophen/Syrup",
+    "form": "Syrup",
+    "strength": "160mg/5ml"
+  },
+  {
+    "name": "Paracetamol/Codeine/Tablet",
+    "form": "Tablet",
+    "strength": "500mg/30mg"
+  },
+  {
+    "name": "Ibuprofen/Capsule",
+    "form": "Capsule",
+    "strength": "200mg"
+  },
+  {
+    "name": "Aspirin/Chewable",
+    "form": "Tablet",
+    "strength": "81mg"
+  },
+  {
+    "name": "Diclofenac/SR",
+    "form": "Tablet",
+    "strength": "75mg"
+  },
+  {
+    "name": "Naproxen/SR",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ketorolac/SR",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Tramadol/ER",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Codeine/Solution",
+    "form": "Syrup",
+    "strength": "10mg/5ml"
+  },
+  {
+    "name": "Morphine/SR",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Fentanyl/Lozenge",
+    "form": "Lozenge",
+    "strength": "200mcg"
+  },
+  {
+    "name": "Celecoxib/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Etoricoxib/Suspension",
+    "form": "Suspension",
+    "strength": "30mg/5ml"
+  },
+  {
+    "name": "Indomethacin/Injection",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Meloxicam/Injection",
+    "form": "Injection",
+    "strength": "15mg/ml"
+  },
+  {
+    "name": "Piroxicam/Injection",
+    "form": "Injection",
+    "strength": "20mg/ml"
+  },
+  {
+    "name": "Nabumetone/Suspension",
+    "form": "Suspension",
+    "strength": "500mg/5ml"
+  },
+  {
+    "name": "Oxaprozin/Suspension",
+    "form": "Suspension",
+    "strength": "600mg/5ml"
+  },
+  {
+    "name": "Flurbiprofen/Suspension",
+    "form": "Suspension",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Ketoprofen/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Salsalate/Suspension",
+    "form": "Suspension",
+    "strength": "500mg/5ml"
+  },
+  {
+    "name": "Meperidine/SR",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Hydromorphone/SR",
+    "form": "Tablet",
+    "strength": "2mg"
+  },
+  {
+    "name": "Oxycodone/SR",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Tapentadol/SR",
+    "form": "Tablet",
+    "strength": "50mg"
+  },
+  {
+    "name": "Nefopam/SR",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Acetaminophen/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Paracetamol/SR",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ibuprofen/ER",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Aspirin/ER",
+    "form": "Tablet",
+    "strength": "325mg"
+  },
+  {
+    "name": "Diclofenac/ER",
+    "form": "Tablet",
+    "strength": "75mg"
+  },
+  {
+    "name": "Naproxen/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ketorolac/ER",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Tramadol/ER",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Codeine/ER",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Morphine/ER",
+    "form": "Tablet",
+    "strength": "30mg"
+  },
+  {
+    "name": "Fentanyl/ER",
+    "form": "Patch",
+    "strength": "50mcg/hr"
+  },
+  {
+    "name": "Buprenorphine/ER",
+    "form": "Patch",
+    "strength": "10mcg/hr"
+  },
+  {
+    "name": "Hydrocodone/ER",
+    "form": "Tablet",
+    "strength": "10mg"
+  },
+  {
+    "name": "Codeine/ER",
+    "form": "Tablet",
+    "strength": "60mg"
+  },
+  {
+    "name": "Tramadol/ER",
+    "form": "Tablet",
+    "strength": "150mg"
+  },
+  {
+    "name": "Tapentadol/ER",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Nefopam/ER",
+    "form": "Tablet",
+    "strength": "60mg"
+  },
+  {
+    "name": "Acetaminophen/ER",
+    "form": "Tablet",
+    "strength": "650mg"
+  },
+  {
+    "name": "Paracetamol/ER",
+    "form": "Tablet",
+    "strength": "650mg"
+  },
+  {
+    "name": "Ibuprofen/ER",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Aspirin/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Diclofenac/ER",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Naproxen/ER",
+    "form": "Tablet",
+    "strength": "750mg"
+  },
+  {
+    "name": "Ketorolac/ER",
+    "form": "Tablet",
+    "strength": "20mg"
+  },
+  {
+    "name": "Celecoxib/ER",
+    "form": "Capsule",
+    "strength": "200mg"
+  },
+  {
+    "name": "Etoricoxib/ER",
+    "form": "Tablet",
+    "strength": "120mg"
+  },
+  {
+    "name": "Indomethacin/ER",
+    "form": "Capsule",
+    "strength": "75mg"
+  },
+  {
+    "name": "Meloxicam/ER",
+    "form": "Tablet",
+    "strength": "15mg"
+  },
+  {
+    "name": "Piroxicam/ER",
+    "form": "Capsule",
+    "strength": "20mg"
+  },
+  {
+    "name": "Nabumetone/ER",
+    "form": "Tablet",
+    "strength": "1000mg"
+  },
+  {
+    "name": "Oxaprozin/ER",
+    "form": "Tablet",
+    "strength": "800mg"
+  },
+  {
+    "name": "Flurbiprofen/ER",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Ketoprofen/ER",
+    "form": "Tablet",
+    "strength": "75mg"
+  },
+  {
+    "name": "Salsalate/ER",
+    "form": "Tablet",
+    "strength": "1000mg"
+  },
+  {
+    "name": "Meperidine/ER",
+    "form": "Tablet",
+    "strength": "100mg"
+  },
+  {
+    "name": "Hydromorphone/ER",
+    "form": "Tablet",
+    "strength": "4mg"
+  },
+  {
+    "name": "Oxycodone/ER",
+    "form": "Tablet",
+    "strength": "20mg"
+  },
+  {
+    "name": "Tapentadol/ER",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Tramadol/ER",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Codeine/ER",
+    "form": "Tablet",
+    "strength": "60mg"
+  },
+  {
+    "name": "Morphine/Solution",
+    "form": "Syrup",
+    "strength": "10mg/5ml"
+  },
+  {
+    "name": "Fentanyl/Solution",
+    "form": "Syrup",
+    "strength": "20mcg/5ml"
+  },
+  {
+    "name": "Buprenorphine/Solution",
+    "form": "Syrup",
+    "strength": "2mg/5ml"
+  },
+  {
+    "name": "Hydrocodone/Solution",
+    "form": "Syrup",
+    "strength": "5mg/5ml"
+  },
+  {
+    "name": "Codeine/Syrup",
+    "form": "Syrup",
+    "strength": "10mg/5ml"
+  },
+  {
+    "name": "Tramadol/Syrup",
+    "form": "Syrup",
+    "strength": "10mg/5ml"
+  },
+  {
+    "name": "Tapentadol/Syrup",
+    "form": "Syrup",
+    "strength": "20mg/5ml"
+  },
+  {
+    "name": "Nefopam/Syrup",
+    "form": "Syrup",
+    "strength": "20mg/5ml"
+  },
+  {
+    "name": "Acetaminophen/Syrup",
+    "form": "Syrup",
+    "strength": "160mg/5ml"
+  },
+  {
+    "name": "Paracetamol/Syrup",
+    "form": "Syrup",
+    "strength": "160mg/5ml"
+  },
+  {
+    "name": "Ibuprofen/Syrup",
+    "form": "Syrup",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Naproxen/Syrup",
+    "form": "Syrup",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Diclofenac/Suspension",
+    "form": "Suspension",
+    "strength": "25mg/5ml"
+  },
+  {
+    "name": "Ketorolac/Suspension",
+    "form": "Suspension",
+    "strength": "10mg/5ml"
+  },
+  {
+    "name": "Piroxicam/Suspension",
+    "form": "Suspension",
+    "strength": "20mg/5ml"
+  },
+  {
+    "name": "Meloxicam/Suspension",
+    "form": "Suspension",
+    "strength": "7.5mg/5ml"
+  },
+  {
+    "name": "Indomethacin/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Celecoxib/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Etoricoxib/Suspension",
+    "form": "Suspension",
+    "strength": "30mg/5ml"
+  },
+  {
+    "name": "Nabumetone/Suspension",
+    "form": "Suspension",
+    "strength": "500mg/5ml"
+  },
+  {
+    "name": "Oxaprozin/Suspension",
+    "form": "Suspension",
+    "strength": "600mg/5ml"
+  },
+  {
+    "name": "Flurbiprofen/Suspension",
+    "form": "Suspension",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Ketoprofen/Suspension",
+    "form": "Suspension",
+    "strength": "25mg/5ml"
+  },
+  {
+    "name": "Salsalate/Suspension",
+    "form": "Suspension",
+    "strength": "500mg/5ml"
+  },
+  {
+    "name": "Meperidine/Solution",
+    "form": "Solution",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Hydromorphone/Solution",
+    "form": "Solution",
+    "strength": "1mg/ml"
+  },
+  {
+    "name": "Oxycodone/Solution",
+    "form": "Solution",
+    "strength": "10mg/5ml"
+  },
+  {
+    "name": "Tapentadol/Solution",
+    "form": "Solution",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Tramadol/Solution",
+    "form": "Solution",
+    "strength": "20mg/5ml"
+  },
+  {
+    "name": "Codeine/Solution",
+    "form": "Solution",
+    "strength": "15mg/5ml"
+  },
+  {
+    "name": "Morphine/Injection",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Fentanyl/Injection",
+    "form": "Injection",
+    "strength": "50mcg/ml"
+  },
+  {
+    "name": "Buprenorphine/Injection",
+    "form": "Injection",
+    "strength": "0.3mg/ml"
+  },
+  {
+    "name": "Hydrocodone/Injection",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Codeine/Injection",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Tramadol/Injection",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Tapentadol/Injection",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Nefopam/Injection",
+    "form": "Injection",
+    "strength": "20mg/ml"
+  },
+  {
+    "name": "Acetaminophen/Injection",
+    "form": "Injection",
+    "strength": "500mg/100ml"
+  },
+  {
+    "name": "Paracetamol/Injection",
+    "form": "Injection",
+    "strength": "500mg/100ml"
+  },
+  {
+    "name": "Ibuprofen/Injection",
+    "form": "Injection",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Naproxen/Injection",
+    "form": "Injection",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Diclofenac/Injection",
+    "form": "Injection",
+    "strength": "75mg/3ml"
+  },
+  {
+    "name": "Ketorolac/Injection",
+    "form": "Injection",
+    "strength": "30mg/ml"
+  },
+  {
+    "name": "Piroxicam/Injection",
+    "form": "Injection",
+    "strength": "20mg/ml"
+  },
+  {
+    "name": "Meloxicam/Injection",
+    "form": "Injection",
+    "strength": "15mg/ml"
+  },
+  {
+    "name": "Indomethacin/Injection",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Celecoxib/Injection",
+    "form": "Injection",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Etoricoxib/Injection",
+    "form": "Injection",
+    "strength": "30mg/5ml"
+  },
+  {
+    "name": "Nabumetone/Injection",
+    "form": "Injection",
+    "strength": "500mg/5ml"
+  },
+  {
+    "name": "Oxaprozin/Injection",
+    "form": "Injection",
+    "strength": "600mg/5ml"
+  },
+  {
+    "name": "Flurbiprofen/Injection",
+    "form": "Injection",
+    "strength": "50mg/5ml"
+  },
+  {
+    "name": "Ketoprofen/Injection",
+    "form": "Injection",
+    "strength": "25mg/5ml"
+  },
+  {
+    "name": "Salsalate/Injection",
+    "form": "Injection",
+    "strength": "500mg/5ml"
+  },
+  {
+    "name": "Meperidine/Injection",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Hydromorphone/Injection",
+    "form": "Injection",
+    "strength": "1mg/ml"
+  },
+  {
+    "name": "Oxycodone/Injection",
+    "form": "Injection",
+    "strength": "10mg/ml"
+  },
+  {
+    "name": "Tapentadol/Injection",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Tramadol/Injection",
+    "form": "Injection",
+    "strength": "50mg/ml"
+  },
+  {
+    "name": "Codeine/Injection",
+    "form": "Injection",
+    "strength": "15mg/ml"
+  },
+  {
+    "name": "Amoxicillin",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ampicillin",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefalexin",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefadroxil",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefixime",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefuroxime",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefpodoxime",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Cefotaxime",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Ceftriaxone",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefepime",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Ceftazidime",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Ceftibuten",
+    "form": "Capsule",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefdinir",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Cefixime/Suspension",
+    "form": "Suspension",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Cefuroxime/Suspension",
+    "form": "Suspension",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Cefaclor",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefprozil",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cephalexin/Suspension",
+    "form": "Suspension",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Cefotetan",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefamandole",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefoperazone",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefixime/ER",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefpodoxime/ER",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Cefdinir/ER",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Azithromycin",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Clarithromycin",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Erythromycin",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Roxithromycin",
+    "form": "Tablet",
+    "strength": "150mg"
+  },
+  {
+    "name": "Spiramycin",
+    "form": "Tablet",
+    "strength": "1M IU"
+  },
+  {
+    "name": "Telithromycin",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Clindamycin",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Lincomycin",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Vancomycin",
+    "form": "Injection",
+    "strength": "500mg"
+  },
+  {
+    "name": "Teicoplanin",
+    "form": "Injection",
+    "strength": "400mg"
+  },
+  {
+    "name": "Doxycycline",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Tetracycline",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Minocycline",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Oxytetracycline",
+    "form": "Capsule",
+    "strength": "250mg"
+  },
+  {
+    "name": "Rifampicin",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Rifabutin",
+    "form": "Capsule",
+    "strength": "150mg"
+  },
+  {
+    "name": "Isoniazid",
+    "form": "Tablet",
+    "strength": "300mg"
+  },
+  {
+    "name": "Pyrazinamide",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ethambutol",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Linezolid",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Tedizolid",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Mupirocin",
+    "form": "Ointment",
+    "strength": "2%"
+  },
+  {
+    "name": "Fosfomycin",
+    "form": "Sachet",
+    "strength": "3g"
+  },
+  {
+    "name": "Metronidazole",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Tinidazole",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ornidazole",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Secnidazole",
+    "form": "Tablet",
+    "strength": "2g"
+  },
+  {
+    "name": "Chloramphenicol",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Linezolid/Suspension",
+    "form": "Suspension",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Rifampicin/Suspension",
+    "form": "Suspension",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Cefixime/Syrup",
+    "form": "Syrup",
+    "strength": "100mg/5ml"
+  },
+  {
+    "name": "Amoxicillin/Syrup",
+    "form": "Syrup",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Ampicillin/Syrup",
+    "form": "Syrup",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Azithromycin/Syrup",
+    "form": "Syrup",
+    "strength": "200mg/5ml"
+  },
+  {
+    "name": "Clarithromycin/Syrup",
+    "form": "Syrup",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Erythromycin/Syrup",
+    "form": "Syrup",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Cefaclor/Suspension",
+    "form": "Suspension",
+    "strength": "125mg/5ml"
+  },
+  {
+    "name": "Cefuroxime/Oral",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Cefprozil/Oral",
+    "form": "Tablet",
+    "strength": "250mg"
+  },
+  {
+    "name": "Cephalexin/Oral",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefadroxil/Oral",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Cefixime/Oral",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefpodoxime/Oral",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Cefotaxime/Injection",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Ceftriaxone/Injection",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Cefepime/Injection",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Ceftazidime/Injection",
+    "form": "Injection",
+    "strength": "1g"
+  },
+  {
+    "name": "Ceftibuten/Oral",
+    "form": "Capsule",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefdinir/Oral",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Cefixime/ER",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Cefpodoxime/ER",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Cefdinir/ER",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Azithromycin/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Clarithromycin/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Erythromycin/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Roxithromycin/ER",
+    "form": "Tablet",
+    "strength": "150mg"
+  },
+  {
+    "name": "Spiramycin/ER",
+    "form": "Tablet",
+    "strength": "1M IU"
+  },
+  {
+    "name": "Telithromycin/ER",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Clindamycin/ER",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Lincomycin/ER",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Vancomycin/ER",
+    "form": "Injection",
+    "strength": "500mg"
+  },
+  {
+    "name": "Teicoplanin/ER",
+    "form": "Injection",
+    "strength": "400mg"
+  },
+  {
+    "name": "Doxycycline/ER",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Tetracycline/ER",
+    "form": "Capsule",
+    "strength": "500mg"
+  },
+  {
+    "name": "Minocycline/ER",
+    "form": "Capsule",
+    "strength": "100mg"
+  },
+  {
+    "name": "Oxytetracycline/ER",
+    "form": "Capsule",
+    "strength": "250mg"
+  },
+  {
+    "name": "Rifampicin/ER",
+    "form": "Capsule",
+    "strength": "300mg"
+  },
+  {
+    "name": "Rifabutin/ER",
+    "form": "Capsule",
+    "strength": "150mg"
+  },
+  {
+    "name": "Isoniazid/ER",
+    "form": "Tablet",
+    "strength": "300mg"
+  },
+  {
+    "name": "Pyrazinamide/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ethambutol/ER",
+    "form": "Tablet",
+    "strength": "400mg"
+  },
+  {
+    "name": "Linezolid/ER",
+    "form": "Tablet",
+    "strength": "600mg"
+  },
+  {
+    "name": "Tedizolid/ER",
+    "form": "Tablet",
+    "strength": "200mg"
+  },
+  {
+    "name": "Mupirocin/ER",
+    "form": "Ointment",
+    "strength": "2%"
+  },
+  {
+    "name": "Fosfomycin/ER",
+    "form": "Sachet",
+    "strength": "3g"
+  },
+  {
+    "name": "Metronidazole/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Tinidazole/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Ornidazole/ER",
+    "form": "Tablet",
+    "strength": "500mg"
+  },
+  {
+    "name": "Secnidazole/ER",
+    "form": "Tablet",
+    "strength": "2g"
+  },
+  {
+    "name": "Chloramphenicol/ER",
+    "form": "Capsule",
+    "strength": "500mg"
+  }
+]
