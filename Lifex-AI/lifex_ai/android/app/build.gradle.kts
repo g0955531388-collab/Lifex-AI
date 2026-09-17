@@ -6,10 +6,8 @@ plugins {
 
 android {
     namespace = "com.lifex_ai"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
-    // 36.1.0 على هذا الجهاز مجلد فارغ بلا aapt. 34.0.0 مكتمل ويسمح بالبناء.
-    buildToolsVersion = "34.0.0"
+    compileSdk = 36
+    ndkVersion = "25.1.8937393"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -23,8 +21,8 @@ android {
     defaultConfig {
         // لا تغيّر applicationId — هذا معرّف التطبيق الرسمي على Google Play
         applicationId = "com.lifex_ai"
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = 24
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
     }
