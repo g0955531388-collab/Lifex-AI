@@ -1,4 +1,5 @@
 allprojects {
+    extra["kotlin_version"] = "2.2.20"
     repositories {
         maven { url = uri("https://maven.aliyun.com/repository/google") }
         maven { url = uri("https://maven.aliyun.com/repository/central") }
