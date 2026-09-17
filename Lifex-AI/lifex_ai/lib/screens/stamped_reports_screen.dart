@@ -60,7 +60,7 @@ class _StampedReportsScreenState extends State<StampedReportsScreen> {
       _text = bundle.report.toPlainText();
       _specialty = bundle.specialtyAr;
       _shareHint = bundle.shareHintAr;
-      _doctors = bundle.doctorsForSpecialty(
+      _doctors = const CvReportEngine().doctorsForSpecialty(
         doctors: store.list(BoxKeys.doctors),
         specialtyAr: bundle.specialtyAr,
       );

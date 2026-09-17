@@ -74,6 +74,7 @@ class _PairCard extends StatelessWidget {
     final ledger = MarriageRequestLedger();
     const engine = QiranEngine();
     final request = ledger.pairOf(me, other);
+    final requestId = request?.id;
     final verdict = request == null
         ? null
         : engine.verdict(a: me, b: other, request: request);
@@ -128,7 +129,7 @@ class _PairCard extends StatelessWidget {
                       ledger.setStatus(
                         from: other,
                         to: me,
-                        requestId: request.id,
+                        requestId: requestId ?? '',
                         status: MarriageRequestStatus.declined,
                       );
                       controller.saveActiveProfileChanges();
@@ -172,7 +173,7 @@ class _PairCard extends StatelessWidget {
                       ledger.answerReason(
                         from: other,
                         to: me,
-                        requestId: request.id,
+                        requestId: requestId ?? '',
                         accept: true,
                       );
                       controller.saveActiveProfileChanges();
@@ -184,7 +185,7 @@ class _PairCard extends StatelessWidget {
                       ledger.answerReason(
                         from: other,
                         to: me,
-                        requestId: request.id,
+                        requestId: requestId ?? '',
                         accept: false,
                       );
                       controller.saveActiveProfileChanges();
@@ -193,18 +194,20 @@ class _PairCard extends StatelessWidget {
                   ),
                 ],
               )
-            else if (request.reasonAskStatus == MarriageRequestStatus.accepted)
+            else if (request?.reasonAskStatus == MarriageRequestStatus.accepted)
               const Text('كُشف السبب بعد الموافقة المعاكسة.')
-            else if (request.reasonAskStatus == MarriageRequestStatus.pending &&
-                request.reasonAskFromId == me.profileId)
+            else if (request?.reasonAskStatus == MarriageRequestStatus.pending &&
+                request?.reasonAskFromId == me.profileId)
               const Text('بانتظار موافقة الطرف الآخر على كشف السبب.')
             else
               FilledButton.tonal(
                 onPressed: () {
+                  final current = ledger.pairOf(me, other);
+                  if (current == null) return;
                   ledger.askReason(
                     from: me,
                     to: other,
-                    requestId: request.id,
+                    requestId: current.id,
                     askerId: me.profileId,
                   );
                   controller.saveActiveProfileChanges();

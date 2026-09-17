@@ -156,7 +156,7 @@ class _ChoiceMirrorScreenState extends State<ChoiceMirrorScreen> {
             style: Theme.of(context).textTheme.bodySmall,
           ),
           const SizedBox(height: 8),
-          Text(
+          const Text(
             ChoiceMirrorBook.authorsAr,
             textAlign: TextAlign.center,
           ),
@@ -176,9 +176,9 @@ class _ChoiceMirrorScreenState extends State<ChoiceMirrorScreen> {
             onChanged: (value) => setState(() => _textScale = value),
           ),
           TextField(
-            decoration: const InputDecoration(
+            decoration: InputDecoration(
               labelText: _english ? 'Search this book' : 'بحث داخل الكتاب',
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: const Icon(Icons.search),
             ),
             onChanged: (value) => setState(() => _query = value.trim()),
           ),
