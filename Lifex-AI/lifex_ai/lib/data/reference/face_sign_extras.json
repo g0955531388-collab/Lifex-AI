@@ -1,0 +1,23 @@
+[
+  {"id": "face-extra-1", "sign": "Facial Yellowing", "meaning": "مشاكل كبدية أو انسداد صفراوي. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-2", "sign": "Pustular Facial Lesions", "meaning": "قد يُذكر مع التهاب جلدي بكتيري. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-3", "sign": "Diffuse Red Rash", "meaning": "قد يُذكر مع حساسية. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-4", "sign": "Dry Scaly Patches", "meaning": "قد يُذكر مع أكزيما أو صدفية. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-5", "sign": "Light Skin Patches", "meaning": "قد يُذكر مع فطريات أو بهاق. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-6", "sign": "Dark Facial Patches", "meaning": "قد يُذكر مع كلف أو اضطراب هرموني. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-7", "sign": "Morning Eyelid Swelling", "meaning": "قد يُذكر مع احتباس أو قصور درقي. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-8", "sign": "Facial Muscle Spasm", "meaning": "قد يُذكر مع نقص كالسيوم. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-9", "sign": "Eyelid Twitching", "meaning": "قد يُذكر مع إرهاق. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-10", "sign": "Glassy Fixed Eyes", "meaning": "قد يستدعي تقييماً عاجلاً. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-11", "sign": "Unilateral Dilated Pupil", "meaning": "قد يستدعي تقييماً عصبياً عاجلاً. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-12", "sign": "Protruding Eyes", "meaning": "قد يُذكر مع فرط نشاط الدرق. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-13", "sign": "Thinning Eyebrows", "meaning": "قد يُذكر مع قصور الدرق. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-14", "sign": "Blue Lips", "meaning": "قد يُذكر مع نقص أكسجين. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-15", "sign": "Severe Lip Cracking", "meaning": "قد يُذكر مع جفاف شديد. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-16", "sign": "Glossy Red Tongue", "meaning": "قد يُذكر مع نقص B12. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-17", "sign": "Severe Eye Redness", "meaning": "قد يُذكر مع التهاب ملتحمة. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-18", "sign": "Upper Eyelid Swelling", "meaning": "قد يُذكر مع حساسية. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-19", "sign": "Subconjunctival Bleeding", "meaning": "قد يُذكر مع جهد أو ضغط. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-21", "sign": "White Mouth Coating", "meaning": "قد يُذكر مع فطريات الفم. مرجع توعية وليس تشخيصاً."},
+  {"id": "face-extra-22", "sign": "Perioral Cyanosis", "meaning": "قد يُذكر مع نقص أكسجة. مرجع توعية وليس تشخيصاً."}
+]

@@ -136,4 +136,40 @@ class LicenseManager {
   void clearLicense() {
     _currentLicense = null;
   }
+
+  /// مفاتيح العرض في مصادر Kotlin مرفوضة. لا تفعّل ترخيصاً.
+  static bool isRejectedDemoKey(String key) {
+    final folded = key.trim().toUpperCase().replaceAll(RegExp(r'[\s\-_]'), '');
+    return folded == 'GHAZI2026';
+  }
+
+  String evaluateExternalKey(String key) {
+    if (isRejectedDemoKey(key)) {
+      return 'مفتاح العرض التوضيحي مرفوض. لا يفعّل ترخيصاً على هذا الجهاز.';
+    }
+    return 'لا يوجد خادم ترخيص لقبول مفاتيح خارجية بعد.';
+  }
+
+  String appendAr(String body) {
+    const stamp = AppConstants.ownershipStatementShort;
+    final trimmed = body.trim();
+    if (trimmed.isEmpty) return stamp;
+    if (trimmed.contains(stamp) ||
+        trimmed.contains(AppConstants.developerCredit) ||
+        trimmed.contains('غازي سليم بكفلاوي')) {
+      return trimmed;
+    }
+    return '$trimmed $stamp';
+  }
+
+  String appendEn(String body) {
+    const stamp =
+        'Lifex-AI — invented by Ghazi Salim Bakfalawi with Rabab Alhayek.';
+    final trimmed = body.trim();
+    if (trimmed.isEmpty) return stamp;
+    if (trimmed.contains(stamp) || trimmed.contains('Bakfalawi')) {
+      return trimmed;
+    }
+    return '$trimmed $stamp';
+  }
 }

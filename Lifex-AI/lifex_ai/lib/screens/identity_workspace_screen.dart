@@ -9,10 +9,15 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../features/network_box/profile_box_store.dart';
+import '../features/network_box/unit_branch_catalog.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../features/profile/health_identity_manager.dart';
 import '../widgets/honesty_banner.dart';
+import '../widgets/lifex_thumbnail.dart';
 import '../widgets/voice_fill_button.dart';
+import 'partner_sign_in_screen.dart';
+import 'thumbnail_manage_screen.dart';
+import 'unit_branch_navigator.dart';
 
 class IdentityWorkspaceScreen extends StatefulWidget {
   const IdentityWorkspaceScreen({super.key});
@@ -25,13 +30,24 @@ class IdentityWorkspaceScreen extends StatefulWidget {
 class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
   late final TextEditingController _alias;
   late final TextEditingController _origin;
+  late final TextEditingController _phone;
+  late final TextEditingController _email;
+  late final TextEditingController _nationalId;
+  late final TextEditingController _nationality;
+  late final TextEditingController _residence;
   bool _seeded = false;
+  bool _publicAliasMode = true;
 
   @override
   void initState() {
     super.initState();
     _alias = TextEditingController();
     _origin = TextEditingController();
+    _phone = TextEditingController();
+    _email = TextEditingController();
+    _nationalId = TextEditingController();
+    _nationality = TextEditingController();
+    _residence = TextEditingController();
   }
 
   @override
@@ -41,6 +57,13 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
     final store = _store();
     _alias.text = store?.stringField(BoxKeys.aliasName) ?? '';
     _origin.text = store?.stringField(BoxKeys.lifeOriginNotes) ?? '';
+    _phone.text = store?.stringField(BoxKeys.accountPhone) ?? '';
+    _email.text = store?.stringField(BoxKeys.accountEmail) ?? '';
+    _nationalId.text = store?.stringField(BoxKeys.ownerNationalId) ?? '';
+    _nationality.text = store?.stringField(BoxKeys.nationality) ?? '';
+    _residence.text = store?.stringField(BoxKeys.residencePlace) ?? '';
+    _publicAliasMode =
+        store?.stringField(BoxKeys.publicIdentityMode) != 'real';
     _seeded = true;
   }
 
@@ -55,6 +78,11 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
   void dispose() {
     _alias.dispose();
     _origin.dispose();
+    _phone.dispose();
+    _email.dispose();
+    _nationalId.dispose();
+    _nationality.dispose();
+    _residence.dispose();
     super.dispose();
   }
 
@@ -64,6 +92,15 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
     if (store == null) return;
     store.setString(BoxKeys.aliasName, _alias.text.trim());
     store.setString(BoxKeys.lifeOriginNotes, _origin.text.trim());
+    store.setString(BoxKeys.accountPhone, _phone.text.trim());
+    store.setString(BoxKeys.accountEmail, _email.text.trim());
+    store.setString(BoxKeys.ownerNationalId, _nationalId.text.trim());
+    store.setString(BoxKeys.nationality, _nationality.text.trim());
+    store.setString(BoxKeys.residencePlace, _residence.text.trim());
+    store.setString(
+      BoxKeys.publicIdentityMode,
+      _publicAliasMode ? 'alias' : 'real',
+    );
     controller.saveActiveProfileChanges();
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('حُفظت الهوية في ملفك على هذا الجهاز.')),
@@ -90,6 +127,21 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
                           'الهوية الحقيقية للجهات الصحية المخوّلة فقط. الهوية المستعارة للمجتمع والتعليم. التحقق الوثائقي يحتاج خادماً.',
                     ),
                     const SizedBox(height: 12),
+                    Center(
+                      child: LifexThumbnail(
+                        localPath: _store()?.stringField(BoxKeys.profileThumbnailPath),
+                        size: 96,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const ThumbnailManageScreen(),
+                        ),
+                      ),
+                      child: const Text('Manage the thumbnail'),
+                    ),
                     ListTile(
                       title: const Text('الاسم الحقيقي'),
                       subtitle: Text(profile.fullName),
@@ -101,8 +153,46 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
                     ListTile(
                       title: const Text('مستوى التحقق'),
                       subtitle: Text(
-                          identity?.verificationLevel.name ?? 'unverified'),
+                          '${identity?.verificationLevel.name ?? 'unverified'} — التحقق الوثائقي ليس محلياً'),
                     ),
+                    const SizedBox(height: 8),
+                    Text('الهوية الحقيقية للجهات المخوّلة',
+                        style: Theme.of(context).textTheme.titleMedium),
+                    TextField(
+                      controller: _phone,
+                      keyboardType: TextInputType.phone,
+                      decoration: const InputDecoration(
+                        labelText: 'رقم الهاتف',
+                      ),
+                    ),
+                    TextField(
+                      controller: _nationalId,
+                      decoration: const InputDecoration(
+                        labelText: 'الرقم الوطني الحقيقي (اختياري)',
+                      ),
+                    ),
+                    TextField(
+                      controller: _email,
+                      keyboardType: TextInputType.emailAddress,
+                      decoration: const InputDecoration(
+                        labelText: 'البريد الإلكتروني',
+                      ),
+                    ),
+                    TextField(
+                      controller: _nationality,
+                      decoration: const InputDecoration(
+                        labelText: 'الجنسية (اختياري)',
+                      ),
+                    ),
+                    TextField(
+                      controller: _residence,
+                      decoration: const InputDecoration(
+                        labelText: 'مكان الإقامة (اختياري)',
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    Text('الهوية المستعارة للمجتمع والتعليم',
+                        style: Theme.of(context).textTheme.titleMedium),
                     TextField(
                       controller: _alias,
                       decoration: const InputDecoration(
@@ -110,12 +200,23 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
                         hintText: 'مثال: مريض الأمل',
                       ),
                     ),
+                    SwitchListTile(
+                      contentPadding: EdgeInsets.zero,
+                      title: const Text('في الصفحات العامة استخدم المستعار'),
+                      subtitle: const Text(
+                          'الطبيب والمستشفى والإسعاف يرون الاسم الحقيقي حسب صلاحياتك'),
+                      value: _publicAliasMode,
+                      onChanged: (value) =>
+                          setState(() => _publicAliasMode = value),
+                    ),
                     const SizedBox(height: 12),
+                    Text('من التكوين',
+                        style: Theme.of(context).textTheme.titleMedium),
                     TextField(
                       controller: _origin,
                       maxLines: 4,
                       decoration: const InputDecoration(
-                        labelText: 'من التكوين: حمل أو ولادة أو بداية الملف',
+                        labelText: 'حمل أو ولادة أو بداية الملف',
                         border: OutlineInputBorder(),
                       ),
                     ),
@@ -133,6 +234,47 @@ class _IdentityWorkspaceScreenState extends State<IdentityWorkspaceScreen> {
                     FilledButton(
                       onPressed: _save,
                       child: const Text('حفظ الهوية'),
+                    ),
+                    const SizedBox(height: 8),
+                    OutlinedButton.icon(
+                      icon: const Icon(Icons.login_outlined),
+                      label: const Text('الدخول بحساب لايفكس في موقع آخر'),
+                      onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const PartnerSignInScreen(),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.emergency_outlined),
+                        title: const Text('معلومات الطوارئ'),
+                        subtitle: const Text('جهات الثقة على هذا الجهاز'),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvEmergency',
+                          ),
+                          profileId: profile.profileId,
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.family_restroom_outlined),
+                        title: const Text('أفراد العائلة'),
+                        subtitle: const Text(
+                            'ملفات مستقلة. الإشعارات باسم كل فرد'),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvFamily',
+                          ),
+                          profileId: profile.profileId,
+                        ),
+                      ),
                     ),
                   ],
                 ),

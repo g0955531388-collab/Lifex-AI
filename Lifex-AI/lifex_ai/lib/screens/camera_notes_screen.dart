@@ -12,8 +12,12 @@ import 'package:provider/provider.dart';
 import '../core/permission_transparency.dart';
 import '../features/network_box/profile_box_store.dart';
 import '../features/profile/active_profile_controller.dart';
+import '../features/profile/cv_document_vault.dart';
 import '../widgets/honesty_banner.dart';
+import 'layered_lens_studio_screen.dart';
+import 'live_sight_screen.dart';
 import 'medical_reference_screen.dart';
+import 'thumbnail_manage_screen.dart';
 
 class CameraNotesScreen extends StatefulWidget {
   const CameraNotesScreen({super.key});
@@ -68,6 +72,12 @@ class _CameraNotesScreenState extends State<CameraNotesScreen> {
       'detail': _note.text.trim().isEmpty ? file.path : _note.text.trim(),
       'path': file.path,
     });
+    CvDocumentVault(profile).attach(
+      title: _kind,
+      path: file.path,
+      passphrase: profile.profileId,
+      detail: _note.text.trim(),
+    );
     controller.saveActiveProfileChanges();
     setState(() {
       _status =
@@ -93,9 +103,14 @@ class _CameraNotesScreenState extends State<CameraNotesScreen> {
           DropdownButtonFormField<String>(
             value: _kind,
             items: const [
-              DropdownMenuItem(value: 'document', child: Text('ورقة')),
+              DropdownMenuItem(value: 'document', child: Text('ورقة / وثيقة وطنية')),
               DropdownMenuItem(value: 'screen', child: Text('شاشة جهاز')),
               DropdownMenuItem(value: 'body', child: Text('منطقة جسم')),
+              DropdownMenuItem(value: 'bedsore', child: Text('قرحة فراش')),
+              DropdownMenuItem(value: 'tongue', child: Text('لسان')),
+              DropdownMenuItem(value: 'skin', child: Text('جلد')),
+              DropdownMenuItem(value: 'hair', child: Text('شعر')),
+              DropdownMenuItem(value: 'vessel', child: Text('شرايين بارزة')),
             ],
             onChanged: (value) {
               if (value != null) setState(() => _kind = value);
@@ -109,7 +124,49 @@ class _CameraNotesScreenState extends State<CameraNotesScreen> {
           FilledButton.icon(
             onPressed: _capture,
             icon: const Icon(Icons.camera_alt_outlined),
-            label: const Text('التقاط بعد الموافقة'),
+            label: const Text('التقاط لقطة ثابتة بعد الموافقة'),
+          ),
+          const SizedBox(height: 8),
+          OutlinedButton.icon(
+            onPressed: () {
+              final id =
+                  context.read<ActiveProfileController>().activeProfileId;
+              if (id == null) return;
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => LiveSightScreen(profileId: id),
+                ),
+              );
+            },
+            icon: const Icon(Icons.videocam_outlined),
+            label: const Text('البث الحي على هذه الشاشة'),
+          ),
+          const SizedBox(height: 8),
+          OutlinedButton.icon(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const LayeredLensStudioScreen(),
+                ),
+              );
+            },
+            icon: const Icon(Icons.filter_none_outlined),
+            label: const Text('عدسة الشرائح المتراكبة (جلد وتكبير)'),
+          ),
+          const SizedBox(height: 8),
+          OutlinedButton.icon(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => const ThumbnailManageScreen(),
+                ),
+              );
+            },
+            icon: const Icon(Icons.image_outlined),
+            label: const Text('Manage the thumbnail'),
           ),
           if (_status.isNotEmpty) Text(_status),
           for (final note in notes)

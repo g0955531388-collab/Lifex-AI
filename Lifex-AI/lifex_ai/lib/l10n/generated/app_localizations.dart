@@ -132,7 +132,7 @@ abstract class AppLocalizations {
   /// No description provided for @emergencyConfirmBody.
   ///
   /// In ar, this message translates to:
-  /// **'سيتم إبلاغ جهات الثقة المسجَّلة لديك فوراً. هل تريد المتابعة؟'**
+  /// **'ستُسجَّل حالة طوارئ على هذا الجهاز. الإرسال لجهات الثقة يحتاج قناة SMS أو دفع حقيقية. هل تريد المتابعة؟'**
   String get emergencyConfirmBody;
 
   /// No description provided for @cancel.
@@ -150,7 +150,7 @@ abstract class AppLocalizations {
   /// No description provided for @emergencyAlertSent.
   ///
   /// In ar, this message translates to:
-  /// **'تم إرسال تنبيه الطوارئ لجهات الثقة.'**
+  /// **'سُجّلت حالة الطوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد.'**
   String get emergencyAlertSent;
 
   /// No description provided for @settingsTitle.
@@ -246,7 +246,7 @@ abstract class AppLocalizations {
   /// No description provided for @accessibilityEmergencyButton.
   ///
   /// In ar, this message translates to:
-  /// **'زر الطوارئ. اضغط ضغطاً مزدوجاً لتفعيل حالة طوارئ فورية'**
+  /// **'زر الطوارئ. اضغط ضغطاً مزدوجاً لتسجيل حالة طوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد'**
   String get accessibilityEmergencyButton;
 
   /// No description provided for @accessibilitySettingsButton.

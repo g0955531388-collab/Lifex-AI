@@ -12,6 +12,8 @@ import '../features/doctors/doctor_directory.dart';
 import '../features/network_box/profile_box_store.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../widgets/honesty_banner.dart';
+import 'doctor_diary_screen.dart';
+import 'public_doctor_face_screen.dart';
 
 class DoctorDirectoryScreen extends StatefulWidget {
   const DoctorDirectoryScreen({super.key});
@@ -26,12 +28,17 @@ class _DoctorDirectoryScreenState extends State<DoctorDirectoryScreen> {
   final _name = TextEditingController();
   final _phone = TextEditingController();
   final _km = TextEditingController(text: '1');
+  final _license = TextEditingController();
+  final _brief = TextEditingController();
+  String? _linkedProfileId;
 
   @override
   void dispose() {
     _name.dispose();
     _phone.dispose();
     _km.dispose();
+    _license.dispose();
+    _brief.dispose();
     super.dispose();
   }
 
@@ -60,6 +67,17 @@ class _DoctorDirectoryScreenState extends State<DoctorDirectoryScreen> {
                 messageAr:
                     'الصفحة العامة: اسم واختصاص وتواصل. بلا أسماء مرضى. الموقع الآلي يحتاج إذناً وخادماً؛ المسافة هنا يدوية.',
               ),
+              ListTile(
+                leading: const Icon(Icons.event_note_outlined),
+                title: const Text('يوميات الطبيب'),
+                subtitle: const Text('حصص اليوم على هذا الجهاز'),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const DoctorDiaryScreen(),
+                  ),
+                ),
+              ),
               DropdownButtonFormField<String>(
                 value: _filter ?? '__all__',
                 items: [
@@ -79,6 +97,12 @@ class _DoctorDirectoryScreenState extends State<DoctorDirectoryScreen> {
                   title: Text(doctor['title']?.toString() ?? ''),
                   subtitle: Text(
                     '${doctor['detail']} · ${doctor['km'] ?? '—'} كم',
+                  ),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => PublicDoctorFaceScreen(doctor: doctor),
+                    ),
                   ),
                 ),
               const Divider(),
@@ -106,6 +130,39 @@ class _DoctorDirectoryScreenState extends State<DoctorDirectoryScreen> {
                 keyboardType: TextInputType.number,
                 decoration: const InputDecoration(labelText: 'المسافة كم'),
               ),
+              TextField(
+                controller: _license,
+                decoration: const InputDecoration(
+                  labelText: 'رقم الاعتماد الوطني',
+                ),
+              ),
+              TextField(
+                controller: _brief,
+                maxLines: 3,
+                decoration: const InputDecoration(
+                  labelText: 'نبذة الإعلان العامة',
+                ),
+              ),
+              DropdownButtonFormField<String>(
+                value: _linkedProfileId ?? '',
+                items: [
+                  const DropdownMenuItem(
+                    value: '',
+                    child: Text('بلا ملف طبيب على الجهاز'),
+                  ),
+                  ...controller.allProfiles.map(
+                    (item) => DropdownMenuItem(
+                      value: item.profileId,
+                      child: Text('ملف: ${item.fullName}'),
+                    ),
+                  ),
+                ],
+                onChanged: (value) =>
+                    setState(() => _linkedProfileId = value == '' ? null : value),
+                decoration: const InputDecoration(
+                  labelText: 'ربط بملف الطبيب لاستلام الإشعار والسي في',
+                ),
+              ),
               FilledButton(
                 onPressed: () {
                   if (_name.text.trim().isEmpty) return;
@@ -113,10 +170,19 @@ class _DoctorDirectoryScreenState extends State<DoctorDirectoryScreen> {
                     'title': _name.text.trim(),
                     'detail': '$_specialty — ${_phone.text.trim()}',
                     'km': _km.text.trim(),
+                    'license': _license.text.trim(),
+                    'brief': _brief.text.trim(),
+                    'profileId': _linkedProfileId ?? '',
+                    'workHours': '12',
+                    'slotMinutes': '30',
+                    'startHour': '9',
+                    'photos': <String>[],
                   });
                   controller.saveActiveProfileChanges();
                   _name.clear();
                   _phone.clear();
+                  _license.clear();
+                  _brief.clear();
                 },
                 child: const Text('حفظ طبيب محلي'),
               ),

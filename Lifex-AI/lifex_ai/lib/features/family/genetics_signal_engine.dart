@@ -6,6 +6,7 @@
 library lifex_ai.features.family.genetics_signal_engine;
 
 import '../profile/health_profile.dart';
+import '../profile/determination_credential_policy.dart';
 
 class GeneticsSignal {
   const GeneticsSignal({
@@ -41,7 +42,7 @@ class GeneticsSignalEngine {
     final chronic = optedIn
         .where((p) =>
             p.chronicConditions.any((c) => c.isActive) ||
-            p.isPersonOfDetermination)
+            const DeterminationCredentialPolicy().isRecognized(p))
         .toList();
     if (chronic.length >= 2) {
       signals.add(

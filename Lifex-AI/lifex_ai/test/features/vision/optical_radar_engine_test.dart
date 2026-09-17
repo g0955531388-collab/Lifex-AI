@@ -7,5 +7,6 @@ void main() {
     expect(result.success, isFalse);
     expect(result.distanceMeters, isNull);
     expect(result.messageAr, contains('موافقة'));
+    expect(result.messageAr, isNot(contains(' متر')));
   });
 }

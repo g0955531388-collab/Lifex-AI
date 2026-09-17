@@ -6,6 +6,7 @@
 /// لأي مزوّد TTS فعلي، ويربطه بـ VoiceEngine المركزي.
 /// =============================================================
 
+import 'language_detector.dart';
 import 'voice_engine.dart';
 
 /// إعدادات النطق (سرعة، طبقة صوت، لغة) القابلة للتخصيص من المستخدم.
@@ -47,14 +48,23 @@ class TextToSpeechManager {
       return const VoiceOperationResult.failure('لا يوجد نص لنطقه.');
     }
 
+    final detection = await LanguageDetector.instance.detect(text);
+    final locale = detection.preciseLanguageCode ??
+        LanguageDetector.instance.localeCodeFor(detection.language);
+    final settings = SpeechSettings(
+      speechRate: defaultSettings.speechRate,
+      pitch: defaultSettings.pitch,
+      localeCode: locale,
+    );
+
     final supported = await provider.isLanguageSupported;
     if (!supported) {
       return const VoiceOperationResult.failure(
-        'اللغة الحالية غير مدعومة للقراءة الصوتية على هذا الجهاز.',
+        'لا يوجد محرّك نطق على هذا الجهاز.',
       );
     }
 
-    final success = await provider.speak(text, defaultSettings);
+    final success = await provider.speak(text, settings);
     if (!success) {
       return const VoiceOperationResult.failure(
         'تعذّرت القراءة الصوتية للنص. حاول مرة أخرى.',

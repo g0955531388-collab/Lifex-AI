@@ -15,16 +15,24 @@ import '../core/admin/admin_manager.dart';
 import '../core/admin/admin_permissions.dart';
 import '../core/app_config.dart';
 import '../core/app_constants.dart';
+import '../core/lasting_search_index.dart';
+import '../core/local_knowledge.dart';
+import '../core/search_refresh_engine.dart';
 import '../core/trial_manager.dart';
 import '../data/medical_database_manager.dart';
+import '../features/finance/billing_exemption_policy.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../features/profile/health_identity_manager.dart';
 import '../widgets/lifex_brand_mark.dart';
 import 'admin_dashboard_screen.dart';
+import 'clinical_watch_screen.dart';
 import 'family_management_screen.dart';
+import 'layered_lens_studio_screen.dart';
+import 'partner_sign_in_screen.dart';
 import 'permission_transparency_screen.dart';
 import 'privacy_settings_screen.dart';
 import 'project_box_hub_screen.dart';
+import 'thumbnail_manage_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -41,6 +49,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _isCheckingForUpdate = false;
   bool _isDownloadingUpdate = false;
   String? _updateStatusMessageAr;
+  final _giftToken = TextEditingController();
 
   @override
   void initState() {
@@ -49,6 +58,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _darkModeEnabled = config.darkModeEnabled;
     _voiceGuidanceEnabled = config.voiceGuidanceEnabledByDefault;
     _selectedLanguage = config.defaultLanguage;
+  }
+
+  @override
+  void dispose() {
+    _giftToken.dispose();
+    super.dispose();
   }
 
   void _persist() {
@@ -86,7 +101,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
       _updateStatusMessageAr = null;
     });
 
-    final result = await databaseManager.downloadAndUpdateBundle();
+    final result = await const SearchRefreshEngine().refresh(
+      knowledge: context.read<LocalKnowledge>(),
+      lasting: context.read<LastingSearchIndex>(),
+      database: databaseManager,
+    );
 
     if (!mounted) return;
     setState(() {
@@ -94,18 +113,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
       _updateStatusMessageAr = result.messageAr;
     });
 
-    if (result.success) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(result.messageAr)),
-      );
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(result.messageAr),
-          backgroundColor: Colors.orange,
-        ),
-      );
-    }
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(result.messageAr),
+        backgroundColor: result.remoteOk ? null : Colors.orange,
+      ),
+    );
   }
 
   /// معرّف Lifex-ID للملف النشط حالياً، أو null إن لم توجد هوية صحية
@@ -174,6 +187,32 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           const Divider(),
           ListTile(
+            leading: const Icon(Icons.image_outlined),
+            title: const Text('Manage the thumbnail'),
+            subtitle: const Text('إدارة الصورة المصغّرة للملف والختم الرسمي'),
+            trailing: const Icon(Icons.chevron_left),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const ThumbnailManageScreen(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.filter_none_outlined),
+            title: const Text('عدسة الشرائح المتراكبة'),
+            subtitle: const Text('تكبير جلدي وعدستان. بلا تشخيص وبلا دمج وهمي'),
+            trailing: const Icon(Icons.chevron_left),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const LayeredLensStudioScreen(),
+                ),
+              );
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.privacy_tip_outlined),
             title: const Text('إعدادات الخصوصية'),
             subtitle: const Text('التحكم بمن يرى بياناتك الصحية'),
@@ -210,6 +249,22 @@ class _SettingsScreenState extends State<SettingsScreen> {
             subtitle: const Text('من التكوين حتى آخر يوم'),
             trailing: const Icon(Icons.chevron_left),
             onTap: () {
+              final trial = context.read<TrialManager>();
+              final profile =
+                  context.read<ActiveProfileController>().activeProfile;
+              final exempt = profile != null &&
+                  const BillingExemptionPolicy().evaluate(profile).isExempt;
+              final allowed = const SessionAccessPolicy().canOpenUnit(
+                'box',
+                phase: trial.phase(feeExempt: exempt),
+                feeExempt: exempt,
+              );
+              if (!allowed) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(trial.statusLineAr(feeExempt: exempt))),
+                );
+                return;
+              }
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => const ProjectBoxHubScreen(),
@@ -219,12 +274,109 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           ListTile(
             leading: const Icon(Icons.timer_outlined),
-            title: const Text('فترة التجربة'),
+            title: const Text('حالة النسخة والاشتراك'),
             subtitle: Text(
-              context.read<TrialManager>().emergencyAndBloodOnly
-                  ? 'انتهت التجربة. تبقى الطوارئ والدم والمحفظة والإعدادات ما لم يُسجَّل إعفاء.'
-                  : 'متبقية تقريباً ${AppConstants.trialPeriodDays - context.read<TrialManager>().daysSinceInstall} يوماً من أصل ${AppConstants.trialPeriodDays}.',
+              context.read<TrialManager>().statusLineAr(
+                    feeExempt: context
+                                .read<ActiveProfileController>()
+                                .activeProfile !=
+                            null &&
+                        const BillingExemptionPolicy()
+                            .evaluate(
+                              context
+                                  .read<ActiveProfileController>()
+                                  .activeProfile!,
+                            )
+                            .isExempt,
+                  ),
             ),
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: Text(
+              'لا يجوز استنساخ التطبيق من غير مشترك. المشترك النظامي يُهدي نسخة واحدة لشخص آخر تعمل 15 يوماً ثم تتوقف حتى تخصيصها كمشترك جديد في الشهر المجاني المخفّف. التحقق بين جهازين يحتاج خادماً غير مربوط بعد.',
+            ),
+          ),
+          Consumer<ActiveProfileController>(
+            builder: (context, profiles, _) {
+              final trial = context.watch<TrialManager>();
+              final profile = profiles.activeProfile;
+              final exempt = profile != null &&
+                  const BillingExemptionPolicy().evaluate(profile).isExempt;
+              final subscribed =
+                  trial.phase(feeExempt: exempt) == TrialPhase.subscribed;
+              return Column(
+                children: [
+                  ListTile(
+                    leading: const Icon(Icons.card_giftcard_outlined),
+                    title: const Text('إهداء نسخة واحدة'),
+                    subtitle: Text(
+                      trial.hasIssuedGift
+                          ? 'صدرت الهدية: ${trial.issuedGiftToken}'
+                          : 'للمشترك النظامي فقط، مرة واحدة.',
+                    ),
+                    trailing: TextButton(
+                      onPressed: () {
+                        final result = trial.issueGiftToken(
+                          legallySubscribed: subscribed,
+                        );
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text(result.messageAr)),
+                        );
+                        setState(() {});
+                      },
+                      child: const Text('إصدار'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: TextField(
+                      controller: _giftToken,
+                      decoration: const InputDecoration(
+                        labelText: 'رمز الإهداء على جهاز المستلم',
+                        border: OutlineInputBorder(),
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      final result = trial.redeemGiftToken(_giftToken.text);
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text(result.messageAr)),
+                      );
+                      setState(() {});
+                    },
+                    child: const Text('تفعيل نسخة الإهداء'),
+                  ),
+                  if (trial.phase(feeExempt: exempt) == TrialPhase.giftFrozen)
+                    FilledButton(
+                      onPressed: () {
+                        final result = trial.claimAsNewSubscriber();
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(content: Text(result.messageAr)),
+                        );
+                        setState(() {});
+                      },
+                      child: const Text('تخصيص النسخة وشهر مجاني مخفّف'),
+                    ),
+                ],
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.login_outlined),
+            title: const Text('الدخول بحساب لايفكس'),
+            subtitle: const Text(
+              'يحق لك طلب الدخول لمواقع الذكاء الاصطناعي وغيرها ما عدا الإباحي. التنفيذ للشركاء فقط.',
+            ),
+            trailing: const Icon(Icons.chevron_left),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const PartnerSignInScreen(),
+                ),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(Icons.family_restroom_outlined),
@@ -247,6 +399,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => const PermissionTransparencyScreen(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.monitor_heart_outlined),
+            title: const Text('مراقبة سريرية ظاهرة'),
+            subtitle: const Text('إشعار دائم بموافقة. بلا تصوير خفي وبلا حفظ صور'),
+            trailing: const Icon(Icons.chevron_left),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const ClinicalWatchScreen(),
                 ),
               );
             },
@@ -343,9 +508,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           const SizedBox(height: 4),
           const Text(
-            'قاعدة البيانات الطبية تعمل بالكامل دون إنترنت. يمكنك '
-            'التحقق من وجود توسعات جديدة (أمراض، أعراض، تحاليل) '
-            'وتحميلها عند توفر اتصال.',
+            'قاعدة البحث الداخلية تدوم بلا انتهاء. الزر يبحث في قواعد الجهاز '
+            'ويحاول جلب حزمة الخادم إن وُجدت، ثم يضيفها للمحرك. التطبيق يبقى يعمل.',
             style: TextStyle(fontSize: 12, color: Colors.grey),
           ),
           const SizedBox(height: 12),
@@ -376,7 +540,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                       )
                     : const Icon(Icons.download_outlined),
-                label: const Text('تنزيل التحديث'),
+                label: const Text('ابحث وجُلب للقواعد الداخلية'),
                 onPressed: _isCheckingForUpdate || _isDownloadingUpdate
                     ? null
                     : () => _downloadMedicalUpdate(databaseManager),

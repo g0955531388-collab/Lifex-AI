@@ -23,7 +23,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get emergencyConfirmTitle => 'Confirm Emergency';
 
   @override
-  String get emergencyConfirmBody => 'Your trusted contacts will be notified immediately. Continue?';
+  String get emergencyConfirmBody => 'An emergency case will be recorded on this device. Outbound SMS/push is not bound yet. Continue?';
 
   @override
   String get cancel => 'Cancel';
@@ -32,7 +32,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get confirmEmergency => 'Confirm Emergency';
 
   @override
-  String get emergencyAlertSent => 'Emergency alert sent to your trusted contacts.';
+  String get emergencyAlertSent => 'Emergency case recorded on this device. Outbound send is not bound yet.';
 
   @override
   String get settingsTitle => 'Settings';
@@ -80,7 +80,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get accessibilityHomeButton => 'Home screen';
 
   @override
-  String get accessibilityEmergencyButton => 'Emergency button. Double tap to trigger an immediate emergency alert';
+  String get accessibilityEmergencyButton => 'Emergency button. Double tap to record an emergency on this device. Outbound send is not bound yet';
 
   @override
   String get accessibilitySettingsButton => 'Settings button';

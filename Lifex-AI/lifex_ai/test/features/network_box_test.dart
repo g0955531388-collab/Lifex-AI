@@ -13,6 +13,7 @@ import 'package:lifex_ai/features/network_box/box_unit_catalog.dart';
 import 'package:lifex_ai/features/network_box/profile_box_store.dart';
 import 'package:lifex_ai/features/network_box/sector_analytics.dart';
 import 'package:lifex_ai/features/network_box/unified_booking_service.dart';
+import 'package:lifex_ai/features/network_box/unit_branch_catalog.dart';
 import 'package:lifex_ai/features/profile/health_profile.dart';
 import 'package:lifex_ai/features/reports/stamped_report.dart';
 import 'package:lifex_ai/services/cloud/cloud_backend_client.dart';
@@ -88,6 +89,34 @@ void main() {
           'donations',
           'education',
         ]),
+      );
+    });
+  });
+
+  group('UnitBranchCatalog', () {
+    test('كل وحدة مؤسسية لها فروع أعمق من سجل واحد', () {
+      for (final unit in BoxUnitCatalog.recordUnits) {
+        final branches = UnitBranchCatalog.forUnit(unit.id);
+        expect(branches, isNotEmpty, reason: unit.id);
+        expect(branches.length, greaterThanOrEqualTo(2), reason: unit.id);
+      }
+    });
+
+    test('الأطباء يفصلون مهتم عن طبيبي', () {
+      final ids = UnitBranchCatalog.forUnit('doctors').map((b) => b.id);
+      expect(ids, containsAll(['interested', 'myDoctor', 'publicCv', 'directory']));
+    });
+
+    test('المرأة تغطي الحمل والنفاس والدورة', () {
+      final ids = UnitBranchCatalog.forUnit('women').map((b) => b.id);
+      expect(ids, containsAll(['edu', 'preg', 'birth', 'post', 'cycle']));
+    });
+
+    test('الملف الصحي يفرع الهوية والأدوية والتاريخ', () {
+      final ids = UnitBranchCatalog.healthCv.map((b) => b.id);
+      expect(
+        ids,
+        containsAll(['cvIdentity', 'cvMeds', 'cvHistory', 'cvVaccines', 'cvFamily']),
       );
     });
   });

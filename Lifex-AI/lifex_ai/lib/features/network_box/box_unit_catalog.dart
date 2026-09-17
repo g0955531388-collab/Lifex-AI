@@ -113,8 +113,8 @@ class BoxUnitCatalog {
 
   static const women = BoxUnit(
     id: 'women',
-    titleAr: 'رعاية الإناث والحمل',
-    subtitleAr: 'من التكوين حتى ما بعد الولادة',
+    titleAr: 'رعاية الإناث',
+    subtitleAr: 'وحدة مستقلة من الطفولة حتى نهاية العمر. رسائل خاصة غير صريحة.',
     storageKey: BoxKeys.women,
     icon: Icons.pregnant_woman_outlined,
     needsServer: false,

@@ -23,7 +23,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get emergencyConfirmTitle => 'تأكيد حالة طوارئ';
 
   @override
-  String get emergencyConfirmBody => 'سيتم إبلاغ جهات الثقة المسجَّلة لديك فوراً. هل تريد المتابعة؟';
+  String get emergencyConfirmBody => 'ستُسجَّل حالة طوارئ على هذا الجهاز. الإرسال لجهات الثقة يحتاج قناة SMS أو دفع حقيقية. هل تريد المتابعة؟';
 
   @override
   String get cancel => 'إلغاء';
@@ -32,7 +32,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get confirmEmergency => 'تأكيد الطوارئ';
 
   @override
-  String get emergencyAlertSent => 'تم إرسال تنبيه الطوارئ لجهات الثقة.';
+  String get emergencyAlertSent => 'سُجّلت حالة الطوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد.';
 
   @override
   String get settingsTitle => 'الإعدادات';
@@ -80,7 +80,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get accessibilityHomeButton => 'الشاشة الرئيسية';
 
   @override
-  String get accessibilityEmergencyButton => 'زر الطوارئ. اضغط ضغطاً مزدوجاً لتفعيل حالة طوارئ فورية';
+  String get accessibilityEmergencyButton => 'زر الطوارئ. اضغط ضغطاً مزدوجاً لتسجيل حالة طوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد';
 
   @override
   String get accessibilitySettingsButton => 'زر الإعدادات';

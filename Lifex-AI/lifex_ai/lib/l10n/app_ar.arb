@@ -6,10 +6,10 @@
   "homeMyAppointments": "مواعيدي",
   "homeEmergency": "طوارئ",
   "emergencyConfirmTitle": "تأكيد حالة طوارئ",
-  "emergencyConfirmBody": "سيتم إبلاغ جهات الثقة المسجَّلة لديك فوراً. هل تريد المتابعة؟",
+  "emergencyConfirmBody": "ستُسجَّل حالة طوارئ على هذا الجهاز. الإرسال لجهات الثقة يحتاج قناة SMS أو دفع حقيقية. هل تريد المتابعة؟",
   "cancel": "إلغاء",
   "confirmEmergency": "تأكيد الطوارئ",
-  "emergencyAlertSent": "تم إرسال تنبيه الطوارئ لجهات الثقة.",
+  "emergencyAlertSent": "سُجّلت حالة الطوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد.",
   "settingsTitle": "الإعدادات",
   "settingsDarkMode": "الوضع الليلي",
   "settingsVoiceGuidance": "الإرشاد الصوتي",
@@ -25,6 +25,6 @@
   "settingsAbout": "حول التطبيق",
   "noHealthProfileLoaded": "لا يوجد ملف صحي محمَّل حالياً.",
   "accessibilityHomeButton": "الشاشة الرئيسية",
-  "accessibilityEmergencyButton": "زر الطوارئ. اضغط ضغطاً مزدوجاً لتفعيل حالة طوارئ فورية",
+  "accessibilityEmergencyButton": "زر الطوارئ. اضغط ضغطاً مزدوجاً لتسجيل حالة طوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد",
   "accessibilitySettingsButton": "زر الإعدادات"
 }

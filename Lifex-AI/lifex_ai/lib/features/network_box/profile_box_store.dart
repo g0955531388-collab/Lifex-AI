@@ -36,6 +36,40 @@ class BoxKeys {
   static const careOrders = 'careOrders';
   static const accountEmail = 'accountEmail';
   static const accountPhone = 'accountPhone';
+  static const ownerNationalId = 'ownerNationalId';
+  static const nationality = 'nationality';
+  static const residencePlace = 'residencePlace';
+  static const surgeries = 'surgeryHistoryRecords';
+  static const vaccinations = 'vaccinationRecords';
+  static const lifestyle = 'lifestyleRecords';
+  static const medicalHistory = 'pastIllnessRecords';
+  static const womenMembership = 'womenMembership';
+  static const doctorInterested = 'doctorInterestedFollows';
+  static const doctorMyDoctors = 'doctorMedicalLinks';
+  static const labSamples = 'labSampleRecords';
+  static const hospitalDepartments = 'hospitalDepartmentRecords';
+  static const hospitalAdmissions = 'hospitalAdmissionRecords';
+  static const hospitalDischarge = 'hospitalDischargeRecords';
+  static const imagingModalities = 'imagingModalityRecords';
+  static const donationKinds = 'donationKindRecords';
+  static const educationPlan = 'educationPersonalPlan';
+  static const familyHistory = 'familyHistoryRecords';
+  static const profileThumbnailPath = 'profileThumbnailPath';
+  static const layeredSlices = 'layeredSliceRecords';
+  static const doctorDiaryDays = 'doctorDiaryDays';
+  static const empowermentPact = 'empowermentPact';
+  static const familyChildCharter = 'familyChildCharter';
+  static const youthPact = 'youthPact';
+  static const royalIntelligenceLast = 'royalIntelligenceLast';
+  static const personalShelf = 'personalShelf';
+  static const disabilityRecords = 'disabilitySelfRecords';
+  static const marriageRequests = 'marriageHealthRequests';
+  static const healthThreads = 'healthChannelThreads';
+  static const cvVault = 'ownerCvVault';
+  static const accreditedPatientInbox = 'accreditedPatientInbox';
+  static const doctorNotices = 'doctorUnitNotices';
+  static const medicationAlarms = 'medicationAlarms';
+  static const choiceMirrorJournal = 'choiceMirrorJournal';
 }
 
 /// قراءة وكتابة قوائم الصندوق داخل [HealthProfile.questionnaireData].

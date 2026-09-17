@@ -12,6 +12,9 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../core/medical_record_canon.dart';
+import '../widgets/encyclopedia_share_bar.dart';
+
 enum MedicalReferenceKind { cameraSigns, conditions, growth, drugs }
 
 class MedicalReferenceScreen extends StatefulWidget {
@@ -57,7 +60,7 @@ class _MedicalReferenceScreenState extends State<MedicalReferenceScreen> {
       }
       if (!mounted) return;
       setState(() {
-        _all = items;
+        _all = _uniqueByTitle(items);
         _loading = false;
       });
     } catch (_) {
@@ -72,12 +75,16 @@ class _MedicalReferenceScreenState extends State<MedicalReferenceScreen> {
   List<String> _assetsFor(MedicalReferenceKind kind) {
     switch (kind) {
       case MedicalReferenceKind.cameraSigns:
-        return ['lib/data/reference/SmartCameraSigns.json'];
+        return [
+          'lib/data/reference/SmartCameraSigns.json',
+          'lib/data/reference/face_sign_extras.json',
+        ];
       case MedicalReferenceKind.conditions:
         return [
           'lib/data/reference/conditions_db_1000.json',
           'lib/data/reference/genital_conditions.json',
           'lib/data/reference/hands_conditions.json',
+          'lib/data/reference/skin_hair_conditions.json',
         ];
       case MedicalReferenceKind.growth:
         return ['lib/data/reference/Height_Weight.json'];
@@ -117,6 +124,19 @@ class _MedicalReferenceScreenState extends State<MedicalReferenceScreen> {
     }
   }
 
+  List<_RefItem> _uniqueByTitle(List<_RefItem> items) {
+    final buckets = <String, _RefItem>{};
+    for (final item in items) {
+      final key = MedicalRecordCanon.normalize(item.title);
+      if (key.isEmpty) continue;
+      final prev = buckets[key];
+      if (prev == null || item.subtitle.length > prev.subtitle.length) {
+        buckets[key] = item;
+      }
+    }
+    return buckets.values.toList();
+  }
+
   List<_RefItem> get _filtered {
     final q = _query.text.trim().toLowerCase();
     if (q.isEmpty) return _all;
@@ -132,6 +152,7 @@ class _MedicalReferenceScreenState extends State<MedicalReferenceScreen> {
     final filtered = _filtered;
     return Scaffold(
       appBar: AppBar(title: Text(_title)),
+      bottomNavigationBar: const EncyclopediaShareBar(),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
           : _errorAr != null

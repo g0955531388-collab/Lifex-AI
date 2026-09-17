@@ -9,18 +9,24 @@
 library lifex_ai.screens.home_screen;
 
 import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 
 import '../core/trial_manager.dart';
 import '../features/emergency/emergency_manager.dart';
+import '../features/network_box/box_unit_catalog.dart';
+import '../features/emergency/emergency_phone_contacts_registry.dart';
 import '../features/finance/billing_exemption_policy.dart';
+import '../features/location/gps_priority_monitor.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../widgets/accessible_widgets.dart';
+import '../widgets/encyclopedia_share_bar.dart';
 import 'accessibility_assistant_screen.dart';
 import 'ai_agent_screen.dart';
 import 'ai_hub_screen.dart';
 import 'appointments_screen.dart';
 import 'blood_request_screen.dart';
+import 'box_unit_screen.dart';
 import 'camera_notes_screen.dart';
 import 'doctor_directory_screen.dart';
 import 'emergency_contacts_screen.dart';
@@ -47,19 +53,17 @@ class HomeScreen extends StatelessWidget {
         const BillingExemptionPolicy().evaluate(profile).isExempt;
     return const SessionAccessPolicy().canOpenUnit(
       unitId,
-      expired: trial.emergencyAndBloodOnly,
+      phase: trial.phase(feeExempt: exempt),
       feeExempt: exempt,
     );
   }
 
   void _open(BuildContext context, String unitId, Widget page) {
     if (!_allowed(context, unitId)) {
+      final trial = context.read<TrialManager>();
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text(
-            'انتهت التجربة. تبقى الطوارئ وشبكة الدم والمحفظة والإعدادات. '
-            'ذوو الهمم وأصحاب الأمراض المزمنة معفيون.',
-          ),
+        SnackBar(
+          content: Text(trial.statusLineAr()),
         ),
       );
       return;
@@ -77,9 +81,13 @@ class HomeScreen extends StatelessWidget {
             const BillingExemptionPolicy()
                 .evaluate(profileController.activeProfile!)
                 .isExempt;
-        final expiredLocked = trial.emergencyAndBloodOnly && !exempt;
+        final phase = trial.phase(feeExempt: exempt);
+        final showGate = !exempt &&
+            phase != TrialPhase.subscribed &&
+            phase != TrialPhase.giftWorking;
 
         return Scaffold(
+          bottomNavigationBar: const EncyclopediaShareBar(),
           appBar: AppBar(
             title: const Text('Lifex-AI'),
             actions: [
@@ -116,17 +124,31 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(16.0),
               child: Column(
                 children: [
-                  if (expiredLocked)
-                    const Card(
-                      child: Padding(
-                        padding: EdgeInsets.all(12),
-                        child: Text(
-                          'انتهت فترة التجربة. تبقى الطوارئ وشبكة الدم والمحفظة '
-                          'والإعدادات حتى تُفعَّل الفوترة أو يُسجَّل إعفاء إنساني.',
+                  FutureBuilder<PermissionStatus>(
+                    future: Permission.location.status,
+                    builder: (context, snapshot) {
+                      final granted = snapshot.data?.isGranted == true;
+                      final gps = const GpsPriorityMonitor()
+                          .fromPermission(granted: granted);
+                      return Card(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        child: ListTile(
+                          leading: const Icon(Icons.gps_fixed),
+                          title: const Text('حالة GPS — أولوية عالية'),
+                          subtitle: Text(gps.messageAr),
                         ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 12),
+                  if (showGate)
+                    Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Text(trial.statusLineAr(feeExempt: exempt)),
                       ),
                     ),
-                  if (expiredLocked) const SizedBox(height: 12),
+                  if (showGate) const SizedBox(height: 12),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
@@ -258,9 +280,9 @@ class HomeScreen extends StatelessWidget {
                         ),
                         AccessibleActionButton(
                           icon: Icons.chat_bubble_outline,
-                          label: 'المحادثة الصحية',
+                          label: 'القناة الصحية',
                           semanticHint:
-                              'يفتح محادثة صحية تنظيمية ويقرأ الردود صوتيًا',
+                              'محادثة صحية بأسلوب المراسلة: فلتر عام ومرفقات للمشتركين',
                           onTap: activeProfileId == null
                               ? null
                               : () {
@@ -285,6 +307,19 @@ class HomeScreen extends StatelessWidget {
                                     const HealthModulesScreen(),
                                   );
                                 },
+                        ),
+                        AccessibleActionButton(
+                          icon: Icons.volunteer_activism_outlined,
+                          label: 'التبرعات',
+                          semanticHint:
+                              'تبقى مفتوحة بلا اشتراك: حملات الدعم الإنساني على هذا الجهاز',
+                          onTap: () {
+                            _open(
+                              context,
+                              'donations',
+                              const BoxUnitScreen(unit: BoxUnitCatalog.donations),
+                            );
+                          },
                         ),
                         AccessibleActionButton(
                           icon: Icons.bloodtype_outlined,
@@ -395,10 +430,18 @@ class HomeScreen extends StatelessWidget {
                           icon: Icons.emergency_outlined,
                           label: 'طوارئ',
                           semanticHint:
-                              'يبدأ إجراء تنبيه طوارئ فوري لجهات الثقة، '
+                              'يسجّل حالة طوارئ على هذا الجهاز. الإرسال الخارجي غير مربوط بعد. '
                               'اضغط ضغطاً مزدوجاً للتأكيد',
                           isUrgent: true,
                           onTap: () {
+                            if (!_allowed(context, 'emergency')) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(trial.statusLineAr()),
+                                ),
+                              );
+                              return;
+                            }
                             _showEmergencyConfirmationDialog(
                                 context, activeProfileId);
                           },
@@ -424,7 +467,7 @@ class HomeScreen extends StatelessWidget {
       builder: (dialogContext) => AlertDialog(
         title: const Text('تأكيد حالة طوارئ'),
         content: const Text(
-          'سيتم إبلاغ جهات الثقة المسجَّلة لديك فوراً. هل تريد المتابعة؟',
+          'ستُسجَّل حالة طوارئ على هذا الجهاز. الإرسال لجهات الثقة يحتاج قناة SMS أو دفع حقيقية. هل تريد المتابعة؟',
         ),
         actions: [
           TextButton(
@@ -443,26 +486,34 @@ class HomeScreen extends StatelessWidget {
           ),
           FilledButton(
             style: FilledButton.styleFrom(backgroundColor: Colors.red),
-            onPressed: () {
-              final emergencyManager =
-                  Provider.of<EmergencyManager>(context, listen: false);
-
-              emergencyManager.triggerEmergency(
-                profileId: activeProfileId ?? 'unknown_profile',
-                reasonAr: 'تفعيل يدوي من الشاشة الرئيسية بواسطة المستخدم.',
+            onPressed: () async {
+              final profileId = activeProfileId ?? 'unknown_profile';
+              final registry = context.read<EmergencyPhoneContactsRegistry>();
+              final profile =
+                  context.read<ActiveProfileController>().activeProfile;
+              registry.replaceForProfile(
+                profileId,
+                EmergencyPhoneContactsRegistry.phonesFromTrustedMaps(
+                  profile?.questionnaireData['trustedContacts'],
+                ),
               );
+              final outcome =
+                  await context.read<EmergencyManager>().triggerEmergency(
+                        profileId: profileId,
+                        reasonAr:
+                            'تفعيل يدوي من الشاشة الرئيسية بواسطة المستخدم.',
+                      );
 
+              if (!context.mounted) return;
               Navigator.of(dialogContext).pop();
 
-              announceForScreenReader(
-                context,
-                'تم إرسال تنبيه الطوارئ لجهات الثقة.',
-              );
+              announceForScreenReader(context, outcome.messageAr);
 
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('تم إرسال تنبيه الطوارئ لجهات الثقة.'),
-                  backgroundColor: Colors.red,
+                SnackBar(
+                  content: Text(outcome.messageAr),
+                  backgroundColor:
+                      outcome.outboundSent ? Colors.red : Colors.orange,
                 ),
               );
             },

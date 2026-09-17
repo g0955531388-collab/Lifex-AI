@@ -42,6 +42,9 @@ class VoiceEngine {
 
   VoiceEngineState _state = VoiceEngineState.idle;
   final List<VoiceStateListener> _listeners = [];
+  String? partialTranscript;
+  String? activeLocaleId;
+  String lastSignalAr = 'الصوت في وضع الانتظار';
 
   /// دوال منفَّذة من المحركات الفرعية (تُسجَّل عند التهيئة عبر
   /// voice_command_engine أو غيره) لتنفيذ العمليات الفعلية.
@@ -58,9 +61,26 @@ class VoiceEngine {
 
   void _setState(VoiceEngineState newState) {
     _state = newState;
+    _notify();
+  }
+
+  void _notify() {
     for (final listener in List<VoiceStateListener>.from(_listeners)) {
-      listener(newState);
+      listener(_state);
     }
+  }
+
+  void signalAr(String message) {
+    lastSignalAr = message;
+    _notify();
+  }
+
+  void reportPartial(String text) {
+    partialTranscript = text;
+    if (text.trim().isNotEmpty) {
+      lastSignalAr = 'أسمعك: $text';
+    }
+    _notify();
   }
 
   /// ربط التنفيذ الفعلي للاستماع (يُستدعى من speech_to_text_processor.dart).
@@ -93,17 +113,24 @@ class VoiceEngine {
         sourceModule: 'voice_engine',
         severity: ErrorSeverity.warning,
       );
+      signalAr('التعرّف الصوتي غير مربوط.');
       return const VoiceOperationResult.failure(
         'ميزة التعرّف الصوتي غير جاهزة حالياً.',
       );
     }
 
+    partialTranscript = null;
+    signalAr('أستمع وأسجّل الآن.');
     _setState(VoiceEngineState.listening);
     try {
       final result = await _startListeningImpl!();
+      signalAr(result.success
+          ? 'انتهى الاستماع.'
+          : (result.errorMessageAr ?? 'تعذّر الاستماع.'));
       _setState(VoiceEngineState.idle);
       return result;
     } catch (e, stackTrace) {
+      signalAr('تعذّر تشغيل الميكروفون.');
       _setState(VoiceEngineState.error);
       ErrorHandler.instance.report(
         'VOICE_LISTEN_FAILED',
@@ -130,13 +157,18 @@ class VoiceEngine {
         sourceModule: 'voice_engine',
         severity: ErrorSeverity.warning,
       );
+      signalAr('النطق غير مربوط.');
       return const VoiceOperationResult.failure(
         'ميزة القراءة الصوتية غير جاهزة حالياً.',
       );
     }
 
+    signalAr('أردّ بالصوت الآن.');
     _setState(VoiceEngineState.speaking);
     final result = await _speakImpl!(text);
+    signalAr(result.success
+        ? 'انتهى الرد الصوتي.'
+        : (result.errorMessageAr ?? 'تعذّر النطق.'));
     _setState(VoiceEngineState.idle);
     return result;
   }

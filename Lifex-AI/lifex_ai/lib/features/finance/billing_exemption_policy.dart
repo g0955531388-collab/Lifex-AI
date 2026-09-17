@@ -2,14 +2,13 @@
 /// Lifex-AI — المعاملات المالية
 /// الملف: billing_exemption_policy.dart
 /// المسار: lib/features/finance/billing_exemption_policy.dart
-/// الوصف: سياسة إعفاء ثابتة وصريحة — كل مريض بحالة مزمنة أو مستعصية
-/// نشطة، وكل شخص من ذوي الهمم، مُعفى بشكل دائم من أي رسوم أو اشتراكات
-/// في المنصة، بصرف النظر عن أي ظرف آخر. هذا الملف هو المصدر الوحيد
-/// لهذا القرار؛ SubscriptionBillingManager يستدعيه دائماً قبل أي محاولة
-/// فوترة، ولا يُطبَّق الإعفاء أو يُعاد تعريفه في أي مكان آخر من الكود.
+/// الوصف: إعفاء بلا أجور ولا رسوم لذوي الإعاقة بعد بطاقة من بلد الحساب،
+/// والمرضى الدائمين في الملف، والمكفوفين. الاشتراك العادي للأفراد 100
+/// دولار سنوياً ولا يشمل الإعلانات ولا الخدمات الخاصة.
 /// =============================================================
 library lifex_ai.features.finance.billing_exemption_policy;
 
+import '../profile/determination_credential_policy.dart';
 import '../profile/health_profile.dart';
 
 class BillingExemptionResult {
@@ -30,9 +29,17 @@ class BillingExemptionPolicy {
   const BillingExemptionPolicy();
 
   BillingExemptionResult evaluate(HealthProfile profile) {
-    if (profile.isPersonOfDetermination) {
+    final determination =
+        const DeterminationCredentialPolicy().evaluate(profile);
+    if (determination.recognized) {
       return const BillingExemptionResult.exempt(
-        'إعفاء دائم: صاحب الحساب من ذوي الهمم.',
+        'إعفاء دائم: بطاقة همم من بلد صاحب الحساب (وطنية أو إعاقة أو مرض دائم).',
+      );
+    }
+
+    if (profile.isBlind) {
+      return const BillingExemptionResult.exempt(
+        'إعفاء دائم: لا أجور ولا رسوم على المكفوفين في هذه الفئة.',
       );
     }
 
@@ -40,8 +47,7 @@ class BillingExemptionPolicy {
         profile.chronicConditions.any((c) => c.isActive);
     if (hasActiveChronicCondition) {
       return const BillingExemptionResult.exempt(
-        'إعفاء دائم: صاحب الحساب لديه حالة مزمنة أو مستعصية نشطة مسجَّلة '
-        'في ملفه الصحي.',
+        'إعفاء دائم: لا أجور ولا رسوم على المرضى الدائمين المسجَّلين في الملف.',
       );
     }
 

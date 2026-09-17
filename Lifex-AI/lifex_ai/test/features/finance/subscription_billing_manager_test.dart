@@ -32,12 +32,22 @@ class _FakeSucceedingGateway implements PaymentGatewayClient {
   }
 }
 
-HealthProfile _buildProfile({bool isPersonOfDetermination = false}) {
+HealthProfile _buildProfile({
+  bool isPersonOfDetermination = false,
+  String accountCountry = '',
+  String determinationCardKind = '',
+  String determinationCardCountry = '',
+  String determinationCardRef = '',
+}) {
   return HealthProfile(
     profileId: 'p1',
     fullName: 'مستخدم اختباري',
     dateOfBirth: DateTime(1990, 1, 1),
     isPersonOfDetermination: isPersonOfDetermination,
+    accountCountry: accountCountry,
+    determinationCardKind: determinationCardKind,
+    determinationCardCountry: determinationCardCountry,
+    determinationCardRef: determinationCardRef,
   );
 }
 
@@ -50,7 +60,13 @@ void main() {
     )..registerGateway(_FakeSucceedingGateway());
 
     final result = await manager.chargeSubscription(
-      profile: _buildProfile(isPersonOfDetermination: true),
+      profile: _buildProfile(
+        isPersonOfDetermination: true,
+        accountCountry: 'SY',
+        determinationCardKind: 'nationalId',
+        determinationCardCountry: 'SY',
+        determinationCardRef: 'N-1',
+      ),
       amountInSmallestUnit: 500,
       currencyCode: 'USD',
       gatewayName: 'FakeGateway',

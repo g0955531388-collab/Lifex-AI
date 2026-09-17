@@ -15,8 +15,10 @@ import 'box_unit_screen.dart';
 import 'camera_notes_screen.dart';
 import 'care_order_screen.dart';
 import 'doctor_directory_screen.dart';
+import 'layered_lens_studio_screen.dart';
 import 'medical_reference_screen.dart';
 import 'pharmacy_stock_screen.dart';
+import 'thumbnail_manage_screen.dart';
 
 class HealthModulesScreen extends StatelessWidget {
   const HealthModulesScreen({super.key});
@@ -40,7 +42,7 @@ class HealthModulesScreen extends StatelessWidget {
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
           const SizedBox(height: 8),
           const Text(
-              'كل وحدة تفتح مساحة عمل. السجلات محلية. الربط المؤسسي يحتاج خادماً.'),
+              'كل وحدة تفتح أقسامها الفرعية من السيناريو: ملف عام، علاقة، حجز، سجلات. الربط المؤسسي يحتاج خادماً.'),
           const SizedBox(height: 16),
           Card(
             child: ListTile(
@@ -109,6 +111,31 @@ class HealthModulesScreen extends StatelessWidget {
               onTap: () => Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (_) => const CameraNotesScreen(),
+                ),
+              ),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading:
+                  const CircleAvatar(child: Icon(Icons.filter_none_outlined)),
+              title: const Text('عدسة الشرائح المتراكبة'),
+              subtitle: const Text('تكبير جلدي وعدستان. ليست تشخيصاً جلدياً'),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const LayeredLensStudioScreen(),
+                ),
+              ),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              leading: const CircleAvatar(child: Icon(Icons.image_outlined)),
+              title: const Text('Manage the thumbnail'),
+              subtitle: const Text('إدارة الصورة المصغّرة'),
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const ThumbnailManageScreen(),
                 ),
               ),
             ),

@@ -14,6 +14,7 @@ import 'package:provider/provider.dart';
 import '../data/medical_database_manager.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../features/profile/health_profile.dart';
+import 'medication_alarm_screen.dart';
 
 class MedicationsScreen extends StatefulWidget {
   const MedicationsScreen({super.key, required this.profileId});
@@ -135,7 +136,21 @@ class _MedicationsScreenState extends State<MedicationsScreen> {
       builder: (context, profiles, _) {
         final profile = profiles.profileById(widget.profileId);
         return Scaffold(
-          appBar: AppBar(title: const Text('أدويتي')),
+          appBar: AppBar(
+            title: const Text('أدويتي'),
+            actions: [
+              IconButton(
+                tooltip: 'منبّه الأدوية الذكي',
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const MedicationAlarmScreen(),
+                  ),
+                ),
+                icon: const Icon(Icons.alarm),
+              ),
+            ],
+          ),
           floatingActionButton: profile == null
               ? null
               : FloatingActionButton.extended(
@@ -156,6 +171,15 @@ class _MedicationsScreenState extends State<MedicationsScreen> {
                           style: TextStyle(fontSize: 13, color: Colors.orange),
                         ),
                         const SizedBox(height: 12),
+                        FilledButton.tonal(
+                          onPressed: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const MedicationAlarmScreen(),
+                            ),
+                          ),
+                          child: const Text('منبّه الأدوية الذكي لكل أفراد الحساب'),
+                        ),
                         for (final warning in _interactionWarnings(profile))
                           Card(
                             color: Colors.red.withOpacity(0.08),

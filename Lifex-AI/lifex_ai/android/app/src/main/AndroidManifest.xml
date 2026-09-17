@@ -18,8 +18,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!-- الكاميرا — smart_vision_engine.dart وكل محركات الرؤية الفرعية -->
+    <!-- الكاميرا — البث الحي على الشاشة المفتوحة وأرشيف الأوراق بموافقة -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
     <!-- الميكروفون — voice_engine.dart وspeech_to_text_processor.dart -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -42,6 +44,11 @@
          النظام الموقَّعة بمفتاح المنصة نفسها، فلا فائدة من إعلانه في
          تطبيق عادي — تم حذفه. -->
 
+    <!-- إشعار مراقبة صحية ظاهر — ليست خدمة خفية ولا Device Admin -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+
     <!-- الإشعارات — health_alert_dispatcher.dart وflash_alert_notifier.dart -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
@@ -51,6 +58,20 @@
 
     <!-- الرسائل النصية — sms_fallback_channel.dart (طوارئ فقط) -->
     <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Android 11+: السماح برؤية خدمات التعرّف والنطق على الجهاز -->
+    <queries>
+        <intent>
+            <action android:name="android.speech.RecognitionService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+    </queries>
 
     <application
         android:label="Lifex-AI"
@@ -75,6 +96,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".ClinicalWatchService"
+            android:exported="false"
+            android:foregroundServiceType="microphone|camera" />
 
         <meta-data
             android:name="flutterEmbedding"

@@ -13,6 +13,7 @@ import 'package:provider/provider.dart';
 
 import '../features/ai/unified_ai_hub_gateway.dart';
 import 'ai_agent_screen.dart';
+import 'partner_sign_in_screen.dart';
 
 class AiHubScreen extends StatefulWidget {
   const AiHubScreen({super.key, required this.profileId});
@@ -45,9 +46,8 @@ class _AiHubScreenState extends State<AiHubScreen> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'أدخل مفتاح API الخاص بك. لن يُشارك هذا المفتاح مع أي '
-              'طرف آخر، ويُستخدم فقط لإرسال طلباتك مباشرة لمحرك '
-              '${_providerLabelsAr[provider]}.',
+              'أدخل مفتاح API الخاص بك. يُحفظ على هذا الجهاز فقط. '
+              'لن أختبره مع ${_providerLabelsAr[provider]} حتى يوجد اتصال حقيقي بالمحرك.',
               style: const TextStyle(fontSize: 12, color: Colors.grey),
             ),
             const SizedBox(height: 12),
@@ -98,8 +98,9 @@ class _AiHubScreenState extends State<AiHubScreen> {
     setState(() {
       _isConnecting = false;
       _statusMessageAr = success
-          ? 'تم ربط حساب ${_providerLabelsAr[provider]} بنجاح.'
-          : 'تعذّر ربط الحساب. حاول مرة أخرى.';
+          ? 'حُفظ مفتاح ${_providerLabelsAr[provider]} على هذا الجهاز. '
+              'لم يُختبر مع المحرك بعد. التخزين الحالي في الذاكرة وليس خزنة مشفّرة.'
+          : 'تعذّر حفظ المفتاح على هذا الجهاز.';
     });
   }
 
@@ -128,9 +129,20 @@ class _AiHubScreenState extends State<AiHubScreen> {
           padding: const EdgeInsets.all(16),
           children: [
             const Text(
-              'اربط حسابك الشخصي بأي محرك ذكاء اصطناعي تفضّله. مفتاحك '
-              'الخاص يُستخدم لإرسال طلباتك مباشرة لذلك المحرك.',
+              'حساب لايفكس لا يسجّل دخولاً نيابة عنك في Gemini أو ChatGPT أو غيرها. '
+              'إن حفظت مفتاحك فهو على هذا الجهاز فقط، ولم يُختبر مع المحرك حتى يوجد اتصال حقيقي. '
+              'طلب الدخول بأي موقع غير إباحي حقّك؛ التنفيذ للشركاء فقط.',
               style: TextStyle(fontSize: 13, color: Colors.grey),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => const PartnerSignInScreen(),
+                  ),
+                );
+              },
+              child: const Text('طلب الدخول بحساب لايفكس لموقع تختاره'),
             ),
             const SizedBox(height: 16),
             Card(

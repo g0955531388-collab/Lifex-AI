@@ -21,14 +21,17 @@ import '../features/profile/active_profile_controller.dart';
 import '../features/voice/voice_engine.dart';
 
 class BloodRequestScreen extends StatefulWidget {
-  const BloodRequestScreen({super.key});
+  const BloodRequestScreen({super.key, this.preferType});
+
+  /// فصيلة من أمر صوتي أو بحث، إن وُجدت. لا تُرسل الطلب تلقائياً.
+  final BloodTypeSimple? preferType;
 
   @override
   State<BloodRequestScreen> createState() => _BloodRequestScreenState();
 }
 
 class _BloodRequestScreenState extends State<BloodRequestScreen> {
-  BloodTypeSimple _type = BloodTypeSimple.oPositive;
+  late BloodTypeSimple _type = widget.preferType ?? BloodTypeSimple.oPositive;
   BloodRequestUrgency _urgency = BloodRequestUrgency.urgent;
   String _statusAr = 'لم يُرسل أي طلب بعد.';
 

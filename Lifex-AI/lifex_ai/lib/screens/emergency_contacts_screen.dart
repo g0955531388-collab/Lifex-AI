@@ -38,6 +38,19 @@ class _EmergencyContactsScreenState extends State<EmergencyContactsScreen> {
           .map((item) => Map<String, dynamic>.from(item))
           .toList();
     }
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _syncRegistry();
+    });
+  }
+
+  void _syncRegistry() {
+    final profileId =
+        context.read<ActiveProfileController>().activeProfileId;
+    if (profileId == null) return;
+    context.read<EmergencyPhoneContactsRegistry>().replaceForProfile(
+          profileId,
+          _contacts.map((c) => c['phone']?.toString() ?? ''),
+        );
   }
 
   void _persist() {
@@ -47,6 +60,7 @@ class _EmergencyContactsScreenState extends State<EmergencyContactsScreen> {
     profile.questionnaireData['trustedContacts'] = _contacts;
     profile.lastUpdatedAt = DateTime.now();
     controller.saveActiveProfileChanges();
+    _syncRegistry();
   }
 
   Future<void> _add() async {

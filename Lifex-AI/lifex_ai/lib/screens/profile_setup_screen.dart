@@ -13,6 +13,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../features/profile/active_profile_controller.dart';
+import '../features/profile/determination_credential_policy.dart';
 import '../features/profile/health_profile.dart';
 import 'home_screen.dart';
 
@@ -28,9 +29,14 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
   final _phoneController = TextEditingController();
+  final _accountCountryController = TextEditingController();
+  final _cardCountryController = TextEditingController();
+  final _cardRefController = TextEditingController();
   DateTime? _dateOfBirth;
   BiologicalSex _sex = BiologicalSex.unspecified;
   bool _isPersonOfDetermination = false;
+  bool _isBlind = false;
+  DeterminationCardKind _cardKind = DeterminationCardKind.disabilityCard;
   bool _acceptsBloodDonationAlerts = true;
   String? _errorMessageAr;
 
@@ -39,6 +45,9 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
     _nameController.dispose();
     _emailController.dispose();
     _phoneController.dispose();
+    _accountCountryController.dispose();
+    _cardCountryController.dispose();
+    _cardRefController.dispose();
     super.dispose();
   }
 
@@ -63,6 +72,25 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
       setState(() => _errorMessageAr = 'يُرجى تحديد تاريخ الميلاد.');
       return;
     }
+    if (_isPersonOfDetermination) {
+      final draft = HealthProfile(
+        profileId: 'draft',
+        fullName: _nameController.text.trim(),
+        dateOfBirth: _dateOfBirth!,
+        isPersonOfDetermination: true,
+        accountCountry: _accountCountryController.text.trim(),
+        determinationCardKind: _cardKind.name,
+        determinationCardCountry: _cardCountryController.text.trim().isEmpty
+            ? _accountCountryController.text.trim()
+            : _cardCountryController.text.trim(),
+        determinationCardRef: _cardRefController.text.trim(),
+      );
+      final check = const DeterminationCredentialPolicy().evaluate(draft);
+      if (!check.recognized) {
+        setState(() => _errorMessageAr = check.messageAr);
+        return;
+      }
+    }
 
     final controller = Provider.of<ActiveProfileController>(
       context,
@@ -77,6 +105,17 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
       dateOfBirth: _dateOfBirth!,
       biologicalSex: _sex,
       isPersonOfDetermination: _isPersonOfDetermination,
+      accountCountry: _accountCountryController.text.trim(),
+      determinationCardKind:
+          _isPersonOfDetermination ? _cardKind.name : '',
+      determinationCardCountry: _isPersonOfDetermination
+          ? (_cardCountryController.text.trim().isEmpty
+              ? _accountCountryController.text.trim()
+              : _cardCountryController.text.trim())
+          : '',
+      determinationCardRef:
+          _isPersonOfDetermination ? _cardRefController.text.trim() : '',
+      isBlind: _isBlind,
       acceptsBloodDonationAlerts: _acceptsBloodDonationAlerts,
     );
 
@@ -193,14 +232,65 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                 const SizedBox(height: 16),
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
-                  title: const Text('أنا من ذوي الهمم'),
+                  title: const Text('أنا من ذوي الهمم / الإعاقة'),
                   subtitle: const Text(
-                    'إعفاء دائم من الرسوم والاشتراكات. تصريح منك وليس تشخيصاً.',
+                    'لا تُمنح الميزة بالتصريح. بطاقة وطنية أو إعاقة أو مرض دائم من بلد الحساب.',
                   ),
                   value: _isPersonOfDetermination,
                   onChanged: (value) =>
                       setState(() => _isPersonOfDetermination = value),
                 ),
+                SwitchListTile(
+                  contentPadding: EdgeInsets.zero,
+                  title: const Text('مكفوف / ضعف بصر شديد في هذه الفئة'),
+                  subtitle: const Text('لا أجور ولا رسوم على هذه الفئة.'),
+                  value: _isBlind,
+                  onChanged: (value) => setState(() => _isBlind = value),
+                ),
+                TextFormField(
+                  controller: _accountCountryController,
+                  decoration: const InputDecoration(
+                    labelText: 'بلد صاحب الحساب',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                if (_isPersonOfDetermination) ...[
+                  const SizedBox(height: 12),
+                  DropdownButtonFormField<DeterminationCardKind>(
+                    value: _cardKind,
+                    decoration: const InputDecoration(
+                      labelText: 'نوع البطاقة',
+                      border: OutlineInputBorder(),
+                    ),
+                    items: [
+                      for (final kind in DeterminationCardKind.values)
+                        DropdownMenuItem(
+                          value: kind,
+                          child: Text(kind.labelAr),
+                        ),
+                    ],
+                    onChanged: (value) {
+                      if (value != null) setState(() => _cardKind = value);
+                    },
+                  ),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _cardCountryController,
+                    decoration: const InputDecoration(
+                      labelText: 'بلد البطاقة (نفس بلد الحساب)',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  TextFormField(
+                    controller: _cardRefController,
+                    decoration: const InputDecoration(
+                      labelText: 'رقم أو مرجع البطاقة',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 8),
                 SwitchListTile(
                   contentPadding: EdgeInsets.zero,
                   title: const Text('استقبال طلبات التبرع بالدم'),

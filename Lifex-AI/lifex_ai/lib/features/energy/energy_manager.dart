@@ -7,6 +7,7 @@
 /// =============================================================
 
 import 'battery_monitor.dart';
+import 'intermittent_sense_policy.dart';
 import 'survival_energy_mode.dart';
 
 /// المدير المركزي للطاقة.
@@ -14,12 +15,14 @@ class EnergyManager {
   EnergyManager({
     required this.batteryMonitor,
     required this.survivalMode,
+    this.sensePolicy = const IntermittentSensePolicy(),
   }) {
     batteryMonitor.addListener(_onBatteryChanged);
   }
 
   final BatteryMonitor batteryMonitor;
   final SurvivalEnergyMode survivalMode;
+  final IntermittentSensePolicy sensePolicy;
 
   void _onBatteryChanged(BatteryStatus status) {
     if (status.level <= survivalMode.activationThresholdPercent &&

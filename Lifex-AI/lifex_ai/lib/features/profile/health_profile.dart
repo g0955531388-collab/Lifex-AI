@@ -93,11 +93,18 @@ class HealthProfile {
   List<AllergyRecord> allergies;
   List<ChronicConditionRecord> chronicConditions;
 
-  /// "من ذوي الهمم" (شخص من ذوي الإعاقة) بتصريح المستخدم نفسه — يُستخدم
-  /// حصراً في billing_exemption_policy.dart لتطبيق الإعفاء الدائم من
-  /// الرسوم والاشتراكات؛ لا يُستنتج تلقائياً من أي بيانات طبية أخرى ولا
-  /// يُشترط إثبات طبي لتفعيله، احتراماً لخصوصية المستخدم وسهولة الوصول.
+  /// ادّعاء المستخدم أنه من ذوي الهمم. لا يمنح الميزة وحده.
   bool isPersonOfDetermination;
+
+  /// بلد صاحب الحساب. بطاقة الهمم تُقبل منه فقط.
+  String accountCountry;
+
+  /// nationalId | disabilityCard | chronicIllnessCard
+  String determinationCardKind;
+  String determinationCardCountry;
+  String determinationCardRef;
+  bool isBlind;
+  String billingSeat;
 
   /// معرّفات ملفات أفراد العائلة المرتبطين (يُستخدم مع
   /// family_genetic_engine.dart) — تخزّن كمعرفات فقط، البيانات نفسها
@@ -129,6 +136,12 @@ class HealthProfile {
     List<AllergyRecord>? allergies,
     List<ChronicConditionRecord>? chronicConditions,
     this.isPersonOfDetermination = false,
+    this.accountCountry = '',
+    this.determinationCardKind = '',
+    this.determinationCardCountry = '',
+    this.determinationCardRef = '',
+    this.isBlind = false,
+    this.billingSeat = 'individual',
     List<String>? linkedFamilyProfileIds,
     List<String>? currentMedicationNames,
     this.acceptsBloodDonationAlerts = true,
@@ -207,6 +220,12 @@ class HealthProfile {
         'chronicConditions':
             chronicConditions.map((c) => c.toJson()).toList(),
         'isPersonOfDetermination': isPersonOfDetermination,
+        'accountCountry': accountCountry,
+        'determinationCardKind': determinationCardKind,
+        'determinationCardCountry': determinationCardCountry,
+        'determinationCardRef': determinationCardRef,
+        'isBlind': isBlind,
+        'billingSeat': billingSeat,
         'linkedFamilyProfileIds': linkedFamilyProfileIds,
         'currentMedicationNames': currentMedicationNames,
         'acceptsBloodDonationAlerts': acceptsBloodDonationAlerts,
@@ -237,6 +256,13 @@ class HealthProfile {
             .toList(),
         isPersonOfDetermination:
             json['isPersonOfDetermination'] as bool? ?? false,
+        accountCountry: json['accountCountry'] as String? ?? '',
+        determinationCardKind: json['determinationCardKind'] as String? ?? '',
+        determinationCardCountry:
+            json['determinationCardCountry'] as String? ?? '',
+        determinationCardRef: json['determinationCardRef'] as String? ?? '',
+        isBlind: json['isBlind'] as bool? ?? false,
+        billingSeat: json['billingSeat'] as String? ?? 'individual',
         linkedFamilyProfileIds:
             (json['linkedFamilyProfileIds'] as List<dynamic>? ?? [])
                 .map((e) => e as String)

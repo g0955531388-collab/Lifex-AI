@@ -60,11 +60,11 @@ class EmergencyManager {
 
   /// إطلاق حالة طوارئ جديدة — نقطة الدخول الوحيدة المعتمدة لإنشاء حالة
   /// طوارئ من أي وحدة أخرى في النظام.
-  EmergencyCase triggerEmergency({
+  Future<EmergencyDispatchOutcome> triggerEmergency({
     required String profileId,
     required String reasonAr,
     Map<String, dynamic>? context,
-  }) {
+  }) async {
     _caseCounter++;
     final caseId = 'EMG-${DateTime.now().millisecondsSinceEpoch}-$_caseCounter';
 
@@ -77,7 +77,7 @@ class EmergencyManager {
     );
     _activeCases[caseId] = emergencyCase;
 
-    messageManager.dispatchEmergencyMessage(
+    final outcome = await messageManager.dispatchEmergencyMessage(
       profileId: profileId,
       caseId: caseId,
       riskLevel: riskAssessment.level,
@@ -104,7 +104,7 @@ class EmergencyManager {
       data: {'caseId': caseId, 'riskLevel': riskAssessment.level},
     );
 
-    return emergencyCase;
+    return outcome;
   }
 
   /// إغلاق حالة طوارئ بعد التأكد من استقرار الوضع (يتم يدوياً من قِبل

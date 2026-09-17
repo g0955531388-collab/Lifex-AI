@@ -12,9 +12,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../features/family/genetics_signal_engine.dart';
+import '../features/network_box/unit_branch_catalog.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../features/profile/health_profile.dart';
 import '../features/profile/multi_profile_engine.dart';
+import 'unit_branch_navigator.dart';
+import 'marriage_request_screen.dart';
 
 class FamilyManagementScreen extends StatelessWidget {
   const FamilyManagementScreen({super.key});
@@ -53,6 +56,105 @@ class FamilyManagementScreen extends StatelessWidget {
                     Text(
                       'المقاعد المتبقية: ${controller.remainingFamilySlots}',
                       style: const TextStyle(fontSize: 13, color: Colors.grey),
+                    ),
+                    const SizedBox(height: 8),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.account_tree_outlined),
+                        title: const Text('التاريخ العائلي'),
+                        subtitle: const Text(
+                            'ملاحظات وراثية على هذا الملف فقط. لا تُفتح ملفات الآخرين'),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvFamilyHistory',
+                          ),
+                          profileId: controller.activeProfileId,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.account_balance_outlined),
+                        title: const Text('رواق المعرفة'),
+                        subtitle: const Text(
+                            'مكتبة الأسرة واليافعين، ورفّ تنزيل إلى الجهاز'),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvArcade',
+                          ),
+                          profileId: controller.activeProfileId,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.menu_book_outlined),
+                        title: const Text('كتاب حقوق الطفل'),
+                        subtitle: const Text('قراءة محلية. ليس قانون دولة'),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvChildRights',
+                          ),
+                          profileId: controller.activeProfileId,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.favorite_outline),
+                        title: const Text('مَرآةُ الاختيار'),
+                        subtitle: const Text(
+                          'نضج الشراكة. لغة الجهاز أو التطبيق تلقائياً',
+                        ),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvChoiceMirror',
+                          ),
+                          profileId: controller.activeProfileId,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.auto_stories_outlined),
+                        title: const Text('دليل اليافعين'),
+                        subtitle: const Text('توعوي. ليس علاجاً نفسياً'),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          UnitBranchCatalog.healthCv.firstWhere(
+                            (branch) => branch.id == 'cvYouthGuide',
+                          ),
+                          profileId: controller.activeProfileId,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Card(
+                      child: ListTile(
+                        leading: const Icon(Icons.favorite_outline),
+                        title: const Text('طلب زواج وتوافق صحي'),
+                        subtitle: const Text(
+                            'طلب لفلانة على الجهاز. الحساب الصحي بعد موافقتها فقط'),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => const MarriageRequestScreen(),
+                          ),
+                        ),
+                      ),
                     ),
                     const SizedBox(height: 8),
                     ...GeneticsSignalEngine()

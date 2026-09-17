@@ -41,6 +41,29 @@ class EmergencyPhoneContactsRegistry {
 
   final Map<String, List<EmergencyPhoneContact>> _contactsByProfileId = {};
 
+  void replaceForProfile(String profileId, Iterable<String> phones) {
+    final unique = <String>{};
+    final list = <EmergencyPhoneContact>[];
+    for (final raw in phones) {
+      final normalized = raw.trim();
+      if (normalized.isEmpty || unique.contains(normalized)) continue;
+      unique.add(normalized);
+      list.add(EmergencyPhoneContact(phoneNumber: normalized));
+      if (list.length >= maxEmergencyPhoneContactsPerProfile) break;
+    }
+    _contactsByProfileId[profileId] = list;
+  }
+
+  static List<String> phonesFromTrustedMaps(dynamic raw) {
+    if (raw is! List) return const [];
+    return [
+      for (final item in raw)
+        if (item is Map &&
+            (item['phone'] ?? '').toString().trim().isNotEmpty)
+          item['phone'].toString().trim(),
+    ];
+  }
+
   List<EmergencyPhoneContact> contactsFor(String profileId) =>
       List.unmodifiable(_contactsByProfileId[profileId] ?? const []);
 

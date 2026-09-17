@@ -15,6 +15,20 @@ typedef EmergencySendFunction = Future<bool> Function(
   String messageAr,
 );
 
+class EmergencyDispatchOutcome {
+  const EmergencyDispatchOutcome({
+    required this.localCaseOpened,
+    required this.outboundSent,
+    required this.contactCount,
+    required this.messageAr,
+  });
+
+  final bool localCaseOpened;
+  final bool outboundSent;
+  final int contactCount;
+  final String messageAr;
+}
+
 class EmergencyDispatchRecord {
   final String caseId;
   final String profileId;
@@ -44,7 +58,7 @@ class EmergencyMessageManager {
   /// جهات الثقة الخاصة بالمستخدم (بحد أقصى عشرة أرقام — انظر
   /// emergency_phone_contacts_registry.dart)، وليس لنص عام ثابت كما كان سابقاً.
   /// التسجيل يتم دائماً حتى لو فشل الإرسال الفعلي، لأغراض التدقيق.
-  Future<void> dispatchEmergencyMessage({
+  Future<EmergencyDispatchOutcome> dispatchEmergencyMessage({
     required String profileId,
     required String caseId,
     required String riskLevel,
@@ -61,11 +75,30 @@ class EmergencyMessageManager {
     final message = _buildMessage(riskLevel, reasonAr, latitude, longitude);
     final contacts = emergencyContactsRegistry.contactsFor(profileId);
 
-    if (sendFunction != null) {
-      for (final contact in contacts) {
-        await sendFunction!(contact.phoneNumber, message);
-      }
+    if (sendFunction == null) {
+      return EmergencyDispatchOutcome(
+        localCaseOpened: true,
+        outboundSent: false,
+        contactCount: contacts.length,
+        messageAr: contacts.isEmpty
+            ? 'سُجّلت حالة طوارئ على هذا الجهاز. لا أرقام ثقة محفوظة، وقناة SMS/Push غير مربوطة.'
+            : 'سُجّلت حالة طوارئ على هذا الجهاز لـ ${contacts.length} جهة. لم يُرسل SMS ولا إشعار دفع: القناة غير مربوطة بمفاتيح حقيقية.',
+      );
     }
+
+    var sent = 0;
+    for (final contact in contacts) {
+      final ok = await sendFunction!(contact.phoneNumber, message);
+      if (ok) sent++;
+    }
+    return EmergencyDispatchOutcome(
+      localCaseOpened: true,
+      outboundSent: sent > 0 && sent == contacts.length,
+      contactCount: contacts.length,
+      messageAr: sent == 0
+          ? 'سُجّلت الحالة محلياً. تعذّر إرسال الاستغاثة الخارجية.'
+          : 'أُرسلت الاستغاثة إلى $sent من أصل ${contacts.length} جهة.',
+    );
   }
 
   String _buildMessage(

@@ -9,68 +9,97 @@
 library lifex_ai.screens.health_profile_screen;
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../features/network_box/unit_branch_catalog.dart';
+import '../features/profile/active_profile_controller.dart';
+import '../features/profile/determination_credential_policy.dart';
 import '../features/profile/health_profile.dart';
 import '../l10n/generated/app_localizations.dart';
-import 'identity_workspace_screen.dart';
-import 'smart_health_questionnaire_screen.dart';
+import 'unit_branch_navigator.dart';
 
 class HealthProfileScreen extends StatelessWidget {
-  const HealthProfileScreen({super.key, this.profile});
+  const HealthProfileScreen({
+    super.key,
+    this.profile,
+    this.preferThisProfile = false,
+  });
 
-  /// الملف الصحي المعروض. في هذه المرحلة الأولية يُمرَّر مباشرة؛ لاحقاً
-  /// سيُستبدل هذا بحقن اعتماديات فعلي (Provider/Riverpod/GetIt) يجلب
-  /// الملف النشط من MultiProfileEngine.
+  /// إن [preferThisProfile] يُعرض هذا الملف دون تبديل الملف النشط للحساب.
   final HealthProfile? profile;
+  final bool preferThisProfile;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(l10n?.homeMyHealthProfile ?? 'ملفي الصحي'),
-      ),
-      body: profile == null
-          ? Center(
-              child: Text(l10n?.noHealthProfileLoaded ?? 'لا يوجد ملف صحي محمّل.'),
-            )
-          : SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+    return Consumer<ActiveProfileController>(
+      builder: (context, controller, _) {
+        final live = preferThisProfile
+            ? (profile ?? controller.activeProfile)
+            : (controller.activeProfile ?? profile);
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(
+              preferThisProfile
+                  ? 'ملف مرتبط بالحصة'
+                  : (l10n?.homeMyHealthProfile ?? 'ملفي الصحي'),
+            ),
+          ),
+          body: live == null
+              ? Center(
+                  child: Text(
+                      l10n?.noHealthProfileLoaded ?? 'لا يوجد ملف صحي محمّل.'),
+                )
+              : SingleChildScrollView(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                  if (preferThisProfile)
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 12),
+                      child: Text(
+                        'عرض ملف مرتبط بهذه الحصة. الملف النشط لحساب الطبيب لم يُبدَّل.',
+                      ),
+                    ),
                   Semantics(
                     header: true,
                     child: Text(
-                      profile!.fullName,
+                      live.fullName,
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text('العمر: ${profile!.ageInYears} سنة'),
+                  Text('العمر: ${live.ageInYears} سنة'),
                   const SizedBox(height: 16),
                   _InfoSection(
                     titleAr: 'معلومات أساسية',
                     children: [
-                      _InfoRow(labelAr: 'فصيلة الدم', valueAr: profile!.bloodType.name),
-                      if (profile!.heightCm != null)
-                        _InfoRow(labelAr: 'الطول', valueAr: '${profile!.heightCm} سم'),
-                      if (profile!.weightKg != null)
-                        _InfoRow(labelAr: 'الوزن', valueAr: '${profile!.weightKg} كغم'),
-                      if (profile!.bodyMassIndex != null)
+                      _InfoRow(labelAr: 'فصيلة الدم', valueAr: live.bloodType.name),
+                      _InfoRow(
+                        labelAr: 'ذوو الهمم',
+                        valueAr: const DeterminationCredentialPolicy()
+                            .evaluate(live)
+                            .messageAr,
+                      ),
+                      if (live.heightCm != null)
+                        _InfoRow(labelAr: 'الطول', valueAr: '${live.heightCm} سم'),
+                      if (live.weightKg != null)
+                        _InfoRow(labelAr: 'الوزن', valueAr: '${live.weightKg} كغم'),
+                      if (live.bodyMassIndex != null)
                         _InfoRow(
                           labelAr: 'مؤشر كتلة الجسم',
-                          valueAr: profile!.bodyMassIndex!.toStringAsFixed(1),
+                          valueAr: live.bodyMassIndex!.toStringAsFixed(1),
                         ),
                     ],
                   ),
                   const SizedBox(height: 16),
                   _InfoSection(
                     titleAr: 'الحساسية',
-                    children: profile!.allergies.isEmpty
+                    children: live.allergies.isEmpty
                         ? [const Text('لا توجد حساسية مسجَّلة.')]
-                        : profile!.allergies
+                        : live.allergies
                             .map((a) => _InfoRow(
                                   labelAr: a.substance,
                                   valueAr: a.severity,
@@ -80,37 +109,30 @@ class HealthProfileScreen extends StatelessWidget {
                   const SizedBox(height: 16),
                   _InfoSection(
                     titleAr: 'الحالات المزمنة',
-                    children: profile!.chronicConditions.isEmpty
+                    children: live.chronicConditions.isEmpty
                         ? [const Text('لا توجد حالات مزمنة مسجَّلة.')]
-                        : profile!.chronicConditions
+                        : live.chronicConditions
                             .map((c) => Text(c.conditionName))
                             .toList(),
                   ),
                   const SizedBox(height: 16),
-                  FilledButton.tonalIcon(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const IdentityWorkspaceScreen(),
-                        ),
-                      );
-                    },
-                    icon: const Icon(Icons.badge_outlined),
-                    label: const Text('الهوية الحقيقية والمستعارة'),
-                  ),
+                  Text('أقسام الملف الصحي',
+                      style: Theme.of(context).textTheme.titleLarge),
                   const SizedBox(height: 8),
-                  FilledButton.tonalIcon(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) =>
-                              const SmartHealthQuestionnaireScreen(),
+                  for (final branch in UnitBranchCatalog.healthCv)
+                    Card(
+                      child: ListTile(
+                        leading: CircleAvatar(child: Icon(branch.icon)),
+                        title: Text(branch.titleAr),
+                        subtitle: Text(branch.subtitleAr),
+                        trailing: const Icon(Icons.arrow_forward_ios, size: 16),
+                        onTap: () => UnitBranchNavigator.open(
+                          context,
+                          branch,
+                          profileId: live.profileId,
                         ),
-                      );
-                    },
-                    icon: const Icon(Icons.assignment_outlined),
-                    label: const Text('فتح الاستبيان الصحي الشامل'),
-                  ),
+                      ),
+                    ),
                   const SizedBox(height: 24),
                   Semantics(
                     label: 'تنويه: هذه البيانات للاطلاع الشخصي فقط وليست '
@@ -135,6 +157,8 @@ class HealthProfileScreen extends StatelessWidget {
                 ],
               ),
             ),
+        );
+      },
     );
   }
 }

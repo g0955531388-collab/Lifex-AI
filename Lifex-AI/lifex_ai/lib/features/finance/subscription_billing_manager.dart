@@ -13,6 +13,8 @@ library lifex_ai.features.finance.subscription_billing_manager;
 import '../profile/health_profile.dart';
 import 'billing_exemption_policy.dart';
 import 'payment_gateway_client.dart';
+import 'platform_fee_policy.dart';
+import 'subscription_catalog.dart';
 import 'transaction_ledger.dart';
 
 class BillingOutcome {
@@ -38,6 +40,8 @@ class SubscriptionBillingManager {
   SubscriptionBillingManager({
     required this.ledger,
     required this.exemptionPolicy,
+    this.catalog = const SubscriptionCatalog(),
+    this.feePolicy = const PlatformFeePolicy(),
     Map<String, PaymentGatewayClient>? gatewaysByName,
     Map<String, List<String>>? availableGatewayNamesByCountryCode,
   })  : _gatewaysByName = gatewaysByName ?? {},
@@ -46,6 +50,8 @@ class SubscriptionBillingManager {
 
   final TransactionLedger ledger;
   final BillingExemptionPolicy exemptionPolicy;
+  final SubscriptionCatalog catalog;
+  final PlatformFeePolicy feePolicy;
   final Map<String, PaymentGatewayClient> _gatewaysByName;
   final Map<String, List<String>> _availableGatewayNamesByCountryCode;
 
@@ -67,6 +73,61 @@ class SubscriptionBillingManager {
     return List.unmodifiable(
       _availableGatewayNamesByCountryCode[countryCode] ??
           _gatewaysByName.keys.toList(),
+    );
+  }
+
+  AnnualPlan annualPlanFor(HealthProfile profile) =>
+      catalog.planFor(catalog.parseSeat(profile.billingSeat));
+
+  /// فوترة الاشتراك السنوي حسب المقعد: فرد 100، وحدة 300، مستشفى 600.
+  Future<BillingOutcome> chargeAnnualSubscription({
+    required HealthProfile profile,
+    required String gatewayName,
+  }) {
+    final plan = annualPlanFor(profile);
+    return chargeSubscription(
+      profile: profile,
+      amountInSmallestUnit: plan.cents,
+      currencyCode: SubscriptionCatalog.currency,
+      gatewayName: gatewayName,
+      planDescriptionAr: '${plan.titleAr} — ${plan.includesAr}',
+    );
+  }
+
+  BillingOutcome quoteExtraService({
+    required HealthProfile profile,
+    required ExtraServiceKind kind,
+    int? negotiatedCents,
+  }) {
+    final quote = feePolicy.onExtraService(
+      profile: profile,
+      kind: kind,
+      negotiatedCents: negotiatedCents,
+    );
+    if (quote.wasExempt) {
+      return BillingOutcome.exempt(quote.messageAr);
+    }
+    if (quote.needsNegotiation) {
+      return BillingOutcome.failed(quote.messageAr);
+    }
+    return BillingOutcome.charged(quote.messageAr);
+  }
+
+  WalletTransaction? recordPlatformFeeIfDue({
+    required HealthProfile profile,
+    required int transferCents,
+  }) {
+    final quote = feePolicy.onMoneyTransfer(
+      profile: profile,
+      transferCents: transferCents,
+    );
+    if (quote.wasExempt || quote.dueCents <= 0) return null;
+    return ledger.record(
+      profileId: profile.profileId,
+      type: TransactionType.platformFee,
+      amountInSmallestUnit: quote.dueCents,
+      currencyCode: SubscriptionCatalog.currency,
+      relatedEntityId: 'transfer',
     );
   }
 

@@ -38,6 +38,7 @@ import 'features/ai/ai_service_router.dart';
 import 'features/ai/unified_ai_hub_gateway.dart';
 import 'core/admin/admin_manager.dart';
 import 'core/local_knowledge.dart';
+import 'core/lasting_search_index.dart';
 import 'core/trial_manager.dart';
 import 'features/emergency/emergency_manager.dart';
 import 'features/emergency/emergency_message_manager.dart';
@@ -62,6 +63,12 @@ import 'features/profile/profile_vault.dart';
 import 'features/remote_health/health_alert_dispatcher.dart';
 import 'features/remote_health/trusted_contacts_manager.dart';
 
+import 'app_navigator.dart';
+import 'features/voice/device_speech_to_text_provider.dart';
+import 'features/voice/device_text_to_speech_provider.dart';
+import 'features/voice/hardware_cue_bridge.dart';
+import 'features/voice/hardware_cue_host.dart';
+import 'features/voice/speech_to_text_processor.dart';
 import 'features/voice/text_to_speech_manager.dart';
 import 'features/voice/voice_engine.dart';
 import 'features/vision/medical_ocr_reader.dart';
@@ -108,6 +115,7 @@ class LifexAppContext {
     required this.emergencyPhoneContactsRegistry,
     required this.trialManager,
     required this.localKnowledge,
+    required this.lastingSearchIndex,
   });
 
   final MultiProfileEngine multiProfileEngine;
@@ -132,6 +140,7 @@ class LifexAppContext {
   final EmergencyPhoneContactsRegistry emergencyPhoneContactsRegistry;
   final TrialManager trialManager;
   final LocalKnowledge localKnowledge;
+  final LastingSearchIndex lastingSearchIndex;
 }
 
 /// ⚠️ تنفيذ مؤقت (In-memory) لتخزين بيانات الاعتماد — **غير آمن** لأي
@@ -177,20 +186,6 @@ class _NoopVisualFlashExecutor implements VisualFlashExecutor {
   }
 }
 
-/// مزوّد نطق محلي حتى يُربَط محرك TTS بجهاز حقيقي. يُبقي VoiceEngine
-/// مربوطاً بدل حالة "غير جاهز"، بينما شاشة المساعد البصري تعلن النص
-/// فوراً عبر قارئ الشاشة.
-class _UnconfiguredTextToSpeechProvider implements TextToSpeechProvider {
-  @override
-  Future<bool> get isLanguageSupported async => false;
-
-  @override
-  Future<bool> speak(String text, SpeechSettings settings) async => false;
-
-  @override
-  Future<void> stop() async {}
-}
-
 /// تهيئة كل الأنظمة الأساسية بالترتيب الصحيح قبل تشغيل أي واجهة.
 Future<LifexAppContext> _bootstrapLifexAi() async {
   ErrorHandler.instance.report(
@@ -232,9 +227,19 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
       medications: const [],
       symptoms: const [],
       tests: const [],
+      namedConditions: const [],
+      cameraSigns: const [],
       disclaimerAr: 'مرجع توعية فقط. ليس تشخيصاً.',
     );
   }
+
+  final lastingSearchIndex = LastingSearchIndex();
+  lastingSearchIndex.ingest(localKnowledge.diseases);
+  lastingSearchIndex.ingest(localKnowledge.medications);
+  lastingSearchIndex.ingest(localKnowledge.symptoms);
+  lastingSearchIndex.ingest(localKnowledge.tests);
+  lastingSearchIndex.ingest(localKnowledge.namedConditions);
+  lastingSearchIndex.ingest(localKnowledge.cameraSigns);
 
   // 2) الذكاء الاصطناعي الصحي الداخلي (تحليل أعراض/توجيه طبي).
   final medicalDatabaseManager = MedicalDatabaseManager(
@@ -259,10 +264,6 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
   final emergencyPhoneContactsRegistry = EmergencyPhoneContactsRegistry();
   final emergencyMessageManager = EmergencyMessageManager(
     emergencyContactsRegistry: emergencyPhoneContactsRegistry,
-    sendFunction: (recipient, message) async {
-      // TODO: ربط هذا فعلياً بخدمة SMS/Push حقيقية عند توفرها.
-      return true;
-    },
   );
 
   // 4-ب) التنبيهات متعددة الحواس (اهتزاز + ومضة) لضمان وصول تنبيهات
@@ -332,8 +333,7 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
       );
     },
     sendFunction: (alert) async {
-      // TODO: ربط هذا فعلياً بخدمة إشعارات Push حقيقية (FCM) لاحقاً.
-      return true;
+      return false;
     },
   );
 
@@ -348,10 +348,9 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
   final paymentController = PaymentController(walletManager: walletManager);
   final transactionService = TransactionService(ledger: transactionLedger);
 
-  // 7-ب) فوترة الاشتراكات ومبيعات المتاجر — PayPal هو مزوّد الدفع
-  // المعتمد فعلياً للاشتراكات حسب توجيه صريح (Stripe يبقى مخصصاً لشحن
-  // المحفظة أعلاه). كل فوترة تمر أولاً عبر BillingExemptionPolicy، التي
-  // تُعفي تلقائياً كل مريض بحالة مزمنة/مستعصية نشطة وكل شخص من ذوي الهمم.
+  // 7-ب) فوترة الاشتراكات — فرد 100 دولار/سنة، وحدة صحية 300، مستشفى 600.
+  // الاشتراك عادي بلا إعلانات ولا خدمات خاصة. التحويل والخدمات الأخرى برسوم.
+  // المعفى: إعاقة ببطاقة من بلد الحساب، مرض دائم في الملف، مكفوفون.
   // ⚠️ يتطلب Client ID فعلي من حساب PayPal تجاري حقيقي قبل أي دفعة حقيقية.
   final subscriptionBillingManager = SubscriptionBillingManager(
     ledger: transactionLedger,
@@ -372,9 +371,14 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
     // TODO: استبدال هذا بمفتاح Google Cloud Translation حقيقي.
     provider: GoogleTranslationProvider(apiKey: 'placeholder-translation-key'),
   );
-  TextToSpeechManager(
-    provider: _UnconfiguredTextToSpeechProvider(),
+  SpeechToTextProcessor(
+    provider: DeviceSpeechToTextProvider(),
   ).registerWithVoiceEngine(VoiceEngine.instance);
+  TextToSpeechManager(
+    provider: DeviceTextToSpeechProvider(),
+  ).registerWithVoiceEngine(VoiceEngine.instance);
+  await HardwareCueBridge.instance.attach();
+  HardwareCueHost.bind();
   final healthDeviceReader = HealthDeviceReader();
   final terminologyConnector = TerminologyConnector()
     ..registerProvider(RxNormTerminologyProvider());
@@ -411,6 +415,7 @@ Future<LifexAppContext> _bootstrapLifexAi() async {
     emergencyPhoneContactsRegistry: emergencyPhoneContactsRegistry,
     trialManager: trialManager,
     localKnowledge: localKnowledge,
+    lastingSearchIndex: lastingSearchIndex,
   );
 }
 
@@ -464,8 +469,10 @@ class LifexAiApp extends StatelessWidget {
         ),
         Provider<TrialManager>.value(value: appContext.trialManager),
         Provider<LocalKnowledge>.value(value: appContext.localKnowledge),
+        Provider<LastingSearchIndex>.value(value: appContext.lastingSearchIndex),
       ],
       child: MaterialApp(
+        navigatorKey: LifexNavigator.key,
         title: 'Lifex-AI',
         debugShowCheckedModeBanner: false,
         locale: Locale(

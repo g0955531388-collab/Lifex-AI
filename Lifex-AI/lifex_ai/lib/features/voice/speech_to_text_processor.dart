@@ -8,6 +8,7 @@
 /// =============================================================
 
 import 'voice_engine.dart';
+import 'voice_locale_policy.dart';
 
 /// حالة نتيجة التعرّف الصوتي.
 enum SpeechRecognitionStatus { success, noSpeechDetected, permissionDenied, error }
@@ -55,7 +56,10 @@ class SpeechToTextProcessor {
       );
     }
 
-    final result = await provider.listenOnce();
+    final locale = const VoiceLocalePolicy().preferredListenCode();
+    VoiceEngine.instance.activeLocaleId = locale;
+    VoiceEngine.instance.signalAr('أستمع بلغة الجهاز: $locale');
+    final result = await provider.listenOnce(localeCode: locale);
 
     switch (result.status) {
       case SpeechRecognitionStatus.success:
@@ -70,7 +74,7 @@ class SpeechToTextProcessor {
         );
       case SpeechRecognitionStatus.error:
         return const VoiceOperationResult.failure(
-          'حدث خطأ أثناء معالجة الصوت. حاول مرة أخرى.',
+          'محرّك التعرّف غير متاح أو رُفض الميكروفون. لا أدّعي أني سمعت شيئاً.',
         );
     }
   }

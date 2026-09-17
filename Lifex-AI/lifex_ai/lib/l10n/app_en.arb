@@ -6,10 +6,10 @@
   "homeMyAppointments": "My Appointments",
   "homeEmergency": "Emergency",
   "emergencyConfirmTitle": "Confirm Emergency",
-  "emergencyConfirmBody": "Your trusted contacts will be notified immediately. Continue?",
+  "emergencyConfirmBody": "An emergency case will be recorded on this device. Outbound SMS/push is not bound yet. Continue?",
   "cancel": "Cancel",
   "confirmEmergency": "Confirm Emergency",
-  "emergencyAlertSent": "Emergency alert sent to your trusted contacts.",
+  "emergencyAlertSent": "Emergency case recorded on this device. Outbound send is not bound yet.",
   "settingsTitle": "Settings",
   "settingsDarkMode": "Dark Mode",
   "settingsVoiceGuidance": "Voice Guidance",
@@ -25,6 +25,6 @@
   "settingsAbout": "About",
   "noHealthProfileLoaded": "No health profile loaded yet.",
   "accessibilityHomeButton": "Home screen",
-  "accessibilityEmergencyButton": "Emergency button. Double tap to trigger an immediate emergency alert",
+  "accessibilityEmergencyButton": "Emergency button. Double tap to record an emergency on this device. Outbound send is not bound yet",
   "accessibilitySettingsButton": "Settings button"
 }

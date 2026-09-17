@@ -11,10 +11,16 @@ library lifex_ai.screens.wallet_screen;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../core/trial_manager.dart';
+import '../features/finance/billing_exemption_policy.dart';
 import '../features/finance/payment_controller.dart';
+import '../features/finance/subscription_billing_manager.dart';
+import '../features/finance/subscription_catalog.dart';
 import '../features/finance/transaction_ledger.dart';
 import '../features/finance/transaction_service.dart';
 import '../features/finance/wallet_manager.dart';
+import '../features/profile/active_profile_controller.dart';
+import '../features/profile/health_profile.dart';
 
 class WalletScreen extends StatefulWidget {
   const WalletScreen({super.key, required this.profileId});
@@ -88,11 +94,49 @@ class _WalletScreenState extends State<WalletScreen> {
     });
   }
 
+  Future<void> _chargeAnnual(HealthProfile profile) async {
+    setState(() {
+      _isProcessing = true;
+      _statusMessageAr = null;
+    });
+    final billing = context.read<SubscriptionBillingManager>();
+    final gateways = billing.availableGatewaysForCountry(
+      profile.accountCountry.trim().isEmpty ? 'US' : profile.accountCountry,
+    );
+    if (gateways.isEmpty) {
+      setState(() {
+        _isProcessing = false;
+        _statusMessageAr =
+            'الاشتراك السنوي معروف (100 / 300 / 600 دولار) لكن بوابة الدفع غير مربوطة بعد. لا تحصيل وهمي.';
+      });
+      return;
+    }
+    final outcome = await billing.chargeAnnualSubscription(
+      profile: profile,
+      gatewayName: gateways.first,
+    );
+    if (!mounted) return;
+    if (outcome.success) {
+      context.read<TrialManager>().activatePaidYear();
+    }
+    setState(() {
+      _isProcessing = false;
+      _statusMessageAr = outcome.messageAr;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final walletManager = Provider.of<WalletManager>(context, listen: false);
     final transactionService =
         Provider.of<TransactionService>(context, listen: false);
+    final profile = context.watch<ActiveProfileController>().activeProfile;
+    final catalog = const SubscriptionCatalog();
+    final seat = catalog.parseSeat(profile?.billingSeat ?? 'individual');
+    final plan = catalog.planFor(seat);
+    final exemption = profile == null
+        ? const BillingExemptionResult.notExempt()
+        : const BillingExemptionPolicy().evaluate(profile);
 
     final balanceCents = walletManager.balanceFor(widget.profileId);
     final statement = transactionService.statementFor(widget.profileId);
@@ -108,6 +152,7 @@ class _WalletScreenState extends State<WalletScreen> {
                 child: Padding(
                   padding: const EdgeInsets.all(20),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       const Text('الرصيد الحالي', style: TextStyle(fontSize: 14)),
                       const SizedBox(height: 8),
@@ -115,7 +160,58 @@ class _WalletScreenState extends State<WalletScreen> {
                         '\$${(balanceCents / 100).toStringAsFixed(2)}',
                         style: Theme.of(context).textTheme.headlineMedium,
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: 12),
+                      Text(plan.titleAr,
+                          style: const TextStyle(fontWeight: FontWeight.w600)),
+                      Text('\$${plan.usd} / سنة — ${plan.includesAr}'),
+                      Text(plan.excludesAr,
+                          style: const TextStyle(fontSize: 12, color: Colors.grey)),
+                      Text(
+                        exemption.isExempt
+                            ? (exemption.reasonAr ?? 'معفى: لا أجور ولا رسوم.')
+                            : 'تحويل الأموال والخدمات الخاصة (دورات، إعلانات): رسوم 5٪ لصالح المنصة أو تفاوض.',
+                        style: const TextStyle(fontSize: 12),
+                      ),
+                      if (profile != null)
+                        DropdownButton<BillingSeat>(
+                          value: seat,
+                          isExpanded: true,
+                          items: const [
+                            DropdownMenuItem(
+                              value: BillingSeat.individual,
+                              child: Text('فرد — 100 دولار سنوياً'),
+                            ),
+                            DropdownMenuItem(
+                              value: BillingSeat.healthUnit,
+                              child: Text('وحدة صحية — 300 دولار سنوياً'),
+                            ),
+                            DropdownMenuItem(
+                              value: BillingSeat.hospital,
+                              child: Text('مستشفى — 600 دولار سنوياً'),
+                            ),
+                          ],
+                          onChanged: (value) {
+                            if (value == null) return;
+                            profile.billingSeat = value.name;
+                            context
+                                .read<ActiveProfileController>()
+                                .saveActiveProfileChanges();
+                            setState(() {});
+                          },
+                        ),
+                      const SizedBox(height: 8),
+                      FilledButton.icon(
+                        onPressed: (_isProcessing || profile == null)
+                            ? null
+                            : () => _chargeAnnual(profile),
+                        icon: const Icon(Icons.event_available_outlined),
+                        label: Text(
+                          exemption.isExempt
+                              ? 'تفعيل بلا رسوم (فئة معفاة)'
+                              : 'تحصيل الاشتراك السنوي \$${plan.usd}',
+                        ),
+                      ),
+                      const SizedBox(height: 8),
                       FilledButton.icon(
                         onPressed: _isProcessing ? null : _showTopUpDialog,
                         icon: _isProcessing
@@ -197,6 +293,10 @@ class _WalletScreenState extends State<WalletScreen> {
         return 'دفع اشتراك';
       case TransactionType.appStoreSale:
         return 'مبيعات المتجر';
+      case TransactionType.platformFee:
+        return 'رسوم منصة على تحويل أو خدمة';
+      case TransactionType.extraService:
+        return 'خدمة إضافية خارج الاشتراك';
     }
   }
 }

@@ -18,10 +18,14 @@ enum TransactionType {
   /// أصلاً، فأي معاملة من هذا النوع مسجَّلة هنا كانت مستحقة فعلاً.
   subscriptionPayment,
 
-  /// عائدات بيع التطبيق أو ميزة داخلية عبر متاجر التطبيقات (Google
-  /// Play/App Store) — تُسجَّل هنا لأغراض الشفافية المالية والتقارير،
-  /// حتى لو مرّت الدفعة الفعلية عبر نظام فوترة المتجر لا عبر PayPal.
+  /// عائدات بيع عبر متاجر التطبيقات — للشفافية إن مرّ التحصيل من المتجر.
   appStoreSale,
+
+  /// رسوم المنصة على تحويل أموال أو خدمة إضافية، لصالح Lifex-AI.
+  platformFee,
+
+  /// خدمة غير مشمولة بالاشتراك (دورة، إعلان متفق، خاص) بعد تفاوض.
+  extraService,
 }
 
 class WalletTransaction {
@@ -102,6 +106,8 @@ class TransactionLedger {
         case TransactionType.donationPayment:
         case TransactionType.subscriptionPayment:
         case TransactionType.appStoreSale:
+        case TransactionType.platformFee:
+        case TransactionType.extraService:
           balance -= t.amountInSmallestUnit;
           break;
       }

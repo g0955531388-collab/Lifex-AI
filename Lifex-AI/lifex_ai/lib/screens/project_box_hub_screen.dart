@@ -46,6 +46,9 @@ class ProjectBoxHubScreen extends StatelessWidget {
           Text('من الصفر حتى آخر يوم',
               style: Theme.of(context).textTheme.headlineSmall),
           const SizedBox(height: 8),
+          const Text(
+              'كل مقعد يفتح أقسامه: ملف عام، علاقة، حجز، سجلات. ليست صفحة واحدة.'),
+          const SizedBox(height: 8),
           HonestyBanner.localAndServer(),
           const SizedBox(height: 16),
           _section(context, '1 النواة', [

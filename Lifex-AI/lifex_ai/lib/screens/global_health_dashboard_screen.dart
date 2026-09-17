@@ -14,6 +14,8 @@ import 'appointments_screen.dart';
 import 'blood_request_screen.dart';
 import 'booking_workspace_screen.dart';
 import 'box_unit_screen.dart';
+import 'clinical_watch_screen.dart';
+import 'manual_vitals_screen.dart';
 import 'emergency_contacts_screen.dart';
 import 'health_chat_screen.dart';
 import 'health_modules_screen.dart';
@@ -65,6 +67,16 @@ class GlobalHealthDashboardScreen extends StatelessWidget {
         [
           _Module('التحكم الصوتي', 'تنفيذ أوامر عربية والتنقل بالصوت',
               Icons.mic_none_outlined, const VoiceControlScreen()),
+          _Module(
+              'مراقبة سريرية ظاهرة',
+              'إشعار دائم بموافقة. بلا تصوير خفي',
+              Icons.monitor_heart_outlined,
+              const ClinicalWatchScreen()),
+          _Module(
+              'القياسات اليدوية',
+              'حرارة وأكسجين ونبض من جهازك. بلا صورة',
+              Icons.favorite_outline,
+              const ManualVitalsScreen()),
           _Module(
               'المساعد البصري',
               'الكاميرا وقراءة النصوص والنطق',

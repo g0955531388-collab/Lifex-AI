@@ -10,8 +10,10 @@ import 'package:provider/provider.dart';
 
 import '../features/device_guardian/account_recovery_manager.dart';
 import '../features/device_guardian/device_guardian_manager.dart';
+import '../features/device_guardian/device_presence_note.dart';
 import '../features/device_guardian/lost_phone_policy.dart';
 import '../features/device_guardian/trusted_devices_manager.dart';
+import '../features/device_guardian/watch_bond_ledger.dart';
 import '../features/energy/energy_manager.dart';
 import '../features/energy/survival_energy_mode.dart';
 import '../features/network_box/box_unit_catalog.dart';
@@ -19,6 +21,7 @@ import '../features/network_box/profile_box_store.dart';
 import '../features/profile/active_profile_controller.dart';
 import '../widgets/honesty_banner.dart';
 import 'box_unit_screen.dart';
+import 'manual_vitals_screen.dart';
 import 'permission_transparency_screen.dart';
 
 class ProtectionWorkspaceScreen extends StatelessWidget {
@@ -41,6 +44,14 @@ class ProtectionWorkspaceScreen extends StatelessWidget {
         final store = ProfileBoxStore(profile);
         final guardian = store.map(BoxKeys.guardian);
         final links = store.list(BoxKeys.remoteLinks);
+        final bonds = WatchBondLedger(links);
+        final presence = const DevicePresenceNote().describe(
+          lastLocalHeartbeat: DateTime.tryParse(
+            guardian['lastHeartbeat']?.toString() ?? '',
+          ),
+          lostReported: guardian['lost'] == true,
+          locationReaderBound: false,
+        );
         final battery = energy.batteryMonitor.lastKnownStatus;
         final hasReader = energy.batteryMonitor.reader != null;
         return Scaffold(
@@ -64,16 +75,22 @@ class ProtectionWorkspaceScreen extends StatelessWidget {
                 ),
                 trailing: FilledButton.tonal(
                   onPressed: () {
+                    final now = DateTime.now().toIso8601String();
                     store.setMap(BoxKeys.guardian, {
                       ...guardian,
                       'registered': true,
                       'deviceId': _thisDeviceId,
-                      'registeredAt': DateTime.now().toIso8601String(),
+                      'registeredAt': now,
+                      'lastHeartbeat': now,
                     });
                     controller.saveActiveProfileChanges();
                   },
                   child: const Text('تسجيل'),
                 ),
+              ),
+              ListTile(
+                title: const Text('حضور هذا الجهاز'),
+                subtitle: Text(presence),
               ),
               ListTile(
                 title: const Text('الإبلاغ عن فقدان'),
@@ -171,32 +188,69 @@ class ProtectionWorkspaceScreen extends StatelessWidget {
                   style: Theme.of(context).textTheme.titleMedium),
               const HonestyBanner(
                 messageAr:
-                    'الربط العائلي محلي بأربعة مستويات. الكاميرا الحية والمستوى 3 و4 يحتاجان إذناً ثلاثياً وخادماً.',
+                    'الربط بين ملفين على هذا الجهاز. البث الحي عبر الحدود يحتاج قناة معتمدة بعد موافقة الطرفين.',
               ),
               for (final member in controller.allProfiles)
                 if (member.profileId != profile.profileId)
                   Card(
                     child: ListTile(
                       title: Text(member.fullName),
-                      subtitle: Text(_linkLabel(links, member.profileId)),
-                      trailing: PopupMenuButton<int>(
-                        onSelected: (level) {
-                          final next = store.list(BoxKeys.remoteLinks)
-                            ..removeWhere(
-                                (item) => item['targetId'] == member.profileId);
-                          next.add({
-                            'targetId': member.profileId,
-                            'level': level,
-                            'approved': level <= 2,
-                          });
-                          store.setList(BoxKeys.remoteLinks, next);
+                      subtitle: Text(_bondLabel(bonds.forProfile(member.profileId))),
+                      trailing: PopupMenuButton<WatchBondGrade>(
+                        onSelected: (grade) async {
+                          var counterpartHere = false;
+                          if (grade == WatchBondGrade.liveWatch ||
+                              grade == WatchBondGrade.emergency) {
+                            counterpartHere = await showDialog<bool>(
+                                  context: context,
+                                  builder: (ctx) => AlertDialog(
+                                    title: const Text('موافقة الطرفين'),
+                                    content: const Text(
+                                      'المستوى الحي لا يكتمل إلا إذا كان الطرف الآخر أمام الشاشة ويوافق. '
+                                      'حتى بعد ذلك لن أبث صورة إلى شبكة قبل خادم معتمد.',
+                                    ),
+                                    actions: [
+                                      TextButton(
+                                        onPressed: () =>
+                                            Navigator.pop(ctx, false),
+                                        child: const Text('الطرف غائب'),
+                                      ),
+                                      FilledButton(
+                                        onPressed: () =>
+                                            Navigator.pop(ctx, true),
+                                        child: const Text('نعم، يوافق أمامي'),
+                                      ),
+                                    ],
+                                  ),
+                                ) ??
+                                false;
+                          }
+                          if (!context.mounted) return;
+                          bonds.propose(
+                            counterpartProfileId: member.profileId,
+                            grade: grade,
+                            counterpartStandingHere: counterpartHere,
+                          );
+                          store.setList(BoxKeys.remoteLinks, bonds.rows);
                           controller.saveActiveProfileChanges();
                         },
                         itemBuilder: (_) => const [
-                          PopupMenuItem(value: 1, child: Text('1 إشعارات')),
-                          PopupMenuItem(value: 2, child: Text('2 متابعة')),
-                          PopupMenuItem(value: 3, child: Text('3 مراقبة حية')),
-                          PopupMenuItem(value: 4, child: Text('4 طوارئ')),
+                          PopupMenuItem(
+                            value: WatchBondGrade.notices,
+                            child: Text('إشعارات محلية'),
+                          ),
+                          PopupMenuItem(
+                            value: WatchBondGrade.followup,
+                            child: Text('متابعة محلية'),
+                          ),
+                          PopupMenuItem(
+                            value: WatchBondGrade.liveWatch,
+                            child: Text('نية بث حي'),
+                          ),
+                          PopupMenuItem(
+                            value: WatchBondGrade.emergency,
+                            child: Text('طوارئ عائلية'),
+                          ),
                         ],
                       ),
                     ),
@@ -241,9 +295,7 @@ class ProtectionWorkspaceScreen extends StatelessWidget {
                 subtitle: const Text('ليست من الكاميرا وليست تشخيصاً'),
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (_) => const BoxUnitScreen(
-                      unit: BoxUnitCatalog.biometrics,
-                    ),
+                    builder: (_) => const ManualVitalsScreen(),
                   ),
                 ),
               ),
@@ -254,10 +306,8 @@ class ProtectionWorkspaceScreen extends StatelessWidget {
     );
   }
 
-  String _linkLabel(List<Map<String, dynamic>> links, String profileId) {
-    final match = links.where((item) => item['targetId'] == profileId);
-    if (match.isEmpty) return 'بلا ربط';
-    final level = match.first['level'];
-    return 'مستوى $level${level is int && level >= 3 ? ' — ينتظر خادماً' : ''}';
+  String _bondLabel(WatchBond? bond) {
+    if (bond == null) return 'بلا ربط';
+    return '${bond.gradeAr} — ${bond.honestyAr()}';
   }
 }
