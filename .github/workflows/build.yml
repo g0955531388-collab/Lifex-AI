@@ -5,6 +5,9 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -36,3 +39,14 @@ jobs:
         with:
           name: Lifex-AI-APK
           path: lifex_ai/build/app/outputs/flutter-apk/app-release.apk
+
+      - name: Create/update permanent GitHub Release with the APK
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="build-${{ github.run_number }}"
+          gh release create "$TAG" \
+            "lifex_ai/build/app/outputs/flutter-apk/app-release.apk" \
+            --title "Lifex-AI APK — build ${{ github.run_number }}" \
+            --notes "بناء تلقائي من commit ${{ github.sha }} على فرع ${{ github.ref_name }}. هذا ملف دائم (لا ينتهي كملفات Artifacts المؤقتة)." \
+            --latest
