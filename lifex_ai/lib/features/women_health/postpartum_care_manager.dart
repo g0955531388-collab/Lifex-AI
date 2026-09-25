@@ -12,7 +12,6 @@
 /// =============================================================
 
 import '../../core/health_event_manager.dart';
-import 'pregnancy_profile.dart';
 import 'women_health_manager.dart';
 
 /// نوع الرضاعة الحالي.
