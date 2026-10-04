@@ -76,9 +76,14 @@ void main() {
       engine.addProfile(buildProfile('p1', 'غازي'), role: ProfileRole.primaryOwner);
       engine.addProfile(buildProfile('p2', 'ابن'), role: ProfileRole.child);
 
-      engine.removeProfile('p1');
+      final removed = engine.removeProfile('p1');
 
+      expect(removed, isTrue);
       expect(engine.activeProfileId, 'p2');
+    });
+
+    test('إزالة ملف غير موجود تفشل', () {
+      expect(engine.removeProfile('missing'), isFalse);
     });
 
     test('لا يوجد ملف نشط قبل إضافة أي ملف', () {
